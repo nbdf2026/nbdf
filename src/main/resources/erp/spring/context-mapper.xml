@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<!-- SqlSession setup for MyBatis Database Layer -->
+	<!-- 2026.05.01 :: MyBatis Mapper 스캔 경로 설정 및  Mapper SQL 경로 설정 -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:/erp/sqlmap/config/sql-mapper-config.xml" />
+		<property name="mapperLocations" value="classpath:/erp/sqlmap/mappers/**/*.xml" />
+	</bean>
+
+	<!-- MapperConfigurer setup for MyBatis Database Layer with @Mapper("deptMapper") in DeptMapper Interface -->
+	<!-- 2026.05.01 :: Mapper 인터페이스 호출을 위한 경로 설정 -->
+ 	<bean class="org.egovframe.rte.psl.dataaccess.mapper.MapperConfigurer">
+		<property name="basePackage" value="erp" />
+	</bean>
+    
+</beans>
