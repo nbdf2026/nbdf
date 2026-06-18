@@ -2,13 +2,26 @@
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
+	<!-- 2026.05.01 :: SqlSession setup for MyBatis Database Layer -->
+	<!-- 2026.05.01 :: 전자정부 4.3.1 :: XML 변경 자동 반영을 위한 RefreshableSqlSessionFactoryBean 적용 -->
+	<bean id="sqlSession" class="erp.cmmn.web.RefreshableSqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:/erp/sqlmap/config/sql-mapper-config.xml" />
+		<property name="mapperLocations" value="classpath:/erp/sqlmap/mappers/**/*.xml" />
+		<!-- 실시간 감지 주기 설정 (밀리초 단위, 1000 = 1초) -->
+		<property name="checkInterval" value="1000" />
+	</bean>
+	
 	<!-- SqlSession setup for MyBatis Database Layer -->
 	<!-- 2026.05.01 :: MyBatis Mapper 스캔 경로 설정 및  Mapper SQL 경로 설정 -->
+	<!-- 2026.05.01 :: SQL Mapper 자동 변경설정으로 주석 처리 -->
+	<!-- 
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:/erp/sqlmap/config/sql-mapper-config.xml" />
 		<property name="mapperLocations" value="classpath:/erp/sqlmap/mappers/**/*.xml" />
-	</bean>
+	</bean> 
+	-->
 
 	<!-- MapperConfigurer setup for MyBatis Database Layer with @Mapper("deptMapper") in DeptMapper Interface -->
 	<!-- 2026.05.01 :: Mapper 인터페이스 호출을 위한 경로 설정 -->

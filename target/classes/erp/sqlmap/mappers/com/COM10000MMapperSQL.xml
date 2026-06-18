@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <mapper namespace="erp.com.service.impl.COM10000MMapper">
 	
-	<select id="selectCodeList" resultType="map">
+	<!-- 코드유형 데이터 조회 -->
+	<select id="selectCodeTypeList" resultType="map">
 		select cct.code_type
 		      ,cct.code_type_nm
 		      ,cct.code_type_nm_s
@@ -17,6 +19,14 @@
 		      ,cct.rowid
 		  from com_code_type cct
 		 where 1=1
+		 
+		 <if test='CODE_TYPE != null and CODE_TYPE != "" '>
+		   and cct.code_type = #{CODE_TYPE}
+		 </if>
+		 
+		 <if test='CODE_TYPE_NM != null and CODE_TYPE_NM != "" '>
+		   and cct.code_type_nm like #{CODE_TYPE_NM} || '%' 
+		 </if>
 	</select>
 	
 </mapper>

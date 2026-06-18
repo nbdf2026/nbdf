@@ -3,12 +3,15 @@ package erp.com.web;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.nexacro.uiadapter.spring.core.annotation.ParamDataSet;
+import com.nexacro.uiadapter.spring.core.annotation.ParamVariable;
 import com.nexacro.uiadapter.spring.core.data.NexacroResult;
 
 import erp.com.service.COM10000MService;
@@ -32,6 +35,7 @@ public class COM10000MController {
 	private Logger log = LoggerFactory.getLogger(getClass());
 	
 	//구현체 인터페이스를 위한 변수
+	@Resource
 	private COM10000MService com10000MService;
 
 	/**
@@ -43,21 +47,33 @@ public class COM10000MController {
 	* @return
 	* @throws Exception
 	*/
-	@RequestMapping(value = "selectCodeList")
-	public NexacroResult selectCodeList(@ParamDataSet(name = "ds_search") Map<String, Object> inSearch) throws Exception {
+	@RequestMapping(value = "selectCodeList.do")
+	public NexacroResult selectCodeList(@ParamDataSet(name = "inSearch") Map<String, Object> inSearch
+			                           ,@ParamVariable(name = "userId") String userId) throws Exception {
 		
-		log.debug("############################################################");
-		log.debug("Controller : selectCodeList");
-		log.debug("inSearch   : " + inSearch);
+		/*
+		 * System.out.println("LoggerFactory = " +
+		 * LoggerFactory.getILoggerFactory().getClass().getName());
+		 * 
+		 * System.out.println(org.slf4j.LoggerFactory.class .getPackage()
+		 * .getImplementationVersion());
+		 */
+		
+		log.info("############################################################");
+		log.debug("Controller 				: selectCodeList");
+		log.debug("inSearch   				: " + inSearch);
+		log.debug("inSearch.CODE_TYPE		: " + inSearch.get("CODE_TYPE"));
+		log.debug("inSearch.CODE_TYPE_NM	: " + inSearch.get("CODE_TYPE_NM"));
+		log.debug("userID					: " + userId);
 		log.debug("############################################################");
 		
 		//자바 데이터 형식에서 넥사크로 데이터셋 형식으로 데이터 전환을 위한 변수
 		NexacroResult result = new NexacroResult();
 		
 		//공통코드 조회
-		List<Map<String, Object>> outSelectCodeList = com10000MService.selectCodeList();
+		List<Map<String, Object>> outSelectCodeTypeList = com10000MService.selectCodeTypeList(inSearch);
 		
-		result.addDataSet("outSelectCodeList", outSelectCodeList);
+		result.addDataSet("outSelectCodeTypeList", outSelectCodeTypeList);
 		
 		return result;
 	}
