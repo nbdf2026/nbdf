@@ -1,14 +1,14 @@
--- »ç¿ëÀÚ Á¢¼Ó
+-- ì‚¬ìš©ì ì ‘ì†
 conn system/manager!@orcl;
 -- ------------------------------------------------------------------------------------------------
 
 -- ------------------------------------------------------------------------------------------------
--- 11g¹öÀü ÀÌ»ó "c##" »ç¿ëÇÏÁö ¾Ê±â À§ÇÑ ¼³Á¤ Àû¿ë
+-- 11gë²„ì „ ì´ìƒ "c##" ì‚¬ìš©í•˜ì§€ ì•Šê¸° ìœ„í•œ ì„¤ì • ì ìš©
 alter session set "_oracle_script"=true;
 -- ------------------------------------------------------------------------------------------------
 
 -- ------------------------------------------------------------------------------------------------
--- nsys »ç¿ëÀÚ »ı¼º
+-- nsys ì‚¬ìš©ì ìƒì„±
 -- ------------------------------------------------------------------------------------------------
 drop   user nsys cascade;
 create user nsys identified by "manager!"
@@ -18,12 +18,12 @@ profile default
 quota unlimited on nbdf_data
 quota unlimited on nbdf_idx;
 
--- ·Ñ±ÇÇÑ
+-- ë¡¤ê¶Œí•œ
 grant connect  to nsys;
 grant dba      to nsys;
 grant resource to nsys;
 
--- ½Ã½ºÅÛ ±ÇÇÑ
+-- ì‹œìŠ¤í…œ ê¶Œí•œ
 grant create cluster                 to nsys with admin option;
 grant create dimension               to nsys with admin option;
 grant create indextype               to nsys with admin option;
@@ -43,7 +43,7 @@ grant unlimited tablespace           to nsys;
 
 
 -- ------------------------------------------------------------------------------------------------
--- ncom »ç¿ëÀÚ »ı¼º
+-- ncom ì‚¬ìš©ì ìƒì„±
 -- ------------------------------------------------------------------------------------------------
 drop   user ncom cascade;
 create user ncom identified by "manager!"
@@ -53,12 +53,12 @@ profile default
 quota unlimited on nbdf_data
 quota unlimited on nbdf_idx;
 
--- ·Ñ±ÇÇÑ
+-- ë¡¤ê¶Œí•œ
 grant connect  to ncom;
 grant resource to ncom;
 
 /*
--- ½Ã½ºÅÛ ±ÇÇÑ
+-- ì‹œìŠ¤í…œ ê¶Œí•œ
 grant create job                     to ncom with admin option;
 grant create materialized view       to ncom with admin option;
 grant create operator                to ncom with admin option;
@@ -74,7 +74,7 @@ grant unlimited tablespace           to ncom;
 */
 
 -- ------------------------------------------------------------------------------------------------
--- nhrm »ç¿ëÀÚ »ı¼º
+-- nhrm ì‚¬ìš©ì ìƒì„±
 -- ------------------------------------------------------------------------------------------------
 drop   user nhrm cascade;
 create user nhrm identified by "manager!"
@@ -84,7 +84,7 @@ profile default
 quota unlimited on nbdf_data
 quota unlimited on nbdf_idx;
 
--- ·Ñ±ÇÇÑ
+-- ë¡¤ê¶Œí•œ
 grant connect  to nhrm;
 grant resource to nhrm;
 
@@ -96,7 +96,7 @@ select *
 ;
 
 /*
--- ½Ã½ºÅÛ ±ÇÇÑ
+-- ì‹œìŠ¤í…œ ê¶Œí•œ
 grant create job                     to nhrm with admin option;
 grant create operator                to nhrm with admin option;
 grant create procedure               to nhrm with admin option;
