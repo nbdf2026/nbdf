@@ -1,0 +1,110 @@
+-- 사용자 접속
+conn system/manager!@orcl;
+-- ------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------
+-- 11g버전 이상 "c##" 사용하지 않기 위한 설정 적용
+alter session set "_oracle_script"=true;
+-- ------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------
+-- nsys 사용자 생성
+-- ------------------------------------------------------------------------------------------------
+drop   user nsys cascade;
+create user nsys identified by "manager!"
+default tablespace nbdf_data
+temporary tablespace temp
+profile default
+quota unlimited on nbdf_data
+quota unlimited on nbdf_idx;
+
+-- 롤권한
+grant connect  to nsys;
+grant dba      to nsys;
+grant resource to nsys;
+
+-- 시스템 권한
+grant create cluster                 to nsys with admin option;
+grant create dimension               to nsys with admin option;
+grant create indextype               to nsys with admin option;
+grant create job                     to nsys with admin option;
+grant create materialized view       to nsys with admin option;
+grant create operator                to nsys with admin option;
+grant create procedure               to nsys with admin option;
+grant create sequence                to nsys with admin option;
+grant create session                 to nsys with admin option;
+grant create synonym                 to nsys with admin option;
+grant create table                   to nsys with admin option;
+grant create trigger                 to nsys with admin option;
+grant create type                    to nsys with admin option;
+grant create view                    to nsys with admin option;
+grant unlimited tablespace           to nsys;
+
+
+
+-- ------------------------------------------------------------------------------------------------
+-- ncom 사용자 생성
+-- ------------------------------------------------------------------------------------------------
+drop   user ncom cascade;
+create user ncom identified by "manager!"
+default tablespace nbdf_data
+temporary tablespace temp
+profile default
+quota unlimited on nbdf_data
+quota unlimited on nbdf_idx;
+
+-- 롤권한
+grant connect  to ncom;
+grant resource to ncom;
+
+/*
+-- 시스템 권한
+grant create job                     to ncom with admin option;
+grant create materialized view       to ncom with admin option;
+grant create operator                to ncom with admin option;
+grant create procedure               to ncom with admin option;
+grant create sequence                to ncom with admin option;
+grant create session                 to ncom with admin option;
+grant create synonym                 to ncom with admin option;
+grant create table                   to ncom with admin option;
+grant create trigger                 to ncom with admin option;
+grant create type                    to ncom with admin option;
+grant create view                    to ncom with admin option;
+grant unlimited tablespace           to ncom;
+*/
+
+-- ------------------------------------------------------------------------------------------------
+-- nhrm 사용자 생성
+-- ------------------------------------------------------------------------------------------------
+drop   user nhrm cascade;
+create user nhrm identified by "manager!"
+default tablespace nbdf_data
+temporary tablespace temp
+profile default
+quota unlimited on nbdf_data
+quota unlimited on nbdf_idx;
+
+-- 롤권한
+grant connect  to nhrm;
+grant resource to nhrm;
+
+
+select *
+  from dba_users du
+ where 1=1
+   and du.username like 'N%'
+;
+
+/*
+-- 시스템 권한
+grant create job                     to nhrm with admin option;
+grant create operator                to nhrm with admin option;
+grant create procedure               to nhrm with admin option;
+grant create sequence                to nhrm with admin option;
+grant create synonym                 to nhrm with admin option;
+grant create table                   to nhrm with admin option;
+grant create trigger                 to nhrm with admin option;
+grant create type                    to nhrm with admin option;
+grant create view                    to nhrm with admin option;
+grant unlimited tablespace           to nhrm;
+*/

@@ -1,0 +1,77 @@
+-- ------------------------------------------------------------------------------------------------
+-- [공통관리] 프로그램등록 오브젝트 생성
+CONN SYSTEM/MANAGER@DEV1213;
+-- ------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------
+-- 시퀀스 생성
+-- ------------------------------------------------------------------------------------------------
+DROP   SEQUENCE ECOM.COM_VENDOR_S;
+CREATE SEQUENCE ECOM.COM_VENDOR_S
+MINVALUE 1
+MAXVALUE 999999999999
+START WITH 10000
+INCREMENT BY 1
+ORDER;
+
+-- 권한 부여
+GRANT SELECT ON ECOM.COM_VENDOR_S TO ESYS WITH GRANT OPTION;
+GRANT SELECT ON ECOM.COM_VENDOR_S TO EHRM WITH GRANT OPTION;
+
+-- 시노님 생성
+CREATE OR REPLACE SYNONYM ESYS.COM_VENDOR_S FOR ECOM.COM_VENDOR_S;
+CREATE OR REPLACE SYNONYM EHRM.COM_VENDOR_S FOR ECOM.COM_VENDOR_S;
+
+
+-- ------------------------------------------------------------------------------------------------
+-- 테이블 생성
+-- ------------------------------------------------------------------------------------------------
+DROP   TABLE ECOM.COM_VENDOR CASCADE CONSTRAINTS;
+CREATE TABLE ECOM.COM_VENDOR
+(
+     CORP_ID                 NUMBER         NOT NULL
+    ,PROGRAM_ID              NUMBER         NOT NULL    
+    ,PROGRAM_CD              VARCHAR2(30)   NOT NULL
+	,PROGRAM_NAME            VARCHAR2(200)  NOT NULL
+    ,PROGRAM_SHORT_NAME      VARCHAR2(100)
+    ,START_DATE              DATE           DEFAULT SYSDATE NOT NULL    
+    ,END_DATE                DATE
+    ,REMARK                  VARCHAR2(4000)
+    ,CREATE_DATE             DATE           DEFAULT SYSDATE
+    ,CREATE_BY               VARCHAR2(50)   DEFAULT '-1'
+    ,UPDATE_DATE             DATE           DEFAULT SYSDATE
+    ,UPDATE_BY               VARCHAR2(50)   DEFAULT '-1'
+) TABLESPACE EAPEX_DATA;
+
+-- 테이블 설명
+COMMENT ON TABLE  ECOM.COM_VENDOR                       IS '[공통관리] 프로그램등록';
+COMMENT ON COLUMN ECOM.COM_VENDOR.CORP_ID               IS '법인ID';
+COMMENT ON COLUMN ECOM.COM_VENDOR.PROGRAM_ID            IS '프로그램ID';
+COMMENT ON COLUMN ECOM.COM_VENDOR.PROGRAM_CD            IS '프로그램코드';
+COMMENT ON COLUMN ECOM.COM_VENDOR.PROGRAM_NAME          IS '프로그램명';
+COMMENT ON COLUMN ECOM.COM_VENDOR.PROGRAM_SHORT_NAME    IS '프로그램명(약칭)';
+COMMENT ON COLUMN ECOM.COM_VENDOR.START_DATE            IS '시작일자';
+COMMENT ON COLUMN ECOM.COM_VENDOR.END_DATE              IS '종료일자';
+COMMENT ON COLUMN ECOM.COM_VENDOR.REMARK                IS '비고';
+
+COMMENT ON COLUMN ECOM.COM_VENDOR.CREATE_DATE           IS '생성일시';
+COMMENT ON COLUMN ECOM.COM_VENDOR.CREATE_BY             IS '생성자';
+COMMENT ON COLUMN ECOM.COM_VENDOR.UPDATE_DATE           IS '수정일시';
+COMMENT ON COLUMN ECOM.COM_VENDOR.UPDATE_BY             IS '수정자';
+
+-- PRIMARY 인덱스
+ALTER TABLE ECOM.COM_VENDOR ADD CONSTRAINT COM_VENDOR_PK PRIMARY KEY (PROGRAM_ID) USING INDEX TABLESPACE EAPEX_IDX;
+
+-- UNIQUE 인덱스
+CREATE UNIQUE INDEX ECOM.COM_VENDOR_UK01 ON ECOM.COM_VENDOR (CORP_ID, PROGRAM_CD) TABLESPACE EAPEX_IDX;
+
+-- NORMAL 인덱스
+CREATE INDEX ECOM.COM_VENDOR_IX01 ON ECOM.COM_VENDOR (CORP_ID, PROGRAM_NAME) TABLESPACE EAPEX_IDX;
+
+-- 권한부여
+GRANT SELECT, INSERT, UPDATE, DELETE ON ECOM.COM_VENDOR TO ESYS WITH GRANT OPTION;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ECOM.COM_VENDOR TO EHRM WITH GRANT OPTION;
+
+-- 시노님 생성
+CREATE OR REPLACE SYNONYM ESYS.COM_VENDOR FOR ECOM.COM_VENDOR;
+CREATE OR REPLACE SYNONYM EHRM.COM_VENDOR FOR ECOM.COM_VENDOR;

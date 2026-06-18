@@ -1,0 +1,75 @@
+-- ------------------------------------------------------------------------------------------------
+-- [공통관리] 코드유형 오브젝트 생성
+conn system/manager!@orcl;
+-- ------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------
+-- 시퀀스 생성
+-- ------------------------------------------------------------------------------------------------
+drop   sequence ncom.com_code_type_s;
+create sequence ncom.com_code_type_s
+minvalue 1
+maxvalue 999999999999
+start with 1000000
+increment by 1
+order;
+
+-- 권한 부여
+grant select on ncom.com_code_type_s to nsys;
+grant select on ncom.com_code_type_s to nhrm;
+
+-- 시노님 생성
+create or replace synonym nsys.com_code_type_s for ncom.com_code_type_s;
+create or replace synonym nhrm.com_code_type_s for ncom.com_code_type_s;
+
+
+-- ------------------------------------------------------------------------------------------------
+-- 테이블 생성
+-- ------------------------------------------------------------------------------------------------
+drop   table ncom.com_code_type cascade constraints;
+create table ncom.com_code_type
+(
+     code_type               varchar2(30)   not null
+    ,code_type_nm            varchar2(200)  not null
+    ,code_type_nm_s          varchar2(100)  not null
+    ,start_date              date           default sysdate not null
+    ,end_date                date
+    ,create_type_cd          varchar2(30)   default 'U' not null
+    ,remark                  varchar2(4000)
+    ,create_date             date           default sysdate
+    ,create_by               varchar2(50)   default 'admin'
+    ,update_date             date           default sysdate
+    ,update_by               varchar2(50)   default 'admin'
+) tablespace nbdf_data;
+
+-- 테이블 설명
+comment on table  ncom.com_code_type                 is '[공통관리] 코드유형';
+comment on column ncom.com_code_type.code_type       is '코드유형';
+comment on column ncom.com_code_type.code_type_nm    is '코드유형명';
+comment on column ncom.com_code_type.code_type_nm_s  is '코드유형(약칭)';
+comment on column ncom.com_code_type.start_date      is '시작일자';
+comment on column ncom.com_code_type.end_date        is '종료일자';
+comment on column ncom.com_code_type.create_type_cd  is '생성유형코드';
+comment on column ncom.com_code_type.remark          is '비고';
+
+comment on column ncom.com_code_type.create_date     is '생성일시';
+comment on column ncom.com_code_type.create_by       is '생성자';
+comment on column ncom.com_code_type.update_date     is '수정일시';
+comment on column ncom.com_code_type.update_by       is '수정자';
+
+-- primary 인덱스
+alter table ncom.com_code_type add constraint com_code_type_pk primary key (code_type) using index tablespace nbdf_idx;
+
+-- unique 인덱스
+--create unique index ncom.com_code_type_uk01 on ncom.com_code_type (corp_id, code_type_id) tablespace nbdf_idx;
+
+-- normal 인덱스
+create index ncom.com_code_type_ix01 on ncom.com_code_type (code_type_nm) tablespace nbdf_idx;
+
+-- 권한부여
+grant all on ncom.com_code_type to nsys;
+grant all on ncom.com_code_type to nhrm;
+
+-- 시노님 생성
+create or replace synonym nsys.com_code_type for ncom.com_code_type;
+create or replace synonym nhrm.com_code_type for ncom.com_code_type;

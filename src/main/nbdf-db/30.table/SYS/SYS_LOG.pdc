@@ -1,0 +1,84 @@
+-- ------------------------------------------------------------------------------------------------
+-- [시스템관리] 로그 오브젝트 생성
+CONN SYSTEM/MANAGER@DEV1213;
+-- ------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------
+-- 시퀀스 생성
+-- ------------------------------------------------------------------------------------------------
+DROP   SEQUENCE ESYS.SYS_LOG_S;
+CREATE SEQUENCE ESYS.SYS_LOG_S
+MINVALUE 1
+MAXVALUE 999999999999
+START WITH 1000000
+INCREMENT BY 1
+ORDER;
+
+-- 권한 부여
+GRANT SELECT ON ESYS.SYS_LOG_S TO ECOM WITH GRANT OPTION;
+GRANT SELECT ON ESYS.SYS_LOG_S TO EHRM WITH GRANT OPTION;
+
+-- 시노님 생성
+CREATE OR REPLACE SYNONYM ECOM.SYS_LOG_S FOR ESYS.SYS_LOG_S;
+CREATE OR REPLACE SYNONYM EHRM.SYS_LOG_S FOR ESYS.SYS_LOG_S;
+
+
+-- ------------------------------------------------------------------------------------------------
+-- 테이블 생성
+-- ------------------------------------------------------------------------------------------------
+DROP   TABLE ESYS.SYS_LOG CASCADE CONSTRAINTS;
+CREATE TABLE ESYS.SYS_LOG
+(
+     CORP_ID                 NUMBER         NOT NULL
+    ,LOG_ID                  NUMBER         NOT NULL
+    ,LOG_NAME                VARCHAR2(200)  NOT NULL
+    ,PARAM_PACKAGE           VARCHAR2(100)
+    ,PARAM_PROCEDURE         VARCHAR2(100)
+    ,PARAM_USER_ID           VARCHAR2(50)
+    ,PARAM_INFO              VARCHAR2(4000)
+    ,BEGIN_DATE              DATE           DEFAULT SYSDATE
+    ,END_DATE                DATE
+    ,TOT_CNT                 NUMBER
+    ,SUC_CNT                 NUMBER
+    ,RESULT_STATUS_CD        VARCHAR2(30)
+    ,RESULT_DESCR            VARCHAR2(4000)
+    ,CREATE_DATE             DATE           DEFAULT SYSDATE
+    ,CREATE_BY               VARCHAR2(50)   DEFAULT '-1'
+    ,UPDATE_DATE             DATE           DEFAULT SYSDATE
+    ,UPDATE_BY               VARCHAR2(50)   DEFAULT '-1'
+);
+
+-- 테이블 설명
+COMMENT ON TABLE  ESYS.SYS_LOG                         IS '[시스템관리] 로그';
+COMMENT ON COLUMN ESYS.SYS_LOG.CORP_ID                 IS '법인ID';
+COMMENT ON COLUMN ESYS.SYS_LOG.LOG_ID                  IS '로그ID';
+COMMENT ON COLUMN ESYS.SYS_LOG.LOG_NAME                IS '로그명';
+COMMENT ON COLUMN ESYS.SYS_LOG.PARAM_PACKAGE           IS '패키지';
+COMMENT ON COLUMN ESYS.SYS_LOG.PARAM_PROCEDURE         IS '프로시져';
+COMMENT ON COLUMN ESYS.SYS_LOG.PARAM_USER_ID           IS '사용자ID';
+COMMENT ON COLUMN ESYS.SYS_LOG.PARAM_INFO              IS '매개변수';
+COMMENT ON COLUMN ESYS.SYS_LOG.BEGIN_DATE              IS '시작일시';
+COMMENT ON COLUMN ESYS.SYS_LOG.END_DATE                IS '종료일시';
+COMMENT ON COLUMN ESYS.SYS_LOG.TOT_CNT                 IS '전체건수';
+COMMENT ON COLUMN ESYS.SYS_LOG.SUC_CNT                 IS '성공건수';
+COMMENT ON COLUMN ESYS.SYS_LOG.RESULT_STATUS_CD        IS '처리결과코드';
+COMMENT ON COLUMN ESYS.SYS_LOG.RESULT_DESCR            IS '처리결과';
+
+COMMENT ON COLUMN ESYS.SYS_LOG.CREATE_DATE             IS '생성일시';
+COMMENT ON COLUMN ESYS.SYS_LOG.CREATE_BY               IS '생성자';
+COMMENT ON COLUMN ESYS.SYS_LOG.UPDATE_DATE             IS '수정일시';
+COMMENT ON COLUMN ESYS.SYS_LOG.UPDATE_BY               IS '수정자';
+
+-- PRIMARY 인덱스
+ALTER TABLE ESYS.SYS_LOG ADD CONSTRAINT SYS_LOG_PK PRIMARY KEY (LOG_ID) USING INDEX TABLESPACE EAPEX_IDX;
+
+-- NORMAL 인덱스
+CREATE INDEX ESYS.SYS_LOG_IX01 ON ESYS.SYS_LOG (CORP_ID, LOG_NAME) TABLESPACE EAPEX_IDX;
+
+-- 권한부여
+GRANT SELECT, INSERT, UPDATE, DELETE ON ESYS.SYS_LOG TO ECOM WITH GRANT OPTION;
+GRANT SELECT, INSERT, UPDATE, DELETE ON ESYS.SYS_LOG TO EHRM WITH GRANT OPTION;
+
+-- 시노님 생성
+CREATE OR REPLACE SYNONYM ECOM.SYS_LOG FOR ESYS.SYS_LOG;
+CREATE OR REPLACE SYNONYM EHRM.SYS_LOG FOR ESYS.SYS_LOG;

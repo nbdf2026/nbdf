@@ -1,0 +1,38 @@
+-- ------------------------------------------------------------------------------------------------
+-- putty 접속
+-- 사용자 / 비밀번호: ebs1213 / xpzm!@9
+-- 2. rdbms oracle home 19.17.0 - pdb
+-- sqlplus apps/builtapps@dev1213
+-- ------------------------------------------------------------------------------------------------
+show user;
+set trimspool on;
+set timing on;
+set heading on;
+set linesize 205;
+set pagesize 20;
+
+-- 테이블스페이스 삭제
+drop tablespace nbdf_data including contents and datafiles;
+drop tablespace nbdf_idx  including contents and datafiles;
+
+-- 테이블스페이스 생성
+create tablespace nbdf_data datafile 'c:\oracle\19c\oradata\orcl\nbdf_data.dbf' size 50m reuse autoextend on next 10m maxsize unlimited;
+create tablespace nbdf_idx  datafile 'c:\oracle\19c\oradata\orcl\nbdf_idx.dbf'  size 50m reuse autoextend on next 10m maxsize unlimited;
+
+-- 테이블스페이스 조회
+select df.status    as "상태"
+      ,df.enabled   as "읽기쓰기"
+      ,df.name      as "파일경로"
+      ,ts.name      as "테이블스페이스명"
+  from v$datafile df
+       inner join v$tablespace ts on ts.ts# = df.ts#
+ where 1=1
+   and ts.name like 'NBDF%'
+;
+
+-- 데이터 파일 조회
+select *
+  from dba_data_files ddf
+ where 1=1
+   and ddf.tablespace_name like 'NBDF%'
+;
