@@ -70,7 +70,7 @@
         	this.ds_search.setColumn(nRow, "CODE_TYPE_NM", "생성");
 
         	var sSvcID 			= "selectCodeList";
-        	var sURL 			= "http://localhost:8080/nbdf/com/COM10000M/selectCodeList.do";
+        	var sURL 			= "svcUrl::com/COM10000M/selectCodeList.do";
         	var sInDatasets 	= "inSearch=ds_search";
         	var sOutDatasets 	= "ds_codeType=outSelectCodeTypeList";
         	var sArgument 		= "userId=" + "admin";
@@ -88,9 +88,9 @@
 
         	switch(sSvcID) {
         		case "selectCodeList":
-        			trace("###########################################################");
-        			trace(this.ds_codeType.saveXML());
-        			trace("###########################################################");
+        			//trace("###########################################################");
+        			//trace(this.ds_codeType.saveXML());
+        			//trace("###########################################################");
 
         			var nCnt = this.ds_codeType.rowcount;
         			if (nCnt == 0) {

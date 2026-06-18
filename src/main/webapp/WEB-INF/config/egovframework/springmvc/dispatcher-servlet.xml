@@ -103,11 +103,17 @@
     <!-- 넥사크로N EXCEPTION-RESOLVER 등록 -->
     <bean id="exceptionResolver" class="com.nexacro.uiadapter.spring.core.resolve.NexacroMappingExceptionResolver" p:order="1">
         <property name="view" ref="nexacroView" />   
-        <property name="shouldLogStackTrace" value="true" />   
-        <property name="shouldSendStackTrace" value="true" />
-        <!-- shouldSendStackTrace 가 false 일 경우 nexacroN으로 전송되는 에러메시지  -->
-        <!-- <property name="defaultErrorMsg" value="An Error Occured. check the ErrorCode for detail of error infomation" /> -->
+           
+        <!-- 2026.05.01 :: 오류메시지 전문내용을 설정을 통한 메시지로 전환 -->
+        <property name="shouldLogStackTrace" value="true" />
+		<property name="shouldSendStackTrace" value="false" />
+		<property name="defaultErrorMsg" value="fail.common.msg" />
+                
+        <!-- <property name="shouldLogStackTrace" value="true" />         
+        <property name="shouldSendStackTrace" value="true" />        
         <property name="defaultErrorMsg" value="fail.common.msg" />
+        -->
+        
         <property name="messageSource" ref="messageSource" />   
     </bean>
     	
