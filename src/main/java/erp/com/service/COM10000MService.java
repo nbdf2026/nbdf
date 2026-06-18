@@ -24,6 +24,14 @@ public interface COM10000MService {
 	* @return
 	* @throws Exception
 	*/
-	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearch) throws Exception;
-
+	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearchMap) throws Exception;
+	
+	/**
+	* @methodName     : saveCodeTypeList
+	* @author         : built1
+	* @date           : 2026.06.18
+	* @description    : 공통코드 데이터를 저장하는 메소드
+	* @throws Exception
+	*/
+	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList) throws Exception;
 }

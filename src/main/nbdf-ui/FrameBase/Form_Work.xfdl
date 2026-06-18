@@ -32,6 +32,8 @@
             </Format>
           </Formats>
         </Grid>
+        <Button id="btn_delete" taborder="2" text="삭제" left="150" top="70" width="120" height="50" onclick="fn_delete"/>
+        <Button id="btn_save" taborder="3" text="저장" left="280" top="70" width="120" height="50" onclick="fn_save"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[this.fn_search = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
@@ -43,7 +45,7 @@
 	
 	var sSvcID 			= "selectCodeList";
 	var sURL 			= "svcUrl::com/COM10000M/selectCodeList.do";
-	var sInDatasets 	= "inSearch=ds_search";
+	var sInDatasets 	= "inSearchMap=ds_search";
 	var sOutDatasets 	= "ds_codeType=outSelectCodeTypeList";
 	var sArgument 		= "userId=" + "admin";
 	var sCallbackFunc 	= "fn_callback";
@@ -56,20 +58,46 @@ this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
 {
 	if(nErrCd < 0) {
 		alert("오류 : " + sErrMsg);
+		return;
 	}
 
 	switch(sSvcID) {
 		case "selectCodeList":
-			//trace("###########################################################");
-			//trace(this.ds_codeType.saveXML());
-			//trace("###########################################################");
+			trace("###########################################################");
+			trace(this.ds_codeType.saveXML());
+			trace("###########################################################");
 			
 			var nCnt = this.ds_codeType.rowcount;			
 			if (nCnt == 0) {
 				alert("조회조건에 일치하는 데이터가 존재하지 않습니다.");
 			}
 			break;
+			
+		case "saveCodeData":
+			trace("###########################################################");
+			trace(this.ds_codeType.saveXML());
+			trace("###########################################################");			
+			alert("정상적으로 처리되었습니다.");
+			break;	
 		}
+};
+
+this.fn_delete = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.ds_codeType.deleteRow(this.ds_codeType.rowposition);
+};
+
+this.fn_save = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sSvcID 			= "saveCodeData";
+	var sURL 			= "svcUrl::com/COM10000M/saveCodeData.do";
+	var sInDatasets 	= "inCodeTypeList=ds_codeType:U";
+	var sOutDatasets 	= "";
+	var sArgument 		= "userId=" + "admin";
+	var sCallbackFunc 	= "fn_callback";
+	
+	// 공통코드 조회
+	this.transaction(sSvcID, sURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
 };
 ]]></Script>
     <Objects>

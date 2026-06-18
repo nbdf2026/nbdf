@@ -27,6 +27,12 @@ public interface COM10000MMapper {
 	* @description    : 공통코드 데이터를 조회하는 메소드
 	* @return
 	*/
-	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearch) throws Exception;
+	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearchMap) throws Exception;
+
+	public void insertCodeTypeMap(Map<String, Object> inCodeTypeListMap) throws Exception;
+
+	public void updateCodeTypeMap(Map<String, Object> inCodeTypeListMap) throws Exception;
+
+	public void deleteCodeTypeMap(Map<String, Object> inCodeTypeListMap) throws Exception;
 
 }

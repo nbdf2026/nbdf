@@ -9,7 +9,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import com.nexacro.java.xapi.data.DataSet;
+
 import erp.com.service.COM10000MService;
+import lombok.experimental.var;
+import lombok.extern.slf4j.Slf4j;
 
 /**
 * @packageName    : erp.com.service.impl
@@ -22,11 +26,12 @@ import erp.com.service.COM10000MService;
 * -----------------------------------------------------------
 * 2026.06.18        Built1             최초 생성
 */
+@Slf4j
 @Service
 public class COM10000MServiceimpl implements COM10000MService {
 	
-	//로그 출력을 위한 변수
-	private Logger log = LoggerFactory.getLogger(getClass());
+	//로그 출력을 위한 변수 (@Slf4j 대체)
+	//private Logger log = LoggerFactory.getLogger(getClass());
 	
 	//매퍼 인터페이스를 위한 변수
 	@Resource
@@ -41,16 +46,44 @@ public class COM10000MServiceimpl implements COM10000MService {
 	 * @throws Exception 
 	*/
 	@Override
-	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearch) throws Exception {
+	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearchMap) throws Exception {		
+		return com10000MMapper.selectCodeTypeList(inSearchMap);
+	}
+	
+
+	
+	/**
+	* @methodName     : selectCodeList
+	* @author         : built1
+	* @date           : 2026.06.18
+	* @description    : 공통코드 데이터를 조회하는 상속메소드
+	* @return
+	 * @throws Exception 
+	*/
+	@Override
+	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList) throws Exception {		
+		//List row count
+		int iSize = inCodeTypeList.size();
 		
-		log.info("############################################################");
-		log.debug("Controller 				: COM10000MServiceimpl / selectCodeTypeList");
-		log.debug("inSearch   				: " + inSearch);
-		log.debug("inSearch.CODE_TYPE		: " + inSearch.get("CODE_TYPE"));
-		log.debug("inSearch.CODE_TYPE_NM	: " + inSearch.get("CODE_TYPE_NM"));
-		log.debug("############################################################");
-		
-		return com10000MMapper.selectCodeTypeList(inSearch);
+		//List에서 1개의 Row씩 데이터를 추출하여 신규/수정/삭제 데이터유형에 따라 매퍼 인터페이스 호출
+		for(int i=0; i<iSize; i++) {
+			Map<String, Object> inCodeTypeListMap = inCodeTypeList.get(i);
+			
+			//Row 데이터 유형을 추출
+			int iDataSetRowType = (int) inCodeTypeListMap.get("DataSetRowType");
+			
+			//Row 데이터 유형에 따른 매퍼 호출
+			if(iDataSetRowType==DataSet.ROW_TYPE_INSERTED) {
+				com10000MMapper.insertCodeTypeMap(inCodeTypeListMap);
+				
+			} else if (iDataSetRowType==DataSet.ROW_TYPE_UPDATED) {
+				com10000MMapper.updateCodeTypeMap(inCodeTypeListMap);
+				
+			} else if (iDataSetRowType==DataSet.ROW_TYPE_DELETED) {
+				com10000MMapper.deleteCodeTypeMap(inCodeTypeListMap);
+				
+			}
+		}
 	}
 
 }

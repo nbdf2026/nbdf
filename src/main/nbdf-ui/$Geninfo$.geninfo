@@ -9,6 +9,20 @@
       <Script rule_version="1.02"/>
       <GeneratorInfo rule_version="1.3"/>
     </Rule>
-    <Info project="E:\nBDF\workspace\nbdf\src\main\nbdf-ui\" generated="E:\nBDF\workspace\nbdf\src\main\webapp\nbdf-ui\"><File url="typedefinition.xml" checksum="20260618174431" errormsg=""/><File url="appvariables.xml" checksum="20260611172325" errormsg=""/><File url="environment.xml" checksum="20260611172325" errormsg=""/><File url="_resource_\_theme_\blue\theme.xcss" checksum="20260611172325" errormsg=""/><File url="Application_Desktop.xadl" checksum="20260611172325" errormsg=""/><File url="FrameBase\Form_Work.xfdl" checksum="20260618174002" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\framework\Framework.json" checksum="20260522110444" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\resources\Resource.json" checksum="20260522110444" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\CompBase.json" checksum="20260522110440" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ComComp.json" checksum="20260522110438" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\Grid.json" checksum="20260522110442" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ListView.json" checksum="20260522110444" errormsg=""/><File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\DeviceAPI.json" checksum="20260522110440" errormsg=""/></Info>
+    <Info project="E:\nBDF\workspace\nbdf\src\main\nbdf-ui\" generated="E:\nBDF\workspace\nbdf\src\main\webapp\nbdf-ui\">
+      <File url="typedefinition.xml" checksum="20260618205703" errormsg=""/>
+      <File url="appvariables.xml" checksum="20260618205703" errormsg=""/>
+      <File url="environment.xml" checksum="20260618205703" errormsg=""/>
+      <File url="_resource_\_theme_\blue\theme.xcss" checksum="20260618205703" errormsg=""/>
+      <File url="Application_Desktop.xadl" checksum="20260618205703" errormsg=""/>
+      <File url="FrameBase\Form_Work.xfdl" checksum="20260618225258" errormsg=""/>
+      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\framework\Framework.json" checksum="20260522110444" errormsg=""/>
+      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\resources\Resource.json" checksum="20260522110444" errormsg=""/>
+      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\CompBase.json" checksum="20260522110440" errormsg=""/>
+      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ComComp.json" checksum="20260522110438" errormsg=""/>
+      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\Grid.json" checksum="20260522110442" errormsg=""/>
+      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\ListView.json" checksum="20260522110444" errormsg=""/>
+      <File url="C:\Program Files (x86)\TOBESOFT\Nexacro N\SDK\21.0.0\nexacrolib\component\DeviceAPI.json" checksum="20260522110440" errormsg=""/>
+    </Info>
   </GenInfo>
 </root>

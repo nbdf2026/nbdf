@@ -29,4 +29,11 @@
 		 </if>
 	</select>
 	
+	<!-- 코드유형 데이터 삭제 -->
+	<delete id="deleteCodeTypeMap" parameterType="map">
+		delete from com_code_type cct
+		 where 1=1
+		   and cct.code_type = #{CODE_TYPE}
+	</delete>
+	
 </mapper>

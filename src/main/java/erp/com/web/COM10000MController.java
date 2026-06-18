@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.naming.spi.DirStateFactory.Result;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,8 @@ import com.nexacro.uiadapter.spring.core.annotation.ParamVariable;
 import com.nexacro.uiadapter.spring.core.data.NexacroResult;
 
 import erp.com.service.COM10000MService;
+import erp.com.service.impl.COM10000MServiceimpl;
+import lombok.extern.slf4j.Slf4j;
 
 /**
 * @packageName    : erp.com.web
@@ -27,12 +30,13 @@ import erp.com.service.COM10000MService;
 * -----------------------------------------------------------
 * 2026.06.18        Built1             최초 생성
 */
+@Slf4j
 @Controller
 @RequestMapping(value = "com/COM10000M")
 public class COM10000MController {
 
-	//로그 출력을 위한 변수
-	private Logger log = LoggerFactory.getLogger(getClass());
+	//로그 출력을 위한 변수 (@Slf4j 대체)
+	//private Logger log = LoggerFactory.getLogger(getClass());
 	
 	//구현체 인터페이스를 위한 변수
 	@Resource
@@ -43,13 +47,14 @@ public class COM10000MController {
 	* @author         : built1
 	* @date           : 2026.06.18
 	* @description    : XXXX 데이터를 조회/저장하는 메소드
-	* @param inSearch
+	* @param inSearchMap
 	* @return
 	* @throws Exception
 	*/
 	@RequestMapping(value = "selectCodeList.do")
-	public NexacroResult selectCodeList(@ParamDataSet(name = "inSearch") Map<String, Object> inSearch
+	public NexacroResult selectCodeList(@ParamDataSet(name = "inSearchMap") Map<String, Object> inSearchMap
 			                           ,@ParamVariable(name = "userId") String userId) throws Exception {
+		
 		
 		/*
 		 * System.out.println("LoggerFactory = " +
@@ -57,13 +62,13 @@ public class COM10000MController {
 		 * 
 		 * System.out.println(org.slf4j.LoggerFactory.class .getPackage()
 		 * .getImplementationVersion());
-		 */
+		 */		 
 		
 		log.info("############################################################");
 		log.debug("Controller 				: selectCodeList");
-		log.debug("inSearch   				: " + inSearch);
-		log.debug("inSearch.CODE_TYPE		: " + inSearch.get("CODE_TYPE"));
-		log.debug("inSearch.CODE_TYPE_NM	: " + inSearch.get("CODE_TYPE_NM"));
+		log.debug("inSearchMap   			: " + inSearchMap);
+		log.debug("inSearchMap.CODE_TYPE	: " + inSearchMap.get("CODE_TYPE"));
+		log.debug("inSearchMap.CODE_TYPE_NM	: " + inSearchMap.get("CODE_TYPE_NM"));
 		log.debug("userID					: " + userId);
 		log.debug("############################################################");
 		
@@ -71,10 +76,29 @@ public class COM10000MController {
 		NexacroResult result = new NexacroResult();
 		
 		//공통코드 조회
-		List<Map<String, Object>> outSelectCodeTypeList = com10000MService.selectCodeTypeList(inSearch);
+		List<Map<String, Object>> outSelectCodeTypeList = com10000MService.selectCodeTypeList(inSearchMap);
 		
 		result.addDataSet("outSelectCodeTypeList", outSelectCodeTypeList);
 		
 		return result;
+	}
+	
+	@RequestMapping(value = "saveCodeData.do")
+	public NexacroResult saveCodeData(@ParamDataSet(name = "inCodeTypeList") List<Map<String, Object>> inCodeTypeList
+                                     ,@ParamVariable(name = "userId") String userId) throws Exception {
+		
+		 		
+		log.info("############################################################");
+		log.debug("Controller 				: saveCodeData");
+		log.debug("inSearchMap   			: " + inCodeTypeList);
+		log.debug("userID					: " + userId);
+		log.info("############################################################");
+		
+		NexacroResult saveCodeTypeList = new NexacroResult();
+		
+		//공통코드 저장
+		com10000MService.saveCodeTypeList(inCodeTypeList);		
+		
+		return saveCodeTypeList;
 	}
 }
