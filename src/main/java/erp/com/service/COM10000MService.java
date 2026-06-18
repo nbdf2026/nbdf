@@ -5,6 +5,6 @@ import java.util.Map;
 
 public interface COM10000MService {
 
-	public List<Map<String, Object>> selectCodeList();
+	public List<Map<String, Object>> selectCodeList() throws Exception;
 
 }
