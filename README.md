@@ -8,7 +8,7 @@
  1. 작업일자 : 2026.06.18
  2. 작업내용
   - RefreshableSqlSessionFactoryBean : 전자정부 4.3.1 - XML 변경 자동 반영을 위한 클래스 추가
-  - database.properties : 데이터베이스 프로퍼티로 설정으로 변경 파일 추가
+  - database.properties : 데이터베이스 프로퍼티 방식으로 설정 변경
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.18
