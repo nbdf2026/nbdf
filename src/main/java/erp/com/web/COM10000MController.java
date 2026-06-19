@@ -2,33 +2,27 @@ package erp.com.web;
 
 import java.util.List;
 import java.util.Map;
-
 import javax.annotation.Resource;
-import javax.naming.spi.DirStateFactory.Result;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.nexacro.uiadapter.spring.core.annotation.ParamDataSet;
 import com.nexacro.uiadapter.spring.core.annotation.ParamVariable;
 import com.nexacro.uiadapter.spring.core.data.NexacroResult;
-
 import erp.com.service.COM10000MService;
-import erp.com.service.impl.COM10000MServiceimpl;
 import lombok.extern.slf4j.Slf4j;
+
+
 
 /**
 * @packageName    : erp.com.web
 * @fileName       : COM10000MController.java
 * @author         : Built1
-* @date           : 2026.06.18
+* @date           : 2026.06.19
 * @description    : 공통코드 데이터를 조회/저장하는 파일
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
-* 2026.06.18        Built1             최초 생성
+* 2026.06.19        Built1             최초 생성
 */
 @Slf4j
 @Controller
@@ -46,7 +40,7 @@ public class COM10000MController {
 	* @methodName     : selectCodeList
 	* @author         : built1
 	* @date           : 2026.06.18
-	* @description    : XXXX 데이터를 조회/저장하는 메소드
+	* @description    : 공통코드 데이터를 조회하는 메소드
 	* @param inSearchMap
 	* @return
 	* @throws Exception
@@ -83,6 +77,16 @@ public class COM10000MController {
 		return result;
 	}
 	
+	/**
+	* @methodName     : saveCodeData
+	* @author         : built1
+	* @date           : 2026.06.19
+	* @description    : 공통코드 데이터를 조회/저장하는 메소드
+	* @param inCodeTypeList
+	* @param userId
+	* @return
+	* @throws Exception
+	*/
 	@RequestMapping(value = "saveCodeData.do")
 	public NexacroResult saveCodeData(@ParamDataSet(name = "inCodeTypeList") List<Map<String, Object>> inCodeTypeList
                                      ,@ParamVariable(name = "userId") String userId) throws Exception {

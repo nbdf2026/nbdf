@@ -2,29 +2,23 @@ package erp.com.service.impl;
 
 import java.util.List;
 import java.util.Map;
-
 import javax.annotation.Resource;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-
 import com.nexacro.java.xapi.data.DataSet;
-
 import erp.com.service.COM10000MService;
-import lombok.experimental.var;
 import lombok.extern.slf4j.Slf4j;
+
 
 /**
 * @packageName    : erp.com.service.impl
 * @fileName       : COM10000MServiceimpl.java
 * @author         : Built1
-* @date           : 2026.06.18
+* @date           : 2026.06.19
 * @description    : 공통코드 데이터를 조회/저장하는 파일
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
-* 2026.06.18        Built1             최초 생성
+* 2026.06.19        Built1             최초 생성
 */
 @Slf4j
 @Service
@@ -37,28 +31,28 @@ public class COM10000MServiceimpl implements COM10000MService {
 	@Resource
 	private COM10000MMapper com10000MMapper;
 	
+	
 	/**
-	* @methodName     : selectCodeList
+	* @methodName     : selectCodeTypeList
 	* @author         : built1
-	* @date           : 2026.06.18
+	* @date           : 2026.06.19
 	* @description    : 공통코드 데이터를 조회하는 상속메소드
+	* @param inSearchMap
 	* @return
-	 * @throws Exception 
+	* @throws Exception
 	*/
 	@Override
 	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearchMap) throws Exception {		
 		return com10000MMapper.selectCodeTypeList(inSearchMap);
 	}
 	
-
-	
 	/**
-	* @methodName     : selectCodeList
+	* @methodName     : saveCodeTypeList
 	* @author         : built1
-	* @date           : 2026.06.18
-	* @description    : 공통코드 데이터를 조회하는 상속메소드
-	* @return
-	 * @throws Exception 
+	* @date           : 2026.06.19
+	* @description    : 공통코드 데이터를 저장하는 상속메소드
+	* @param inCodeTypeList
+	* @throws Exception
 	*/
 	@Override
 	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList) throws Exception {		
