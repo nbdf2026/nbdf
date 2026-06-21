@@ -32,26 +32,31 @@
             this.addChild(obj.name, obj);
             
             // UI Components Initialize
-            obj = new Button("btn_search","20","70","120","50",null,null,null,null,null,null,this);
+            obj = new Button("btn_search","20","70","120","40",null,null,null,null,null,null,this);
             obj.set_taborder("0");
             obj.set_text("조회");
             this.addChild(obj.name, obj);
 
-            obj = new Grid("grd_codeType","20","135","480","565",null,null,null,null,null,null,this);
+            obj = new Grid("grd_codeType","20","120","480","580",null,null,null,null,null,null,this);
             obj.set_taborder("1");
             obj.set_binddataset("ds_codeType");
             obj.set_autofittype("col");
-            obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/></Columns><Rows><Row size=\"24\" band=\"head\"/><Row size=\"24\"/></Rows><Band id=\"head\"><Cell text=\"CODE_TYPE\"/><Cell col=\"1\" text=\"CODE_TYPE_NM\"/><Cell col=\"2\" text=\"START_DATE\"/><Cell col=\"3\" text=\"END_DATE\"/></Band><Band id=\"body\"><Cell text=\"bind:CODE_TYPE\"/><Cell col=\"1\" text=\"bind:CODE_TYPE_NM\"/><Cell col=\"2\" text=\"bind:START_DATE\" calendardateformat=\"yyyy-MM-dd\"/><Cell col=\"3\" text=\"bind:END_DATE\" calendardateformat=\"yyyy-MM-dd\"/></Band></Format></Formats>");
+            obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"131\"/><Column size=\"128\"/><Column size=\"110\"/><Column size=\"110\"/></Columns><Rows><Row size=\"30\" band=\"head\"/><Row size=\"30\"/></Rows><Band id=\"head\"><Cell text=\"코드유형\"/><Cell col=\"1\" text=\"코드유형명\"/><Cell col=\"2\" text=\"시작일자\"/><Cell col=\"3\" text=\"종료일자\"/></Band><Band id=\"body\"><Cell text=\"bind:CODE_TYPE\" edittype=\"normal\"/><Cell col=\"1\" text=\"bind:CODE_TYPE_NM\" edittype=\"normal\"/><Cell col=\"2\" text=\"bind:START_DATE\" calendardateformat=\"yyyy-MM-dd\" edittype=\"date\" displaytype=\"date\"/><Cell col=\"3\" text=\"bind:END_DATE\" calendardateformat=\"yyyy-MM-dd\" edittype=\"date\" displaytype=\"date\"/></Band></Format></Formats>");
             this.addChild(obj.name, obj);
 
-            obj = new Button("btn_delete","150","70","120","50",null,null,null,null,null,null,this);
+            obj = new Button("btn_delete","150","70","120","40",null,null,null,null,null,null,this);
             obj.set_taborder("2");
             obj.set_text("삭제");
             this.addChild(obj.name, obj);
 
-            obj = new Button("btn_save","280","70","120","50",null,null,null,null,null,null,this);
+            obj = new Button("btn_save","280","70","120","40",null,null,null,null,null,null,this);
             obj.set_taborder("3");
             obj.set_text("저장");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("Button00","537","74","120","50",null,null,null,null,null,null,this);
+            obj.set_taborder("4");
+            obj.set_text("Button00");
             this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
@@ -136,6 +141,11 @@
         	this.transaction(sSvcID, sURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
         };
 
+        this.Button00_onclick = function(obj,e)
+        {
+        	trace(this.ds_codeType.saveXML());
+        };
+
         });
         
         // Regist UI Components Event
@@ -144,6 +154,7 @@
             this.btn_search.addEventHandler("onclick",this.fn_search,this);
             this.btn_delete.addEventHandler("onclick",this.fn_delete,this);
             this.btn_save.addEventHandler("onclick",this.fn_save,this);
+            this.Button00.addEventHandler("onclick",this.Button00_onclick,this);
         };
         this.loadIncludeScript("Form_Work.xfdl");
         this.loadPreloadList();
