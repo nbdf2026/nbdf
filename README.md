@@ -1,5 +1,10 @@
 # nbdf 프로젝트
 [nbdf 프로젝트]
+ 1. 작업일자 : 2026.06.22
+ 2. 작업내용
+  - .gitignore : commit and push 제외 파일 설정
+  
+[nbdf 프로젝트]
  1. 작업일자 : 2026.06.21
  2. 작업내용
   - PLSQL : ini or beautifier rules 파일 추가
