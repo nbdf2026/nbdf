@@ -2,6 +2,8 @@ package erp.cmmn.log;
 
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
 * @packageName    : erp.cmmn.log
 * @fileName       : PrettySqlFormat.java
@@ -13,6 +15,7 @@ import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 * -----------------------------------------------------------
 * 2026.06.22        Built1             최초 생성
 */
+@Slf4j
 public class PrettySqlFormat implements MessageFormattingStrategy { 
 	
 	
@@ -478,7 +481,15 @@ public class PrettySqlFormat implements MessageFormattingStrategy {
             text = text.replaceAll("(?i)\\s+values\\s*\\(", "\nVALUES (\n       ");
             text = splitCommaOutsideParentheses(text);
         }
-
+        
+		/* Ctlr + Shift + /   or   Ctlr + Shift + \
+		 * log.info("############################################################");
+		 * log.debug("PrettySqlFormat Class / pretty mothod ");
+		 * log.info("############################################################");
+		 * log.debug("Sql Text:\n" + text);
+		 * log.info("############################################################");
+		 */
+		
         return text;
     }
 }
