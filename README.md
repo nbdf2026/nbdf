@@ -2,6 +2,7 @@
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.22
  2. 작업내용
+  - 넥사크로 공통함수 추가 및 include 처리 (pFORM으로 전환 예정)
   - 콘솔 파싱된 쿼리 문장 정규화 (SELECT / UPDATE / DELETE) 처리
   - INSERT 작업 예정
   
