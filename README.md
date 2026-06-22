@@ -6,6 +6,10 @@
   - E:\nBDF\workspace\nbdf>git rm --cached "src/main/nbdf-ui/$Geninfo$.geninfo"
   - E:\nBDF\workspace\nbdf>git rm --cached "target/m2e-wtp/web-resources/META-INF/maven/com.nbdf/nbdf/pom.properties"
   
+  - .gitignore : commit and push 제외 파일 설정 (bash 창)
+  - git rm -r --cached target
+  - git rm --cached .factorypath
+  
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.21
  2. 작업내용
