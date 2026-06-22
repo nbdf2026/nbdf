@@ -3,8 +3,12 @@ package erp.com.service.impl;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Resource;
+
+import org.antlr.grammar.v3.ANTLRParser.throwsSpec_return;
 import org.springframework.stereotype.Service;
 import com.nexacro.java.xapi.data.DataSet;
+
+import erp.cmmn.exception.UserException;
 import erp.com.service.COM10000MService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -55,7 +59,7 @@ public class COM10000MServiceimpl implements COM10000MService {
 	* @throws Exception
 	*/
 	@Override
-	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList) throws Exception {		
+	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList, String userId) throws Exception {		
 		//List row count
 		int iSize = inCodeTypeList.size();
 		
@@ -67,15 +71,22 @@ public class COM10000MServiceimpl implements COM10000MService {
 			int iDataSetRowType = (int) inCodeTypeListMap.get("DataSetRowType");
 			
 			//Row 데이터 유형에 따른 매퍼 호출
-			if(iDataSetRowType==DataSet.ROW_TYPE_INSERTED) {
-				com10000MMapper.insertCodeTypeMap(inCodeTypeListMap);
-				
-			} else if (iDataSetRowType==DataSet.ROW_TYPE_UPDATED) {
-				com10000MMapper.updateCodeTypeMap(inCodeTypeListMap);
-				
-			} else if (iDataSetRowType==DataSet.ROW_TYPE_DELETED) {
-				com10000MMapper.deleteCodeTypeMap(inCodeTypeListMap);
-				
+			try {				
+				if(iDataSetRowType==DataSet.ROW_TYPE_INSERTED) {
+					inCodeTypeListMap.put("CREATE_BY", userId);
+					inCodeTypeListMap.put("UPDATE_BY", userId);				
+					com10000MMapper.insertCodeTypeMap(inCodeTypeListMap);				
+					
+				} else if (iDataSetRowType==DataSet.ROW_TYPE_UPDATED) {
+					inCodeTypeListMap.put("UPDATE_BY", userId);
+					com10000MMapper.updateCodeTypeMap(inCodeTypeListMap);
+					
+				} else if (iDataSetRowType==DataSet.ROW_TYPE_DELETED) {
+					com10000MMapper.deleteCodeTypeMap(inCodeTypeListMap);
+					
+				}
+			} catch (Exception e) {
+				throw new UserException(e);
 			}
 		}
 	}

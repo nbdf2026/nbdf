@@ -1,0 +1,8 @@
+﻿{
+admin off
+}
+:4099
+{
+root "E:/nBDF/workspace/nbdf/src/main/webapp/nbdf-ui"
+file_server
+}

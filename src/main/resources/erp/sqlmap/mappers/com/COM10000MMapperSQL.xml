@@ -6,19 +6,19 @@
 	<!-- 코드유형 데이터 조회 -->
 	<!-- 특수문자 : <![CDATA[  ]]> -->
 	<select id="selectCodeTypeList" resultType="map">	
-		SELECT CCT.CODE_TYPE
-		      ,CCT.CODE_TYPE_NM
-		      ,CCT.CODE_TYPE_NM_S
-		      ,TO_CHAR(CCT.START_DATE, 'YYYY-MM-DD') AS START_DATE
-		      ,TO_CHAR(CCT.END_DATE, 'YYYY-MM-DD')   AS END_DATE
-		      ,CCT.CREATE_TYPE_CD
-		      ,CCT.REMARK
-		      ,CCT.CREATE_DATE
-		      ,CCT.CREATE_BY
-		      ,CCT.UPDATE_DATE
-		      ,CCT.UPDATE_BY
-		  FROM COM_CODE_TYPE CCT
-		 WHERE 1=1
+		select cct.code_type
+		      ,cct.code_type_nm
+		      ,cct.code_type_nm_s
+		      ,to_char(cct.start_date, 'yyyy-mm-dd') as start_date
+		      ,to_char(cct.end_date, 'yyyy-mm-dd')   as end_date
+		      ,cct.create_type_cd
+		      ,cct.remark
+		      ,cct.create_date
+		      ,cct.create_by
+		      ,cct.update_date
+		      ,cct.update_by
+		  from com_code_type cct
+		 where 1=1
 		 
 		 <if test='CODE_TYPE != null and CODE_TYPE != "" '>
 		   and cct.code_type = #{CODE_TYPE}
@@ -63,28 +63,24 @@
 	
 	<!-- 코드유형 데이터 수정  -->
 	<update id="updateCodeTypeMap" parameterType="map">
-	<![CDATA[
 		update com_code_type cct
 		   set cct.code_type_nm 	= #{CODE_TYPE_NM}
 		      ,cct.code_type_nm_s	= #{CODE_TYPE_NM_S}
 		      ,cct.start_date		= TO_DATE(#{START_DATE}, 'YYYY-MM-DD')
-		      ,cct.end_date			= TO_DATE(#{END_DATE} 'YYYY-MM-DD')
+		      ,cct.end_date			= TO_DATE(#{END_DATE}, 'YYYY-MM-DD')
 		      ,cct.create_type_cd	= #{CREATE_TYPE_CD}
 		      ,cct.remark			= #{REMARK}
 		      ,cct.update_date		= sysdate
 		      ,cct.update_by		= #{UPDATE_BY}
 		 where 1=1
 		   and cct.code_type = #{CODE_TYPE} 
-	]]>
 	</update>
 	
 	<!-- 코드유형 데이터 삭제 -->
 	<delete id="deleteCodeTypeMap" parameterType="map">
-	<![CDATA[
 		delete from com_code_type cct
 		 where 1=1
 		   and cct.code_type = #{CODE_TYPE}
-	]]>
 	</delete>
 	
 </mapper>

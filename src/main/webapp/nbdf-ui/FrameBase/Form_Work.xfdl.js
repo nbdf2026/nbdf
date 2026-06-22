@@ -41,7 +41,8 @@
             obj.set_taborder("1");
             obj.set_binddataset("ds_codeType");
             obj.set_autofittype("col");
-            obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"131\"/><Column size=\"128\"/><Column size=\"110\"/><Column size=\"110\"/></Columns><Rows><Row size=\"30\" band=\"head\"/><Row size=\"30\"/></Rows><Band id=\"head\"><Cell text=\"코드유형\"/><Cell col=\"1\" text=\"코드유형명\"/><Cell col=\"2\" text=\"시작일자\"/><Cell col=\"3\" text=\"종료일자\"/></Band><Band id=\"body\"><Cell text=\"bind:CODE_TYPE\" edittype=\"normal\"/><Cell col=\"1\" text=\"bind:CODE_TYPE_NM\" edittype=\"normal\"/><Cell col=\"2\" text=\"bind:START_DATE\" calendardateformat=\"yyyy-MM-dd\" edittype=\"date\" displaytype=\"date\"/><Cell col=\"3\" text=\"bind:END_DATE\" calendardateformat=\"yyyy-MM-dd\" edittype=\"date\" displaytype=\"date\"/></Band></Format></Formats>");
+            obj.set_autosizingtype("col");
+            obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"131\"/><Column size=\"128\"/><Column size=\"110\"/><Column size=\"110\"/><Column size=\"69\"/></Columns><Rows><Row size=\"30\" band=\"head\"/><Row size=\"30\"/></Rows><Band id=\"head\"><Cell text=\"코드유형\"/><Cell col=\"1\" text=\"코드유형명\"/><Cell col=\"2\" text=\"시작일자\"/><Cell col=\"3\" text=\"종료일자\"/><Cell col=\"4\" text=\"수정자\"/></Band><Band id=\"body\"><Cell text=\"bind:CODE_TYPE\" edittype=\"text\" displaytype=\"editcontrol\"/><Cell col=\"1\" text=\"bind:CODE_TYPE_NM\" edittype=\"text\" displaytype=\"editcontrol\"/><Cell col=\"2\" text=\"bind:START_DATE\" calendardateformat=\"yyyy-MM-dd\" edittype=\"date\" displaytype=\"calendarcontrol\" textAlign=\"center\" calendardisplaynulltype=\"none\"/><Cell col=\"3\" text=\"bind:END_DATE\" calendardateformat=\"yyyy-MM-dd\" edittype=\"date\" displaytype=\"calendarcontrol\" textAlign=\"center\" calendardisplaynulltype=\"none\"/><Cell col=\"4\" text=\"bind:UPDATE_BY\" textAlign=\"center\"/></Band></Format></Formats>");
             this.addChild(obj.name, obj);
 
             obj = new Button("btn_delete","150","70","120","40",null,null,null,null,null,null,this);
@@ -76,7 +77,12 @@
         };
         
         // User Script
+        this.addIncludeScript("Form_Work.xfdl","Lib::libDataSet.xjs");
         this.registerScript("Form_Work.xfdl", function() {
+        this.executeIncludeScript("Lib::libDataSet.xjs"); /*include "Lib::libDataSet.xjs"*/;
+
+        this.userId = "built1";
+
         this.fn_search = function(obj,e)
         {
         	this.ds_search.clearData();
@@ -85,14 +91,14 @@
         	this.ds_search.setColumn(nRow, "CODE_TYPE_NM", "생성");
 
         	var sSvcID 			= "selectCodeList";
-        	var sURL 			= "svcUrl::com/COM10000M/selectCodeList.do";
+        	var sSvcURL			= "svcUrl::com/COM10000M/selectCodeList.do";
         	var sInDatasets 	= "inSearchMap=ds_search";
         	var sOutDatasets 	= "ds_codeType=outSelectCodeTypeList";
-        	var sArgument 		= "userId=" + "admin";
+        	var sArgument 		= "userId=" + this.userId;
         	var sCallbackFunc 	= "fn_callback";
 
         	// 공통코드 조회
-        	this.transaction(sSvcID, sURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
+        	this.gfn_transaction(sSvcID, sSvcURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
         };
 
         this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
@@ -119,6 +125,7 @@
         			//trace(this.ds_codeType.saveXML());
         			//trace("###########################################################");
         			alert("정상적으로 처리되었습니다.");
+        			this.fn_search();
         			break;
         		}
         };
@@ -130,22 +137,27 @@
 
         this.fn_save = function(obj,e)
         {
+        	if(this.gfn_dataSetChange(this.ds_codeType) == false) {
+        		alert("변경된 데이터가 존재하지 않습니다.");
+        		return;
+        	}
+
         	var sSvcID 			= "saveCodeData";
-        	var sURL 			= "svcUrl::com/COM10000M/saveCodeData.do";
+        	var sSvcURL			= "svcUrl::com/COM10000M/saveCodeData.do";
         	var sInDatasets 	= "inCodeTypeList=ds_codeType:U";
         	var sOutDatasets 	= "";
-        	var sArgument 		= "userId=" + "admin";
+        	var sArgument 		= "userId=" + this.userId;
         	var sCallbackFunc 	= "fn_callback";
 
         	// 공통코드 조회
-        	this.transaction(sSvcID, sURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
+        	//this.transaction(sSvcID, sSvcURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
+        	this.gfn_transaction(sSvcID, sSvcURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
         };
 
         this.Button00_onclick = function(obj,e)
         {
         	trace(this.ds_codeType.saveXML());
         };
-
         });
         
         // Regist UI Components Event

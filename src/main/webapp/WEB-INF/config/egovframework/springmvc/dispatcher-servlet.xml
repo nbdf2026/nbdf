@@ -106,7 +106,7 @@
            
         <!-- 2026.05.01 :: 오류메시지 전문내용을 설정을 통한 메시지로 전환 -->
         <property name="shouldLogStackTrace" value="true" />
-		<property name="shouldSendStackTrace" value="false" />
+		<property name="shouldSendStackTrace" value="true" />
 		<property name="defaultErrorMsg" value="fail.common.msg" />
                 
         <!-- <property name="shouldLogStackTrace" value="true" />         

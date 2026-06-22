@@ -33,7 +33,8 @@ public interface COM10000MService {
 	* @date           : 2026.06.19
 	* @description    : 공통코드 데이터를 저장하는 메소드
 	* @param inCodeTypeList
+	 * @param userId 
 	* @throws Exception
 	*/
-	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList) throws Exception;
+	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList, String userId) throws Exception;
 }

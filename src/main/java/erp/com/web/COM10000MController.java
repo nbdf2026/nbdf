@@ -101,7 +101,7 @@ public class COM10000MController {
 		NexacroResult saveCodeTypeList = new NexacroResult();
 		
 		//공통코드 저장
-		com10000MService.saveCodeTypeList(inCodeTypeList);		
+		com10000MService.saveCodeTypeList(inCodeTypeList, userId);		
 		
 		return saveCodeTypeList;
 	}
