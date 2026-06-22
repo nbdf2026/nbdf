@@ -2,7 +2,9 @@
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.22
  2. 작업내용
-  - .gitignore : commit and push 제외 파일 설정
+  - .gitignore : commit and push 제외 파일 설정 (cmd 창)
+  - E:\nBDF\workspace\nbdf>git rm --cached "src/main/nbdf-ui/$Geninfo$.geninfo"
+  - E:\nBDF\workspace\nbdf>git rm --cached "target/m2e-wtp/web-resources/META-INF/maven/com.nbdf/nbdf/pom.properties"
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.21
