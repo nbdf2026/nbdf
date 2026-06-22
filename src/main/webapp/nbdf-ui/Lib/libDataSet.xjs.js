@@ -7,6 +7,7 @@
     
         // User Script
         this.addIncludeScript(path,"Lib::libUtil.xjs");
+        this.addIncludeScript(path,"Lib::libDate.xjs");
         this.registerScript(path, function() {
         /*
          ===============================================================================
@@ -17,13 +18,15 @@
          */
 
         this.executeIncludeScript("Lib::libUtil.xjs"); /*include "Lib::libUtil.xjs"*/;
+        this.executeIncludeScript("Lib::libDate.xjs"); /*include "Lib::libDate.xjs"*/;
 
         /**
          * @description		dataSet 데이터 변경여부 체크
          * @param 			{objDs			: nexacro.NormalDataset} 	데이터셋
          * @return 			{bDsChange		: boolen} 					true, false
          */
-        this.gfn_dataSetChange = function(objDs) {
+        this.gfn_dataSetChange = function(objDs)
+        {
         	var bDsChange = false;
 
         	var nCnt = objDs.rowcount;
@@ -65,8 +68,8 @@
          * @param  			{bCompress		: Boolean} 	true(압축), false(압축X)
          * @param  			{String}
          */
-        this.gfn_transaction = function(sSvcID, sSvcURL, sInDataSets, sOutDataSets, sArgument, sCallbackFunc, bAsync, nDataType, bCompress) {
-
+        this.gfn_transaction = function(sSvcID, sSvcURL, sInDataSets, sOutDataSets, sArgument, sCallbackFunc, bAsync, nDataType, bCompress)
+        {
         	if(this.gfn_isNull(bAsync)) bAsync = true;
         	if(this.gfn_isNull(nDataType)) nDataType = 0;
         	if(this.gfn_isNull(bCompress)) bCompress = false;

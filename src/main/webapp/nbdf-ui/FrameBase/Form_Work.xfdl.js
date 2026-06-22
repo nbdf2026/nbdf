@@ -87,8 +87,8 @@
         {
         	this.ds_search.clearData();
         	var nRow = this.ds_search.addRow();
-        	this.ds_search.setColumn(nRow, "CODE_TYPE"   , "CREATE_TYPE_CD");
-        	this.ds_search.setColumn(nRow, "CODE_TYPE_NM", "생성");
+        	//this.ds_search.setColumn(nRow, "CODE_TYPE"   , "CREATE_TYPE_CD");
+        	//this.ds_search.setColumn(nRow, "CODE_TYPE_NM", "생성");
 
         	var sSvcID 			= "selectCodeList";
         	var sSvcURL			= "svcUrl::com/COM10000M/selectCodeList.do";
@@ -142,6 +142,16 @@
         		return;
         	}
 
+        	for(var i=0; i<this.ds_codeType.rowcount; i++) {
+        		//데이터셋 초기상태일 경우 Skip
+        		if(this.ds_codeType.getRowType(i)==Dataset.ROWTYPE_NORMAL) continue;
+
+        		if (this.gfn_isNull(this.ds_codeType.getColumn(i, "CODE_TYPE"))) {
+        			alert("코드유형 항목은 필수입니다.");
+        			return;
+        		}
+        	}
+
         	var sSvcID 			= "saveCodeData";
         	var sSvcURL			= "svcUrl::com/COM10000M/saveCodeData.do";
         	var sInDatasets 	= "inCodeTypeList=ds_codeType:U";
@@ -157,6 +167,7 @@
         this.Button00_onclick = function(obj,e)
         {
         	trace(this.ds_codeType.saveXML());
+        	alert(this.gfn_getDate("yyyymmdd"));
         };
         });
         
