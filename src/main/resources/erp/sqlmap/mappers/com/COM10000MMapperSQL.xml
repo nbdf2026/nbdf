@@ -3,6 +3,7 @@
 
 <mapper namespace="erp.com.service.impl.COM10000MMapper">
 	
+	<!-- ********************************************************************** -->
 	<!-- 코드유형 데이터 조회 -->
 	<!-- 특수문자 : <![CDATA[  ]]> -->
 	<select id="selectCodeTypeList" resultType="map">	
@@ -30,7 +31,7 @@
 	</select>
 	
 	<!-- 코드유형 데이터 신규 -->
-	<insert id="insertCodeTypeMap" parameterType="map">
+	<insert id="insertCodeType" parameterType="map">
 	<![CDATA[
 		insert into com_code_type
 			(code_type
@@ -49,20 +50,20 @@
 			(#{CODE_TYPE}
 	        ,#{CODE_TYPE_NM}
 	        ,#{CODE_TYPE_NM_S}
-	        ,#{START_DATE}
-	        ,#{END_DATE}
+	        ,TO_DATE(#{START_DATE}, 'YYYY-MM-DD')
+	        ,TO_DATE(#{END_DATE}, 'YYYY-MM-DD')
 	        ,#{CREATE_TYPE_CD}
 	        ,#{REMARK}
-	        ,#{CREATE_DATE}
+	        ,sysdate
 	        ,#{CREATE_BY}
-	        ,#{UPDATE_DATE}
+	        ,sysdate
 	        ,#{UPDATE_BY}
       		)
 	]]>
 	</insert>
 	
 	<!-- 코드유형 데이터 수정  -->
-	<update id="updateCodeTypeMap" parameterType="map">
+	<update id="updateCodeType" parameterType="map">
 		update com_code_type cct
 		   set cct.code_type_nm 	= #{CODE_TYPE_NM}
 		      ,cct.code_type_nm_s	= #{CODE_TYPE_NM_S}
@@ -77,10 +78,93 @@
 	</update>
 	
 	<!-- 코드유형 데이터 삭제 -->
-	<delete id="deleteCodeTypeMap" parameterType="map">
+	<delete id="deleteCodeType" parameterType="map">
 		delete from com_code_type cct
 		 where 1=1
 		   and cct.code_type = #{CODE_TYPE}
+	</delete>	
+	
+	
+	<!-- ********************************************************************** -->
+	<!-- 코드 데이터 조회 -->
+	<!-- 특수문자 : <![CDATA[  ]]> -->
+	<select id="selectCodeList" resultType="map">	
+		select cc.code_type
+		      ,cc.code
+		      ,cc.code_type_nm
+		      ,cc.code_type_nm_s
+		      ,to_char(cc.start_date, 'yyyy-mm-dd') as start_date
+		      ,to_char(cc.end_date, 'yyyy-mm-dd')   as end_date
+		      ,cc.remark
+		      ,cc.create_date
+		      ,cc.create_by
+		      ,cc.update_date
+		      ,cc.update_by
+		  from com_code cc
+		 where 1=1
+		 
+		 <if test='CODE_TYPE != null and CODE_TYPE != "" '>
+		   and cc.code_type = #{CODE_TYPE}
+		 </if>
+		 
+		 <if test='CODE_NM != null and CODE_NM != "" '>
+		   and cc.code_nm like #{CODE_NM} || '%' 
+		 </if>	
+	</select>
+	
+	<!-- 코드 데이터 신규 -->
+	<insert id="insertCode" parameterType="map">
+	<![CDATA[
+		insert into com_code
+			(code_type
+			,code
+		    ,code_nm
+		    ,code_nm_s
+		    ,start_date
+		    ,end_date
+		    ,remark
+		    ,create_date
+		    ,create_by
+		    ,update_date
+		    ,update_by
+			)
+		values
+			(#{CODE_TYPE}
+	        ,#{CODE}
+	        ,#{CODE_NM}
+	        ,#{CODE_NM_S}
+	        ,TO_DATE(#{START_DATE}, 'YYYY-MM-DD')
+	        ,TO_DATE(#{END_DATE}, 'YYYY-MM-DD')
+	        ,#{REMARK}
+	        ,sysdate
+	        ,#{CREATE_BY}
+	        ,sysdate
+	        ,#{UPDATE_BY}
+      		)
+	]]>
+	</insert>
+	
+	<!-- 코드 데이터 수정  -->
+	<update id="updateCode" parameterType="map">
+		update com_code cc
+		   set cc.code_nm        	= #{CODE_NM}
+		      ,cc.code_nm_s	        = #{CODE_NM_S}
+		      ,cct.start_date		= TO_DATE(#{START_DATE}, 'YYYY-MM-DD')
+		      ,cct.end_date			= TO_DATE(#{END_DATE}, 'YYYY-MM-DD')
+		      ,cct.remark			= #{REMARK}
+		      ,cct.update_date		= sysdate
+		      ,cct.update_by		= #{UPDATE_BY}
+		 where 1=1
+		   and cc.code_type 		= #{CODE_TYPE} 
+		   and cc.code 				= #{CODE} 
+	</update>
+	
+	<!-- 코드 데이터 삭제 -->
+	<delete id="deleteCode" parameterType="map">
+		delete from com_code cc
+		 where 1=1
+		   and cc.code_type 		= #{CODE_TYPE} 
+		   and cc.code 				= #{CODE} 
 	</delete>
 	
 </mapper>

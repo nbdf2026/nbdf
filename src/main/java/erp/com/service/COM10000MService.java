@@ -21,20 +21,23 @@ public interface COM10000MService {
 	* @author         : built1
 	* @date           : 2026.06.19
 	* @description    : 공통코드 데이터를 조회하는 메소드
-	* @param inSearchMap
+	* @param inSearch
 	* @return
 	* @throws Exception
 	*/
-	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearchMap) throws Exception;
-	
+	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearch) throws Exception;
+
 	/**
-	* @methodName     : saveCodeTypeList
+	* @methodName     : saveCode
 	* @author         : built1
-	* @date           : 2026.06.19
-	* @description    : 공통코드 데이터를 저장하는 메소드
-	* @param inCodeTypeList
-	 * @param userId 
+	* @date           : 2026.06.23
+	* @description    : 공통코드 데이터를 조회/저장하는 메소드
+	* @param inCodeType
+	* @param inCode
+	* @param userId
 	* @throws Exception
 	*/
-	public void saveCodeTypeList(List<Map<String, Object>> inCodeTypeList, String userId) throws Exception;
+	public void saveCode(List<Map<String, Object>> inCodeType
+			                ,List<Map<String, Object>> inCode
+			                ,String userId) throws Exception;
 }

@@ -28,7 +28,7 @@
 
 
             obj = new Dataset("ds_code", this);
-            obj._setContents({});
+            obj._setContents({"ColumnInfo" : {"Column" : [ {"id" : "CODE_TYPE","type" : "STRING","size" : "256"},{"id" : "CODE","type" : "STRING","size" : "256"},{"id" : "CODE_NM","type" : "STRING","size" : "256"},{"id" : "CODE_NM_S","type" : "STRING","size" : "256"},{"id" : "START_DATE","type" : "STRING","size" : "256"},{"id" : "END_DATE","type" : "STRING","size" : "256"},{"id" : "REMARK","type" : "STRING","size" : "256"},{"id" : "CREATE_DATE","type" : "STRING","size" : "256"},{"id" : "CREATE_BY","type" : "STRING","size" : "256"},{"id" : "UPDATE_DATE","type" : "STRING","size" : "256"},{"id" : "UPDATE_BY","type" : "STRING","size" : "256"}]}});
             this.addChild(obj.name, obj);
             
             // UI Components Initialize
@@ -77,9 +77,7 @@
         };
         
         // User Script
-        this.addIncludeScript("Form_Work.xfdl","Lib::libDataSet.xjs");
         this.registerScript("Form_Work.xfdl", function() {
-        this.executeIncludeScript("Lib::libDataSet.xjs"); /*include "Lib::libDataSet.xjs"*/;
 
         this.userId = "built1";
 
@@ -92,7 +90,7 @@
 
         	var sSvcID 			= "selectCodeList";
         	var sSvcURL			= "svcUrl::com/COM10000M/selectCodeList.do";
-        	var sInDatasets 	= "inSearchMap=ds_search";
+        	var sInDatasets 	= "inSearch=ds_search";
         	var sOutDatasets 	= "ds_codeType=outSelectCodeTypeList";
         	var sArgument 		= "userId=" + this.userId;
         	var sCallbackFunc 	= "fn_callback";
@@ -154,7 +152,7 @@
 
         	var sSvcID 			= "saveCodeData";
         	var sSvcURL			= "svcUrl::com/COM10000M/saveCodeData.do";
-        	var sInDatasets 	= "inCodeTypeList=ds_codeType:U";
+        	var sInDatasets 	= "inCodeType=ds_codeType:U inCode=ds_code:U ";
         	var sOutDatasets 	= "";
         	var sArgument 		= "userId=" + this.userId;
         	var sCallbackFunc 	= "fn_callback";
@@ -168,6 +166,8 @@
         {
         	trace(this.ds_codeType.saveXML());
         	alert(this.gfn_getDate("yyyymmdd"));
+
+        	alert(this.gfn_isNull(""));
         };
         });
         

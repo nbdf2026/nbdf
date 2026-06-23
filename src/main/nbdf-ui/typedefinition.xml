@@ -6,6 +6,7 @@
     <Module url="Grid.json"/>
     <Module url="ListView.json"/>
     <Module url="DeviceAPI.json"/>
+    <Module url="nbdfLIb.json"/>
   </Modules>
   <Components>
     <Component type="JavaScript" id="Button" classname="nexacro.Button"/>
@@ -45,7 +46,7 @@
     <Service prefixid="Base" type="form" url="./Base/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
     <Service prefixid="FrameBase" type="form" url="./FrameBase/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
     <Service prefixid="svcUrl" type="JSP" url="http://localhost:8080/nbdf/" version="0" cachelevel="none" include_subdir="false" communicationversion="0"/>
-    <Service prefixid="Lib" type="form" url="./Lib/" version="0" cachelevel="session" include_subdir="true" communicationversion="0"/>
+    <Service prefixid="nbdfLib" type="js" url="./nexacrolib/component/nbdfLib/" version="0" cachelevel="session" include_subdir="false" communicationversion="0"/>
   </Services>
   <Protocols/>
   <DeviceAdaptors/>

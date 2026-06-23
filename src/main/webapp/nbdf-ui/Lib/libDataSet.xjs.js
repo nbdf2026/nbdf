@@ -6,9 +6,9 @@
         var obj;
     
         // User Script
-        this.addIncludeScript(path,"Lib::libUtil.xjs");
-        this.addIncludeScript(path,"Lib::libDate.xjs");
         this.registerScript(path, function() {
+        var pForm = nexacro.Form.prototype;
+
         /*
          ===============================================================================
          ==  Dataset 관련 공통 함수
@@ -17,15 +17,13 @@
          ● this.gfn_transaction					: DataSet 데이터를 갱신하기 위한 서비스를 호출하는 트랜잭션 함수
          */
 
-        this.executeIncludeScript("Lib::libUtil.xjs"); /*include "Lib::libUtil.xjs"*/;
-        this.executeIncludeScript("Lib::libDate.xjs"); /*include "Lib::libDate.xjs"*/;
 
         /**
          * @description		dataSet 데이터 변경여부 체크
          * @param 			{objDs			: nexacro.NormalDataset} 	데이터셋
          * @return 			{bDsChange		: boolen} 					true, false
          */
-        this.gfn_dataSetChange = function(objDs)
+        pForm.gfn_dataSetChange = function(objDs)
         {
         	var bDsChange = false;
 

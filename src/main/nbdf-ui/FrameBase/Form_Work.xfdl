@@ -40,8 +40,7 @@
         <Button id="Button00" taborder="4" text="Button00" left="537" top="74" width="120" height="50" onclick="Button00_onclick"/>
       </Layout>
     </Layouts>
-    <Script type="xscript5.1"><![CDATA[include "Lib::libDataSet.xjs";
-
+    <Script type="xscript5.1"><![CDATA[
 this.userId = "built1";
 
 this.fn_search = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
@@ -53,7 +52,7 @@ this.fn_search = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	
 	var sSvcID 			= "selectCodeList";
 	var sSvcURL			= "svcUrl::com/COM10000M/selectCodeList.do";
-	var sInDatasets 	= "inSearchMap=ds_search";
+	var sInDatasets 	= "inSearch=ds_search";
 	var sOutDatasets 	= "ds_codeType=outSelectCodeTypeList";
 	var sArgument 		= "userId=" + this.userId;
 	var sCallbackFunc 	= "fn_callback";
@@ -115,7 +114,7 @@ this.fn_save = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	
 	var sSvcID 			= "saveCodeData";
 	var sSvcURL			= "svcUrl::com/COM10000M/saveCodeData.do";
-	var sInDatasets 	= "inCodeTypeList=ds_codeType:U";
+	var sInDatasets 	= "inCodeType=ds_codeType:U inCode=ds_code:U ";
 	var sOutDatasets 	= "";
 	var sArgument 		= "userId=" + this.userId;
 	var sCallbackFunc 	= "fn_callback";
@@ -129,6 +128,8 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 	trace(this.ds_codeType.saveXML());
 	alert(this.gfn_getDate("yyyymmdd"));
+	
+	alert(this.gfn_isNull(""));
 };]]></Script>
     <Objects>
       <Dataset id="ds_search">
@@ -152,7 +153,21 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
           <Column id="UPDATE_BY" type="STRING" size="256"/>
         </ColumnInfo>
       </Dataset>
-      <Dataset id="ds_code"/>
+      <Dataset id="ds_code">
+        <ColumnInfo>
+          <Column id="CODE_TYPE" type="STRING" size="256"/>
+          <Column id="CODE" type="STRING" size="256"/>
+          <Column id="CODE_NM" type="STRING" size="256"/>
+          <Column id="CODE_NM_S" type="STRING" size="256"/>
+          <Column id="START_DATE" type="STRING" size="256"/>
+          <Column id="END_DATE" type="STRING" size="256"/>
+          <Column id="REMARK" type="STRING" size="256"/>
+          <Column id="CREATE_DATE" type="STRING" size="256"/>
+          <Column id="CREATE_BY" type="STRING" size="256"/>
+          <Column id="UPDATE_DATE" type="STRING" size="256"/>
+          <Column id="UPDATE_BY" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
     </Objects>
   </Form>
 </FDL>

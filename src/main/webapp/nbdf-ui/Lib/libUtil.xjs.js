@@ -24,7 +24,7 @@
         	var bReturnValue = false;
 
             // undefined 또는 null
-            if (objValue === "undefined" || objValue === null) bReturnValue = true;
+            if (objValue === undefined || objValue === null) bReturnValue = true;
 
             // 공백 문자열
             if (String(objValue).trim() == "" || String(objValue).length == 0) bReturnValue = true;

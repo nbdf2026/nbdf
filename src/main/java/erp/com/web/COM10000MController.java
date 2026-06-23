@@ -34,19 +34,20 @@ public class COM10000MController {
 	
 	//구현체 인터페이스를 위한 변수
 	@Resource
-	private COM10000MService com10000MService;
-
+	private COM10000MService service;
+	
 	/**
 	* @methodName     : selectCodeList
 	* @author         : built1
-	* @date           : 2026.06.18
-	* @description    : 공통코드 데이터를 조회하는 메소드
-	* @param inSearchMap
+	* @date           : 2026.06.23
+	* @description    : 코드유형 데이터를 조회하는 메소드
+	* @param inSearch
+	* @param userId
 	* @return
 	* @throws Exception
 	*/
 	@RequestMapping(value = "selectCodeList.do")
-	public NexacroResult selectCodeList(@ParamDataSet(name = "inSearchMap") Map<String, Object> inSearchMap
+	public NexacroResult selectCodeList(@ParamDataSet(name = "inSearch") Map<String, Object> inSearch
 			                           ,@ParamVariable(name = "userId") String userId) throws Exception {
 		
 		
@@ -59,10 +60,10 @@ public class COM10000MController {
 		 */		 
 		
 		log.info("############################################################");
-		log.debug("Controller 				: selectCodeList");
-		log.debug("inSearchMap   			: " + inSearchMap);
-		log.debug("inSearchMap.CODE_TYPE	: " + inSearchMap.get("CODE_TYPE"));
-		log.debug("inSearchMap.CODE_TYPE_NM	: " + inSearchMap.get("CODE_TYPE_NM"));
+		log.debug("Controller 				: selectCodeList.do");
+		log.debug("inSearch   				: " + inSearch);
+		log.debug("inSearch.CODE_TYPE		: " + inSearch.get("CODE_TYPE"));
+		log.debug("inSearch.CODE_TYPE_NM	: " + inSearch.get("CODE_TYPE_NM"));
 		log.debug("userID					: " + userId);
 		log.debug("############################################################");
 		
@@ -70,7 +71,7 @@ public class COM10000MController {
 		NexacroResult result = new NexacroResult();
 		
 		//공통코드 조회
-		List<Map<String, Object>> outSelectCodeTypeList = com10000MService.selectCodeTypeList(inSearchMap);
+		List<Map<String, Object>> outSelectCodeTypeList = service.selectCodeTypeList(inSearch);
 		
 		result.addDataSet("outSelectCodeTypeList", outSelectCodeTypeList);
 		
@@ -80,29 +81,30 @@ public class COM10000MController {
 	/**
 	* @methodName     : saveCodeData
 	* @author         : built1
-	* @date           : 2026.06.19
+	* @date           : 2026.06.23
 	* @description    : 공통코드 데이터를 조회/저장하는 메소드
-	* @param inCodeTypeList
+	* @param inCodeType
+	* @param inCode
 	* @param userId
 	* @return
 	* @throws Exception
 	*/
 	@RequestMapping(value = "saveCodeData.do")
-	public NexacroResult saveCodeData(@ParamDataSet(name = "inCodeTypeList") List<Map<String, Object>> inCodeTypeList
-                                     ,@ParamVariable(name = "userId") String userId) throws Exception {
+	public NexacroResult saveCodeData(@ParamDataSet(name = "inCodeType") List<Map<String, Object>> inCodeType
+			                         ,@ParamDataSet(name = "inCode")     List<Map<String, Object>> inCode
+                                     ,@ParamVariable(name = "userId")    String userId) throws Exception {
 		
 		 		
 		log.info("############################################################");
-		log.debug("Controller 				: saveCodeData");
-		log.debug("inSearchMap   			: " + inCodeTypeList);
+		log.debug("Controller 				: saveCodeData.do");
+		log.debug("inCodeType   			: " + inCodeType);
+		log.debug("inCode   				: " + inCode);
 		log.debug("userID					: " + userId);
 		log.info("############################################################");
 		
-		NexacroResult saveCodeTypeList = new NexacroResult();
-		
 		//공통코드 저장
-		com10000MService.saveCodeTypeList(inCodeTypeList, userId);		
+		service.saveCode(inCodeType, inCode, userId);		
 		
-		return saveCodeTypeList;
+		return null;
 	}
 }
