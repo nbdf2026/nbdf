@@ -36,6 +36,9 @@ target/m2e-wtp/web-resources/META-INF/maven/com.nbdf/nbdf/pom.properties
 
 # 2026.05.01 :: 넥사크로 설정 제외
 src/main/nbdf-ui/$Geninfo$.geninfo
+$*.xfdl$
+*.xfdl~
+*.bak
 
 # 2026.05.01 :: Eclipse APT(Annotation Processing Tool) 제외
 .factorypath
