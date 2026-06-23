@@ -1,4 +1,4 @@
-package erp.cmmn.web;
+package erp.cmmn.refreshxml;
 
 
 import java.io.IOException;

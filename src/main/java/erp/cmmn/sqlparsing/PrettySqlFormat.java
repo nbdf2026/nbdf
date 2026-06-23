@@ -1,11 +1,11 @@
-package erp.cmmn.log;
+package erp.cmmn.sqlparsing;
 
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 
 import lombok.extern.slf4j.Slf4j;
 
 /**
-* @packageName    : erp.cmmn.log
+* @packageName    : erp.cmmn.sqlparsing
 * @fileName       : PrettySqlFormat.java
 * @author         : Built1
 * @date           : 2026.06.22
