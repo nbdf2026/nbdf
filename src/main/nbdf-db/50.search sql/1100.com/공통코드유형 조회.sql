@@ -1,0 +1,20 @@
+-- ------------------------------------------------------------------------------------------------
+-- 공통코드유형 조회
+-- ------------------------------------------------------------------------------------------------
+select cct.code_type_id
+      ,cct.code_type
+      ,cct.code_type_nm
+      ,cct.code_type_nm_s
+      ,cct.start_date
+      ,cct.end_date
+      ,cct.entry_type_cd
+      ,cct.remark
+      ,cct.create_date
+      ,cct.create_by
+      ,cct.update_date
+      ,cct.update_by
+      ,rowid
+  from com_code_type cct
+ where 1=1
+ order by cct.code_type
+;

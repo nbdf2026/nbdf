@@ -1,0 +1,81 @@
+-- ------------------------------------------------------------------------------------------------
+-- 공통코드유형 시퀀스 및 테이블 생성
+-- ------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------
+conn system/kjgSYR0527!@orcl;
+-- ------------------------------------------------------------------------------------------------
+
+-- ------------------------------------------------------------------------------------------------
+-- 시퀀스 생성
+-- ------------------------------------------------------------------------------------------------
+drop   sequence xcom.com_code_type_s;
+create sequence xcom.com_code_type_s
+minvalue 1
+maxvalue 999999999999
+start with 1000000
+increment by 1
+order;
+
+-- 권한 부여
+grant select on xcom.com_code_type_s to xsys;
+grant select on xcom.com_code_type_s to xhrm;
+
+-- 시노님 생성
+create or replace synonym xsys.com_code_type_s for xcom.com_code_type_s;
+create or replace synonym xhrm.com_code_type_s for xcom.com_code_type_s;
+
+
+-- ------------------------------------------------------------------------------------------------
+-- 테이블 생성
+-- ------------------------------------------------------------------------------------------------
+drop   table xcom.com_code_type cascade constraints;
+create table xcom.com_code_type
+(
+     code_type_id            number         not null
+    ,code_type               varchar2(30)   not null
+    ,code_type_nm            varchar2(200)  not null    
+    ,code_type_nm_s          varchar2(100)  not null
+    ,start_date              date           default sysdate not null    
+    ,end_date                date
+    ,entry_type_cd           varchar2(30)   default 'U' not null
+    ,remark                  varchar2(1000)
+    ,create_date             date           default sysdate
+    ,create_by               varchar2(50)   default '-1'
+    ,update_date             date           default sysdate
+    ,update_by               varchar2(50)   default '-1'
+) tablespace xbdf_data;
+
+-- 테이블 설명
+comment on table  xcom.com_code_type                       is '[공통관리] 코드유형';
+comment on column xcom.com_code_type.code_type_id          is '코드유형ID';
+comment on column xcom.com_code_type.code_type             is '코드유형';
+comment on column xcom.com_code_type.code_type_nm          is '코드유형명';
+comment on column xcom.com_code_type.code_type_nm_s        is '코드유형명(약칭)';
+comment on column xcom.com_code_type.start_date            is '시작일자';
+comment on column xcom.com_code_type.end_date              is '종료일자';
+comment on column xcom.com_code_type.entry_type_cd         is '등록유형코드';
+comment on column xcom.com_code_type.remark                is '비고';
+
+comment on column xcom.com_code_type.create_date           is '생성일시';
+comment on column xcom.com_code_type.create_by             is '생성자';
+comment on column xcom.com_code_type.update_date           is '수정일시';
+comment on column xcom.com_code_type.update_by             is '수정자';
+
+-- primary 인덱스
+alter table xcom.com_code_type add constraint com_code_type_pk primary key (code_type_id) using index tablespace xbdf_idx;
+
+-- unique 인덱스
+create unique index xcom.com_code_type_uk01 on xcom.com_code_type (code_type) tablespace xbdf_idx;
+
+-- normal 인덱스
+create index xcom.com_code_type_ix01 on xcom.com_code_type (code_type_nm) tablespace xbdf_idx;
+create index xcom.com_code_type_ix02 on xcom.com_code_type (start_date) tablespace xbdf_idx;
+
+-- 권한부여
+grant select, insert, update, delete on xcom.com_code_type to xsys;
+grant select, insert, update, delete on xcom.com_code_type to xhrm;
+
+-- 시노님 생성
+create or replace synonym xsys.com_code_type for xcom.com_code_type;
+create or replace synonym xhrm.com_code_type for xcom.com_code_type;
