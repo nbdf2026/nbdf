@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="erp.com.service.impl.COM10010MMapper">
+	
+	<!-- ********************************************************************** -->
+	<!-- 메시지 데이터 조회 -->
+	<!-- 특수문자 : <![CDATA[  ]]> -->
+	<select id="selectMessageList" resultType="map">	
+		select cm.message_num
+		      ,cm.message_type_cd
+		      ,cm.message_text_ko
+		      ,cm.message_text_en
+		      ,cm.message_text_zh
+		      ,cm.message_text_ja
+		      ,cm.message_text_ot
+		      ,cm.button_yes
+		      ,cm.button_no
+		      ,cm.button_cancle
+		      ,cm.remark
+		      ,cm.create_date
+		      ,cm.create_by
+		      ,cm.update_date
+		      ,cm.update_by
+		  from com_message cm
+		 where 1=1
+		 
+		 <if test='CODE_TYPE != null and CODE_TYPE != "" '>
+		   and cm.message_num = #{MESSAGE_NUM}
+		 </if>
+		 
+		 <if test='CODE_TYPE_NM != null and CODE_TYPE_NM != "" '>
+		   and cm.message_type_cd = #{MESSAGE_TYPE_CD} 
+		 </if>
+		 
+		 <if test='CODE_TYPE_NM != null and CODE_TYPE_NM != "" '>
+		   and cm.message_text_ko like '%' || #{MESSAGE_TEXT_KO} || '%' 
+		 </if>	
+	</select>
+	
+	<!-- 메시지 데이터 신규 -->
+	<insert id="insertMessage" parameterType="map">
+	<![CDATA[
+		insert into com_message
+			(message_num
+		    ,message_type_cd
+		    ,message_text_ko
+		    ,message_text_en
+		    ,message_text_zh
+		    ,message_text_ja
+		    ,message_text_ot
+		    ,button_yes
+		    ,button_no
+		    ,button_cancle
+		    ,remark
+		    ,create_date
+		    ,create_by
+		    ,update_date
+		    ,update_by
+			)
+		values
+			(upper(#{MESSAGE_NUM})
+	        ,upper(#{MESSAGE_TYPE_CD})
+	        ,#{MESSAGE_TEXT_KO}
+	        ,#{MESSAGE_TEXT_EN}
+	        ,#{MESSAGE_TEXT_ZH}
+	        ,#{MESSAGE_TEXT_JA}
+	        ,#{MESSAGE_TEXT_OT}
+	        ,nvl(#{BUTTON_YES}, 'N')
+	        ,nvl(#{BUTTON_NO}, 'N')
+	        ,nvl(#{BUTTON_CANCLE}, 'N')
+	        ,#{REMARK}
+	        ,sysdate
+	        ,#{CREATE_BY}
+	        ,sysdate
+	        ,#{UPDATE_BY}
+      		)
+	]]>
+	</insert>
+	
+	<!-- 메시지 데이터 수정  -->
+	<update id="updateMessage" parameterType="map">
+		update com_message cm
+		   set cm.message_type_cd	= upper(#{MESSAGE_TYPE_CD})
+		      ,cm.message_text_ko	= #{MESSAGE_TEXT_KO}
+		      ,cm.message_text_en	= #{MESSAGE_TEXT_EN}
+		      ,cm.message_text_zh	= #{MESSAGE_TEXT_ZH}
+		      ,cm.message_text_ja	= #{MESSAGE_TEXT_JA}
+		      ,cm.message_text_ot	= #{MESSAGE_TEXT_OT}
+		      ,cm.button_yes		= nvl(#{BUTTON_YES}, 'N')
+		      ,cm.button_no			= nvl(#{BUTTON_NO}, 'N')
+		      ,cm.button_cancle		= nvl(#{BUTTON_CANCLE}, 'N')
+		      ,cm.remark			= #{REMARK}
+		      ,cm.update_date		= sysdate
+		      ,cm.update_by			= #{UPDATE_BY}
+		 where 1=1
+		   and cm.code_type 		= upper(#{MESSAGE_NUM})
+	</update>
+	
+	<!-- 메시지 데이터 삭제 -->
+	<delete id="deleteMessage" parameterType="map">
+		delete from com_message cm
+		 where 1=1
+		   and cm.message_num = #{MESSAGE_NUM}
+	</delete>
+	
+</mapper>
