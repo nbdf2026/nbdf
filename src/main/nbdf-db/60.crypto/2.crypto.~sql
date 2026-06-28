@@ -1,0 +1,18 @@
+﻿--conn sys/manager! as sysdba;
+
+/* 암호화 권한 부여 */
+--grant execute on dbms_crypto to nsys;
+
+--conn system/manager!;
+
+/* 암호화 권한 조회 */
+select *
+from dba_tab_privs
+where table_name='DBMS_CRYPTO';
+
+
+select encrypt_f('홍길동') as name
+  from dual;
+  
+select decrypt_f('A7A61A1E72ED51110C435085AD34923F')
+  from dual;

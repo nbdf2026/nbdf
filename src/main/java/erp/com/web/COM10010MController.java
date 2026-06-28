@@ -44,23 +44,17 @@ public class COM10010MController {
 	* @throws Exception
 	*/
 	@RequestMapping(value = "selectMessageList.do")
-	public NexacroResult selectMessageList(@ParamDataSet(name = "inSearch") Map<String, Object> inSearchMap
-			                              ,@ParamVariable(name = "userId") String userId) throws Exception {
+	public NexacroResult selectMessageList() throws Exception {
 		
 		log.info("############################################################");
 		log.debug("Controller 					: selectMessageList.do");
-		log.debug("inSearchMap   				: " + inSearchMap);
-		log.debug("inSearchMap.MESSAGE_ID		: " + inSearchMap.get("MESSAGE_ID"));
-		log.debug("inSearchMap.MESSAGE_TYPE_CD	: " + inSearchMap.get("MESSAGE_TYPE_CD"));
-		log.debug("inSearchMap.MESSAGE_TYPE_KO	: " + inSearchMap.get("MESSAGE_TYPE_KO"));
-		log.debug("userID						: " + userId);
 		log.debug("############################################################");
 		
 		//자바 데이터 형식에서 넥사크로 데이터셋 형식으로 데이터 전환을 위한 변수
 		NexacroResult result = new NexacroResult();
 		
 		//메시지 조회
-		List<Map<String, Object>> outSelectMessageList = service.selectMessageList(inSearchMap);
+		List<Map<String, Object>> outSelectMessageList = service.selectMessageList();
 		
 		result.addDataSet("outSelectMessageList", outSelectMessageList);
 		

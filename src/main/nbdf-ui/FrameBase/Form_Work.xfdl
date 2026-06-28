@@ -38,10 +38,54 @@
         <Button id="btn_delete" taborder="2" text="삭제" left="150" top="70" width="120" height="40" onclick="fn_delete"/>
         <Button id="btn_save" taborder="3" text="저장" left="280" top="70" width="120" height="40" onclick="fn_save"/>
         <Button id="Button00" taborder="4" text="Button00" left="537" top="74" width="120" height="50" onclick="Button00_onclick"/>
+        <Button id="btn_message" taborder="5" text="메시지(gds복사)" left="740" top="70" width="120" height="40" onclick="fn_message"/>
+        <Grid id="grd_codeType00" taborder="6" left="520" top="120" width="740" height="580" binddataset="ds_message" autofittype="col" autosizingtype="col">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="152"/>
+                <Column size="190"/>
+                <Column size="210"/>
+                <Column size="179"/>
+                <Column size="109"/>
+                <Column size="104"/>
+                <Column size="89"/>
+                <Column size="125"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="MESSAGE_NUM"/>
+                <Cell col="1" text="MESSAGE_TYPE_CD"/>
+                <Cell col="2" text="MESSAGE_TEXT_KO"/>
+                <Cell col="3" text="MESSAGE_TEXT_EN"/>
+                <Cell col="4" text="BUTTON_YES"/>
+                <Cell col="5" text="BUTTON_NO"/>
+                <Cell col="6" text="BUTTON_CANCLE"/>
+                <Cell col="7" text="REMARK"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:MESSAGE_NUM"/>
+                <Cell col="1" text="bind:MESSAGE_TYPE_CD"/>
+                <Cell col="2" text="bind:MESSAGE_TEXT_KO"/>
+                <Cell col="3" text="bind:MESSAGE_TEXT_EN"/>
+                <Cell col="4" text="bind:BUTTON_YES"/>
+                <Cell col="5" text="bind:BUTTON_NO"/>
+                <Cell col="6" text="bind:BUTTON_CANCLE"/>
+                <Cell col="7" text="bind:REMARK"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btn_searchMessage" taborder="7" text="gds메시지조회" left="880" top="70" width="120" height="40" onclick="fn_btn_searchMessage"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[
-this.userId = "built1";
+var app    = nexacro.getApplication();
+var gdsMsg = app.gds_message;
+var userId = "built1";
 
 this.fn_search = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
@@ -87,6 +131,22 @@ this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
 			alert("정상적으로 처리되었습니다.");
 			this.fn_search();
 			break;	
+			
+		case "selectMessageList":
+			//trace("###########################################################");
+			//trace(this.ds_message.saveXML());
+			//trace("###########################################################");			
+			//var app = nexacro.getApplication();
+			//var gdsMsg = app.gds_message;
+			
+			if (!gdsMsg) {
+				trace("gds_message가 아직 생성되지 않았습니다.");
+				return;
+			}
+			
+			gdsMsg.clearData();
+			gdsMsg.copyData(this.ds_message);
+			break;				
 		}
 };
 
@@ -130,7 +190,40 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	alert(this.gfn_getDate("yyyymmdd"));
 	
 	alert(this.gfn_isNull(""));
-};]]></Script>
+};
+
+//메시지 조회
+this.fn_message = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.ds_message.clearData();
+	//this.ds_search.clearData();
+	//var nRow = this.ds_search.addRow();
+	//this.ds_search.setColumn(nRow, "CODE_TYPE"   , "CREATE_TYPE_CD");
+	//this.ds_search.setColumn(nRow, "CODE_TYPE_NM", "생성");
+	
+	var sSvcID 			= "selectMessageList";
+	var sSvcURL			= "svcUrl::com/COM10010M/selectMessageList.do";
+	var sInDatasets 	= "";
+	var sOutDatasets 	= "ds_message=outSelectMessageList";
+	var sArgument 		= "";
+	var sCallbackFunc 	= "fn_callback";
+	
+	// 공통코드 조회
+	this.gfn_transaction(sSvcID, sSvcURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
+	
+};
+
+//gds 메시지 조회
+this.fn_btn_searchMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var nRow = gdsMsg.findRow("MESSAGE_NUM", "MSG-A-10000");
+
+	if (nRow >= 0) {
+		var sMsg = gdsMsg.getColumn(nRow, "MESSAGE_TEXT_KO");
+		this.alert(sMsg);
+}	
+};
+]]></Script>
     <Objects>
       <Dataset id="ds_search">
         <ColumnInfo>
@@ -161,6 +254,25 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
           <Column id="CODE_NM_S" type="STRING" size="256"/>
           <Column id="START_DATE" type="STRING" size="256"/>
           <Column id="END_DATE" type="STRING" size="256"/>
+          <Column id="REMARK" type="STRING" size="256"/>
+          <Column id="CREATE_DATE" type="STRING" size="256"/>
+          <Column id="CREATE_BY" type="STRING" size="256"/>
+          <Column id="UPDATE_DATE" type="STRING" size="256"/>
+          <Column id="UPDATE_BY" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_message">
+        <ColumnInfo>
+          <Column id="MESSAGE_NUM" type="STRING" size="256"/>
+          <Column id="MESSAGE_TYPE_CD" type="STRING" size="256"/>
+          <Column id="MESSAGE_TEXT_KO" type="STRING" size="256"/>
+          <Column id="MESSAGE_TEXT_EN" type="STRING" size="256"/>
+          <Column id="MESSAGE_TEXT_ZH" type="STRING" size="256"/>
+          <Column id="MESSAGE_TEXT_JA" type="STRING" size="256"/>
+          <Column id="MESSAGE_TEXT_OT" type="STRING" size="256"/>
+          <Column id="BUTTON_YES" type="STRING" size="256"/>
+          <Column id="BUTTON_NO" type="STRING" size="256"/>
+          <Column id="BUTTON_CANCLE" type="STRING" size="256"/>
           <Column id="REMARK" type="STRING" size="256"/>
           <Column id="CREATE_DATE" type="STRING" size="256"/>
           <Column id="CREATE_BY" type="STRING" size="256"/>

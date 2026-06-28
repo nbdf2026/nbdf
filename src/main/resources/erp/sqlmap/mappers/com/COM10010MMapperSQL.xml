@@ -36,6 +36,8 @@
 		 <if test='CODE_TYPE_NM != null and CODE_TYPE_NM != "" '>
 		   and cm.message_text_ko like '%' || #{MESSAGE_TEXT_KO} || '%' 
 		 </if>	
+		 
+	    order by cm.message_num
 	</select>
 	
 	<!-- 메시지 데이터 신규 -->

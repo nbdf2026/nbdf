@@ -40,8 +40,8 @@ public class COM10010MServiceimpl implements COM10010MService {
 	* @throws Exception
 	*/
 	@Override
-	public List<Map<String, Object>> selectMessageList(Map<String, Object> inSearchMap) throws Exception {		
-		return mapper.selectMessageList(inSearchMap);
+	public List<Map<String, Object>> selectMessageList() throws Exception {		
+		return mapper.selectMessageList();
 	}
 
 	/**

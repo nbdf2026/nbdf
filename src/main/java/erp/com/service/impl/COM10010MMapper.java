@@ -28,7 +28,7 @@ public interface COM10010MMapper {
 	* @return
 	* @throws Exception
 	*/
-	public List<Map<String, Object>> selectMessageList(Map<String, Object> inSearchMap) throws Exception;
+	public List<Map<String, Object>> selectMessageList() throws Exception;
 
 	/**
 	* @methodName     : insertMessage
