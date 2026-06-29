@@ -1,10 +1,11 @@
-﻿insert into ncom.com_user
+﻿delete from ncom.com_user;
+insert into ncom.com_user
 values
-  ('20260001'
-  ,'강정기'
-  ,encrypt_password_f('kjgSYR0527!@')
-  ,encrypt_f('jgkang@built1.com')
-  ,encrypt_f('010-3038-8977')
+  ('20000001'
+  ,'admin'
+  ,encrypt_password_f('adminADMIN0101!@')
+  ,encrypt_f('admin@built1.com')
+  ,encrypt_f('010-1234-1234')
   ,'Y'
   ,'N'
   ,0
