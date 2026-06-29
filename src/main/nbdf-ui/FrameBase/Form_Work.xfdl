@@ -47,9 +47,6 @@
                 <Column size="190"/>
                 <Column size="210"/>
                 <Column size="179"/>
-                <Column size="109"/>
-                <Column size="104"/>
-                <Column size="89"/>
                 <Column size="125"/>
               </Columns>
               <Rows>
@@ -61,31 +58,27 @@
                 <Cell col="1" text="MESSAGE_TYPE_CD"/>
                 <Cell col="2" text="MESSAGE_TEXT_KO"/>
                 <Cell col="3" text="MESSAGE_TEXT_EN"/>
-                <Cell col="4" text="BUTTON_YES"/>
-                <Cell col="5" text="BUTTON_NO"/>
-                <Cell col="6" text="BUTTON_CANCLE"/>
-                <Cell col="7" text="REMARK"/>
+                <Cell col="4" text="REMARK"/>
               </Band>
               <Band id="body">
                 <Cell text="bind:MESSAGE_NUM"/>
                 <Cell col="1" text="bind:MESSAGE_TYPE_CD"/>
                 <Cell col="2" text="bind:MESSAGE_TEXT_KO"/>
                 <Cell col="3" text="bind:MESSAGE_TEXT_EN"/>
-                <Cell col="4" text="bind:BUTTON_YES"/>
-                <Cell col="5" text="bind:BUTTON_NO"/>
-                <Cell col="6" text="bind:BUTTON_CANCLE"/>
-                <Cell col="7" text="bind:REMARK"/>
+                <Cell col="4" text="bind:REMARK"/>
               </Band>
             </Format>
           </Formats>
         </Grid>
-        <Button id="btn_searchMessage" taborder="7" text="gds메시지조회" left="880" top="70" width="120" height="40" onclick="fn_btn_searchMessage"/>
+        <Button id="btn_alertMessage" taborder="7" text="alert(gds메시지조회)" left="880" top="70" width="150" height="40" onclick="fn_alertMessage"/>
+        <Button id="btn_confirmMessage" taborder="8" text="alert(gds메시지조회)" left="1040" top="70" width="150" height="40" onclick="fn_confirmMessage"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[
 var app    = nexacro.getApplication();
 var gdsMsg = app.gds_message;
 var userId = "built1";
+var sLanguageCd = "KO";
 
 this.fn_search = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
@@ -213,15 +206,17 @@ this.fn_message = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	
 };
 
-//gds 메시지 조회
-this.fn_btn_searchMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+//공통함수를 통한 gds alert 메시지 조회
+this.fn_alertMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	var nRow = gdsMsg.findRow("MESSAGE_NUM", "MSG-A-10000");
+	this.gfn_msgBox("MSG-A-10000", sLanguageCd);
+};
 
-	if (nRow >= 0) {
-		var sMsg = gdsMsg.getColumn(nRow, "MESSAGE_TEXT_KO");
-		this.alert(sMsg);
-}	
+this.fn_confirmMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var bYesNo = this.gfn_msgBox("MSG-C-10000", sLanguageCd);
+	if(bYesNo) alert("확인버튼클릭"); 
+	else alert("취소버튼클릭");
 };
 ]]></Script>
     <Objects>
@@ -270,9 +265,6 @@ this.fn_btn_searchMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo
           <Column id="MESSAGE_TEXT_ZH" type="STRING" size="256"/>
           <Column id="MESSAGE_TEXT_JA" type="STRING" size="256"/>
           <Column id="MESSAGE_TEXT_OT" type="STRING" size="256"/>
-          <Column id="BUTTON_YES" type="STRING" size="256"/>
-          <Column id="BUTTON_NO" type="STRING" size="256"/>
-          <Column id="BUTTON_CANCLE" type="STRING" size="256"/>
           <Column id="REMARK" type="STRING" size="256"/>
           <Column id="CREATE_DATE" type="STRING" size="256"/>
           <Column id="CREATE_BY" type="STRING" size="256"/>

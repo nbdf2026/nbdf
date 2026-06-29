@@ -36,9 +36,6 @@ create table ncom.com_message
     ,message_text_zh         varchar2(300)  not null
     ,message_text_ja         varchar2(300)  not null
     ,message_text_ot         varchar2(300)  not null
-    ,button_yes              varchar2(30)
-    ,button_no               varchar2(30)
-    ,button_cancle           varchar2(30)
     ,remark                  varchar2(4000)
     ,create_date             date           default sysdate
     ,create_by               varchar2(50)   default 'admin'
@@ -55,9 +52,6 @@ comment on column ncom.com_message.message_text_en  is '메시지(영어)';
 comment on column ncom.com_message.message_text_zh  is '메시지(중국어)';
 comment on column ncom.com_message.message_text_ja  is '메시지(일본어)';
 comment on column ncom.com_message.message_text_ot  is '메시지(기타)';
-comment on column ncom.com_message.button_yes       is '버튼(예)';
-comment on column ncom.com_message.button_no        is '버튼(아니오)';
-comment on column ncom.com_message.button_cancle    is '버튼(취소)';
 comment on column ncom.com_message.remark           is '비고';
 
 comment on column ncom.com_message.create_date      is '생성일시';

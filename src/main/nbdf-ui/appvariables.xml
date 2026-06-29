@@ -10,9 +10,6 @@
         <Column id="MESSAGE_TEXT_ZH" type="STRING" size="256"/>
         <Column id="MESSAGE_TEXT_JA" type="STRING" size="256"/>
         <Column id="MESSAGE_TEXT_OT" type="STRING" size="256"/>
-        <Column id="BUTTON_YES" type="STRING" size="256"/>
-        <Column id="BUTTON_NO" type="STRING" size="256"/>
-        <Column id="BUTTON_CANCLE" type="STRING" size="256"/>
         <Column id="REMARK" type="STRING" size="256"/>
         <Column id="CREATE_DATE" type="STRING" size="256"/>
         <Column id="CREATE_BY" type="STRING" size="256"/>

@@ -13,13 +13,16 @@ public class UserException extends RuntimeException {
         String sMessage = e.getMessage();
 
         if (sMessage != null) {
-
-            if (sMessage.contains("ORA-01407")) {
-                return "필수 항목을 입력하시기 바랍니다.";
-            }
-
             if (sMessage.contains("ORA-00001")) {
                 return "이미 등록된 데이터입니다.";
+            }
+
+            if (sMessage.contains("ORA-00904")) {
+                return "테이블과 불일치하는 컬럼이 존재합니다.";
+            }
+            
+            if (sMessage.contains("ORA-01407")) {
+                return "필수 항목을 입력하시기 바랍니다.";
             }
 
             if (sMessage.contains("ORA-02292")) {

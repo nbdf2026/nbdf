@@ -1,4 +1,4 @@
-delete from com_message;
-insert into com_message values('MSG-A-10000', 'A', 'Á¤»óÀûÀ¸·Î Ã³¸® µÇ¾ú½À´Ï´Ù.', 'It was processed normally.', 'Áß±¹¾î', 'ÀÏº»¾î', '±âÅ¸', 'Y', 'N', 'N', '½Ã½ºÅÛ µî·Ï µ¥ÀÌÅÍ', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin');
-insert into com_message values('MSG-C-10000', 'C', '¼±ÅÃµÈ µ¥ÀÌÅÍ¸¦ »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?', 'Would you like to delete the selected data?', 'Áß±¹¾î', 'ÀÏº»¾î', '±âÅ¸', 'Y', 'N', 'N', '½Ã½ºÅÛ µî·Ï µ¥ÀÌÅÍ', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin');
+ï»¿delete from com_message;
+insert into com_message values('MSG-A-10000', 'A', 'ì •ìƒì ìœ¼ë¡œ ì²˜ë¦¬ ë˜ì—ˆìŠµë‹ˆë‹¤.', 'It was processed normally.', 'ì¤‘êµ­ì–´', 'ì¼ë³¸ì–´', 'ê¸°íƒ€', 'ì‹œìŠ¤í…œ ë“±ë¡ ë°ì´í„°', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin');
+insert into com_message values('MSG-C-10000', 'C', 'ì„ íƒëœ ë°ì´í„°ë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?', 'Would you like to delete the selected data?', 'ì¤‘êµ­ì–´', 'ì¼ë³¸ì–´', 'ê¸°íƒ€', 'ì‹œìŠ¤í…œ ë“±ë¡ ë°ì´í„°', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin', to_date('1900-01-01', 'yyyy-mm-dd'), 'admin');
 commit;

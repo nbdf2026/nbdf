@@ -33,7 +33,7 @@
 
 
             obj = new Dataset("ds_message", this);
-            obj._setContents({"ColumnInfo" : {"Column" : [ {"id" : "MESSAGE_NUM","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TYPE_CD","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_KO","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_EN","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_ZH","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_JA","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_OT","type" : "STRING","size" : "256"},{"id" : "BUTTON_YES","type" : "STRING","size" : "256"},{"id" : "BUTTON_NO","type" : "STRING","size" : "256"},{"id" : "BUTTON_CANCLE","type" : "STRING","size" : "256"},{"id" : "REMARK","type" : "STRING","size" : "256"},{"id" : "CREATE_DATE","type" : "STRING","size" : "256"},{"id" : "CREATE_BY","type" : "STRING","size" : "256"},{"id" : "UPDATE_DATE","type" : "STRING","size" : "256"},{"id" : "UPDATE_BY","type" : "STRING","size" : "256"}]}});
+            obj._setContents({"ColumnInfo" : {"Column" : [ {"id" : "MESSAGE_NUM","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TYPE_CD","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_KO","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_EN","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_ZH","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_JA","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_OT","type" : "STRING","size" : "256"},{"id" : "REMARK","type" : "STRING","size" : "256"},{"id" : "CREATE_DATE","type" : "STRING","size" : "256"},{"id" : "CREATE_BY","type" : "STRING","size" : "256"},{"id" : "UPDATE_DATE","type" : "STRING","size" : "256"},{"id" : "UPDATE_BY","type" : "STRING","size" : "256"}]}});
             this.addChild(obj.name, obj);
             
             // UI Components Initialize
@@ -75,12 +75,17 @@
             obj.set_binddataset("ds_message");
             obj.set_autofittype("col");
             obj.set_autosizingtype("col");
-            obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"152\"/><Column size=\"190\"/><Column size=\"210\"/><Column size=\"179\"/><Column size=\"109\"/><Column size=\"104\"/><Column size=\"89\"/><Column size=\"125\"/></Columns><Rows><Row size=\"24\" band=\"head\"/><Row size=\"24\"/></Rows><Band id=\"head\"><Cell text=\"MESSAGE_NUM\"/><Cell col=\"1\" text=\"MESSAGE_TYPE_CD\"/><Cell col=\"2\" text=\"MESSAGE_TEXT_KO\"/><Cell col=\"3\" text=\"MESSAGE_TEXT_EN\"/><Cell col=\"4\" text=\"BUTTON_YES\"/><Cell col=\"5\" text=\"BUTTON_NO\"/><Cell col=\"6\" text=\"BUTTON_CANCLE\"/><Cell col=\"7\" text=\"REMARK\"/></Band><Band id=\"body\"><Cell text=\"bind:MESSAGE_NUM\"/><Cell col=\"1\" text=\"bind:MESSAGE_TYPE_CD\"/><Cell col=\"2\" text=\"bind:MESSAGE_TEXT_KO\"/><Cell col=\"3\" text=\"bind:MESSAGE_TEXT_EN\"/><Cell col=\"4\" text=\"bind:BUTTON_YES\"/><Cell col=\"5\" text=\"bind:BUTTON_NO\"/><Cell col=\"6\" text=\"bind:BUTTON_CANCLE\"/><Cell col=\"7\" text=\"bind:REMARK\"/></Band></Format></Formats>");
+            obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"152\"/><Column size=\"190\"/><Column size=\"210\"/><Column size=\"179\"/><Column size=\"125\"/></Columns><Rows><Row size=\"24\" band=\"head\"/><Row size=\"24\"/></Rows><Band id=\"head\"><Cell text=\"MESSAGE_NUM\"/><Cell col=\"1\" text=\"MESSAGE_TYPE_CD\"/><Cell col=\"2\" text=\"MESSAGE_TEXT_KO\"/><Cell col=\"3\" text=\"MESSAGE_TEXT_EN\"/><Cell col=\"4\" text=\"REMARK\"/></Band><Band id=\"body\"><Cell text=\"bind:MESSAGE_NUM\"/><Cell col=\"1\" text=\"bind:MESSAGE_TYPE_CD\"/><Cell col=\"2\" text=\"bind:MESSAGE_TEXT_KO\"/><Cell col=\"3\" text=\"bind:MESSAGE_TEXT_EN\"/><Cell col=\"4\" text=\"bind:REMARK\"/></Band></Format></Formats>");
             this.addChild(obj.name, obj);
 
-            obj = new Button("btn_searchMessage","880","70","120","40",null,null,null,null,null,null,this);
+            obj = new Button("btn_alertMessage","880","70","150","40",null,null,null,null,null,null,this);
             obj.set_taborder("7");
-            obj.set_text("gds메시지조회");
+            obj.set_text("alert(gds메시지조회)");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("btn_confirmMessage","1040","70","150","40",null,null,null,null,null,null,this);
+            obj.set_taborder("8");
+            obj.set_text("alert(gds메시지조회)");
             this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
@@ -105,6 +110,7 @@
         var app    = nexacro.getApplication();
         var gdsMsg = app.gds_message;
         var userId = "built1";
+        var sLanguageCd = "KO";
 
         this.fn_search = function(obj,e)
         {
@@ -232,15 +238,17 @@
 
         };
 
-        //gds 메시지 조회
-        this.fn_btn_searchMessage = function(obj,e)
+        //공통함수를 통한 gds alert 메시지 조회
+        this.fn_alertMessage = function(obj,e)
         {
-        	var nRow = gdsMsg.findRow("MESSAGE_NUM", "MSG-A-10000");
+        	this.gfn_msgBox("MSG-A-10000", sLanguageCd);
+        };
 
-        	if (nRow >= 0) {
-        		var sMsg = gdsMsg.getColumn(nRow, "MESSAGE_TEXT_KO");
-        		this.alert(sMsg);
-        }
+        this.fn_confirmMessage = function(obj,e)
+        {
+        	var bYesNo = this.gfn_msgBox("MSG-C-10000", sLanguageCd);
+        	if(bYesNo) alert("확인버튼클릭");
+        	else alert("취소버튼클릭");
         };
 
         });
@@ -253,7 +261,8 @@
             this.btn_save.addEventHandler("onclick",this.fn_save,this);
             this.Button00.addEventHandler("onclick",this.Button00_onclick,this);
             this.btn_message.addEventHandler("onclick",this.fn_message,this);
-            this.btn_searchMessage.addEventHandler("onclick",this.fn_btn_searchMessage,this);
+            this.btn_alertMessage.addEventHandler("onclick",this.fn_alertMessage,this);
+            this.btn_confirmMessage.addEventHandler("onclick",this.fn_confirmMessage,this);
         };
         this.loadIncludeScript("Form_Work.xfdl");
         this.loadPreloadList();

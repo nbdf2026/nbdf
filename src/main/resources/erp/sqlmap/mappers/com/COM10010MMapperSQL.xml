@@ -14,9 +14,6 @@
 		      ,cm.message_text_zh
 		      ,cm.message_text_ja
 		      ,cm.message_text_ot
-		      ,cm.button_yes
-		      ,cm.button_no
-		      ,cm.button_cancle
 		      ,cm.remark
 		      ,cm.create_date
 		      ,cm.create_by
@@ -51,9 +48,6 @@
 		    ,message_text_zh
 		    ,message_text_ja
 		    ,message_text_ot
-		    ,button_yes
-		    ,button_no
-		    ,button_cancle
 		    ,remark
 		    ,create_date
 		    ,create_by
@@ -68,9 +62,6 @@
 	        ,#{MESSAGE_TEXT_ZH}
 	        ,#{MESSAGE_TEXT_JA}
 	        ,#{MESSAGE_TEXT_OT}
-	        ,nvl(#{BUTTON_YES}, 'N')
-	        ,nvl(#{BUTTON_NO}, 'N')
-	        ,nvl(#{BUTTON_CANCLE}, 'N')
 	        ,#{REMARK}
 	        ,sysdate
 	        ,#{CREATE_BY}
@@ -89,9 +80,6 @@
 		      ,cm.message_text_zh	= #{MESSAGE_TEXT_ZH}
 		      ,cm.message_text_ja	= #{MESSAGE_TEXT_JA}
 		      ,cm.message_text_ot	= #{MESSAGE_TEXT_OT}
-		      ,cm.button_yes		= nvl(#{BUTTON_YES}, 'N')
-		      ,cm.button_no			= nvl(#{BUTTON_NO}, 'N')
-		      ,cm.button_cancle		= nvl(#{BUTTON_CANCLE}, 'N')
 		      ,cm.remark			= #{REMARK}
 		      ,cm.update_date		= sysdate
 		      ,cm.update_by			= #{UPDATE_BY}

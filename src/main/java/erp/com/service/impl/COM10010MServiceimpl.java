@@ -41,7 +41,11 @@ public class COM10010MServiceimpl implements COM10010MService {
 	*/
 	@Override
 	public List<Map<String, Object>> selectMessageList() throws Exception {		
-		return mapper.selectMessageList();
+		try {
+			return mapper.selectMessageList();		
+		} catch (Exception e) {
+			throw new UserException(e);
+		}
 	}
 
 	/**

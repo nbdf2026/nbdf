@@ -1,10 +1,10 @@
--- ------------------------------------------------------------------------------------------------
--- [°øÅë°ü¸®] ¸Ş½ÃÁö ¿ÀºêÁ§Æ® »ı¼º
+ï»¿-- ------------------------------------------------------------------------------------------------
+-- [ê³µí†µê´€ë¦¬] ë©”ì‹œì§€ ì˜¤ë¸Œì íŠ¸ ìƒì„±
 conn system/manager!@orcl;
 -- ------------------------------------------------------------------------------------------------
 
 -- ------------------------------------------------------------------------------------------------
--- ½ÃÄö½º »ı¼º
+-- ì‹œí€€ìŠ¤ ìƒì„±
 -- ------------------------------------------------------------------------------------------------
 drop   sequence ncom.com_message_s;
 create sequence ncom.com_message_s
@@ -14,17 +14,17 @@ start with 1000000
 increment by 1
 order;
 
--- ±ÇÇÑ ºÎ¿©
+-- ê¶Œí•œ ë¶€ì—¬
 grant select on ncom.com_message_s to nsys;
 grant select on ncom.com_message_s to nhrm;
 
--- ½Ã³ë´Ô »ı¼º
+-- ì‹œë…¸ë‹˜ ìƒì„±
 create or replace synonym nsys.com_message_s for ncom.com_message_s;
 create or replace synonym nhrm.com_message_s for ncom.com_message_s;
 
 
 -- ------------------------------------------------------------------------------------------------
--- Å×ÀÌºí »ı¼º
+-- í…Œì´ë¸” ìƒì„±
 -- ------------------------------------------------------------------------------------------------
 drop   table ncom.com_message cascade constraints;
 create table ncom.com_message
@@ -46,38 +46,38 @@ create table ncom.com_message
     ,update_by               varchar2(50)   default 'admin'
 ) tablespace nbdf_data;
 
--- Å×ÀÌºí ¼³¸í
-comment on table  ncom.com_message                  is '[°øÅë°ü¸®] ¸Ş½ÃÁö';
-comment on column ncom.com_message.message_num      is '¸Ş½ÃÁö¹øÈ£';
-comment on column ncom.com_message.message_type_cd  is '¸Ş½ÃÁöÀ¯ÇüÄÚµå';
-comment on column ncom.com_message.message_text_ko  is '¸Ş½ÃÁö(±¹¾î)';
-comment on column ncom.com_message.message_text_en  is '¸Ş½ÃÁö(¿µ¾î)';
-comment on column ncom.com_message.message_text_zh  is '¸Ş½ÃÁö(Áß±¹¾î)';
-comment on column ncom.com_message.message_text_ja  is '¸Ş½ÃÁö(ÀÏº»¾î)';
-comment on column ncom.com_message.message_text_ot  is '¸Ş½ÃÁö(±âÅ¸)';
-comment on column ncom.com_message.button_yes       is '¹öÆ°(¿¹)';
-comment on column ncom.com_message.button_no        is '¹öÆ°(¾Æ´Ï¿À)';
-comment on column ncom.com_message.button_cancle    is '¹öÆ°(Ãë¼Ò)';
-comment on column ncom.com_message.remark           is 'ºñ°í';
+-- í…Œì´ë¸” ì„¤ëª…
+comment on table  ncom.com_message                  is '[ê³µí†µê´€ë¦¬] ë©”ì‹œì§€';
+comment on column ncom.com_message.message_num      is 'ë©”ì‹œì§€ë²ˆí˜¸';
+comment on column ncom.com_message.message_type_cd  is 'ë©”ì‹œì§€ìœ í˜•ì½”ë“œ';
+comment on column ncom.com_message.message_text_ko  is 'ë©”ì‹œì§€(êµ­ì–´)';
+comment on column ncom.com_message.message_text_en  is 'ë©”ì‹œì§€(ì˜ì–´)';
+comment on column ncom.com_message.message_text_zh  is 'ë©”ì‹œì§€(ì¤‘êµ­ì–´)';
+comment on column ncom.com_message.message_text_ja  is 'ë©”ì‹œì§€(ì¼ë³¸ì–´)';
+comment on column ncom.com_message.message_text_ot  is 'ë©”ì‹œì§€(ê¸°íƒ€)';
+comment on column ncom.com_message.button_yes       is 'ë²„íŠ¼(ì˜ˆ)';
+comment on column ncom.com_message.button_no        is 'ë²„íŠ¼(ì•„ë‹ˆì˜¤)';
+comment on column ncom.com_message.button_cancle    is 'ë²„íŠ¼(ì·¨ì†Œ)';
+comment on column ncom.com_message.remark           is 'ë¹„ê³ ';
 
-comment on column ncom.com_message.create_date      is '»ı¼ºÀÏ½Ã';
-comment on column ncom.com_message.create_by        is '»ı¼ºÀÚ';
-comment on column ncom.com_message.update_date      is '¼öÁ¤ÀÏ½Ã';
-comment on column ncom.com_message.update_by        is '¼öÁ¤ÀÚ';
+comment on column ncom.com_message.create_date      is 'ìƒì„±ì¼ì‹œ';
+comment on column ncom.com_message.create_by        is 'ìƒì„±ì';
+comment on column ncom.com_message.update_date      is 'ìˆ˜ì •ì¼ì‹œ';
+comment on column ncom.com_message.update_by        is 'ìˆ˜ì •ì';
 
--- primary ÀÎµ¦½º
+-- primary ì¸ë±ìŠ¤
 alter table ncom.com_message add constraint com_message_pk primary key (message_num) using index tablespace nbdf_idx;
 
--- unique ÀÎµ¦½º
+-- unique ì¸ë±ìŠ¤
 create unique index ncom.com_message_uk01 on ncom.com_message (message_type_cd, message_text_ko) tablespace nbdf_idx;
 
--- normal ÀÎµ¦½º
+-- normal ì¸ë±ìŠ¤
 create index ncom.com_message_ix01 on ncom.com_message (message_type_cd, message_text_en) tablespace nbdf_idx;
 
--- ±ÇÇÑºÎ¿©
+-- ê¶Œí•œë¶€ì—¬
 grant all on ncom.com_message to nsys;
 grant all on ncom.com_message to nhrm;
 
--- ½Ã³ë´Ô »ı¼º
+-- ì‹œë…¸ë‹˜ ìƒì„±
 create or replace synonym nsys.com_message for ncom.com_message;
 create or replace synonym nhrm.com_message for ncom.com_message;
