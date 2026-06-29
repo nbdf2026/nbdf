@@ -1,0 +1,84 @@
+﻿-- ------------------------------------------------------------------------------------------------
+-- [공통관리] 사용자 접속 - 메시지
+conn nsys/manager!@vis12215;
+-- ------------------------------------------------------------------------------------------------
+
+
+-- ------------------------------------------------------------------------------------------------
+-- 시퀀스 생성
+-- ------------------------------------------------------------------------------------------------
+drop   sequence ncom.com_user_s;
+create sequence ncom.com_user_s
+minvalue 1
+maxvalue 999999999999
+start with 1000000
+increment by 1
+order;
+
+-- 권한 부여
+grant select on ncom.com_user_s to nsys;
+grant select on ncom.com_user_s to nhrm;
+
+-- 시노님 생성
+create or replace synonym nsys.com_user_s for ncom.com_user_s;
+create or replace synonym nhrm.com_user_s for ncom.com_user_s;
+
+
+-- ------------------------------------------------------------------------------------------------
+-- 테이블 생성
+-- ------------------------------------------------------------------------------------------------
+drop   table ncom.com_user cascade constraints;
+create table ncom.com_user
+(
+     user_id                 varchar2(30)   not null
+    ,user_name               varchar2(50)   not null
+    ,password                varchar2(512)  not null
+    ,email_address           varchar2(128)
+    ,mobile_number           varchar2(128)
+    ,user_yn                 varchar2(1)    default 'Y'
+    ,lock_yn                 varchar2(1)    default 'N'
+    ,login_fail_count        number         default 0
+    ,last_login_date         date
+    ,last_pw_change_date     date
+    ,remark                  varchar2(4000)
+    ,create_date             date           default sysdate
+    ,create_by               varchar2(50)   default 'admin'
+    ,update_date             date           default sysdate
+    ,update_by               varchar2(50)   default 'admin'
+) tablespace nbdf_data;
+
+-- 테이블 설명
+comment on table  ncom.com_user                      is '[공통관리] 사용자';
+comment on column ncom.com_user.user_id              is '메시지번호';
+comment on column ncom.com_user.user_name            is '메시지유형코드';
+comment on column ncom.com_user.password             is '메시지(국어)';
+comment on column ncom.com_user.email_address        is '메시지(영어)';
+comment on column ncom.com_user.mobile_number        is '메시지(중국어)';
+comment on column ncom.com_user.user_yn              is '메시지(일본어)';
+comment on column ncom.com_user.lock_yn              is '메시지(기타)';
+comment on column ncom.com_user.login_fail_count     is '비고';
+comment on column ncom.com_user.last_login_date      is '메시지번호';
+comment on column ncom.com_user.last_pw_change_date  is '메시지유형코드';
+comment on column ncom.com_user.remark               is '비고';
+
+comment on column ncom.com_user.create_date          is '생성일시';
+comment on column ncom.com_user.create_by            is '생성자';
+comment on column ncom.com_user.update_date          is '수정일시';
+comment on column ncom.com_user.update_by            is '수정자';
+
+-- primary 인덱스
+alter table ncom.com_user add constraint com_user_pk primary key (user_id) using index tablespace nbdf_idx;
+
+-- unique 인덱스
+create unique index ncom.com_user_uk01 on ncom.com_user (user_name) tablespace nbdf_idx;
+
+-- normal 인덱스
+//create index ncom.com_user_ix01 on ncom.com_user (xx) tablespace nbdf_idx;
+
+-- 권한부여
+grant all on ncom.com_user to nsys;
+grant all on ncom.com_user to nhrm;
+
+-- 시노님 생성
+create or replace synonym nsys.com_user for ncom.com_user;
+create or replace synonym nhrm.com_user for ncom.com_user;
