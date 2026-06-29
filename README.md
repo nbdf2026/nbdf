@@ -2,6 +2,14 @@
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.29
  2. 작업내용
+  - DB 암복호화 함수 생성
+    : encrypt_f, decrypt_f, encrypt_password_f
+  - 깃 제외 파일 등록 : *.~sql, *.~pdc)
+  - nbdf db 디렉터리 재정리
+  
+[nbdf 프로젝트]
+ 1. 작업일자 : 2026.06.29
+ 2. 작업내용
   - gds_message 공통 메시지 함수 처리 완료(Alert, Confirm)
     : 별도 팝업 작성하여 메시지 출력으로 변경 예정
   - gfn_msgBox : 넥사크로 공통 메시지 함수 추가

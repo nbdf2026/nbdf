@@ -1,4 +1,4 @@
-﻿create or replace noneditionable function decrypt_f(p_value varchar2)
+﻿create or replace noneditionable function nsys.encrypt_f(p_value varchar2)
 return varchar2
 is
     l_key raw(32);

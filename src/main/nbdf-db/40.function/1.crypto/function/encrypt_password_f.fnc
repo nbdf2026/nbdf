@@ -1,4 +1,4 @@
-﻿create or replace noneditionable function encrypt_password_f(p_value varchar2)
+﻿create or replace noneditionable function nsys.encrypt_password_f(p_value varchar2)
 return varchar2
 is
     v_hash varchar2(128);

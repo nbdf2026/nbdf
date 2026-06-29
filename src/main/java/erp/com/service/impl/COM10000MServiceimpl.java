@@ -44,7 +44,11 @@ public class COM10000MServiceimpl implements COM10000MService {
 	*/
 	@Override
 	public List<Map<String, Object>> selectCodeTypeList(Map<String, Object> inSearch) throws Exception {		
-		return mapper.selectCodeTypeList(inSearch);
+		try {
+			return mapper.selectCodeTypeList(inSearch);			
+		} catch (Exception e) {
+			throw new UserException(e);
+		}
 	}
 
 	/**

@@ -1,6 +1,6 @@
--- ¸Ş½ÃÁö µ¥ÀÌÅÍ Á¶È¸
+ï»¿-- ë©”ì‹œì§€ ë°ì´í„° ì¡°íšŒ
 select cm.message_num
-      ,cm.message_type_cd
+      ,cm.MESSAGE_TYPE_CD
       ,cm.message_text_ko
       ,cm.message_text_en
       ,cm.message_text_zh
@@ -23,7 +23,7 @@ values
   (
   'MSG-A-10000'
   ,'A'
-  ,'Á¤»óÀûÀ¸·Î Ã³¸® µÇ¾ú½À´Ï´Ù.'
+  ,'ì •ìƒì ìœ¼ë¡œ ì²˜ë¦¬ ë˜ì—ˆìŠµë‹ˆë‹¤.'
   ,'It was processed normally.'
   ,'v_message_text_zh'
   ,'v_message_text_ja'
@@ -31,7 +31,7 @@ values
   ,'Y'
   ,'N'
   ,'N'
-  ,'½Ã½ºÅÛ µî·Ï µ¥ÀÌÅÍ'
+  ,'ì‹œìŠ¤í…œ ë“±ë¡ ë°ì´í„°'
   ,to_date('1900-01-01', 'yyyy-mm-dd')
   ,'admin'
   ,to_date('1900-01-01', 'yyyy-mm-dd')

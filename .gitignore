@@ -21,9 +21,12 @@ hs_err_pid*
 replay_pid*
 
 
-
 # 2026.05.01 :: Log file 제외
 *.log
+
+# 2026.05.01 :: plsql backup file 제외
+*.~sql
+*.~pdc
 
 # 2026.05.01 :: Maven - Maven이 빌드하면서 생성하는 결과물 폴더를 Git 관리 대상에서 제외
 target/
