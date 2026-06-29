@@ -1,14 +1,18 @@
 ﻿-- ------------------------------------------------------------------------------------------------
--- [공통관리] 코드유형 오브젝트 생성
+-- [시스템관리관리] 사용자 접속
 conn nsys/manager!@vis12215;
 -- ------------------------------------------------------------------------------------------------
 
+
+-- ------------------------------------------------------------------------------------------------
+-- [시스템관리관] 복호화 오브젝트 생성
+-- ------------------------------------------------------------------------------------------------
 drop function nsys.decrypt_f;
-create or replace function nsys.decrypt_f(p_value varchar2)
+create function nsys.decrypt_f(p_value varchar2)
 return varchar2
 is
     l_key raw(32);
-    l_enc raw(2000);
+    l_raw raw(32767);
 
     l_type pls_integer :=
           dbms_crypto.encrypt_aes256
@@ -20,13 +24,13 @@ begin
              ,'AL32UTF8'
              );
 
-    l_enc := dbms_crypto.encrypt
-             (src => utl_i18n.string_to_raw(p_value, 'AL32UTF8')
+    l_raw := dbms_crypto.decrypt
+             (src => hextoraw(p_value)
              ,typ => l_type
              ,key => l_key
              );
 
-    return rawtohex(l_enc);
+    return utl_i18n.raw_to_char(l_raw, 'AL32UTF8');
 end;
 /
 
