@@ -16,7 +16,6 @@
         "./nexacrolib/component/ComComp.js",
         "./nexacrolib/component/Grid.js",
         "./nexacrolib/component/ListView.js",
-        "./nexacrolib/component/DeviceAPI.js",
         "./nexacrolib/component/nbdfLib/libDate.js",
         "./nexacrolib/component/nbdfLib/libUtil.js",
         "./nexacrolib/component/nbdfLib/libDataSet.js"
