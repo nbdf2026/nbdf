@@ -17,7 +17,30 @@
         <Column id="UPDATE_BY" type="STRING" size="256"/>
       </ColumnInfo>
     </Dataset>
+    <Dataset id="gds_user">
+      <ColumnInfo>
+        <Column id="USER_ID" type="STRING" size="256"/>
+        <Column id="USER_NAME" type="STRING" size="256"/>
+        <Column id="EMAIL_ADDRESS" type="STRING" size="256"/>
+        <Column id="MOBILE_NUMBER" type="STRING" size="256"/>
+        <Column id="COMPANY_CODE" type="STRING" size="256"/>
+        <Column id="COMPANY_NAME" type="STRING" size="256"/>
+        <Column id="BUSINESS_PLACE_CODE" type="STRING" size="256"/>
+        <Column id="BUSINESS_PLACE_NAME" type="STRING" size="256"/>
+        <Column id="DEPT_CODE" type="STRING" size="256"/>
+        <Column id="DEPT_NAME" type="STRING" size="256"/>
+        <Column id="JOB_CODE" type="STRING" size="256"/>
+        <Column id="JOB_NAME" type="STRING" size="256"/>
+        <Column id="POSITION_CODE" type="STRING" size="256"/>
+        <Column id="POSITION_NAME" type="STRING" size="256"/>
+      </ColumnInfo>
+    </Dataset>
   </Datasets>
-  <Variables/>
+  <Variables>
+    <Variable id="userId"/>
+    <Variable id="userName"/>
+    <Variable id="userEmailAddress"/>
+    <Variable id="userMobileNumber"/>
+  </Variables>
   <DataObjects/>
 </AppVariables>

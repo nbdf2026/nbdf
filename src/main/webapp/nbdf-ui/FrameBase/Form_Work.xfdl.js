@@ -35,6 +35,11 @@
             obj = new Dataset("ds_message", this);
             obj._setContents({"ColumnInfo" : {"Column" : [ {"id" : "MESSAGE_NUM","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TYPE_CD","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_KO","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_EN","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_ZH","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_JA","type" : "STRING","size" : "256"},{"id" : "MESSAGE_TEXT_OT","type" : "STRING","size" : "256"},{"id" : "REMARK","type" : "STRING","size" : "256"},{"id" : "CREATE_DATE","type" : "STRING","size" : "256"},{"id" : "CREATE_BY","type" : "STRING","size" : "256"},{"id" : "UPDATE_DATE","type" : "STRING","size" : "256"},{"id" : "UPDATE_BY","type" : "STRING","size" : "256"}]}});
             this.addChild(obj.name, obj);
+
+
+            obj = new Dataset("ds_user", this);
+            obj._setContents({"ColumnInfo" : {"Column" : [ {"id" : "USER_ID","type" : "STRING","size" : "256"},{"id" : "USER_NAME","type" : "STRING","size" : "256"},{"id" : "EMAIL_ADDRESS","type" : "STRING","size" : "256"},{"id" : "MOBILE_NUMBER","type" : "STRING","size" : "256"},{"id" : "COMPANY_CODE","type" : "STRING","size" : "256"},{"id" : "COMPANY_NAME","type" : "STRING","size" : "256"},{"id" : "BUSINESS_PLACE_CODE","type" : "STRING","size" : "256"},{"id" : "BUSINESS_PLACE_NAME","type" : "STRING","size" : "256"},{"id" : "DEPT_CODE","type" : "STRING","size" : "256"},{"id" : "DEPT_NAME","type" : "STRING","size" : "256"},{"id" : "JOB_CODE","type" : "STRING","size" : "256"},{"id" : "JOB_NAME","type" : "STRING","size" : "256"},{"id" : "POSITION_CODE","type" : "STRING","size" : "256"},{"id" : "POSITION_NAME","type" : "STRING","size" : "256"}]}});
+            this.addChild(obj.name, obj);
             
             // UI Components Initialize
             obj = new Button("btn_search","20","70","120","40",null,null,null,null,null,null,this);
@@ -70,7 +75,7 @@
             obj.set_text("메시지(gds복사)");
             this.addChild(obj.name, obj);
 
-            obj = new Grid("grd_codeType00","520","120","740","580",null,null,null,null,null,null,this);
+            obj = new Grid("grd_message","520","120","740","300",null,null,null,null,null,null,this);
             obj.set_taborder("6");
             obj.set_binddataset("ds_message");
             obj.set_autofittype("col");
@@ -86,6 +91,14 @@
             obj = new Button("btn_confirmMessage","1040","70","150","40",null,null,null,null,null,null,this);
             obj.set_taborder("8");
             obj.set_text("alert(gds메시지조회)");
+            this.addChild(obj.name, obj);
+
+            obj = new Grid("grd_user","520","430","740","300",null,null,null,null,null,null,this);
+            obj.set_taborder("9");
+            obj.set_binddataset("ds_user");
+            obj.set_autofittype("col");
+            obj.set_autosizingtype("col");
+            obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/></Columns><Rows><Row band=\"head\" size=\"24\"/><Row size=\"24\"/></Rows><Band id=\"head\"><Cell text=\"USER_ID\"/><Cell col=\"1\" text=\"USER_NAME\"/><Cell col=\"2\" text=\"EMAIL_ADDRESS\"/><Cell col=\"3\" text=\"MOBILE_NUMBER\"/><Cell col=\"4\" text=\"COMPANY_CODE\"/><Cell col=\"5\" text=\"COMPANY_NAME\"/><Cell col=\"6\" text=\"BUSINESS_PLACE_CODE\"/><Cell col=\"7\" text=\"BUSINESS_PLACE_NAME\"/><Cell col=\"8\" text=\"DEPT_CODE\"/><Cell col=\"9\" text=\"DEPT_NAME\"/><Cell col=\"10\" text=\"JOB_CODE\"/><Cell col=\"11\" text=\"JOB_NAME\"/><Cell col=\"12\" text=\"POSITION_CODE\"/><Cell col=\"13\" text=\"POSITION_NAME\"/></Band><Band id=\"body\"><Cell text=\"bind:USER_ID\"/><Cell col=\"1\" text=\"bind:USER_NAME\"/><Cell col=\"2\" text=\"bind:EMAIL_ADDRESS\"/><Cell col=\"3\" text=\"bind:MOBILE_NUMBER\"/><Cell col=\"4\" text=\"bind:COMPANY_CODE\"/><Cell col=\"5\" text=\"bind:COMPANY_NAME\"/><Cell col=\"6\" text=\"bind:BUSINESS_PLACE_CODE\"/><Cell col=\"7\" text=\"bind:BUSINESS_PLACE_NAME\"/><Cell col=\"8\" text=\"bind:DEPT_CODE\"/><Cell col=\"9\" text=\"bind:DEPT_NAME\"/><Cell col=\"10\" text=\"bind:JOB_CODE\"/><Cell col=\"11\" text=\"bind:JOB_NAME\"/><Cell col=\"12\" text=\"bind:POSITION_CODE\"/><Cell col=\"13\" text=\"bind:POSITION_NAME\"/></Band></Format></Formats>");
             this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
@@ -107,9 +120,11 @@
         // User Script
         this.registerScript("Form_Work.xfdl", function() {
 
-        var app    = nexacro.getApplication();
-        var gdsMsg = app.gds_message;
-        var userId = "built1";
+        var app     	= nexacro.getApplication();
+        var gdsMsg  	= app.gds_message;
+        var gdsUser 	= app.gds_user;
+        var sUserId     = "";
+        var sUserName   = "";
         var sLanguageCd = "KO";
 
         this.fn_search = function(obj,e)
@@ -128,51 +143,6 @@
 
         	// 공통코드 조회
         	this.gfn_transaction(sSvcID, sSvcURL, sInDatasets, sOutDatasets, sArgument, sCallbackFunc);
-        };
-
-        this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
-        {
-        	if(nErrCd < 0) {
-        		alert("오류 : " + sErrMsg);
-        		return;
-        	}
-
-        	switch(sSvcID) {
-        		case "selectCodeList":
-        			//trace("###########################################################");
-        			//trace(this.ds_codeType.saveXML());
-        			//trace("###########################################################");
-
-        			var nCnt = this.ds_codeType.rowcount;
-        			if (nCnt == 0) {
-        				alert("조회조건에 일치하는 데이터가 존재하지 않습니다.");
-        			}
-        			break;
-
-        		case "saveCodeData":
-        			//trace("###########################################################");
-        			//trace(this.ds_codeType.saveXML());
-        			//trace("###########################################################");
-        			alert("정상적으로 처리되었습니다.");
-        			this.fn_search();
-        			break;
-
-        		case "selectMessageList":
-        			//trace("###########################################################");
-        			//trace(this.ds_message.saveXML());
-        			//trace("###########################################################");
-        			//var app = nexacro.getApplication();
-        			//var gdsMsg = app.gds_message;
-
-        			if (!gdsMsg) {
-        				trace("gds_message가 아직 생성되지 않았습니다.");
-        				return;
-        			}
-
-        			gdsMsg.clearData();
-        			gdsMsg.copyData(this.ds_message);
-        			break;
-        		}
         };
 
         this.fn_delete = function(obj,e)
@@ -220,17 +190,12 @@
         //메시지 조회
         this.fn_message = function(obj,e)
         {
-        	this.ds_message.clearData();
-        	//this.ds_search.clearData();
-        	//var nRow = this.ds_search.addRow();
-        	//this.ds_search.setColumn(nRow, "CODE_TYPE"   , "CREATE_TYPE_CD");
-        	//this.ds_search.setColumn(nRow, "CODE_TYPE_NM", "생성");
-
+        	var sUserID         = "20000001";
         	var sSvcID 			= "selectMessageList";
         	var sSvcURL			= "svcUrl::com/COM10010M/selectMessageList.do";
         	var sInDatasets 	= "";
-        	var sOutDatasets 	= "ds_message=outSelectMessageList";
-        	var sArgument 		= "";
+        	var sOutDatasets 	= "ds_message=outSelectMessageList ds_user=outSelectUserList";
+        	var sArgument 		= "userId=" + sUserID;
         	var sCallbackFunc 	= "fn_callback";
 
         	// 공통코드 조회
@@ -249,6 +214,73 @@
         	var bYesNo = this.gfn_msgBox("MSG-C-10000", sLanguageCd);
         	if(bYesNo) alert("확인버튼클릭");
         	else alert("취소버튼클릭");
+        };
+
+        //콜백 함수
+        this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
+        {
+        	if(nErrCd < 0) {
+        		alert("오류 : " + sErrMsg);
+        		return;
+        	}
+
+        	switch(sSvcID) {
+        		case "selectCodeList":
+        			//trace("###########################################################");
+        			//trace(this.ds_codeType.saveXML());
+        			//trace("###########################################################");
+
+        			var nCnt = this.ds_codeType.rowcount;
+        			if (nCnt == 0) {
+        				alert("조회조건에 일치하는 데이터가 존재하지 않습니다.");
+        			}
+        			break;
+
+        		case "saveCodeData":
+        			//trace("###########################################################");
+        			//trace(this.ds_codeType.saveXML());
+        			//trace("###########################################################");
+        			alert("정상적으로 처리되었습니다.");
+        			this.fn_search();
+        			break;
+
+        		case "selectMessageList":
+        			//trace("###########################################################");
+        			//trace(this.ds_message.saveXML());
+        			//trace("###########################################################");
+        			//var app = nexacro.getApplication();
+        			//var gdsMsg = app.gds_message;
+
+        			if (!gdsMsg) {
+        				trace("공통 메시지정보(gds_message)가 생성되지 않았습니다.");
+        				return;
+        			}
+        			gdsMsg.clearData();
+        			gdsMsg.copyData(this.ds_message);
+
+        			if (!gdsUser) {
+        				trace("공통 사용자정보(gds_user)가 생성되지 않았습니다.");
+        				return;
+        			}
+        			gdsUser.clearData();
+        			gdsUser.copyData(this.ds_user);
+
+        			//글러벌 데이터셋
+        			sUserId   = gdsUser.getColumn(0, "USER_ID");
+        			sUserName = gdsUser.getColumn(0, "USER_NAME");
+
+        			//글로벌 변수
+        			app.userId 	 = sUserId;
+        			app.userName = sUserName;
+
+        			//삼항연산자
+        			var sJobCode = gdsUser.getColumn(0, "EMAIL_ADDRESS");
+        			sJobCode = this.gfn_isNull(sJobCode) ? "" : sJobCode;
+        			alert("사용자ID : " + sUserId + ", 사용자명 : " + sUserName);
+        			alert("직무코드 : " + sJobCode);
+        			alert("app.userId : " + app.userId);
+        			break;
+        		}
         };
 
         });

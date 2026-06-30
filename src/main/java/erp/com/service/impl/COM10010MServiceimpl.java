@@ -9,17 +9,16 @@ import erp.cmmn.exception.UserException;
 import erp.com.service.COM10010MService;
 import lombok.extern.slf4j.Slf4j;
 
-
 /**
 * @packageName    : erp.com.service.impl
 * @fileName       : COM10010MServiceimpl.java
 * @author         : Built1
-* @date           : 2026.06.24
+* @date           : 2026.06.30
 * @description    : 메시지 데이터를 조회/저장하는 파일
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
-* 2026.06.19        Built1             최초 생성
+* 2026.06.30        Built1             최초 생성
 */
 @Slf4j
 @Service
@@ -28,14 +27,12 @@ public class COM10010MServiceimpl implements COM10010MService {
 	//매퍼 인터페이스를 위한 변수
 	@Resource
 	private COM10010MMapper mapper;
-	
-	
+
 	/**
 	* @methodName     : selectMessageList
 	* @author         : built1
-	* @date           : 2026.06.24
+	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 조회하는 상속메소드
-	* @param inSearch
 	* @return
 	* @throws Exception
 	*/
@@ -47,14 +44,30 @@ public class COM10010MServiceimpl implements COM10010MService {
 			throw new UserException(e);
 		}
 	}
+	
+	/**
+	* @methodName     : selectUserList
+	* @author         : built1
+	* @date           : 2026.06.30
+	* @description    : 로그인 사용자정보 데이터를 조회하는 상속메소드
+	* @return
+	* @throws Exception
+	*/
+	@Override
+	public List<Map<String, Object>> selectUserList(String userId) throws Exception {		
+		try {
+			return mapper.selectUserList(userId);		
+		} catch (Exception e) {
+			throw new UserException(e);
+		}
+	}
 
 	/**
 	* @methodName     : saveMessageData
 	* @author         : built1
-	* @date           : 2026.06.24
-	* @description    : 메시지 데이터를 조회/저장하는 상속메소드
-	* @param inMessage
-	* @param inCode
+	* @date           : 2026.06.30
+	* @description    : 메시지 데이터를 저장하는 상속메소드
+	* @param inMessageList
 	* @param userId
 	* @throws Exception
 	*/

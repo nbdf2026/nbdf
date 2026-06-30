@@ -2,6 +2,13 @@
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.30
  2. 작업내용
+  - 로그인 사용자정보(사용자+인사정보+발령정보) 조회 추가 및 gds_user 반영
+  - 로그인 사용자정보 application variable 등록(userId, userName, userEmailAddress, userMobileNumber)
+  - COM10010M : 자바 메소드 및 인터페이스 자동 주석 처리
+  
+[nbdf 프로젝트]
+ 1. 작업일자 : 2026.06.30
+ 2. 작업내용
   - 공통 라이브러리 재설정
   - 사용자 매뉴얼 업데이트 : 빌트원-Nexacro N v24-nBDF_20260428_v0.58.pptx
   - COM10020M : 사용자 프로그램 개발 예정 / 로그인에 따른 세션변수 초기화 및 값할당

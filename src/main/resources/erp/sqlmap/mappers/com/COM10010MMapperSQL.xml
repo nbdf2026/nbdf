@@ -37,6 +37,28 @@
 	    order by cm.message_num
 	</select>
 	
+	<!-- 로그인 사용자정보 데이터 조회 -->
+	<!-- 특수문자 : <![CDATA[  ]]> -->
+	<select id="selectUserList" resultType="map">	
+		select cu.user_id            		as user_id
+		      ,cu.user_name          		as user_name
+		      ,decrypt_f(cu.email_address)  as email_address
+		      ,decrypt_f(cu.mobile_number)  as mobile_number
+		      ,''                    		as company_code
+		      ,''                    		as company_name
+		      ,''                    		as business_place_code
+		      ,''                    		as business_place_name
+		      ,''                    		as dept_code
+		      ,''                    		as dept_name
+		      ,''                    		as job_code
+		      ,''                    		as job_name
+		      ,''                    		as position_code
+		      ,''                    		as position_name      
+		  from com_user cu
+		 where 1=1
+		   and cu.user_id = #{USER_ID}
+	</select>
+	
 	<!-- 메시지 데이터 신규 -->
 	<insert id="insertMessage" parameterType="map">
 	<![CDATA[

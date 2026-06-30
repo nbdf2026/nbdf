@@ -18,4 +18,5 @@ select cu.user_id
       ,cu.update_by
   from com_user cu
  where 1=1
+   and cu.user_id = '20000001'
 ;
