@@ -2,6 +2,14 @@
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.01
  2. 작업내용
+  - NBDFConstants 	: NBDF 프레임워크 전체에서 공통으로 사용하고 변경되지 않는 기준값을 관리하는 클래스
+  - NBDFJavaType	: Java 데이터 유형을 관리하는 클래스
+  - NBDFNexacroType	: Nexacro 데이터셋 데이터 유형을 관리하는 클래스
+  - NBDFColumn		: 데이터셋 컬럼정보를 관리하는 메타 객체 클래스
+  
+[nbdf 프로젝트]
+ 1. 작업일자 : 2026.07.01
+ 2. 작업내용
   - 쿼리 파싱할 경우 2번 나오은 문제로 인하여 
   - nbdf core 자바 프레임워크 작업 후 넥사크로 객체 대체 예정
   - NBDFConstants 클래스 작업 완료 : Dataset Column 정보를 관리하는 공통 Metadata 객체

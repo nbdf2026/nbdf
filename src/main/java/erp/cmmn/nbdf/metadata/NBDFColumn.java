@@ -1,13 +1,15 @@
 package erp.cmmn.nbdf.metadata;
 
 import java.io.Serializable;
+import erp.cmmn.nbdf.constants.NBDFJavaType;
+import erp.cmmn.nbdf.constants.NBDFNexacroType;
 
 /**
 * @packageName    : erp.cmmn.nbdf.metadata
 * @fileName       : NBDFColumn.java
 * @author         : Built1
 * @date           : 2026.07.01
-* @description    : Dataset Column 정보를 관리하는 공통 Metadata 객체
+* @description    : 데이터셋 컬럼정보를 관리하는 메타 객체 클래스
 * -----------------------------------------------------------
 * @사용처
  * Nexacro Dataset
@@ -22,67 +24,151 @@ import java.io.Serializable;
 */
 public class NBDFColumn implements Serializable {
 	
+	/**
+	 * Serializable Version UID
+	 */
 	private static final long serialVersionUID = 1L;
 		
-	//생성자(Constructor) : 객체를 생성할 때 가장 먼저 실행되는 메서드
+	/**
+	 * 생성자(Constructor)
+	 * 객체를 생성할 때 가장 먼저 실행되는 메서드
+	 */
 	public NBDFColumn() {
-
+		
     }
 	
-	//컬럼명
+	/**
+	 *  자바 데이터 유형에서 넥사크로 데이터유형 매핑표
+	 * Java              Nexacro
+	 * ----------------------------
+	 * String       →   STRING		: 1
+	 * Integer      →   INT			: 2
+	 * Long         →   LONG		: 3
+	 * BigDecimal   →   BIGDECIMAL	: 4
+	 * Date         →   DATE		: 5
+	 * DateTime     →   DATETIME	: 6
+	 * Boolean      →   BOOLEAN		: 7
+	 */
+		
+	/**
+	 * ● DB 정보
+	 * 컬럼명
+	 */
 	private String columnName;
 	
-	//컬럼라벨
-	private String columnLabel;
+	/**
+	 * 데이터베이스 데이터 유형
+	 */
+	private String dbType;
 	
-	//jdbc 데이터 유형
-	private String jdbcType;
+	/**
+	 * JDBC 데이터 유형(java.sql.Types)
+	 */
+	private int jdbcType;
 	
-	//java 데이터 유형
-	private String javaType;
+	/**
+	 * 컬럼의 길이
+	 */
+	private int columnSize;
 	
-	//넥사크로 데이터 유형
-	private int nexacroType;
-	
-	//컬럼의 길이
-	private int size;
-	
-	//소수점 자릿수
+	/**
+	 * 소수점 자릿수
+	 */
 	private int scale;
 	
-	//널 여부
+	/**
+	 * 널 여부
+	 */
 	private boolean nullable;
 	
-	//primary 키 여부
+	/**
+	 * 기본값
+	 */
+	private String defaultValue;
+	
+	/**
+	 * primary 키 여부
+	 */
 	private boolean primaryKey;
 	
-	//화면 사이즈
+	/**
+	 * unique 키 여부
+	 */
+	private boolean uniqueKey;
+	
+	/**
+	 * ● Java 정보
+	 * java 데이터 유형
+	 */
+	private String javaType = NBDFJavaType.STRING;
+	
+	
+	/**
+	 * ● Nexacro 정보
+	 * 넥사크로 데이터 유형
+	 */
+	private int nexacroType = NBDFNexacroType.STRING;
+	
+	
+	/**
+	 * ● 화면(UI) 정보
+	 * 화면 사이즈
+	 */
 	private int displayWidth = 100;
 	
-	//필수 입력 여부
+	/**
+	 * 필수 입력 여부
+	 */
 	private boolean required;
 	
-	//수정 가능 여부
-	private boolean editable;
+	/**
+	 * 수정 가능 여부
+	 */
+	private boolean editable = true;
 
-	//화면 표시 여부
-	private boolean visible;
+	/**
+	 * 화면 표시 여부
+	 */
+	private boolean visible = true;
 
-	//엑셀 출력 여부
-	private boolean excelExport;
+	/**
+	 * 조회 조건 사용 여부
+	 */
+	private boolean searchable = true;
 
-	//조회 조건 사용 여부
-	private boolean searchable;
-
-	//입력 마스크 또는 표시 마스크
+	/**
+	 * 입력 마스크 또는 표시 마스크
+	 */
 	private String mask;
 
-	//데이터 표시 형식
+	/**
+	 * 데이터 표시 형식
+	 */
 	private String format;
 
-	//공통코드(콤보) ID
-	private String comboId;
-		
+	/**
+	 * 공통코드(콤보) ID
+	 */
+	private String comboId;	
+
+	/**
+	 * 엑셀 출력 여부
+	 */
+	private boolean excelExport = true;
+	
+	
+	/**  
+	 * ● 문서화 정보
+	 * 컬럼라벨
+	 */
+	private String columnLabel;
+	
+	/**
+	 * 컬럼 설명
+	 */
+	private String columnComment;
+	
+	
 	//Generate Getters and Setters
 	//해당 소스에서 마우스 오른쪽 클릭 / Source → Generate Getters and Setters...
 
@@ -94,44 +180,28 @@ public class NBDFColumn implements Serializable {
 		this.columnName = columnName;
 	}
 
-	public String getColumnLabel() {
-		return columnLabel;
+	public String getDbType() {
+		return dbType;
 	}
 
-	public void setColumnLabel(String columnLabel) {
-		this.columnLabel = columnLabel;
+	public void setDbType(String dbType) {
+		this.dbType = dbType;
 	}
 
-	public String getJdbcType() {
+	public int getJdbcType() {
 		return jdbcType;
 	}
 
-	public void setJdbcType(String jdbcType) {
+	public void setJdbcType(int jdbcType) {
 		this.jdbcType = jdbcType;
 	}
 
-	public String getJavaType() {
-		return javaType;
+	public int getColumnSize() {
+		return columnSize;
 	}
 
-	public void setJavaType(String javaType) {
-		this.javaType = javaType;
-	}
-
-	public int getNexacroType() {
-		return nexacroType;
-	}
-
-	public void setNexacroType(int nexacroType) {
-		this.nexacroType = nexacroType;
-	}
-
-	public int getSize() {
-		return size;
-	}
-
-	public void setSize(int size) {
-		this.size = size;
+	public void setColumnSize(int columnSize) {
+		this.columnSize = columnSize;
 	}
 
 	public int getScale() {
@@ -150,12 +220,44 @@ public class NBDFColumn implements Serializable {
 		this.nullable = nullable;
 	}
 
+	public String getDefaultValue() {
+		return defaultValue;
+	}
+
+	public void setDefaultValue(String defaultValue) {
+		this.defaultValue = defaultValue;
+	}
+
 	public boolean isPrimaryKey() {
 		return primaryKey;
 	}
 
 	public void setPrimaryKey(boolean primaryKey) {
 		this.primaryKey = primaryKey;
+	}
+
+	public boolean isUniqueKey() {
+		return uniqueKey;
+	}
+
+	public void setUniqueKey(boolean uniqueKey) {
+		this.uniqueKey = uniqueKey;
+	}
+
+	public String getJavaType() {
+		return javaType;
+	}
+
+	public void setJavaType(String javaType) {
+		this.javaType = javaType;
+	}
+
+	public int getNexacroType() {
+		return nexacroType;
+	}
+
+	public void setNexacroType(int nexacroType) {
+		this.nexacroType = nexacroType;
 	}
 
 	public int getDisplayWidth() {
@@ -190,14 +292,6 @@ public class NBDFColumn implements Serializable {
 		this.visible = visible;
 	}
 
-	public boolean isExcelExport() {
-		return excelExport;
-	}
-
-	public void setExcelExport(boolean excelExport) {
-		this.excelExport = excelExport;
-	}
-
 	public boolean isSearchable() {
 		return searchable;
 	}
@@ -228,5 +322,29 @@ public class NBDFColumn implements Serializable {
 
 	public void setComboId(String comboId) {
 		this.comboId = comboId;
-	}	
+	}
+
+	public boolean isExcelExport() {
+		return excelExport;
+	}
+
+	public void setExcelExport(boolean excelExport) {
+		this.excelExport = excelExport;
+	}
+
+	public String getColumnLabel() {
+		return columnLabel;
+	}
+
+	public void setColumnLabel(String columnLabel) {
+		this.columnLabel = columnLabel;
+	}
+
+	public String getColumnComment() {
+		return columnComment;
+	}
+
+	public void setColumnComment(String columnComment) {
+		this.columnComment = columnComment;
+	}
 }

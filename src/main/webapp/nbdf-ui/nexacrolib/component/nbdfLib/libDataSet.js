@@ -151,7 +151,7 @@ pForm.gfn_checkRequired = function(objGrid, arrRequired)
                 var nColIndex   = this.gfn_getGridColumnIndex(objGrid, sColumnName);
                 var sHeaderText = this.gfn_getGridHeaderText(objGrid, nColIndex);
 
-                this.gfn_msgBox("MSG-A-10010", app.languageCd, [sHeaderText]); //{1} 항목은 필수입니다.
+                this.gfn_msgBox("MSG-A-10010", [sHeaderText]); //{1} 항목은 필수입니다.
 
                 //오류 발생 위치로 이동
 				if (nColIndex>=0) {
