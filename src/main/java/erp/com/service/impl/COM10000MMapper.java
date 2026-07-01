@@ -10,7 +10,7 @@ import org.egovframe.rte.psl.dataaccess.mapper.Mapper;
 * @fileName       : COM10000MMapper.java
 * @author         : Built1
 * @date           : 2026.06.19
-* @description    : 공통코드 데이터를 조회/저장하는 파일
+* @description    : 공통코드 데이터를 조회/저장하는 메퍼 인터페이스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------

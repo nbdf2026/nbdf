@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 * @fileName       : COM10000MController.java
 * @author         : Built1
 * @date           : 2026.06.19
-* @description    : 공통코드 데이터를 조회/저장하는 파일
+* @description    : 공통코드 데이터를 조회/저장하는 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------

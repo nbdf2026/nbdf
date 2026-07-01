@@ -11,7 +11,7 @@ import org.egovframe.rte.psl.dataaccess.mapper.Mapper;
 * @fileName       : COM10010MMapper.java
 * @author         : Built1
 * @date           : 2026.06.30
-* @description    : 메시지 데이터를 조회/저장하는 파일
+* @description    : 메시지 데이터를 조회/저장하는 매퍼 인터페이스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------

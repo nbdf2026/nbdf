@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 * @fileName       : COM10010MServiceimpl.java
 * @author         : Built1
 * @date           : 2026.06.30
-* @description    : 메시지 데이터를 조회/저장하는 파일
+* @description    : 메시지 데이터를 조회/저장하는 구현체 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
