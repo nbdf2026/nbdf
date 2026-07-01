@@ -38,7 +38,8 @@ public interface COM10010MMapper {
 	* @return
 	* @throws Exception
 	*/
-	public List<Map<String, Object>> selectUserList(@Param("USER_ID") String userId) throws Exception;
+	public List<Map<String, Object>> selectUserList(@Param("USER_ID") String userId
+			                                       ,@Param("USER_PASSWORD") String userPassword) throws Exception;
 
 	/**
 	* @methodName     : insertMessage

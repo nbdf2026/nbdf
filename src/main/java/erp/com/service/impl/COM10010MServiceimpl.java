@@ -54,9 +54,9 @@ public class COM10010MServiceimpl implements COM10010MService {
 	* @throws Exception
 	*/
 	@Override
-	public List<Map<String, Object>> selectUserList(String userId) throws Exception {		
-		try {
-			return mapper.selectUserList(userId);		
+	public List<Map<String, Object>> selectUserList(String userId, String userPassword) throws Exception {		
+		try {			 
+			return mapper.selectUserList(userId, userPassword);		
 		} catch (Exception e) {
 			throw new UserException(e);
 		}

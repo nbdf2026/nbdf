@@ -41,6 +41,7 @@
     <Variable id="userName"/>
     <Variable id="userEmailAddress"/>
     <Variable id="userMobileNumber"/>
+    <Variable id="languageCd"/>
   </Variables>
   <DataObjects/>
 </AppVariables>

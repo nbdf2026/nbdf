@@ -34,7 +34,7 @@ public interface COM10010MService {
 	* @return
 	* @throws Exception
 	*/
-	public List<Map<String, Object>> selectUserList(String userId) throws Exception;
+	public List<Map<String, Object>> selectUserList(String userId, String userPassword) throws Exception;
 	
 	/**
 	* @methodName     : saveMessageData

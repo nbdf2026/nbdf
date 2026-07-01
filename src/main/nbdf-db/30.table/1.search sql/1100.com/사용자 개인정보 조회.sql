@@ -16,4 +16,5 @@ select cu.user_id            as user_id
   from com_user cu
  where 1=1
    and cu.user_id = '20000001'
+   and cu.password = encrypt_password_f('adminADMIN0101!@')
 ;

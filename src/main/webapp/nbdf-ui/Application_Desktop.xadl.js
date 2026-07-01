@@ -22,6 +22,7 @@
             this._addVariable("userName","");
             this._addVariable("userEmailAddress","");
             this._addVariable("userMobileNumber","");
+            this._addVariable("languageCd","");
             
             obj = null;
         };
@@ -32,6 +33,7 @@
             // properties
             this.set_id("Application_Desktop");
             this.set_screenid("Desktop_screen");
+            this.set_licenseurl("NexacroN_client_license.xml");
 
             if (this._is_attach_childframe)
             	return;
@@ -69,7 +71,7 @@
         
         // script Compiler
 
-        this.checkLicense("");
+        this.checkLicense("NexacroN_client_license.xml");
         
         this.loadPreloadList();
 

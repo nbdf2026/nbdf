@@ -56,7 +56,8 @@
 		      ,''                    		as position_name      
 		  from com_user cu
 		 where 1=1
-		   and cu.user_id = #{USER_ID}
+		   and cu.user_id  = #{USER_ID}
+		   and cu.password = encrypt_password_f(#{USER_PASSWORD})
 	</select>
 	
 	<!-- 메시지 데이터 신규 -->

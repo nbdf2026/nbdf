@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.nexacro.uiadapter.spring.core.annotation.ParamDataSet;
 import com.nexacro.uiadapter.spring.core.annotation.ParamVariable;
 import com.nexacro.uiadapter.spring.core.data.NexacroResult;
+
+import erp.cmmn.exception.UserException;
 import erp.com.service.COM10010MService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -42,24 +44,31 @@ public class COM10010MController {
 	* @throws Exception
 	*/
 	@RequestMapping(value = "selectMessageList.do")
-	public NexacroResult selectMessageList(@ParamVariable(name = "userId") String userId) throws Exception {
+	public NexacroResult selectMessageList(@ParamVariable(name = "userId") String userId
+			                              ,@ParamVariable(name = "userPassword") String userPassword) throws Exception {
 		
 		log.info("############################################################");
 		log.debug("Controller 					: selectMessageList.do");
 		log.debug("userId					: " + userId);
+		log.debug("userPassword				: " + userPassword);
 		log.debug("############################################################");
 		
 		//자바 데이터 형식에서 넥사크로 데이터셋 형식으로 데이터 전환을 위한 변수
 		NexacroResult result = new NexacroResult();
 		
-		//메시지 조회
-		List<Map<String, Object>> outSelectMessageList = service.selectMessageList();		
-		result.addDataSet("outSelectMessageList", outSelectMessageList);
-		
 		//로그인 사용자정보 조회
-		List<Map<String, Object>> outSelectUserList = service.selectUserList(userId);		
-		result.addDataSet("outSelectUserList", outSelectUserList);
+		List<Map<String, Object>> outSelectUserList = service.selectUserList(userId, userPassword);		
+		//result.addDataSet("outSelectUserList", outSelectUserList);
 		
+		//로그인 사용자 조회 오류 발생
+		if (outSelectUserList == null || outSelectUserList.isEmpty() || outSelectUserList.size() == 0) {
+			result.setErrorCode(-1);
+			result.setErrorMsg("사용자ID 또는 비밀번호가 불일치합니다.");
+		} else {		
+			//메시지 조회
+			List<Map<String, Object>> outSelectMessageList = service.selectMessageList();		
+			result.addDataSet("outSelectMessageList", outSelectMessageList);
+		}		
 		return result;
 	}
 	

@@ -40,6 +40,11 @@
             obj = new Dataset("ds_user", this);
             obj._setContents({"ColumnInfo" : {"Column" : [ {"id" : "USER_ID","type" : "STRING","size" : "256"},{"id" : "USER_NAME","type" : "STRING","size" : "256"},{"id" : "EMAIL_ADDRESS","type" : "STRING","size" : "256"},{"id" : "MOBILE_NUMBER","type" : "STRING","size" : "256"},{"id" : "COMPANY_CODE","type" : "STRING","size" : "256"},{"id" : "COMPANY_NAME","type" : "STRING","size" : "256"},{"id" : "BUSINESS_PLACE_CODE","type" : "STRING","size" : "256"},{"id" : "BUSINESS_PLACE_NAME","type" : "STRING","size" : "256"},{"id" : "DEPT_CODE","type" : "STRING","size" : "256"},{"id" : "DEPT_NAME","type" : "STRING","size" : "256"},{"id" : "JOB_CODE","type" : "STRING","size" : "256"},{"id" : "JOB_NAME","type" : "STRING","size" : "256"},{"id" : "POSITION_CODE","type" : "STRING","size" : "256"},{"id" : "POSITION_NAME","type" : "STRING","size" : "256"}]}});
             this.addChild(obj.name, obj);
+
+
+            obj = new Dataset("ds_language", this);
+            obj._setContents({"ColumnInfo" : {"Column" : [ {"id" : "LANGUAGE_CODE","type" : "STRING","size" : "256"},{"id" : "LANGUAGE_NAME","type" : "STRING","size" : "256"}]},"Rows" : [{"LANGUAGE_CODE" : "KO","LANGUAGE_NAME" : "한국어"},{"LANGUAGE_CODE" : "EN","LANGUAGE_NAME" : "English"}]});
+            this.addChild(obj.name, obj);
             
             // UI Components Initialize
             obj = new Button("btn_search","20","70","120","40",null,null,null,null,null,null,this);
@@ -65,14 +70,14 @@
             obj.set_text("저장");
             this.addChild(obj.name, obj);
 
-            obj = new Button("Button00","537","74","120","50",null,null,null,null,null,null,this);
+            obj = new Button("btn_gfnGetDate","464","70","195","40",null,null,null,null,null,null,this);
             obj.set_taborder("4");
-            obj.set_text("Button00");
+            obj.set_text("gfn_getDate");
             this.addChild(obj.name, obj);
 
-            obj = new Button("btn_message","740","70","120","40",null,null,null,null,null,null,this);
+            obj = new Button("btn_login","664","70","195","40",null,null,null,null,null,null,this);
             obj.set_taborder("5");
-            obj.set_text("메시지(gds복사)");
+            obj.set_text("로그인");
             this.addChild(obj.name, obj);
 
             obj = new Grid("grd_message","520","120","740","300",null,null,null,null,null,null,this);
@@ -83,22 +88,67 @@
             obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"152\"/><Column size=\"190\"/><Column size=\"210\"/><Column size=\"179\"/><Column size=\"125\"/></Columns><Rows><Row size=\"24\" band=\"head\"/><Row size=\"24\"/></Rows><Band id=\"head\"><Cell text=\"MESSAGE_NUM\"/><Cell col=\"1\" text=\"MESSAGE_TYPE_CD\"/><Cell col=\"2\" text=\"MESSAGE_TEXT_KO\"/><Cell col=\"3\" text=\"MESSAGE_TEXT_EN\"/><Cell col=\"4\" text=\"REMARK\"/></Band><Band id=\"body\"><Cell text=\"bind:MESSAGE_NUM\"/><Cell col=\"1\" text=\"bind:MESSAGE_TYPE_CD\"/><Cell col=\"2\" text=\"bind:MESSAGE_TEXT_KO\"/><Cell col=\"3\" text=\"bind:MESSAGE_TEXT_EN\"/><Cell col=\"4\" text=\"bind:REMARK\"/></Band></Format></Formats>");
             this.addChild(obj.name, obj);
 
-            obj = new Button("btn_alertMessage","880","70","150","40",null,null,null,null,null,null,this);
+            obj = new Button("btn_alertMessage","864","70","195","40",null,null,null,null,null,null,this);
             obj.set_taborder("7");
-            obj.set_text("alert(gds메시지조회)");
+            obj.set_text("gfnMsgBox(gds메시지-Alert)");
             this.addChild(obj.name, obj);
 
-            obj = new Button("btn_confirmMessage","1040","70","150","40",null,null,null,null,null,null,this);
+            obj = new Button("btn_confirmMessage","1064","70","195","40",null,null,null,null,null,null,this);
             obj.set_taborder("8");
-            obj.set_text("alert(gds메시지조회)");
+            obj.set_text("gfnMsgBox(gds메시지-Confirm)");
             this.addChild(obj.name, obj);
 
-            obj = new Grid("grd_user","520","430","740","300",null,null,null,null,null,null,this);
+            obj = new Grid("grd_user","520","430","740","150",null,null,null,null,null,null,this);
             obj.set_taborder("9");
             obj.set_binddataset("ds_user");
             obj.set_autofittype("col");
             obj.set_autosizingtype("col");
             obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/><Column size=\"80\"/></Columns><Rows><Row band=\"head\" size=\"24\"/><Row size=\"24\"/></Rows><Band id=\"head\"><Cell text=\"USER_ID\"/><Cell col=\"1\" text=\"USER_NAME\"/><Cell col=\"2\" text=\"EMAIL_ADDRESS\"/><Cell col=\"3\" text=\"MOBILE_NUMBER\"/><Cell col=\"4\" text=\"COMPANY_CODE\"/><Cell col=\"5\" text=\"COMPANY_NAME\"/><Cell col=\"6\" text=\"BUSINESS_PLACE_CODE\"/><Cell col=\"7\" text=\"BUSINESS_PLACE_NAME\"/><Cell col=\"8\" text=\"DEPT_CODE\"/><Cell col=\"9\" text=\"DEPT_NAME\"/><Cell col=\"10\" text=\"JOB_CODE\"/><Cell col=\"11\" text=\"JOB_NAME\"/><Cell col=\"12\" text=\"POSITION_CODE\"/><Cell col=\"13\" text=\"POSITION_NAME\"/></Band><Band id=\"body\"><Cell text=\"bind:USER_ID\"/><Cell col=\"1\" text=\"bind:USER_NAME\"/><Cell col=\"2\" text=\"bind:EMAIL_ADDRESS\"/><Cell col=\"3\" text=\"bind:MOBILE_NUMBER\"/><Cell col=\"4\" text=\"bind:COMPANY_CODE\"/><Cell col=\"5\" text=\"bind:COMPANY_NAME\"/><Cell col=\"6\" text=\"bind:BUSINESS_PLACE_CODE\"/><Cell col=\"7\" text=\"bind:BUSINESS_PLACE_NAME\"/><Cell col=\"8\" text=\"bind:DEPT_CODE\"/><Cell col=\"9\" text=\"bind:DEPT_NAME\"/><Cell col=\"10\" text=\"bind:JOB_CODE\"/><Cell col=\"11\" text=\"bind:JOB_NAME\"/><Cell col=\"12\" text=\"bind:POSITION_CODE\"/><Cell col=\"13\" text=\"bind:POSITION_NAME\"/></Band></Format></Formats>");
+            this.addChild(obj.name, obj);
+
+            obj = new Radio("rdo_language","897","8","146","20",null,null,null,null,null,null,this);
+            obj.set_taborder("10");
+            obj.set_innerdataset("ds_language");
+            obj.set_codecolumn("LANGUAGE_CODE");
+            obj.set_datacolumn("LANGUAGE_NAME");
+            obj.set_columncount("2");
+            obj.set_text("한국어");
+            obj.set_value("KO");
+            obj.set_index("0");
+            this.addChild(obj.name, obj);
+
+            obj = new Edit("edt_loginId","665","5","140","26",null,null,null,null,null,null,this);
+            obj.set_taborder("11");
+            obj.set_value("20000001");
+            obj.set_text("20000001");
+            this.addChild(obj.name, obj);
+
+            obj = new Static("sta_loginID","580","5","80","26",null,null,null,null,null,null,this);
+            obj.set_taborder("12");
+            obj.set_text("로그인ID");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("btn_gridColIndex","520","595","120","50",null,null,null,null,null,null,this);
+            obj.set_taborder("13");
+            obj.set_text("그리드컬럼인덱스");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("btn_gridValue","771","600","120","50",null,null,null,null,null,null,this);
+            obj.set_taborder("14");
+            obj.set_text("Button00");
+            this.addChild(obj.name, obj);
+
+            obj = new Static("sta_password","580","34","80","26",null,null,null,null,null,null,this);
+            obj.set_taborder("15");
+            obj.set_text("비밀번호");
+            this.addChild(obj.name, obj);
+
+            obj = new Edit("edt_password","665","34","140","26",null,null,null,null,null,null,this);
+            obj.set_taborder("16");
+            obj.set_password("true");
+            obj.set_tooltiptext("대소문자 구분합니다.");
+            obj.set_value("adminADMIN0101!@");
+            obj.set_text("adminADMIN0101!@");
             this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
@@ -125,7 +175,12 @@
         var gdsUser 	= app.gds_user;
         var sUserId     = "";
         var sUserName   = "";
-        var sLanguageCd = "KO";
+
+        this.Form_Work_onload = function(obj,e)
+        {
+        	app.languageCd = this.rdo_language.value;
+        };
+
 
         this.fn_search = function(obj,e)
         {
@@ -138,7 +193,7 @@
         	var sSvcURL			= "svcUrl::com/COM10000M/selectCodeList.do";
         	var sInDatasets 	= "inSearch=ds_search";
         	var sOutDatasets 	= "ds_codeType=outSelectCodeTypeList";
-        	var sArgument 		= "userId=" + this.userId;
+        	var sArgument 		= "userId=" + app.userId;
         	var sCallbackFunc 	= "fn_callback";
 
         	// 공통코드 조회
@@ -153,25 +208,19 @@
         this.fn_save = function(obj,e)
         {
         	if(this.gfn_dataSetChange(this.ds_codeType) == false) {
-        		alert("변경된 데이터가 존재하지 않습니다.");
+        		this.gfn_msgBox("MSG-A-10020"); //변경된 데이터가 존재하지 않습니다.
         		return;
         	}
 
-        	for(var i=0; i<this.ds_codeType.rowcount; i++) {
-        		//데이터셋 초기상태일 경우 Skip
-        		if(this.ds_codeType.getRowType(i)==Dataset.ROWTYPE_NORMAL) continue;
-
-        		if (this.gfn_isNull(this.ds_codeType.getColumn(i, "CODE_TYPE"))) {
-        			alert("코드유형 항목은 필수입니다.");
-        			return;
-        		}
-        	}
+        	//그리드 필수항목 체크
+        	var arrRequired = ["CODE_TYPE", "CODE_TYPE_NM", "START_DATE"];
+        	if (!this.gfn_checkRequired(this.grd_codeType, arrRequired)) return;
 
         	var sSvcID 			= "saveCodeData";
         	var sSvcURL			= "svcUrl::com/COM10000M/saveCodeData.do";
         	var sInDatasets 	= "inCodeType=ds_codeType:U inCode=ds_code:U ";
         	var sOutDatasets 	= "";
-        	var sArgument 		= "userId=" + this.userId;
+        	var sArgument 		= "userId=" + app.userId;
         	var sCallbackFunc 	= "fn_callback";
 
         	// 공통코드 조회
@@ -190,12 +239,14 @@
         //메시지 조회
         this.fn_message = function(obj,e)
         {
-        	var sUserID         = "20000001";
+        	var sUserID         = this.edt_loginId.value;
+        	var sUserPassword   = this.edt_password.value;
+
         	var sSvcID 			= "selectMessageList";
         	var sSvcURL			= "svcUrl::com/COM10010M/selectMessageList.do";
         	var sInDatasets 	= "";
         	var sOutDatasets 	= "ds_message=outSelectMessageList ds_user=outSelectUserList";
-        	var sArgument 		= "userId=" + sUserID;
+        	var sArgument 		= "userId=" + sUserID + ' userPassword=' + sUserPassword;
         	var sCallbackFunc 	= "fn_callback";
 
         	// 공통코드 조회
@@ -206,12 +257,12 @@
         //공통함수를 통한 gds alert 메시지 조회
         this.fn_alertMessage = function(obj,e)
         {
-        	this.gfn_msgBox("MSG-A-10000", sLanguageCd);
+        	this.gfn_msgBox("MSG-A-10000"); //정상적으로 처리 되었습니다.
         };
 
         this.fn_confirmMessage = function(obj,e)
         {
-        	var bYesNo = this.gfn_msgBox("MSG-C-10000", sLanguageCd);
+        	var bYesNo = this.gfn_msgBox("MSG-C-10000"); //선택된 데이터를 삭제하시겠습니까?
         	if(bYesNo) alert("확인버튼클릭");
         	else alert("취소버튼클릭");
         };
@@ -220,7 +271,7 @@
         this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
         {
         	if(nErrCd < 0) {
-        		alert("오류 : " + sErrMsg);
+        		alert(sErrMsg);
         		return;
         	}
 
@@ -232,7 +283,7 @@
 
         			var nCnt = this.ds_codeType.rowcount;
         			if (nCnt == 0) {
-        				alert("조회조건에 일치하는 데이터가 존재하지 않습니다.");
+        				this.gfn_msgBox('MSG-A-10030'); //조회조건에 일치하는 데이터가 존재하지 않습니다.
         			}
         			break;
 
@@ -240,7 +291,7 @@
         			//trace("###########################################################");
         			//trace(this.ds_codeType.saveXML());
         			//trace("###########################################################");
-        			alert("정상적으로 처리되었습니다.");
+        			this.gfn_msgBox('MSG-A-10000'); //정상적으로 저장 되었습니다.
         			this.fn_search();
         			break;
 
@@ -252,14 +303,14 @@
         			//var gdsMsg = app.gds_message;
 
         			if (!gdsMsg) {
-        				trace("공통 메시지정보(gds_message)가 생성되지 않았습니다.");
+        				this.gfn_msgBox('MSG-A-10040'); //공통 메시지정보(gds_message)가 생성되지 않았습니다.
         				return;
         			}
         			gdsMsg.clearData();
         			gdsMsg.copyData(this.ds_message);
 
         			if (!gdsUser) {
-        				trace("공통 사용자정보(gds_user)가 생성되지 않았습니다.");
+        				this.gfn_msgBox('MSG-A-10050'); //공통 사용자정보(gds_user)가 생성되지 않았습니다.
         				return;
         			}
         			gdsUser.clearData();
@@ -276,11 +327,45 @@
         			//삼항연산자
         			var sJobCode = gdsUser.getColumn(0, "EMAIL_ADDRESS");
         			sJobCode = this.gfn_isNull(sJobCode) ? "" : sJobCode;
-        			alert("사용자ID : " + sUserId + ", 사용자명 : " + sUserName);
-        			alert("직무코드 : " + sJobCode);
-        			alert("app.userId : " + app.userId);
+        			//alert("사용자ID : " + sUserId + ", 사용자명 : " + sUserName);
+        			//alert("직무코드 : " + sJobCode);
+        			//alert("app.userId : " + app.userId);
+
         			break;
         		}
+        };
+
+
+        this.rdo_language_onitemchanged = function(obj,e)
+        {
+        	app.languageCd = this.rdo_language.value;
+        	alert("app.languageCd : " + app.languageCd);
+        };
+
+
+        this.btn_gridColIndex_onclick = function(obj,e)
+        {
+        	//그리드 컬럼이름을 기준으로 인덱스 찾기
+        	//var nColumnIndex = this.gfn_getGridColumnIndex(this.grd_codeType, "CODE_TYPE_NM");
+        	//alert("nColumnIndex : " + nColumnIndex);
+
+        	//그리드 인덱스를 기준으로 헤더 텍스트 찾기
+        	//if (nColumnIndex>0) {
+        	//	var sColumnHeaderText = this.gfn_getGridHeaderText(this.grd_codeType, nColumnIndex);
+        	//	alert(sColumnHeaderText);
+
+        		//그리드 필수항목 체크
+        		var arrRequired = ["CODE_TYPE", "CODE_TYPE_NM", "START_DATE"];
+        		if (!this.gfn_checkRequired(this.grd_codeType, arrRequired)) return;
+        	//}
+        };
+
+        this.btn_gridValue_onclick = function(obj,e)
+        {
+        	var sColumnBandName = "CODE_TYPE";
+        	var sColumnValue = this.ds_codeType.getColumn(1, sColumnBandName);
+
+            alert("sColumnValue : " + sColumnValue);
         };
 
         });
@@ -288,13 +373,17 @@
         // Regist UI Components Event
         this.on_initEvent = function()
         {
+            this.addEventHandler("onload",this.Form_Work_onload,this);
             this.btn_search.addEventHandler("onclick",this.fn_search,this);
             this.btn_delete.addEventHandler("onclick",this.fn_delete,this);
             this.btn_save.addEventHandler("onclick",this.fn_save,this);
-            this.Button00.addEventHandler("onclick",this.Button00_onclick,this);
-            this.btn_message.addEventHandler("onclick",this.fn_message,this);
+            this.btn_gfnGetDate.addEventHandler("onclick",this.Button00_onclick,this);
+            this.btn_login.addEventHandler("onclick",this.fn_message,this);
             this.btn_alertMessage.addEventHandler("onclick",this.fn_alertMessage,this);
             this.btn_confirmMessage.addEventHandler("onclick",this.fn_confirmMessage,this);
+            this.rdo_language.addEventHandler("onitemchanged",this.rdo_language_onitemchanged,this);
+            this.btn_gridColIndex.addEventHandler("onclick",this.btn_gridColIndex_onclick,this);
+            this.btn_gridValue.addEventHandler("onclick",this.btn_gridValue_onclick,this);
         };
         this.loadIncludeScript("Form_Work.xfdl");
         this.loadPreloadList();

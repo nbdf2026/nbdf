@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FDL version="2.1">
-  <Form id="Form_Work" width="1280" height="720" titletext="Form_Work">
+  <Form id="Form_Work" width="1280" height="720" titletext="Form_Work" onload="Form_Work_onload">
     <Layouts>
       <Layout width="1280" height="720" screenid="Desktop_screen">
         <Button id="btn_search" taborder="0" text="조회" left="20" top="70" width="120" height="40" onclick="fn_search"/>
@@ -37,8 +37,8 @@
         </Grid>
         <Button id="btn_delete" taborder="2" text="삭제" left="150" top="70" width="120" height="40" onclick="fn_delete"/>
         <Button id="btn_save" taborder="3" text="저장" left="280" top="70" width="120" height="40" onclick="fn_save"/>
-        <Button id="Button00" taborder="4" text="Button00" left="537" top="74" width="120" height="50" onclick="Button00_onclick"/>
-        <Button id="btn_message" taborder="5" text="메시지(gds복사)" left="740" top="70" width="120" height="40" onclick="fn_message"/>
+        <Button id="btn_gfnGetDate" taborder="4" text="gfn_getDate" left="464" top="70" width="195" height="40" onclick="Button00_onclick"/>
+        <Button id="btn_login" taborder="5" text="로그인" left="664" top="70" width="195" height="40" onclick="fn_message"/>
         <Grid id="grd_message" taborder="6" left="520" top="120" width="740" height="300" binddataset="ds_message" autofittype="col" autosizingtype="col">
           <Formats>
             <Format id="default">
@@ -70,9 +70,9 @@
             </Format>
           </Formats>
         </Grid>
-        <Button id="btn_alertMessage" taborder="7" text="alert(gds메시지조회)" left="880" top="70" width="150" height="40" onclick="fn_alertMessage"/>
-        <Button id="btn_confirmMessage" taborder="8" text="alert(gds메시지조회)" left="1040" top="70" width="150" height="40" onclick="fn_confirmMessage"/>
-        <Grid id="grd_user" taborder="9" left="520" top="430" width="740" height="300" binddataset="ds_user" autofittype="col" autosizingtype="col">
+        <Button id="btn_alertMessage" taborder="7" text="gfnMsgBox(gds메시지-Alert)" left="864" top="70" width="195" height="40" onclick="fn_alertMessage"/>
+        <Button id="btn_confirmMessage" taborder="8" text="gfnMsgBox(gds메시지-Confirm)" left="1064" top="70" width="195" height="40" onclick="fn_confirmMessage"/>
+        <Grid id="grd_user" taborder="9" left="520" top="430" width="740" height="150" binddataset="ds_user" autofittype="col" autosizingtype="col">
           <Formats>
             <Format id="default">
               <Columns>
@@ -130,6 +130,13 @@
             </Format>
           </Formats>
         </Grid>
+        <Radio id="rdo_language" taborder="10" left="897" top="8" width="146" height="20" innerdataset="ds_language" codecolumn="LANGUAGE_CODE" datacolumn="LANGUAGE_NAME" columncount="2" onitemchanged="rdo_language_onitemchanged" value="KO" text="한국어" index="0"/>
+        <Edit id="edt_loginId" taborder="11" left="665" top="5" width="140" height="26" value="20000001" text="20000001"/>
+        <Static id="sta_loginID" taborder="12" text="로그인ID" left="580" top="5" width="80" height="26"/>
+        <Button id="btn_gridColIndex" taborder="13" text="그리드컬럼인덱스" left="520" top="595" width="120" height="50" onclick="btn_gridColIndex_onclick"/>
+        <Button id="btn_gridValue" taborder="14" text="Button00" left="771" top="600" width="120" height="50" onclick="btn_gridValue_onclick"/>
+        <Static id="sta_password" taborder="15" text="비밀번호" left="580" top="34" width="80" height="26"/>
+        <Edit id="edt_password" taborder="16" left="665" top="34" width="140" height="26" text="adminADMIN0101!@" password="true" tooltiptext="대소문자 구분합니다." value="adminADMIN0101!@"/>
       </Layout>
     </Layouts>
     <Script type="xscript5.1"><![CDATA[
@@ -138,7 +145,12 @@ var gdsMsg  	= app.gds_message;
 var gdsUser 	= app.gds_user;
 var sUserId     = "";
 var sUserName   = "";
-var sLanguageCd = "KO";
+
+this.Form_Work_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	app.languageCd = this.rdo_language.value;
+};
+
 
 this.fn_search = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
@@ -151,7 +163,7 @@ this.fn_search = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 	var sSvcURL			= "svcUrl::com/COM10000M/selectCodeList.do";
 	var sInDatasets 	= "inSearch=ds_search";
 	var sOutDatasets 	= "ds_codeType=outSelectCodeTypeList";
-	var sArgument 		= "userId=" + this.userId;
+	var sArgument 		= "userId=" + app.userId;
 	var sCallbackFunc 	= "fn_callback";
 	
 	// 공통코드 조회
@@ -166,25 +178,19 @@ this.fn_delete = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 this.fn_save = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
 	if(this.gfn_dataSetChange(this.ds_codeType) == false) {
-		alert("변경된 데이터가 존재하지 않습니다.");
+		this.gfn_msgBox("MSG-A-10020"); //변경된 데이터가 존재하지 않습니다.
 		return;
 	}
 	
-	for(var i=0; i<this.ds_codeType.rowcount; i++) {
-		//데이터셋 초기상태일 경우 Skip
-		if(this.ds_codeType.getRowType(i)==Dataset.ROWTYPE_NORMAL) continue;
-		
-		if (this.gfn_isNull(this.ds_codeType.getColumn(i, "CODE_TYPE"))) {
-			alert("코드유형 항목은 필수입니다.");
-			return;
-		}
-	}
+	//그리드 필수항목 체크
+	var arrRequired = ["CODE_TYPE", "CODE_TYPE_NM", "START_DATE"];
+	if (!this.gfn_checkRequired(this.grd_codeType, arrRequired)) return;
 	
 	var sSvcID 			= "saveCodeData";
 	var sSvcURL			= "svcUrl::com/COM10000M/saveCodeData.do";
 	var sInDatasets 	= "inCodeType=ds_codeType:U inCode=ds_code:U ";
 	var sOutDatasets 	= "";
-	var sArgument 		= "userId=" + this.userId;
+	var sArgument 		= "userId=" + app.userId;
 	var sCallbackFunc 	= "fn_callback";
 	
 	// 공통코드 조회
@@ -203,12 +209,14 @@ this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 //메시지 조회
 this.fn_message = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {	
-	var sUserID         = "20000001";
+	var sUserID         = this.edt_loginId.value;
+	var sUserPassword   = this.edt_password.value;
+	
 	var sSvcID 			= "selectMessageList";
 	var sSvcURL			= "svcUrl::com/COM10010M/selectMessageList.do";
 	var sInDatasets 	= "";
 	var sOutDatasets 	= "ds_message=outSelectMessageList ds_user=outSelectUserList";
-	var sArgument 		= "userId=" + sUserID;
+	var sArgument 		= "userId=" + sUserID + ' userPassword=' + sUserPassword;
 	var sCallbackFunc 	= "fn_callback";
 	
 	// 공통코드 조회
@@ -219,12 +227,12 @@ this.fn_message = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 //공통함수를 통한 gds alert 메시지 조회
 this.fn_alertMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	this.gfn_msgBox("MSG-A-10000", sLanguageCd);
+	this.gfn_msgBox("MSG-A-10000"); //정상적으로 처리 되었습니다.
 };
 
 this.fn_confirmMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 {
-	var bYesNo = this.gfn_msgBox("MSG-C-10000", sLanguageCd);
+	var bYesNo = this.gfn_msgBox("MSG-C-10000"); //선택된 데이터를 삭제하시겠습니까?
 	if(bYesNo) alert("확인버튼클릭"); 
 	else alert("취소버튼클릭");
 };
@@ -233,7 +241,7 @@ this.fn_confirmMessage = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
 this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
 {
 	if(nErrCd < 0) {
-		alert("오류 : " + sErrMsg);
+		alert(sErrMsg);
 		return;
 	}
 
@@ -245,7 +253,7 @@ this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
 			
 			var nCnt = this.ds_codeType.rowcount;			
 			if (nCnt == 0) {
-				alert("조회조건에 일치하는 데이터가 존재하지 않습니다.");
+				this.gfn_msgBox('MSG-A-10030'); //조회조건에 일치하는 데이터가 존재하지 않습니다.
 			}
 			break;
 			
@@ -253,7 +261,7 @@ this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
 			//trace("###########################################################");
 			//trace(this.ds_codeType.saveXML());
 			//trace("###########################################################");			
-			alert("정상적으로 처리되었습니다.");
+			this.gfn_msgBox('MSG-A-10000'); //정상적으로 저장 되었습니다.
 			this.fn_search();
 			break;	
 			
@@ -265,14 +273,14 @@ this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
 			//var gdsMsg = app.gds_message;
 			
 			if (!gdsMsg) {
-				trace("공통 메시지정보(gds_message)가 생성되지 않았습니다.");
+				this.gfn_msgBox('MSG-A-10040'); //공통 메시지정보(gds_message)가 생성되지 않았습니다.
 				return;
 			}			
 			gdsMsg.clearData();
 			gdsMsg.copyData(this.ds_message);
 			
 			if (!gdsUser) {
-				trace("공통 사용자정보(gds_user)가 생성되지 않았습니다.");
+				this.gfn_msgBox('MSG-A-10050'); //공통 사용자정보(gds_user)가 생성되지 않았습니다.
 				return;
 			}
 			gdsUser.clearData();
@@ -289,11 +297,45 @@ this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
 			//삼항연산자
 			var sJobCode = gdsUser.getColumn(0, "EMAIL_ADDRESS");
 			sJobCode = this.gfn_isNull(sJobCode) ? "" : sJobCode;
-			alert("사용자ID : " + sUserId + ", 사용자명 : " + sUserName);			
-			alert("직무코드 : " + sJobCode);
-			alert("app.userId : " + app.userId);
+			//alert("사용자ID : " + sUserId + ", 사용자명 : " + sUserName);			
+			//alert("직무코드 : " + sJobCode);
+			//alert("app.userId : " + app.userId);
+			
 			break;				
 		}
+};
+
+
+this.rdo_language_onitemchanged = function(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo)
+{
+	app.languageCd = this.rdo_language.value;
+	alert("app.languageCd : " + app.languageCd);
+};
+
+
+this.btn_gridColIndex_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	//그리드 컬럼이름을 기준으로 인덱스 찾기
+	//var nColumnIndex = this.gfn_getGridColumnIndex(this.grd_codeType, "CODE_TYPE_NM");
+	//alert("nColumnIndex : " + nColumnIndex);
+	
+	//그리드 인덱스를 기준으로 헤더 텍스트 찾기	
+	//if (nColumnIndex>0) {
+	//	var sColumnHeaderText = this.gfn_getGridHeaderText(this.grd_codeType, nColumnIndex);
+	//	alert(sColumnHeaderText);
+		
+		//그리드 필수항목 체크
+		var arrRequired = ["CODE_TYPE", "CODE_TYPE_NM", "START_DATE"];
+		if (!this.gfn_checkRequired(this.grd_codeType, arrRequired)) return;
+	//}
+};
+
+this.btn_gridValue_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var sColumnBandName = "CODE_TYPE";
+	var sColumnValue = this.ds_codeType.getColumn(1, sColumnBandName);
+			
+    alert("sColumnValue : " + sColumnValue);
 };
 ]]></Script>
     <Objects>
@@ -366,6 +408,22 @@ this.fn_callback = function(sSvcID, nErrCd, sErrMsg)
           <Column id="POSITION_CODE" type="STRING" size="256"/>
           <Column id="POSITION_NAME" type="STRING" size="256"/>
         </ColumnInfo>
+      </Dataset>
+      <Dataset id="ds_language">
+        <ColumnInfo>
+          <Column id="LANGUAGE_CODE" type="STRING" size="256"/>
+          <Column id="LANGUAGE_NAME" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="LANGUAGE_CODE">KO</Col>
+            <Col id="LANGUAGE_NAME">한국어</Col>
+          </Row>
+          <Row>
+            <Col id="LANGUAGE_CODE">EN</Col>
+            <Col id="LANGUAGE_NAME">English</Col>
+          </Row>
+        </Rows>
       </Dataset>
     </Objects>
   </Form>
