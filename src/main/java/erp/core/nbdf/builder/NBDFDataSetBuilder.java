@@ -1,13 +1,14 @@
-package erp.cmmn.nbdf.builder;
+package erp.core.nbdf.builder;
 
 import java.util.List;
 import java.util.Map;
 
 import com.nexacro.java.xapi.data.DataSet;
-import erp.cmmn.nbdf.metadata.NBDFColumn;
+
+import erp.core.nbdf.metadata.NBDFColumn;
 
 /**
-* @packageName    : erp.cmmn.nbdf.builder
+* @packageName    : erp.core.nbdf.builder
 * @fileName       : NBDFDataSetBuilder.java
 * @author         : Built1
 * @date           : 2026.07.03

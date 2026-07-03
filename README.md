@@ -1,5 +1,12 @@
 # nbdf 프로젝트
 [nbdf 프로젝트]
+ 1. 작업일자 : 2026.07.04
+ 2. 작업내용
+  - scr/main/java/erp : nbdf core 폴더로 이동 분리
+    : nbdf framework 구성
+    : nbdf utility 폴더 구성 (기존 전자정보 프레임워크에서 제공된 핸들러 귀속)
+  
+[nbdf 프로젝트]
  1. 작업일자 : 2026.07.03
  2. 작업내용
   - NBDFMetaDataReader : ResultSetMetaData를 읽어 NBDFColumn 목록을 생성하는 클래스

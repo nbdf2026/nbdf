@@ -1,4 +1,4 @@
-package erp.cmmn.nbdf.metadata;
+package erp.core.nbdf.metadata;
 
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-* @packageName    : erp.cmmn.nbdf.metadata
+* @packageName    : erp.core.nbdf.metadata
 * @fileName       : NBDFMetaDataReader.java
 * @author         : Built1
 * @date           : 2026.07.03

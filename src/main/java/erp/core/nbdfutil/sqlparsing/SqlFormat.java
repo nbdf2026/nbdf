@@ -1,12 +1,12 @@
-package erp.cmmn.sqlparsing;
+package erp.core.nbdfutil.sqlparsing;
 
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 
 import lombok.extern.slf4j.Slf4j;
 
 /**
-* @packageName    : erp.cmmn.sqlparsing
-* @fileName       : PrettySqlFormat.java
+* @packageName    : erp.core.sqlparsing
+* @fileName       : SqlFormat.java
 * @author         : Built1
 * @date           : 2026.06.22
 * @description    : 콘솔에 출력되는 쿼리 줄간격/들여쓰기 조정
@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 * 2026.06.22        Built1             최초 생성
 */
 @Slf4j
-public class PrettySqlFormat implements MessageFormattingStrategy { 
+public class SqlFormat implements MessageFormattingStrategy { 
 	
 	
 	/**
@@ -484,7 +484,7 @@ public class PrettySqlFormat implements MessageFormattingStrategy {
         
 		/* Ctlr + Shift + /   or   Ctlr + Shift + \
 		 * log.info("############################################################");
-		 * log.debug("PrettySqlFormat Class / pretty mothod ");
+		 * log.debug("SqlFormat Class / pretty mothod ");
 		 * log.info("############################################################");
 		 * log.debug("Sql Text:\n" + text);
 		 * log.info("############################################################");

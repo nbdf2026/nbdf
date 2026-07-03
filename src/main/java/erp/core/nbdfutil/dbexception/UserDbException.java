@@ -1,4 +1,4 @@
-package erp.cmmn.dbexception;
+package erp.core.nbdfutil.dbexception;
 
 public class UserDbException extends RuntimeException {
 	

@@ -1,7 +1,7 @@
-package erp.cmmn.nbdf.constants;
+package erp.core.nbdf.constants;
 
 /**
-* @packageName    : erp.cmmn.nbdf.constants
+* @packageName    : erp.core.nbdf.constants
 * @fileName       : NBDFConstants.java
 * @author         : Built1
 * @date           : 2026.07.01

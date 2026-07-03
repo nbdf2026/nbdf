@@ -1,4 +1,4 @@
-package erp.cmmn.refreshxml;
+package erp.core.nbdfutil.refreshxml;
 
 
 import java.io.IOException;
@@ -17,8 +17,8 @@ import org.springframework.core.io.Resource;
 
 
 /**
-* @packageName    : erp.cmmn.web
-* @fileName       : RefreshableSqlSessionFactoryBean.java
+* @packageName    : erp.core.web
+* @fileName       : RefreshXml.java
 * @author         : Built1
 * @date           : 2026.06.18
 * @description    : XML 서버 재시작 없이 실시간으로 반영 파일
@@ -27,8 +27,8 @@ import org.springframework.core.io.Resource;
 * -----------------------------------------------------------
 * 2026.06.18        Built1             최초 생성
 */
-public class RefreshableSqlSessionFactoryBean extends SqlSessionFactoryBean {
-    private static final Logger logger = LoggerFactory.getLogger(RefreshableSqlSessionFactoryBean.class);
+public class RefreshXml extends SqlSessionFactoryBean {
+    private static final Logger logger = LoggerFactory.getLogger(RefreshXml.class);
 
     private SqlSessionFactory proxy;
     private int checkInterval = 5000; // 감시 주기 (기본 5초)

@@ -1,10 +1,10 @@
-package erp.cmmn.nbdf.builder;
+package erp.core.nbdf.builder;
 
 import com.nexacro.java.xapi.data.DataSet;
 import com.nexacro.java.xapi.data.PlatformData;
 
 /**
-* @packageName    : erp.cmmn.nbdf.builder
+* @packageName    : erp.core.nbdf.builder
 * @fileName       : NBDFTransferDataBuilder.java
 * @author         : Built1
 * @date           : 2026.07.03

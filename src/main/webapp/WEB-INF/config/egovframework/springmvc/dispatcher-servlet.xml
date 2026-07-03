@@ -23,7 +23,7 @@
 
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="webBindingInitializer">            
-            <bean class="erp.cmmn.web.EgovBindingInitializer"/>
+            <bean class="erp.core.nbdfutil.egovweb.EgovBindingInitializer"/>
         </property>
     </bean>
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
@@ -57,7 +57,7 @@
 	    p:prefix="/WEB-INF/jsp/egovframework/example/" p:suffix=".jsp"/>
 
     <!-- For Pagination Tag -->
-    <bean id="imageRenderer" class="erp.cmmn.web.EgovImgPaginationRenderer"/>
+    <bean id="imageRenderer" class="erp.core.nbdfutil.egovweb.EgovImgPaginationRenderer"/>
 
     <bean id="paginationManager" class="org.egovframe.rte.ptl.mvc.tags.ui.pagination.DefaultPaginationManager">
         <property name="rendererType">

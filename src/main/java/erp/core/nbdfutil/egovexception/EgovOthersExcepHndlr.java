@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package erp.cmmn;
+package erp.core.nbdfutil.egovexception;
 
 import org.egovframe.rte.fdl.cmmn.exception.handler.ExceptionHandler;
 
@@ -21,8 +21,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @Class Name : EgovSampleExcepHndlr.java
- * @Description : EgovSampleExcepHndlr Class
+ * @Class Name : EgovOthersExcepHndlr.java
+ * @Description : EgovOthersExcepHndlr Class
  * @Modification Information
  * @
  * @  수정일      수정자              수정내용
@@ -36,17 +36,18 @@ import org.slf4j.LoggerFactory;
  *
  *  Copyright (C) by MOPAS All right reserved.
  */
-public class EgovSampleExcepHndlr implements ExceptionHandler {
+public class EgovOthersExcepHndlr implements ExceptionHandler {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(EgovSampleExcepHndlr.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(EgovOthersExcepHndlr.class);
 
 	/**
-	* @param ex
+	* @param exception
 	* @param packageName
 	* @see 개발프레임웍크 실행환경 개발팀
 	*/
 	@Override
-	public void occur(Exception ex, String packageName) {
+	public void occur(Exception exception, String packageName) {
 		LOGGER.debug(" EgovServiceExceptionHandler run...............");
 	}
+
 }

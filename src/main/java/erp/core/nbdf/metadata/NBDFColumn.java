@@ -1,11 +1,12 @@
-package erp.cmmn.nbdf.metadata;
+package erp.core.nbdf.metadata;
 
 import java.io.Serializable;
-import erp.cmmn.nbdf.constants.NBDFJavaType;
-import erp.cmmn.nbdf.constants.NBDFNexacroType;
+
+import erp.core.nbdf.constants.NBDFJavaType;
+import erp.core.nbdf.constants.NBDFNexacroType;
 
 /**
-* @packageName    : erp.cmmn.nbdf.metadata
+* @packageName    : erp.core.nbdf.metadata
 * @fileName       : NBDFColumn.java
 * @author         : Built1
 * @date           : 2026.07.01

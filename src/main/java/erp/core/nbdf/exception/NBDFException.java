@@ -1,7 +1,7 @@
-package erp.cmmn.nbdf.exception;
+package erp.core.nbdf.exception;
 
 /**
-* @packageName    : erp.cmmn.nbdf.exception
+* @packageName    : erp.core.nbdf.exception
 * @fileName       : NBDFException.java
 * @author         : Built1
 * @date           : 2026.07.03
