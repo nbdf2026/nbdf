@@ -5,6 +5,8 @@
   - NBDFMetaDataReader : ResultSetMetaData를 읽어 NBDFColumn 목록을 생성하는 클래스
   - NBDFDataSetBuilder : NBDF 메타정보와 조회 데이터를 Nexacro DataSet으로 생성하는 Builder 클래스
   - UserDbException : 폴더 및 명칭 변경(exception\UserException.java -> dbexception\UserDbException.java)
+  - NBDFTransferDataBuilder : NBDF 전송 데이터(TransferData)를 생성하는 Builder 클래스
+  - NBDF Framework 클래스 주석 일괄 변경
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.01

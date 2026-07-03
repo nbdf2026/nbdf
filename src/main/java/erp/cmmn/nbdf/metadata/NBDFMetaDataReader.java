@@ -20,7 +20,7 @@ import java.util.List;
 public final class NBDFMetaDataReader {
 	
 	/**
-	 * 오라클에서 데이터 조회 후 NBDF 메타 데이터로 전환하는 단계 
+	 * 데이터베이스에서 데이터 조회 후 NBDF 메타 데이터로 전환하는 단계 
 	 * 
 	 * ResultSet : 쿼리에서 실행된 데이터셋
 	 * ↓
@@ -52,44 +52,44 @@ public final class NBDFMetaDataReader {
 	*/
 	public static List<NBDFColumn> read(ResultSet rs) throws SQLException {
 		
-		//List columns 선언
+		// List columns 선언
 		List<NBDFColumn> columns = new ArrayList<>();
 		
-		//데이터 조회된 컬럼에 대상정보를 meta 전달
+		// 데이터 조회된 컬럼에 대상정보를 meta 전달
 		ResultSetMetaData meta = rs.getMetaData();
 		
-		//조회된 컬럼의 갯수
+		// 조회된 컬럼의 갯수
 		int columnCount = meta.getColumnCount();
 		
-		//컬럼의 갯수만큼 column 객체 값 할당
-		//columnName, columnLabel, jdbcType, dbType, columnSize, scale, nullable 값 할당
-		//NBDFDataTypeMapper : 컬럼의 데이터 유형에 따라 javaType, NexacroType 데이터 유형 확정
+		// 컬럼의 갯수만큼 column 객체 값 할당
+		// columnName, columnLabel, jdbcType, dbType, columnSize, scale, nullable 값 할당
+		// NBDFDataTypeMapper : 컬럼의 데이터 유형에 따라 javaType, NexacroType 데이터 유형 확정
 		for (int i=0; i<columnCount; i++) {
 			
-			//column map 객체 생성
+			// column map 객체 생성
 			NBDFColumn column = new NBDFColumn();
 			
-			//컬럼에 대한 명칭 및 설명 할당
+			// 컬럼에 대한 명칭 및 설명 할당
 			column.setColumnName(meta.getColumnName(i));
 			column.setColumnLabel(meta.getColumnLabel(i));
 			
-			//JDBC 컬럼유형 및 DB 컬럼유형 할당
+			// JDBC 컬럼유형 및 DB 컬럼유형 할당
 			column.setJdbcType(meta.getColumnType(i));
 			column.setDbType(meta.getColumnTypeName(i));
 			
-			//컬럼에 대한 사이즈 할당
+			// 컬럼에 대한 사이즈 할당
 			column.setColumnSize(meta.getPrecision(i));
 			
-			//컬럼의 소수점 사이즈 할당
+			// 컬럼의 소수점 사이즈 할당
 			column.setScale(meta.getScale(i));
 			
-			//컬럼의 널여부 할당
+			// 컬럼의 널여부 할당
 			column.setNullable(meta.isNullable(i) == ResultSetMetaData.columnNullable);
 			
 			//Java and Nexacro 데이터 유형 자동 생성
 			NBDFDataTypeMapper.mapDataType(column);
 			
-			//NBDFColumn List 객체에 Column map 추가
+			// NBDFColumn List 객체에 Column map 추가
 			columns.add(column);
 			
 		}

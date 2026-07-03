@@ -18,10 +18,10 @@ import erp.cmmn.nbdf.constants.NBDFNexacroType;
 */
 public final class NBDFDataTypeMapper {
 	
-	/**
+	/*
 	 * 데이터 유형에 따른 데이터 전환
 	 * 
-	 * Oracle 데이터 추출 : 컬럼, 데이터유형, 데이터 
+	 * Database 데이터 추출 : 컬럼, 데이터유형, 데이터 
 	 * ↓
 	 * JDBC Type : 컬럼, 데이터유형, 데이터 
 	 * ↓
@@ -30,7 +30,7 @@ public final class NBDFDataTypeMapper {
 	 * Nexacro Type : 컬럼, 데이터유형, 데이터 
 	 */
 	
-	/**
+	/*
 	 * 개발유형에 따른 데이터 유형 매핑
 	 * 
 	 * DB Type			JDBC		Java			Nexacro
@@ -44,7 +44,7 @@ public final class NBDFDataTypeMapper {
 	 * TIMESTAMP		TIMESTAMP	DateTime		DATETIME
 	 */
 	
-	/**
+	/*
 	 * NUMBER 처리 규칙
 	 * 
 	 * Oracle NUMBER	Java		Nexacro
@@ -55,7 +55,7 @@ public final class NBDFDataTypeMapper {
 	 * NUMBER(*,2)		BigDecimal	BIGDECIMAL
 	 */
 	
-	/**
+	/*
 	 * 문자열 처리 규칙
 	 * 
 	 * JDBC Type		Java		Nexacro
@@ -66,7 +66,7 @@ public final class NBDFDataTypeMapper {
 	 * CLOB				String		STRING
 	 */
 	
-	/**
+	/*
 	 * 날짜 처리 규칙
 	 * 
 	 * JDBC Type		Java		Nexacro
@@ -75,7 +75,7 @@ public final class NBDFDataTypeMapper {
 	 * TIMESTAMP		DateTime	DATETIME
 	 */
 	
-	/**
+	/*
 	 * 기타 처리 규칙
 	 * 
 	 * JDBC Type		Java		Nexacro
@@ -93,7 +93,7 @@ public final class NBDFDataTypeMapper {
 	}
 	
 	/**
-	* @methodName     : mapping
+	* @methodName     : mapDataType
 	* @author         : built1
 	* @date           : 2026.07.03
 	* @description    : 오라클에서 조회된 데이터를 Oracle, JDBC, Java, Nexacro 데이터 유형으로 매핑
@@ -101,18 +101,21 @@ public final class NBDFDataTypeMapper {
 	*/
 	public static void mapDataType(NBDFColumn column) {
 		
-		//JDBC 데이터 유형(java.sql.Types) : int
+		// JDBC 데이터 유형(java.sql.Types) : int
 		switch (column.getJdbcType()) {
 			
-			//문자 데이터 유형
+			// 문자 데이터 유형
 			case Types.CHAR:
+			case Types.NCHAR:
 			case Types.VARCHAR:
+			case Types.NVARCHAR:
 			case Types.LONGNVARCHAR:
 			case Types.CLOB:
+			case Types.NCLOB:
 				mapString(column);
 				break;
 			
-			//숫자 데이터 유형
+			// 숫자 데이터 유형
 			case Types.NUMERIC:
 			case Types.DECIMAL:
 			case Types.INTEGER:
@@ -122,24 +125,24 @@ public final class NBDFDataTypeMapper {
 				mapNumber(column);
 				break;
 			
-			//날짜 데이터 유형
+			// 날짜 데이터 유형
 			case Types.DATE:
 				mapDate(column);
 				break;
 				
-			//일시 데이터 유형
+			// 날짜일시 데이터 유형
 			case Types.TIMESTAMP:
 			case Types.TIMESTAMP_WITH_TIMEZONE:
 				mapDateTime(column);
 				break;
 			
-			//논리형 데이터 유형	
+			// 논리형 데이터 유형	
 			case Types.BOOLEAN:	
 			case Types.BIT:
 				mapBoolean(column);				
 				break;
 			
-			//그외 데이터 유형
+			// 그외 데이터 유형
 			default:
 				mapString(column);
 				break;
@@ -154,8 +157,8 @@ public final class NBDFDataTypeMapper {
 	* @description    : 문자형으로 전환(자바, 넥사크로)하는 메소드
 	* @param column
 	*/
-	public static void mapString(NBDFColumn column) {
-		//문자형으로 전환 : STRING, STRING
+	private static void mapString(NBDFColumn column) {
+		// 문자형으로 전환 : STRING, STRING
 		column.setJavaType(NBDFJavaType.STRING);
 		column.setNexacroType(NBDFNexacroType.STRING);		
 	}
@@ -167,26 +170,26 @@ public final class NBDFDataTypeMapper {
 	* @description    : 숫자형으로 전환(자바, 넥사크로)하는 메소드
 	* @param column
 	*/
-	public static void mapNumber(NBDFColumn column) {
+	private static void mapNumber(NBDFColumn column) {
 		
-		//소수점 0 보다 클 경우 : BIGDECIMAL, BIGDECIMAL
+		// 소수점이 존재할 경우 : BIGDECIMAL, BIGDECIMAL
 		if (column.getScale() > 0) {
 			column.setJavaType(NBDFJavaType.BIG_DECIMAL);
 			column.setNexacroType(NBDFNexacroType.BIG_DECIMAL);
 			return;
 		}
 		
-		//숫자형 길이가 9보다 작을 경우 : INTERGER, INT
+		// 숫자형 길이가 9보다 작을 경우 : INTERGER, INT
 		if (column.getColumnSize()<=9) {
 			column.setJavaType(NBDFJavaType.INTEGER);
 			column.setNexacroType(NBDFNexacroType.INT);
 			
-		//숫자형 길이가 9보다 크고 18보다 작을 경우 : LONG, LONG	
+		// 숫자형 길이가 9보다 크고 18보다 작을 경우 : LONG, LONG	
 		} else if (column.getColumnSize()<=18) {
 			column.setJavaType(NBDFJavaType.LONG);
 			column.setNexacroType(NBDFNexacroType.LONG);
 		
-		//숫자형 길이가 18보다 클 경우 : BIGDECIMAL, BIGDECIMAL	
+		// 숫자형 길이가 18보다 클 경우 : BIGDECIMAL, BIGDECIMAL	
 		} else {
 			column.setJavaType(NBDFJavaType.BIG_DECIMAL);
 			column.setNexacroType(NBDFNexacroType.BIG_DECIMAL);			
@@ -199,8 +202,8 @@ public final class NBDFDataTypeMapper {
 	* @date           : 2026.07.03
 	* @description    : 날짜형으로 전환(자바, 넥사크로)하는 메소드
 	*/
-	public static void mapDate(NBDFColumn column) {
-		//날짜형으로 전환 : DATE, DATE
+	private static void mapDate(NBDFColumn column) {
+		// 날짜형으로 전환 : DATE, DATE
 		column.setJavaType(NBDFJavaType.DATE);
 		column.setNexacroType(NBDFNexacroType.DATE);
 	}
@@ -211,8 +214,8 @@ public final class NBDFDataTypeMapper {
 	* @date           : 2026.07.03
 	* @description    : 날짜일시형으로 전환(자바, 넥사크로)하는 메소드
 	*/
-	public static void mapDateTime(NBDFColumn column) {
-		//날짜일시형으로 전환 : DATETIME, DATETIME
+	private static void mapDateTime(NBDFColumn column) {
+		// 날짜일시형으로 전환 : DATETIME, DATETIME
 		column.setJavaType(NBDFJavaType.DATETIME);
 		column.setNexacroType(NBDFNexacroType.DATETIME);
 	}
@@ -223,8 +226,8 @@ public final class NBDFDataTypeMapper {
 	* @date           : 2026.07.03
 	* @description    : 논리형으로 전환(자바, 넥사크로)하는 메소드
 	*/
-	public static void mapBoolean(NBDFColumn column) {
-		//날짜일시형으로 전환 : BOOLEAN, BOOLEAN
+	private static void mapBoolean(NBDFColumn column) {
+		// 논리형으로 전환 : BOOLEAN, BOOLEAN
 		column.setJavaType(NBDFJavaType.BOOLEAN);
 		column.setNexacroType(NBDFNexacroType.BOOLEAN);
 	}
