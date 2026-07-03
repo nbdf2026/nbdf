@@ -1,10 +1,10 @@
-package erp.cmmn.exception;
+package erp.cmmn.dbexception;
 
-public class UserException extends RuntimeException {
+public class UserDbException extends RuntimeException {
 	
 	private static final long serialVersionUID = 1L;
 
-	public UserException(Exception e) {
+	public UserDbException(Exception e) {
         super(getErrorMessage(e));
     }
 	

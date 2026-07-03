@@ -5,7 +5,8 @@ import java.util.Map;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import com.nexacro.java.xapi.data.DataSet;
-import erp.cmmn.exception.UserException;
+
+import erp.cmmn.dbexception.UserDbException;
 import erp.com.service.COM10010MService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -41,7 +42,7 @@ public class COM10010MServiceimpl implements COM10010MService {
 		try {
 			return mapper.selectMessageList();		
 		} catch (Exception e) {
-			throw new UserException(e);
+			throw new UserDbException(e);
 		}
 	}
 	
@@ -58,7 +59,7 @@ public class COM10010MServiceimpl implements COM10010MService {
 		try {			 
 			return mapper.selectUserList(userId, userPassword);		
 		} catch (Exception e) {
-			throw new UserException(e);
+			throw new UserDbException(e);
 		}
 	}
 
@@ -100,7 +101,7 @@ public class COM10010MServiceimpl implements COM10010MService {
 				
 			}
 		} catch (Exception e) {
-			throw new UserException(e);
+			throw new UserDbException(e);
 			}	
 		}
 	}

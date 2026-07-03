@@ -129,9 +129,38 @@ public final class NBDFDataSetBuilder {
 			//컬럼별 데이터 할당
 			for (NBDFColumn column : columns) {
 				Object value = rowData.get(column.getColumnName());				
-				dataSet.set(row, column.getColumnName(), value);
+				dataSet.set(row, column.getColumnName(), convertValue(value));
 			}
 		}
 	}
 	
+	
+	/**
+	* @methodName     : cnnvertValue
+	* @author         : built1
+	* @date           : 2026.07.03
+	* @description    : DataSet에 저장 가능한 데이터로 변환하는 메소드
+	* @param value	  : 원본 데이터
+	* @return		  : 변환된 데이터
+	*/
+	private static Object convertValue(Object value) {
+		
+		/**
+		 * | Java Type     | Nexacro 저장 형태                                  |
+		 * | ------------- | -------------------------------------------------- |
+		 * | String        | String                                             |
+		 * | Integer       | Integer                                            |
+		 * | Long          | Long                                               |
+		 * | BigDecimal    | BigDecimal 그대로 또는 프로젝트 정책에 맞는 숫자형 |
+		 * | Boolean       | Boolean                                            |
+		 * | LocalDate     | 'yyyyMMdd' 문자열                                  |
+		 * | LocalDateTime | 'yyyyMMddHHmmss' 문자열                            |
+		 * | null          | null                                               |
+		 */
+		//널일 경우 null 리턴
+		if (value == null) return null;
+		
+		//그렇지 않으면 원본 데이터 리턴
+		return value;		
+	}
 }

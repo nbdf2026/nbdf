@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.nexacro.uiadapter.spring.core.annotation.ParamDataSet;
 import com.nexacro.uiadapter.spring.core.annotation.ParamVariable;
 import com.nexacro.uiadapter.spring.core.data.NexacroResult;
-
-import erp.cmmn.exception.UserException;
 import erp.com.service.COM10010MService;
 import lombok.extern.slf4j.Slf4j;
 
