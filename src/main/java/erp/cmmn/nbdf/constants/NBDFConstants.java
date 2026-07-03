@@ -15,7 +15,7 @@ public final class NBDFConstants {
 	
 	/**
 	 * 생성자(Constructor)
-	 * 객체를 생성할 때 가장 먼저 실행되는 메서드
+	 * Constants 클래스로 객체 생성 방지
 	 */
 	private NBDFConstants() {
 		

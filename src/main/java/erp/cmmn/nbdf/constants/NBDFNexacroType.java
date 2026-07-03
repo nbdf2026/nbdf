@@ -15,7 +15,7 @@ public final class NBDFNexacroType {
 	
 	/**
 	 * 생성자(Constructor)
-	 * 상수 클래스이므로 객체 생성 방지
+	 * Constants 클래스로 객체 생성 방지
 	 */
 	private NBDFNexacroType() {
 		

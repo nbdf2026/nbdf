@@ -9,7 +9,7 @@ import erp.cmmn.nbdf.constants.NBDFNexacroType;
 * @fileName       : NBDFColumn.java
 * @author         : Built1
 * @date           : 2026.07.01
-* @description    : 데이터셋 컬럼정보를 관리하는 메타 객체 클래스
+* @description    : 데이터셋 컬럼정보를 관리하는 NBDF 메타데이터 객체 클래스
 * -----------------------------------------------------------
 * @사용처
  * Nexacro Dataset

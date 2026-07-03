@@ -76,23 +76,13 @@
           <Formats>
             <Format id="default">
               <Columns>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
-                <Column size="80"/>
+                <Column size="114"/>
+                <Column size="173"/>
+                <Column size="241"/>
+                <Column size="204"/>
               </Columns>
               <Rows>
-                <Row band="head" size="24"/>
+                <Row size="24" band="head"/>
                 <Row size="24"/>
               </Rows>
               <Band id="head">
@@ -100,32 +90,12 @@
                 <Cell col="1" text="USER_NAME"/>
                 <Cell col="2" text="EMAIL_ADDRESS"/>
                 <Cell col="3" text="MOBILE_NUMBER"/>
-                <Cell col="4" text="COMPANY_CODE"/>
-                <Cell col="5" text="COMPANY_NAME"/>
-                <Cell col="6" text="BUSINESS_PLACE_CODE"/>
-                <Cell col="7" text="BUSINESS_PLACE_NAME"/>
-                <Cell col="8" text="DEPT_CODE"/>
-                <Cell col="9" text="DEPT_NAME"/>
-                <Cell col="10" text="JOB_CODE"/>
-                <Cell col="11" text="JOB_NAME"/>
-                <Cell col="12" text="POSITION_CODE"/>
-                <Cell col="13" text="POSITION_NAME"/>
               </Band>
               <Band id="body">
                 <Cell text="bind:USER_ID"/>
                 <Cell col="1" text="bind:USER_NAME"/>
                 <Cell col="2" text="bind:EMAIL_ADDRESS"/>
                 <Cell col="3" text="bind:MOBILE_NUMBER"/>
-                <Cell col="4" text="bind:COMPANY_CODE"/>
-                <Cell col="5" text="bind:COMPANY_NAME"/>
-                <Cell col="6" text="bind:BUSINESS_PLACE_CODE"/>
-                <Cell col="7" text="bind:BUSINESS_PLACE_NAME"/>
-                <Cell col="8" text="bind:DEPT_CODE"/>
-                <Cell col="9" text="bind:DEPT_NAME"/>
-                <Cell col="10" text="bind:JOB_CODE"/>
-                <Cell col="11" text="bind:JOB_NAME"/>
-                <Cell col="12" text="bind:POSITION_CODE"/>
-                <Cell col="13" text="bind:POSITION_NAME"/>
               </Band>
             </Format>
           </Formats>

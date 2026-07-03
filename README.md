@@ -1,5 +1,11 @@
 # nbdf 프로젝트
 [nbdf 프로젝트]
+ 1. 작업일자 : 2026.07.03
+ 2. 작업내용
+  - NBDFMetaDataReader : ResultSetMetaData를 읽어 NBDFColumn 목록을 생성하는 클래스
+  - NBDFDataSetBuilder : NBDF 메타정보와 조회 데이터를 Nexacro DataSet으로 생성하는 Builder 클래스
+  
+[nbdf 프로젝트]
  1. 작업일자 : 2026.07.01
  2. 작업내용
   - NBDFConstants 	: NBDF 프레임워크 전체에서 공통으로 사용하고 변경되지 않는 기준값을 관리하는 클래스

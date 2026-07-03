@@ -58,7 +58,7 @@ public class COM10010MController {
 		
 		//로그인 사용자정보 조회
 		List<Map<String, Object>> outSelectUserList = service.selectUserList(userId, userPassword);		
-		//result.addDataSet("outSelectUserList", outSelectUserList);
+		result.addDataSet("outSelectUserList", outSelectUserList);
 		
 		//로그인 사용자 조회 오류 발생
 		if (outSelectUserList == null || outSelectUserList.isEmpty() || outSelectUserList.size() == 0) {
