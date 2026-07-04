@@ -23,32 +23,18 @@ public final class NBDFTransferDataBuilder {
 	 * <pre>
 	 * --------------------------------------------------------------
 	 * NBDF Framework Layer
-	 * -------------------------------------------------------------- 
+	 * --------------------------------------------------------------
 	 * 1. Metadata Layer
-	 * 2. Builder Layer
+	 * 2. Builder Layer(현재)
 	 * 3. Constants Layer
 	 * 4. Exception Layer
 	 * 5. Type Mapping Layer
 	 * 6. Utility Layer
-	 * 
-	 * </pre>
-	 */
-	
-	/**
-	 * <pre>
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
 	 * --------------------------------------------------------------
-	 * 클래스 내 메소드 작성 순서
-	 * --------------------------------------------------------------
-	 * 
-	 * 1. 상수(static final) 
-	 * 2. 멤버 변수(field)
-	 * 3. 생성자(Constructor)	: NBDFTransferDataBuilder()
-	 * 4. Static Factory Method : create()
-	 * 5. 데이터 추가(Put)		: put(), putAll()
-	 * 6. 데이터 조회(Get)    	: get(), getString(), getInt()
-	 * 7. 결과 생성(Build)		: build()
-	 * 8. 초기화(Clear)    		: clear()
-	 * 
 	 * </pre>
 	 */
 	
@@ -68,7 +54,7 @@ public final class NBDFTransferDataBuilder {
      *      ↓
      * DataSet
      *      ↓
-     * NBDFTransferDataBuilder
+     * NBDFTransferDataBuilder (현재)
      *      ↓
      * PlatformData
      *      ↓
@@ -76,6 +62,24 @@ public final class NBDFTransferDataBuilder {
      * 
      * </pre>
      */
+	
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
+	 * 클래스 내 메소드 작성 순서
+	 * --------------------------------------------------------------
+	 * 
+	 * 1. 상수(static final) 
+	 * 2. 멤버 변수(field)
+	 * 3. 생성자(Constructor)	: NBDFTransferDataBuilder()
+	 * 4. Static Factory Method : create()
+	 * 5. 데이터 추가(Put)		: put(), putAll()
+	 * 6. 데이터 조회(Get)    	: get(), getString(), getInt()
+	 * 7. 결과 생성(Build)		: build()
+	 * 8. 초기화(Clear)    		: clear()
+	 * 
+	 * </pre>
+	 */
 
     /**
      * 전달 데이터를 저장하는 내부 Map 객체

@@ -21,6 +21,25 @@ public final class NBDFDataTypeMapper {
 	/**
 	 * <pre>
 	 * --------------------------------------------------------------
+	 * NBDF Framework Layer
+	 * --------------------------------------------------------------
+	 * 1. Metadata Layer(현재)
+	 * 2. Builder Layer
+	 * 3. Constants Layer
+	 * 4. Exception Layer
+	 * 5. Type Mapping Layer
+	 * 6. Utility Layer
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
+	 * --------------------------------------------------------------
+	 * </pre>
+	 */
+	
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
 	 * 데이터 유형에 따른 데이터 전환
 	 * --------------------------------------------------------------
 	 * 

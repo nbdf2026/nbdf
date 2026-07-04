@@ -8,6 +8,7 @@
   - Eclipse Java template : XML 파일 Import
   - NBDFTransferDataBuilder : NBDF 전송 데이터(TransferData)를 생성하는 Builder 클래스中
   - NBDF Framework 주석 조정 및 상세화 작업
+  - NBDF Framework 주석 조정에 따른 JavaDOC 생성 테스트
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.03

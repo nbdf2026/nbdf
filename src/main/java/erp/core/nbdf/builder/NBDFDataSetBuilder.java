@@ -23,23 +23,41 @@ public final class NBDFDataSetBuilder {
 	/**
 	 * <pre>
 	 * --------------------------------------------------------------
+	 * NBDF Framework Layer
+	 * --------------------------------------------------------------
+	 * 1. Metadata Layer
+	 * 2. Builder Layer(현재)
+	 * 3. Constants Layer
+	 * 4. Exception Layer
+	 * 5. Type Mapping Layer
+	 * 6. Utility Layer
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
+	 * --------------------------------------------------------------
+	 * </pre>
+	 */
+	
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
 	 * 메타데이터를 실제 데이터셋으로 변환하는 단계
 	 * --------------------------------------------------------------
 	 * 
 	 * ResultSet
-	 * ↓
+	 * 		↓
 	 * NBDFMetaDataReader
-	 * ↓
+	 * 		↓
 	 * List<NBDFColumn>
-	 * ↓
-	 * NBDFDataSetBuilder
-	 * ↓
+	 * 		↓
+	 * NBDFDataSetBuilder (현재)
+	 * 		↓
 	 * PlatformData
-	 * ↓
+	 * 		↓
 	 * DataSet
 	 * 
-	 * </pre>
-	 * 
+	 * </pre> 
 	 */
 	
 	/**

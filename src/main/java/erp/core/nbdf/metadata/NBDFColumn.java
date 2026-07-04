@@ -10,7 +10,7 @@ import erp.core.nbdf.constants.NBDFNexacroType;
 * @fileName       	: NBDFColumn.java
 * @author         	: Built1
 * @date           	: 2026.07.01
-* @description    	: NBDF 데이터셋 컬럼정보를 관리하는 메타데이터 객체 클래스
+* @description    	: JDBC ResultSet 기반 컬럼 정보를 NBDF 표준 메타데이터로 관리하는 클래스
 * -----------------------------------------------------------
 * @사용처
  * Nexacro Dataset
@@ -24,22 +24,43 @@ import erp.core.nbdf.constants.NBDFNexacroType;
 * 2026.07.01        Built1             최초 생성
 */
 public class NBDFColumn implements Serializable {
-		
+	
 	/**
 	 * <pre>
-     * --------------------------------------------------------------
-     * 자바 데이터 유형에서 넥사크로 데이터유형 매핑표
-     * --------------------------------------------------------------
-     * 
-	 * Java              Nexacro
 	 * --------------------------------------------------------------
-	 * String       →   STRING		: 1
-	 * Integer      →   INT			: 2
-	 * Long         →   LONG		: 3
-	 * BigDecimal   →   BIGDECIMAL	: 4
-	 * Date         →   DATE		: 5
-	 * DateTime     →   DATETIME	: 6
-	 * Boolean      →   BOOLEAN		: 7
+	 * [1] NBDF Layer Structure
+	 * --------------------------------------------------------------
+	 * 1. Metadata Layer (Current)
+	 * 2. Builder Layer
+	 * 3. Constants Layer 
+	 * 4. Exception Layer
+	 * 5. Type Mapping Layer
+	 * 6. Utility Layer
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
+	 * 11. Configuration Layer
+	 * 12. Extension Layer
+	 * --------------------------------------------------------------
+	 * 
+	 * --------------------------------------------------------------
+	 * [2] NBDF Processing Flow
+	 * --------------------------------------------------------------
+	 * JDBC ResultSet
+	 *       ↓
+	 * NBDFColumn (Current Module)
+	 *       ↓
+	 * DataSet Column 생성
+	 * 
+	 * --------------------------------------------------------------
+	 * [3] Key Features
+	 * --------------------------------------------------------------
+	 * 1. DB 컬럼 메타데이터 관리
+	 * 2. Java / Nexacro 타입 정보 포함
+	 * 3. DataSet 생성 기준 제공
+	 * 4. NBDF Type Mapping 중심 객체
+	 * --------------------------------------------------------------
 	 * 
 	 * </pre>
 	 */

@@ -12,6 +12,25 @@ package erp.core.nbdf.exception;
 * 2026.07.03        Built1             최초 생성
 */
 public class NBDFException extends RuntimeException {
+	
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
+	 * NBDF Framework Layer
+	 * --------------------------------------------------------------
+	 * 1. Metadata Layer
+	 * 2. Builder Layer
+	 * 3. Constants Layer
+	 * 4. Exception Layer(현재)
+	 * 5. Type Mapping Layer
+	 * 6. Utility Layer
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
+	 * --------------------------------------------------------------
+	 * </pre>
+	 */
 
 	/**
 	 * Serializable Version UID

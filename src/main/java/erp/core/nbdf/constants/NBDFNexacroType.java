@@ -5,28 +5,68 @@ package erp.core.nbdf.constants;
 * @fileName       : NBDFNexacroType.java
 * @author         : Built1
 * @date           : 2026.07.01
-* @description    : Nexacro 데이터셋 데이터 유형을 관리하는 클래스
+* @description    : Java 및 DB 타입을 Nexacro Dataset 표준 타입으로 매핑하기 위한 정의 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
 * 2026.07.01        Built1             최초 생성
 */
 public final class NBDFNexacroType {
-		
+	
 	/**
 	 * <pre>
 	 * --------------------------------------------------------------
-	 * 자바 데이터 유형에서 넥사크로 데이터유형 매핑표
+	 * [1] NBDF Layer Structure
 	 * --------------------------------------------------------------
-	 * Java              Nexacro
+	 * 1. Metadata Layer
+	 * 2. Builder Layer
+	 * 3. Constants Layer (Current Module)
+	 * 4. Exception Layer
+	 * 5. Type Mapping Layer
+	 * 6. Utility Layer
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
+	 * 11. Configuration Layer
+	 * 12. Extension Layer
 	 * --------------------------------------------------------------
-	 * String       →   STRING		: 1
-	 * Integer      →   INT			: 2
-	 * Long         →   LONG		: 3
-	 * BigDecimal   →   BIGDECIMAL	: 4
-	 * Date         →   DATE		: 5
-	 * DateTime     →   DATETIME	: 6
-	 * Boolean      →   BOOLEAN		: 7
+	 * 
+	 * --------------------------------------------------------------
+	 * [2] NBDF Processing Flow
+	 * --------------------------------------------------------------
+	 * Framework
+	 *       ↓
+	 * NBDFConstants (Current)
+	 *       ↓
+	 * Builder
+	 *       ↓
+	 * Exception
+	 *       ↓
+	 * Result
+	 *       ↓
+	 * Application
+	 * 
+	 * --------------------------------------------------------------
+	 * [3] Key Features
+	 * --------------------------------------------------------------
+	 * 1. Nexacro Dataset 표준 타입 정의
+	 * 2. Backend(Java) → Front(Nexacro) 타입 통일
+	 * 3. DataSet 생성 및 변환 기준 제공
+	 * --------------------------------------------------------------
+	 * 
+	 * --------------------------------------------------------------
+	 * [4] DB/Java 데이터 유형과 넥사크로 데이터유형 매핑 기준
+	 * --------------------------------------------------------------
+	 * DB / Java Type     →  Nexacro Type
+	 * --------------------------------------------------------------
+	 * String             →  STRING
+	 * Integer            →  INT
+	 * Long               →  BIGDECIMAL or INT
+	 * BigDecimal         →  BIGDECIMAL
+	 * Date               →  DATE
+	 * Timestamp          →  DATETIME
+	 * Boolean            →  STRING (Y/N or true/false)
 	 * 
 	 * </pre>
 	 */
