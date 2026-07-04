@@ -1,11 +1,11 @@
 package erp.core.nbdf.constants;
 
 /**
-* @packageName    : erp.core.nbdf.constants
-* @fileName       : NBDFConstants.java
-* @author         : Built1
-* @date           : 2026.07.01
-* @description    : NBDF 프레임워크 전체에서 공통으로 사용하고 변경되지 않는 기준값을 관리하는 클래스
+* @packageName    	: erp.core.nbdf.constants
+* @fileName       	: NBDFConstants.java
+* @author         	: Built1
+* @date           	: 2026.07.01
+* @description    	: NBDF 프레임워크 전체에서 공통으로 사용하고 변경되지 않는 기준값을 관리하는 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------

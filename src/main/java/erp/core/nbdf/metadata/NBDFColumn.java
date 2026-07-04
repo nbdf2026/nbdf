@@ -6,11 +6,11 @@ import erp.core.nbdf.constants.NBDFJavaType;
 import erp.core.nbdf.constants.NBDFNexacroType;
 
 /**
-* @packageName    : erp.core.nbdf.metadata
-* @fileName       : NBDFColumn.java
-* @author         : Built1
-* @date           : 2026.07.01
-* @description    : 데이터셋 컬럼정보를 관리하는 NBDF 메타데이터 객체 클래스
+* @packageName    	: erp.core.nbdf.metadata
+* @fileName       	: NBDFColumn.java
+* @author         	: Built1
+* @date           	: 2026.07.01
+* @description    	: NBDF 데이터셋 컬럼정보를 관리하는 메타데이터 객체 클래스
 * -----------------------------------------------------------
 * @사용처
  * Nexacro Dataset
@@ -24,6 +24,25 @@ import erp.core.nbdf.constants.NBDFNexacroType;
 * 2026.07.01        Built1             최초 생성
 */
 public class NBDFColumn implements Serializable {
+		
+	/**
+	 * <pre>
+     * --------------------------------------------------------------
+     * 자바 데이터 유형에서 넥사크로 데이터유형 매핑표
+     * --------------------------------------------------------------
+     * 
+	 * Java              Nexacro
+	 * --------------------------------------------------------------
+	 * String       →   STRING		: 1
+	 * Integer      →   INT			: 2
+	 * Long         →   LONG		: 3
+	 * BigDecimal   →   BIGDECIMAL	: 4
+	 * Date         →   DATE		: 5
+	 * DateTime     →   DATETIME	: 6
+	 * Boolean      →   BOOLEAN		: 7
+	 * 
+	 * </pre>
+	 */
 	
 	/**
 	 * Serializable Version UID
@@ -37,19 +56,6 @@ public class NBDFColumn implements Serializable {
 	public NBDFColumn() {
 		
     }
-	
-	/**
-	 *  자바 데이터 유형에서 넥사크로 데이터유형 매핑표
-	 * Java              Nexacro
-	 * ----------------------------
-	 * String       →   STRING		: 1
-	 * Integer      →   INT			: 2
-	 * Long         →   LONG		: 3
-	 * BigDecimal   →   BIGDECIMAL	: 4
-	 * Date         →   DATE		: 5
-	 * DateTime     →   DATETIME	: 6
-	 * Boolean      →   BOOLEAN		: 7
-	 */
 		
 	/**
 	 * ● DB 정보

@@ -6,11 +6,11 @@ import erp.core.nbdf.constants.NBDFJavaType;
 import erp.core.nbdf.constants.NBDFNexacroType;
 
 /**
-* @packageName    : erp.core.nbdf.metadata
-* @fileName       : NBDFDataTypeMapper.java
-* @author         : Built1
-* @date           : 2026.07.03
-* @description    : JDBC 데이터 유형을 Java 및 Nexacro 데이터 유형으로 변환하는 클래스
+* @packageName    	: erp.core.nbdf.metadata
+* @fileName       	: NBDFDataTypeMapper.java
+* @author         	: Built1
+* @date           	: 2026.07.03
+* @description    	: JDBC 데이터 유형을 Java 및 Nexacro 데이터 유형으로 변환하는 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
@@ -18,8 +18,11 @@ import erp.core.nbdf.constants.NBDFNexacroType;
 */
 public final class NBDFDataTypeMapper {
 	
-	/*
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
 	 * 데이터 유형에 따른 데이터 전환
+	 * --------------------------------------------------------------
 	 * 
 	 * Database 데이터 추출 : 컬럼, 데이터유형, 데이터 
 	 * ↓
@@ -28,13 +31,18 @@ public final class NBDFDataTypeMapper {
 	 * Java Type : 컬럼, 데이터유형, 데이터 
 	 * ↓
 	 * Nexacro Type : 컬럼, 데이터유형, 데이터 
+	 * 
+	 * </pre>
 	 */
 	
-	/*
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
 	 * 개발유형에 따른 데이터 유형 매핑
+	 * --------------------------------------------------------------
 	 * 
 	 * DB Type			JDBC		Java			Nexacro
-	 * -----------------------------------------------------
+	 * --------------------------------------------------------------
 	 * VARCHAR2			VARCHAR		String			STRING
 	 * CHAR				CHAR		String			STRING
 	 * NUMBER(10)		INTEGER		Integer			INT
@@ -42,28 +50,40 @@ public final class NBDFDataTypeMapper {
 	 * NUMBER(18,2)		NUMERIC		BigDecimal		BIGDECIMAL
 	 * DATE				DATE		Date			DATE
 	 * TIMESTAMP		TIMESTAMP	DateTime		DATETIME
+	 * 
+	 * </pre>
 	 */
 	
-	/*
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
 	 * NUMBER 처리 규칙
+	 * --------------------------------------------------------------
 	 * 
 	 * Oracle NUMBER	Java		Nexacro
-	 * -----------------------------------------------------
+	 * --------------------------------------------------------------
 	 * NUMBER(1~9)		Integer		INT
 	 * NUMBER(10~18)	Long		LONG
 	 * NUMBER(19 이상)	BigDecimal	BIGDECIMAL
 	 * NUMBER(*,2)		BigDecimal	BIGDECIMAL
+	 * 
+	 * </pre>
 	 */
 	
-	/*
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
 	 * 문자열 처리 규칙
+	 * --------------------------------------------------------------
 	 * 
 	 * JDBC Type		Java		Nexacro
-	 * -----------------------------------------------------
+	 * --------------------------------------------------------------
 	 * VARCHAR			String		STRING
 	 * CHAR				String		STRING
 	 * LONGVARCHAR		String		STRING
 	 * CLOB				String		STRING
+	 * 
+	 * </pre>
 	 */
 	
 	/*
@@ -93,11 +113,14 @@ public final class NBDFDataTypeMapper {
 	}
 	
 	/**
-	* @methodName     : mapDataType
-	* @author         : built1
-	* @date           : 2026.07.03
-	* @description    : 오라클에서 조회된 데이터를 Oracle, JDBC, Java, Nexacro 데이터 유형으로 매핑
-	* @param column
+	* @methodName     	: mapDataType
+	* @author         	: Built1
+	* @date           	: 2026.07.03
+	* @description    	: 데이터베이스에서 조회한 JDBC 데이터 타입을 분석
+	* 					  데이터를 Oracle, JDBC, Java, Nexacro 데이터 유형으로 매핑하는 메서드
+	* 					  NBDF에서 사용하는 표준 데이터 타입과 Java 타입, Nexacro 타입을 NBDFColumn 객체에 설정하는 메소드
+	*  					  표준 데이터 타입 정보를 {@link NBDFColumn} 객체에 설정
+	* @param column		: 데이터 타입을 매핑할 컬럼 정보
 	*/
 	public static void mapDataType(NBDFColumn column) {
 		
@@ -151,11 +174,11 @@ public final class NBDFDataTypeMapper {
 	
 	
 	/**
-	* @methodName     : mapString
-	* @author         : built1
-	* @date           : 2026.07.03
-	* @description    : 문자형으로 전환(자바, 넥사크로)하는 메서드
-	* @param column
+	* @methodName     	: mapString
+	* @author         	: Built1
+	* @date           	: 2026.07.03
+	* @description    	: 문자형 JDBC 데이터 타입을 NBDF(자바, 넥사크로) 표준 문자열 타입으로 매핑
+	* @param column		: 데이터 타입 정보를 설정할 컬럼 정보
 	*/
 	private static void mapString(NBDFColumn column) {
 		// 문자형으로 전환 : STRING, STRING
@@ -164,11 +187,11 @@ public final class NBDFDataTypeMapper {
 	}
 	
 	/**
-	* @methodName     : mapNumber
-	* @author         : built1
-	* @date           : 2026.07.03
-	* @description    : 숫자형으로 전환(자바, 넥사크로)하는 메서드
-	* @param column
+	* @methodName     	: mapNumber
+	* @author         	: Built1
+	* @date           	: 2026.07.03
+	* @description    	: 숫자형 JDBC 데이터 타입을 NBDF(자바, 넥사크로) 표준 숫자열 타입으로 매핑
+	* @param column		: 데이터 타입 정보를 설정할 컬럼 정보
 	*/
 	private static void mapNumber(NBDFColumn column) {
 		
@@ -197,10 +220,11 @@ public final class NBDFDataTypeMapper {
 	}
 	
 	/**
-	* @methodName     : mapDate
-	* @author         : built1
-	* @date           : 2026.07.03
-	* @description    : 날짜형으로 전환(자바, 넥사크로)하는 메서드
+	* @methodName     	: mapDate
+	* @author         	: Built1
+	* @date           	: 2026.07.03
+	* @description    	: 날짜형 JDBC 데이터 타입을 NBDF(자바, 넥사크로) 표준 날짜형 타입으로 매핑
+	* @param column		: 데이터 타입 정보를 설정할 컬럼 정보
 	*/
 	private static void mapDate(NBDFColumn column) {
 		// 날짜형으로 전환 : DATE, DATE
@@ -209,10 +233,11 @@ public final class NBDFDataTypeMapper {
 	}
 	
 	/**
-	* @methodName     : mapDateTime
-	* @author         : built1
-	* @date           : 2026.07.03
-	* @description    : 날짜일시형으로 전환(자바, 넥사크로)하는 메서드
+	* @methodName     	: mapDateTime
+	* @author         	: Built1
+	* @date           	: 2026.07.03
+	* @description    	: 날짜일시형 JDBC 데이터 타입을 NBDF(자바, 넥사크로) 표준 날짜일시형 타입으로 매핑
+	* @param column		: 데이터 타입 정보를 설정할 컬럼 정보
 	*/
 	private static void mapDateTime(NBDFColumn column) {
 		// 날짜일시형으로 전환 : DATETIME, DATETIME
@@ -221,10 +246,11 @@ public final class NBDFDataTypeMapper {
 	}
 	
 	/**
-	* @methodName     : mapBoolean
-	* @author         : built1
-	* @date           : 2026.07.03
-	* @description    : 논리형으로 전환(자바, 넥사크로)하는 메서드
+	* @methodName     	: mapBoolean
+	* @author         	: Built1
+	* @date           	: 2026.07.03
+	* @description    	: 논리형 JDBC 데이터 타입을 NBDF(자바, 넥사크로) 표준 논리형 타입으로 매핑
+	* @param column		: 데이터 타입 정보를 설정할 컬럼 정보
 	*/
 	private static void mapBoolean(NBDFColumn column) {
 		// 논리형으로 전환 : BOOLEAN, BOOLEAN

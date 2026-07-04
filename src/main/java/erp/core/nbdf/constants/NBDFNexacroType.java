@@ -12,6 +12,24 @@ package erp.core.nbdf.constants;
 * 2026.07.01        Built1             최초 생성
 */
 public final class NBDFNexacroType {
+		
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
+	 * 자바 데이터 유형에서 넥사크로 데이터유형 매핑표
+	 * --------------------------------------------------------------
+	 * Java              Nexacro
+	 * --------------------------------------------------------------
+	 * String       →   STRING		: 1
+	 * Integer      →   INT			: 2
+	 * Long         →   LONG		: 3
+	 * BigDecimal   →   BIGDECIMAL	: 4
+	 * Date         →   DATE		: 5
+	 * DateTime     →   DATETIME	: 6
+	 * Boolean      →   BOOLEAN		: 7
+	 * 
+	 * </pre>
+	 */
 	
 	/**
 	 * 생성자(Constructor)
@@ -20,19 +38,6 @@ public final class NBDFNexacroType {
 	private NBDFNexacroType() {
 		
 	}
-	
-	/**
-	 *  자바 데이터 유형에서 넥사크로 데이터유형 매핑표
-	 * Java              Nexacro
-	 * ----------------------------
-	 * String       →   STRING		: 1
-	 * Integer      →   INT			: 2
-	 * Long         →   LONG		: 3
-	 * BigDecimal   →   BIGDECIMAL	: 4
-	 * Date         →   DATE		: 5
-	 * DateTime     →   DATETIME	: 6
-	 * Boolean      →   BOOLEAN		: 7
-	 */
 	
 	/**
 	 * Nexacro String 타입

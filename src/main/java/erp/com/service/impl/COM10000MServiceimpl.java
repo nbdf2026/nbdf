@@ -36,7 +36,7 @@ public class COM10000MServiceimpl implements COM10000MService {
 	
 	/**
 	* @methodName     : selectCodeTypeList
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.19
 	* @description    : 공통코드 데이터를 조회하는 상속메서드
 	* @param inSearch
@@ -54,7 +54,7 @@ public class COM10000MServiceimpl implements COM10000MService {
 
 	/**
 	* @methodName     : saveCode
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.23
 	* @description    : 공통코드 데이터를 조회/저장하는 상속메서드
 	* @param inCodeType

@@ -31,7 +31,7 @@ public class COM10010MServiceimpl implements COM10010MService {
 
 	/**
 	* @methodName     : selectMessageList
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 조회하는 상속메서드
 	* @return
@@ -48,7 +48,7 @@ public class COM10010MServiceimpl implements COM10010MService {
 	
 	/**
 	* @methodName     : selectUserList
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 로그인 사용자정보 데이터를 조회하는 상속메서드
 	* @return
@@ -65,7 +65,7 @@ public class COM10010MServiceimpl implements COM10010MService {
 
 	/**
 	* @methodName     : saveMessageData
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 저장하는 상속메서드
 	* @param inMessageList

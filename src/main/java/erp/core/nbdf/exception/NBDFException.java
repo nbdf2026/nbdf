@@ -1,11 +1,11 @@
 package erp.core.nbdf.exception;
 
 /**
-* @packageName    : erp.core.nbdf.exception
-* @fileName       : NBDFException.java
-* @author         : Built1
-* @date           : 2026.07.03
-* @description    : NBDF 프레임워크 예외 처리 클래스
+* @packageName    	: erp.core.nbdf.exception
+* @fileName       	: NBDFException.java
+* @author         	: Built1
+* @date           	: 2026.07.03
+* @description    	: NBDF 프레임워크 예외 처리 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
@@ -30,8 +30,8 @@ public class NBDFException extends RuntimeException {
 	private final Object[] messageArguments;
 
 	/**
-	 * @description    			: 메시지 코드를 전달하는 생성자
-	 * @param messageCode		: 예외 코드
+	 * @description    			: 메시지 코드만 지정하여 NBDF 예외를 생성하는 메서드
+	 * @param messageCode		: 공통 메시지 코드
 	 */
 	public NBDFException(String messageCode) {
 		super(messageCode);
@@ -40,11 +40,11 @@ public class NBDFException extends RuntimeException {
 	}
 	
 	/**
-	 * @description    			: 메시지 코드와 치환 변수를 전달하는 생성자
-	 * @param messageCode  		: 메시지 코드
-	 * @param messageArguments	: 메시지 치환 변수
+	 * @description    			: 메시지 코드와 치환 변수 지정을 통하여 예외를 생성하는 메서드
+	 * @param messageCode  		: 공통 메시지 코드
+	 * @param messageArguments	: 메시지 치환에 사용할 인수(배열)
 	 */
-	 public NBDFException(String messageCode, Object... messageArguments) {
+	public NBDFException(String messageCode, Object... messageArguments) {
 		 super(messageCode);
 		this.messageCode      = messageCode;
 		this.messageArguments = messageArguments;
@@ -62,8 +62,8 @@ public class NBDFException extends RuntimeException {
 	}
 	
 	/**
-	 * 메시지 코드 및 예외 원인을 전달하는 생성자
-	 * @param messageCode		: 메시지 코드
+	 * @description    			: 메시지 코드 및 예외 원인을 지정하여 예외를 생성하는 메서드
+	 * @param messageCode		: 공통 메시지 코드
 	 * @param cause				: 예외 원인
 	 * @param messageArguments	: 메시지 치환 변수
 	 */	
@@ -74,16 +74,16 @@ public class NBDFException extends RuntimeException {
 	}
 	
 	/**
-	 * 메시지 코드를 반환 
-	 * @return 	: 메시지 코드
+	 * @description    			: 메시지 코드를 반환 
+	 * @return 					: 공통 메시지 코드
 	 */
 	public String getMessageCode() {
 		return messageCode;
 	}
 	
 	/**
-	 * 메시지 치환 변수를 반환
-	 * @return 	: 메시지 치환 변수
+	 * @description    			: 메시지 치환 변수를 반환
+	 * @return 					: 메시지 치환 인수(배열)
 	 */
 	public Object[] getMessageArguments() {
 		return messageArguments;

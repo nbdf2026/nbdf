@@ -22,7 +22,7 @@ public interface COM10010MMapper {
 	
 	/**
 	* @methodName     : selectMessageList
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 조회하는 매퍼 인터페이스
 	* @return
@@ -32,7 +32,7 @@ public interface COM10010MMapper {
 	
 	/**
 	* @methodName     : selectUserList
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 로그인 사용자정보 데이터를 조회하는 매퍼 인터페이스
 	* @return
@@ -43,7 +43,7 @@ public interface COM10010MMapper {
 
 	/**
 	* @methodName     : insertMessage
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 신규 저장하기 위한 매퍼 인터페이스
 	* @param inMessageMap
@@ -53,7 +53,7 @@ public interface COM10010MMapper {
 
 	/**
 	* @methodName     : updateMessage
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 수정하기 위한 매퍼 인터페이스
 	* @param inMessageMap
@@ -63,7 +63,7 @@ public interface COM10010MMapper {
 
 	/**
 	* @methodName     : deleteMessage
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 삭제하기 위한 매퍼 인터페이스
 	* @param inMessageMap

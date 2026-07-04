@@ -4,7 +4,7 @@ values
   ('20000001'
   ,'admin'
   ,encrypt_password_f('adminADMIN0101!@')
-  ,encrypt_f('admin@built1.com')
+  ,encrypt_f('adminBuilt11.com')
   ,encrypt_f('010-1234-1234')
   ,'Y'
   ,'N'

@@ -18,7 +18,7 @@ public interface COM10010MService {
 	
 	/**
 	* @methodName     : selectMessageList
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 조회하는 인터페이스
 	* @return
@@ -28,7 +28,7 @@ public interface COM10010MService {
 	
 	/**
 	* @methodName     : selectUserList
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 로그인 사용자정보 데이터를 조회하는 인터페이스
 	* @return
@@ -38,7 +38,7 @@ public interface COM10010MService {
 	
 	/**
 	* @methodName     : saveMessageData
-	* @author         : built1
+	* @author         : Built1
 	* @date           : 2026.06.30
 	* @description    : 메시지 데이터를 저장하는 인터페이스
 	* @param inMessageList

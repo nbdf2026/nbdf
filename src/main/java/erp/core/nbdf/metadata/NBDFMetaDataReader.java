@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-* @packageName    : erp.core.nbdf.metadata
-* @fileName       : NBDFMetaDataReader.java
-* @author         : Built1
-* @date           : 2026.07.03
-* @description    : ResultSetMetaData를 읽어 NBDFColumn 목록을 생성하는 클래스
+* @packageName    	: erp.core.nbdf.metadata
+* @fileName       	: NBDFMetaDataReader.java
+* @author         	: Built1
+* @date           	: 2026.07.03
+* @description    	: ResultSetMetaData를 읽어 NBDFColumn 목록을 생성하는 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
@@ -20,7 +20,10 @@ import java.util.List;
 public final class NBDFMetaDataReader {
 	
 	/**
-	 * 데이터베이스에서 데이터 조회 후 NBDF 메타 데이터로 전환하는 단계 
+	 * <pre>
+	 * --------------------------------------------------------------
+	 * 데이터베이스에서 데이터 조회 후 NBDF 메타 데이터로 전환하는 단계
+	 * -------------------------------------------------------------- 
 	 * 
 	 * ResultSet : 쿼리에서 실행된 데이터셋
 	 * ↓
@@ -31,6 +34,8 @@ public final class NBDFMetaDataReader {
 	 * DataTypeMapper 호출 : 언제 호출되는지?
 	 * ↓
 	 * List 반환 : column map 데이터를 List 객체 값 추가 후 반환
+	 * 
+	 * </pre>
 	 */
 	
 	/**
@@ -42,12 +47,13 @@ public final class NBDFMetaDataReader {
 	}
 	
 	/**
-	* @methodName     : read
-	* @author         : built1
-	* @date           : 2026.07.03
-	* @description    : 메타정보를 읽어 NBDFColumn 목록을 생성하는 메서드
-	* @param rs		  : ResultSet
-	* @return columns : NBDFColumn 목록
+	* @methodName     	: read
+	* @author         	: Built1
+	* @date           	: 2026.07.03
+	* @description    	: ResultSetMetaData를 이용하여 컬럼명, JDBC 데이터 타입,
+	* 					  Java 타입, Nexacro 타입 등의 정보를 추출한 후 NBDFColumn 객체를 생성하여 반환하는 메서드
+	* @param rs		  	: 컬럼 정보를 조회할 ResultSet
+	* @return columns 	: 조회된 컬럼 정보 목록
 	* @throws SQLException
 	*/
 	public static List<NBDFColumn> read(ResultSet rs) throws SQLException {
