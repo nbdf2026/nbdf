@@ -20,7 +20,7 @@ public interface COM10000MService {
 	* @methodName     : selectCodeTypeList
 	* @author         : built1
 	* @date           : 2026.06.19
-	* @description    : 공통코드 데이터를 조회하는 메소드
+	* @description    : 공통코드 데이터를 조회하는 메서드
 	* @param inSearch
 	* @return
 	* @throws Exception
@@ -31,7 +31,7 @@ public interface COM10000MService {
 	* @methodName     : saveCode
 	* @author         : built1
 	* @date           : 2026.06.23
-	* @description    : 공통코드 데이터를 조회/저장하는 메소드
+	* @description    : 공통코드 데이터를 조회/저장하는 메서드
 	* @param inCodeType
 	* @param inCode
 	* @param userId

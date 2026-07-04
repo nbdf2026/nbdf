@@ -17,7 +17,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 에 특정 이벤트를 선언하여 추가하는 메소드입니다.">
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 에 특정 이벤트를 선언하여 추가하는 메서드입니다.">
         <Syntax text="DataObject.addEvent( strEventID )">
           <Return type="Boolean" description="이벤트 추가에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 추가에 실패하거나 선언되어 있는 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -25,7 +25,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="DataObject.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -35,7 +35,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 DataObject 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 DataObject 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="DataObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -45,13 +45,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="변경 정보를 전부 삭제하는 메소드입니다.">
+      <Method name="clearChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="변경 정보를 전부 삭제하는 메서드입니다.">
         <Syntax text="DataObject.clearChangedInfo()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="DataObject.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -59,13 +59,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 DataObject 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 DataObject 을(를) 삭제하는 메서드입니다.">
         <Syntax text="DataObject.destroy()">
           <Return type="Boolean" description="DataObject 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;DataObject 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="DataObject.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -75,19 +75,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getAllResponseHeaders" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메소드 호출 후 Response header 정보를 반환하는 메소드입니다.">
+      <Method name="getAllResponseHeaders" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메서드 호출 후 Response header 정보를 반환하는 메서드입니다.">
         <Syntax text="DataObject00.getAllResponseHeaders()">
           <Return type="Object" description="header, value 쌍으로 구성된 오브젝트를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="저장된 변경 정보를 반환하는 메소드입니다.">
+      <Method name="getChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="저장된 변경 정보를 반환하는 메서드입니다.">
         <Syntax text="DataObject.getChangedInfo()">
           <Return type="Array" description="Infoarray 형식의 배열을 반환합니다.&#xA;Infoarray 각 속성은 아래 표를 참고하세요." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="DataObject.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -96,13 +96,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 오브젝트의 데이터를 오브젝트로 반환하는 메소드입니다.">
+      <Method name="getObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 오브젝트의 데이터를 오브젝트로 반환하는 메서드입니다.">
         <Syntax text="DataObject00.getObject()">
           <Return type="Object" description="DataObject 오브젝트의 데이터" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getObjectByPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="jsonpath값으로 필터링한 데이터 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getObjectByPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="jsonpath값으로 필터링한 데이터 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="DataObject00.getObjectByPath(strJsonpath)">
           <Return type="Object" description="필터링된 데이터 오브젝트를 반환합니다." />
           <Arguments>
@@ -110,13 +110,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메소드 호출 후 response data 정보를 반환하는 메소드입니다.">
+      <Method name="getResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메서드 호출 후 response data 정보를 반환하는 메서드입니다.">
         <Syntax text="DataObject00.getResponse()">
           <Return type="String" description="데이터 통신 후 서버에서 받은 데이터값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getResponseHeader" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메소드 호출 후 특정 Response header 값을 반환하는 메소드입니다.">
+      <Method name="getResponseHeader" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메서드 호출 후 특정 Response header 값을 반환하는 메서드입니다.">
         <Syntax text="DataObject.getResponseHeader(strHeaderName)">
           <Return type="String" description="파라미터로 설정한 header 이름에 해당하는 값을 반환합니다.&#xA;대소문자 구분 없이 설정한 header 이름과 일치하는 값을 반환합니다.&#xA;일치하는 header 정보가 없는 경우에는 null을 반환합니다." />
           <Arguments>
@@ -124,7 +124,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="DataObject.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -135,7 +135,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="url 속성에 설정한 서비스에서 데이터를 로드하는 메소드입니다.">
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="url 속성에 설정한 서비스에서 데이터를 로드하는 메서드입니다.">
         <Syntax text="DataObject00.load([bAsync])">
           <Return type="" description="" />
           <Arguments>
@@ -143,7 +143,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="변경 정보에서 특정 uid에 해당하는 item 정보를 삭제하는 메소드입니다.">
+      <Method name="removeChangedInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="변경 정보에서 특정 uid에 해당하는 item 정보를 삭제하는 메서드입니다.">
         <Syntax text="DataObject.removeChangedInfo(uid)">
           <Return type="" description="" />
           <Arguments>
@@ -151,7 +151,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 에 선언된 특정 이벤트를 삭제하는 메소드입니다.">
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 에 선언된 특정 이벤트를 삭제하는 메서드입니다.">
         <Syntax text="DataObject.removeEvent( strEventID )">
           <Return type="Boolean" description="이벤트 삭제에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 삭제에 실패하거나 선언되지 않은 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -159,7 +159,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="DataObject.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -169,7 +169,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="DataObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -179,18 +179,18 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="request" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="설정된 속성값에 따라 통신을 처리하는 메소드입니다.">
+      <Method name="request" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="설정된 속성값에 따라 통신을 처리하는 메서드입니다.">
         <Syntax text="DataObject00.request(strServiceid, strMethod, strUrl[, objParam])">
           <Return type="" description="" />
           <Arguments>
             <Argument name="objParam" type="Object" in="false" out="false" option="false" variable="false" description="header, postdata, async 정보를 저장한 JSON 오브젝트를 설정합니다.&#xA;JSON 오브젝트는 아래와 같은 형식으로 처리할 수 있습니다.&#xA;var json_param = {&#xA;    &quot;httpheader&quot; : header,&#xA;    &quot;postdata&quot; : &quot;test&quot;,&#xA;    &quot;async&quot; : true&#xA;}&#xA;async 정보를 설정하지 않으면 true로 처리합니다." />
-            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="요청 시 처리할 메소드를 설정합니다.&#xA;아래 메소드를 지정할 수 있습니다.&#xA;GET, POST, PUT, DELETE, HEAD, PATCH" />
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="요청 시 처리할 메서드를 설정합니다.&#xA;아래 메서드를 지정할 수 있습니다.&#xA;GET, POST, PUT, DELETE, HEAD, PATCH" />
             <Argument name="strServiceid" type="String" in="false" out="false" option="false" variable="false" description="서비스 ID 값을 설정합니다." />
             <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="JSON 데이터를 호출할 URL을 설정합니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="serializeToString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="데이터를 문자열로 반환하는 메소드입니다.">
+      <Method name="serializeToString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="데이터를 문자열로 반환하는 메서드입니다.">
         <Syntax text="DataObject00.serializeToString([funcReplacer | arrReplacer[, strSpace | nSpace]])">
           <Return type="String" description="데이터를 변환한 문자열" />
           <Arguments>
@@ -201,7 +201,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="DataObject.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -211,7 +211,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataObject 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="DataObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -259,7 +259,7 @@
           </Arguments>
         </Syntax>
       </EventHandler>
-      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메소드 호출 후 통신 성공 시 발생하는 이벤트입니다.">
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="request 메서드 호출 후 통신 성공 시 발생하는 이벤트입니다.">
         <Syntax text="DataObject.onsuccess(obj:nexacro.DataObject,e:nexacro.DataObjectEventInfo);">
           <Return type="" description="" />
           <Arguments>

@@ -96,7 +96,7 @@
     </StatusInfo>
     <ControlInfo />
     <MethodInfo>
-      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 특정 이벤트를 선언하여 추가하는 메소드입니다.">
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 특정 이벤트를 선언하여 추가하는 메서드입니다.">
         <Syntax text="GoogleMap.addEvent( strEventID )">
           <Return type="Boolean" description="이벤트 추가에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 추가에 실패하거나 선언되어 있는 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -104,7 +104,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="GoogleMap.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -114,7 +114,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="함수를 검색하여 GoogleMap 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="함수를 검색하여 GoogleMap 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="GoogleMap.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -124,7 +124,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 위에 표시할 아이템을 추가하는 메소드입니다.">
+      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 위에 표시할 아이템을 추가하는 메서드입니다.">
         <Syntax text="GoogleMap.addItem( strItemID, objItem )">
           <Return type="Boolean" description="파라미터를 잘못 설정하거나 중복된 ID가 존재할 경우 &quot;false&quot; 를 반환합니다.&#xA;그 외의 정상적인 경우에는 &quot;true&quot; 를 반환합니다." />
           <Arguments>
@@ -145,7 +145,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="GoogleMap.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -153,13 +153,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="스크립트에서 동적으로 생성한 GoogleMap 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="스크립트에서 동적으로 생성한 GoogleMap 을(를) 삭제하는 메서드입니다.">
         <Syntax text="GoogleMap.destroy()">
           <Return type="Boolean" description="GoogleMap 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;GoogleMap 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -169,7 +169,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getAddress" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="GoogleMap 에서 특정 좌표(위도,경도)에 등록된 주소를 반환하는 메소드입니다.">
+      <Method name="getAddress" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="GoogleMap 에서 특정 좌표(위도,경도)에 등록된 주소를 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getAddress(nLatitude, nLongitude, [nMaxResultCount, [enumLocale]])">
           <Return type="Boolean" description="파라미터를 잘 못 설정하거나 0 이하로 설정 시 &quot;false&quot; 를 반환합니다.&#xA;그 외의 정상적인 경우에는 &quot;true&quot; 를 반환합니다." />
           <Arguments>
@@ -180,21 +180,21 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCoordinates" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="GoogleMap 에서 특정 주소를 좌표(위도,경도)로 반환하는 메소드입니다.">
+      <Method name="getCoordinates" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="GoogleMap 에서 특정 주소를 좌표(위도,경도)로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getCoordinates( strAddress )">
-          <Return type="Boolean" description="메소드 수행에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;메소드 수행에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Return type="Boolean" description="메서드 수행에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;메서드 수행에 실패하면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
             <Argument name="strAddress" type="String" in="false" out="false" option="false" variable="false" description="좌표(위도,경도)로 변환하려는 주소를 문자열로 설정합니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 표시된 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 표시된 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getDisplayText()">
           <Return type="String" description="GoogleMap 에 표시된 텍스트값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -203,85 +203,85 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getFocus()">
           <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 bottom 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 bottom 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getOffsetBottom();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 bottom 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 높이를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 높이를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getOffsetHeight();">
           <Return type="Number" description="GoogleMap 의 높이를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 left 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 left 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getOffsetLeft();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 left 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 right 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 right 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getOffsetRight();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 right 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 top 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 top 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getOffsetTop();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 top 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 너비를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 너비를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getOffsetWidth();">
           <Return type="Number" description="GoogleMap 의 너비를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 bottom 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getPixelBottom();">
           <Return type="Number" description="GoogleMap 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;bottom 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 height 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getPixelHeight();">
           <Return type="Number" description="GoogleMap 의 height 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;height 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 left 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getPixelLeft();">
           <Return type="Number" description="GoogleMap 의 left 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;left 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 right 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getPixelRight();">
           <Return type="Number" description="GoogleMap 의 right 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;right 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 top 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getPixelTop();">
           <Return type="Number" description="GoogleMap 의 top 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;top 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 width 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="GoogleMap.getPixelWidth();">
           <Return type="Number" description="GoogleMap 의 width 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;width 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="스크립트로 GoogleMap 을(를) 동적 생성한 후에 초기화하는 메소드입니다.">
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="스크립트로 GoogleMap 을(를) 동적 생성한 후에 초기화하는 메서드입니다.">
         <Syntax text="GoogleMap.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
           <Return type="" description="" />
           <Arguments>
@@ -299,7 +299,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="GoogleMap.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -310,7 +310,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 지도를 로딩하는 메소드입니다.">
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 지도를 로딩하는 메서드입니다.">
         <Syntax text="GoogleMap.load( [bUseSensor[, nLatitude, nLongitude[, constViewMode[, nZoomLevel]]] )">
           <Return type="Boolean" description="파라미터를 잘 못 설정할 경우 false 를 반환합니다.&#xA;&#xA;그 외의 정상적인 경우에는 true 를 반환합니다." />
           <Arguments>
@@ -322,7 +322,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 위치와 크기를 변경하는 메소드입니다.">
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 위치와 크기를 변경하는 메서드입니다.">
         <Syntax text="GoogleMap.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
           <Return type="" description="" />
           <Arguments>
@@ -353,7 +353,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 선언된 특정 이벤트를 삭제하는 메소드입니다.">
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 선언된 특정 이벤트를 삭제하는 메서드입니다.">
         <Syntax text="GoogleMap.removeEvent( strEventID )">
           <Return type="Boolean" description="이벤트 삭제에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 삭제에 실패하거나 선언되지 않은 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -361,7 +361,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="GoogleMap.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -371,7 +371,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="GoogleMap.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -381,7 +381,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 위에 표시된 아이템을 제거하는 메소드입니다.">
+      <Method name="removeItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 위에 표시된 아이템을 제거하는 메서드입니다.">
         <Syntax text="GoogleMap.removeItem(strItemID)">
           <Return type="Boolean" description="파라미터를 잘 못 설정할 경우 &quot;false&quot; 를 반환합니다.&#xA;그 외의 정상적인 경우에는 &quot;true&quot; 를 반환합니다." />
           <Arguments>
@@ -389,7 +389,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 크기를 변경하는 메소드입니다.">
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 크기를 변경하는 메서드입니다.">
         <Syntax text="GoogleMap.resize( vWidth, vHeight )">
           <Return type="" description="" />
           <Arguments>
@@ -410,7 +410,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="GoogleMap.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -420,7 +420,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="GoogleMap.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -430,15 +430,15 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 포커스를 주는 메소드입니다.">
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 에 포커스를 주는 메서드입니다.">
         <Syntax text="GoogleMap.setFocus( [bMoveScroll] )">
-          <Return type="Object" description="GoogleMap 이(가) 포커스되기 전에 포커스를 가졌던 컴포넌트를 반환합니다.&#xA;포커스를 가진 컴포넌트가 없었거나 메소드 수행이 실패하는 경우에는 &quot;null&quot;을 반환합니다." />
+          <Return type="Object" description="GoogleMap 이(가) 포커스되기 전에 포커스를 가졌던 컴포넌트를 반환합니다.&#xA;포커스를 가진 컴포넌트가 없었거나 메서드 수행이 실패하는 경우에는 &quot;null&quot;을 반환합니다." />
           <Arguments>
             <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우 GoogleMap 기준으로 스크롤을 이동할지 설정합니다.&#xA;&quot;true&quot; 설정 시 GoogleMap 이(가) 화면에 표시되도록 스크롤을 이동시킵니다.&#xA;&quot;false&quot; 설정 시 GoogleMap 의 위치에 관계없이 스크롤을 이동시키지 않습니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 bottom 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="GoogleMap.setOffsetBottom( nBottom );">
           <Return type="" description="" />
           <Arguments>
@@ -446,7 +446,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 높이를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 높이를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="GoogleMap.setOffsetHeight( nHeight );">
           <Return type="" description="" />
           <Arguments>
@@ -454,7 +454,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 left 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="GoogleMap.setOffsetLeft( nLeft );">
           <Return type="" description="" />
           <Arguments>
@@ -462,7 +462,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Left 위치를 기준으로 GoogleMap 의 right 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="GoogleMap.setOffsetRight( nRight );">
           <Return type="" description="" />
           <Arguments>
@@ -470,7 +470,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="부모 컴포넌트의 Top 위치를 기준으로 GoogleMap 의 top 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="GoogleMap.setOffsetTop( nTop );">
           <Return type="" description="" />
           <Arguments>
@@ -478,7 +478,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 너비를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 너비를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="GoogleMap.setOffsetWidth( nWidth );">
           <Return type="" description="" />
           <Arguments>
@@ -486,7 +486,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="스크립트로 동적 생성한 GoogleMap 을(를) 화면에 표시하는 메소드입니다.">
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="스크립트로 동적 생성한 GoogleMap 을(를) 화면에 표시하는 메서드입니다.">
         <Syntax text="GoogleMap.show()">
           <Return type="" description="" />
           <Arguments />
@@ -745,7 +745,7 @@
           </Arguments>
         </Syntax>
       </EventHandler>
-      <EventHandler name="onrecvsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 getAddress() 메소드 수행이 성공한 경우 발생하는 이벤트입니다.">
+      <EventHandler name="onrecvsuccess" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Android NRE,iOS/iPadOS NRE" description="GoogleMap 의 getAddress() 메서드 수행이 성공한 경우 발생하는 이벤트입니다.">
         <Syntax text="GoogleMap.onrecvsuccess(obj:nexacro.GoogleMap,e:nexacro.GoogleMapEventInfo);">
           <Return type="" description="" />
           <Arguments>

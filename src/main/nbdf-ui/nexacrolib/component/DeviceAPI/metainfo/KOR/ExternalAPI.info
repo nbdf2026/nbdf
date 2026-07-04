@@ -13,20 +13,20 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="execExtAPI" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="특정 외부 앱에 정의된 API 모듈을 실행하는 메소드입니다.">
+      <Method name="execExtAPI" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="특정 외부 앱에 정의된 API 모듈을 실행하는 메서드입니다.">
         <Syntax text="ExternalAPI.execExtAPI( strRecvID, strAppID, strAPI [, strParams] )">
-          <Return type="Boolean" description="API 모듈의 실행여부와 관계없이 메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;API 모듈의 실행여부와 관계없이 메소드 실행에 실패하면 false 를 반환합니다." />
+          <Return type="Boolean" description="API 모듈의 실행여부와 관계없이 메서드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;API 모듈의 실행여부와 관계없이 메서드 실행에 실패하면 false 를 반환합니다." />
           <Arguments>
             <Argument name="strAPI" type="String" in="false" out="false" option="false" variable="false" description="실행하려는 API 모듈의 이름을 문자열로 설정합니다." />
             <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="실행하려는 API 모듈이 정의된 외부 앱의 ID 를 문자열로 설정합니다." />
             <Argument name="strParams" type="String" in="false" out="false" option="false" variable="false" description="실행할 API 모듈에 전달할 파라미터를 문자열로 설정합니다.&#xA;&#xA;파라미터가 여러개일 경우 각 파라미터는 공백으로 구분합니다.&#xA;파라미터값에 공백이 포함된 경우는 &quot; ' &quot; (홑따옴표) 를 사용하여야 합니다." />
-            <Argument name="strRecvID" type="String" in="false" out="false" option="false" variable="false" description="실행한 메소드를 구분하기 위한 ID 를 문자열로 설정합니다.&#xA;&#xA;onsuccess, onrecvdata 이벤트에서 ExternalAPIEventIfo 오브젝트의 recvid 속성에 설정한 값이 전달됩니다." />
+            <Argument name="strRecvID" type="String" in="false" out="false" option="false" variable="false" description="실행한 메서드를 구분하기 위한 ID 를 문자열로 설정합니다.&#xA;&#xA;onsuccess, onrecvdata 이벤트에서 ExternalAPIEventIfo 오브젝트의 recvid 속성에 설정한 값이 전달됩니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isAccessible" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="특정 외부 앱에 접근이 가능한지 확인하는 메소드입니다.">
+      <Method name="isAccessible" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="특정 외부 앱에 접근이 가능한지 확인하는 메서드입니다.">
         <Syntax text="ExternalAPI.isAccessible ( strAppID )">
-          <Return type="Boolean" description="외부 앱의 접근 가능여부와 관계없이 메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;외부 앱의 접근 가능여부와 관계없이 메소드 실행에 실패하면 false 를 반환합니다." />
+          <Return type="Boolean" description="외부 앱의 접근 가능여부와 관계없이 메서드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;외부 앱의 접근 가능여부와 관계없이 메서드 실행에 실패하면 false 를 반환합니다." />
           <Arguments>
             <Argument name="strAppID" type="String" in="false" out="false" option="false" variable="false" description="접근 가능여부를 확인하려는 외부 앱의 ID 를 문자열로 설정합니다.&#xA;&#xA;Android 는 Domain 형태로 설정합니다. (&quot;com.nexacro.testmodule&quot;)&#xA;iOS 는 URL Scheme 형태로 설정합니다. (&quot;TestApp://&quot;)" />
           </Arguments>

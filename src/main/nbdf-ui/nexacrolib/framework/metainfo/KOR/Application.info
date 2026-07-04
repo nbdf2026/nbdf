@@ -18,7 +18,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="Application.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -28,7 +28,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 Application 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 Application 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="Application.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -38,7 +38,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="동적으로 생성한 Tray 를 Application 에 추가하는 메소드입니다.">
+      <Method name="addTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="동적으로 생성한 Tray 를 Application 에 추가하는 메서드입니다.">
         <Syntax text="Application.addTray(strTrayID, objTray)">
           <Return type="Number" description="trays 속성에 추가된 Tray 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;Tray 오브젝트 추가에 실패했을 경우 &quot;-1&quot; 을 반환합니다." />
           <Arguments>
@@ -47,7 +47,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에 변수를 추가하는 메소드입니다.">
+      <Method name="addVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에 변수를 추가하는 메서드입니다.">
         <Syntax text="Application.addVariable( strID, varValue )">
           <Return type="Number" description="변수 추가에 성공하면 &quot;1&quot; 을 반환합니다.&#xA;변수 추가에 실패하면 &quot;0&quot; 을 반환합니다.&#xA;동일한 변수가 존재하면 &quot;-1&quot; 을 반환합니다." />
           <Arguments>
@@ -56,7 +56,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 경고 대화상자를 표시하는 메소드입니다.">
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 경고 대화상자를 표시하는 메서드입니다.">
         <Syntax text="Application.alert( strText )">
           <Return type="" description="" />
           <Arguments>
@@ -64,7 +64,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 트렌젝션을 중지 시키는 메소드입니다.">
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 트렌젝션을 중지 시키는 메서드입니다.">
         <Syntax text="cancelTransaction( [strSvcID] )">
           <Return type="" description="" />
           <Arguments>
@@ -72,7 +72,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다">
         <Syntax text="Application.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -80,7 +80,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 선택 대화상자를 표시하는 메소드입니다.">
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 선택 대화상자를 표시하는 메서드입니다.">
         <Syntax text="Application.confirm( strText [,strCaption [,strType]] )">
           <Return type="Boolean" description="표시된 선택 대화상자에서 &quot;확인&quot; 버튼을 선택하면 &quot;true&quot;를 반환합니다.&#xA;표시된 선택 대화상자에서 &quot;취소&quot; 버튼을 선택하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -96,13 +96,13 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="exit" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="실행중인 넥사크로 어플리케이션을 종료시키는 메소드입니다.">
+      <Method name="exit" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="실행중인 넥사크로 어플리케이션을 종료시키는 메서드입니다.">
         <Syntax text="Application.exit()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Application.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -112,19 +112,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getActiveForm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 에서 현재 활성화된 Form 객체를 반환하는 메소드입니다.">
+      <Method name="getActiveForm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 에서 현재 활성화된 Form 객체를 반환하는 메서드입니다.">
         <Syntax text="Application.getActiveForm()">
           <Return type="Object" description="현재 포커스를 가진 컴포넌트의 부모 Form 을 반환합니다.&#xA;&#xA;Div 와 같은 컨테이너 컴포넌트에 속한 컴포넌트에 포커스가 있을 경우 Div 의 부모 Form 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 에서 현재 활성화된 Frame 객체를 반환하는 메소드입니다.">
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 에서 현재 활성화된 Frame 객체를 반환하는 메서드입니다.">
         <Syntax text="Application.getActiveFrame()">
           <Return type="Object" description="현재 포커스를 가진 Form 의 부모 Frame 을 반환합니다.&#xA;&#xA;Modal, Modeless 자식 Frame 을 포함하여 현재 포커스를 가진 Frame 이 반환됩니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="Application.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
           <Arguments>
@@ -145,7 +145,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="Application.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -156,7 +156,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isExistVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에 특정 변수의 존재여부를 반환하는 메소드입니다.">
+      <Method name="isExistVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에 특정 변수의 존재여부를 반환하는 메서드입니다.">
         <Syntax text="Application.isExistVariable( strID );">
           <Return type="Boolean" description="변수가 AppVariables 영역에 존재하면 &quot;true&quot; 를 반환합니다.&#xA;변수가 AppVariables 영역에 존재하지 않으면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -164,7 +164,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 오브젝트를 Application 전체를 대상으로 검색하여 반환하는 메소드입니다.">
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 오브젝트를 Application 전체를 대상으로 검색하여 반환하는 메서드입니다.">
         <Syntax text="Application.lookup( strObjectID )">
           <Return type="Object" description="검색하여 찾아낸 오브젝트를 반환합니다." />
           <Arguments>
@@ -172,7 +172,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Application.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
           <Arguments>
@@ -182,7 +182,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Application.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다" />
           <Arguments>
@@ -192,7 +192,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Application 의 trays 속성에 등록된 Tray 오브젝트를 삭제하는 메소드입니다.">
+      <Method name="removeTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Application 의 trays 속성에 등록된 Tray 오브젝트를 삭제하는 메서드입니다.">
         <Syntax text="application.removeTray([strID]);">
           <Return type="" description="" />
           <Arguments>
@@ -200,7 +200,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에서 변수를 제거하는 메소드입니다.">
+      <Method name="removeVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에서 변수를 제거하는 메서드입니다.">
         <Syntax text="Application.removeVariable( strID )">
           <Return type="" description="" />
           <Arguments>
@@ -208,7 +208,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="Application.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -218,7 +218,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="Application.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -228,7 +228,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에 변수를 추가 또는 값을 설정하는 메소드입니다.">
+      <Method name="setVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 의 AppVariables 영역에 변수를 추가 또는 값을 설정하는 메서드입니다.">
         <Syntax text="Application.setVariable( strID, varValue )">
           <Return type="Number" description="변수 추가에 성공하면 &quot;1&quot; 을 반환합니다.&#xA;변수 추가에 실패하면 &quot;0&quot; 을 반환합니다.&#xA;동일한 변수가 존재하면 &quot;-1&quot; 을 반환합니다." />
           <Arguments>
@@ -237,7 +237,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="trace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="추적 로그를 남기는 메소드입니다.">
+      <Method name="trace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="추적 로그를 남기는 메서드입니다.">
         <Syntax text="Application.trace( strLog )">
           <Return type="" description="" />
           <Arguments>
@@ -245,7 +245,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 영역에 정의된 Dataset 의 데이터를 갱신하기 위한 서비스를 호출하고, 트랜잭션이 완료되면 콜백함수을 실행하는 메소드입니다.">
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Application 영역에 정의된 Dataset 의 데이터를 갱신하기 위한 서비스를 호출하고, 트랜잭션이 완료되면 콜백함수을 실행하는 메서드입니다.">
         <Syntax text="Application.transaction(strSvcID,strURL,strInDatasets,strOutDatasets,strArgument,strCallbackFunc[,bAsync[,nDataType[,bCompress]]])">
           <Return type="" description="" />
           <Arguments>

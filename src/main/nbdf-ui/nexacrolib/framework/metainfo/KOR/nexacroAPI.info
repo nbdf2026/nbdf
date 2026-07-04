@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaInfo version="2.0">
   <Object id="nexacro.NexacroAPI">
-    <ObjectInfo finalclass="" inheritance="" classname="nexacro.nexacro" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="넥사크로에서 기능을 확장하여 추가로 제공하는 메소드입니다." a11yprop="" />
+    <ObjectInfo finalclass="" inheritance="" classname="nexacro.nexacro" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="넥사크로에서 기능을 확장하여 추가로 제공하는 메서드입니다." a11yprop="" />
     <PropertyInfo />
     <CSSInfo>
       <PropertyInfo />
@@ -9,7 +9,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addErrorMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에 사용자가 정의한 에러메시지를 추가하는 메소드입니다.">
+      <Method name="addErrorMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에 사용자가 정의한 에러메시지를 추가하는 메서드입니다.">
         <Syntax text="nexacro.addErrorMessage( enumLang, strCode, strMsg )">
           <Return type="" description="" />
           <Arguments>
@@ -19,7 +19,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="base64Decode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Base64 형식으로 인코딩된 데이터를 디코딩 하는 메소드입니다.">
+      <Method name="base64Decode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Base64 형식으로 인코딩된 데이터를 디코딩 하는 메서드입니다.">
         <Syntax text="nexacro.base64Decode( strData )">
           <Return type="String" description="디코딩된 결과 데이터를 반환합니다." />
           <Arguments>
@@ -27,7 +27,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="base64Encode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="데이터를 Base64 형식으로 인코딩 하는 메소드입니다.">
+      <Method name="base64Encode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="데이터를 Base64 형식으로 인코딩 하는 메서드입니다.">
         <Syntax text="nexacro.base64Encode( strData )">
           <Return type="Object" description="Base64 형식으로 인코딩된 오브젝트를 반환합니다." />
           <Arguments>
@@ -35,7 +35,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 올림한 값을 반환하는 메소드입니다.">
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 올림한 값을 반환하는 메서드입니다.">
         <Syntax text="nexacro.ceil( nVal [,nFractionDigit] );">
           <Return type="Number" description="올림한 값을 반환합니다." />
           <Arguments>
@@ -44,23 +44,23 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="deleteCacheDB" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="어플리케이션에서 사용한 Cache DB 파일 및 관련된 임시파일을 삭제하는 메소드입니다.">
+      <Method name="deleteCacheDB" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="어플리케이션에서 사용한 Cache DB 파일 및 관련된 임시파일을 삭제하는 메서드입니다.">
         <Syntax text="nexacro.deleteCacheDB()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="flashWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="작업표시줄에서 해당 어플리케이션 아이콘을 깜빡이게 하는 메소드입니다.">
+      <Method name="flashWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="작업표시줄에서 해당 어플리케이션 아이콘을 깜빡이게 하는 메서드입니다.">
         <Syntax text="nexacro.flashWindow( enumType, nCount, [,nInterval] )">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="enumType" type="String" in="false" out="false" option="false" variable="false" description="어플리케이션이 아이콘이 깜빡이는 방식을 설정합니다.&#xA;&#xA;&quot;count&quot; 설정 시 지정된 횟수만큼 깜빡인 후 종료됩니다.&#xA;&quot;timer&quot; 설정 시 &quot;stop&quot; 값으로 flashWindow() 메소드를 실행할 때까지 계속 깜빡입니다.&#xA;&quot;timernofg&quot; 설정 시 해당 어플리케이션이 활성화 될 때까지 깜빡입니다.&#xA;&quot;stop&quot; 설정 시 현재 깜빡이는 동작을 중지합니다." />
+            <Argument name="enumType" type="String" in="false" out="false" option="false" variable="false" description="어플리케이션이 아이콘이 깜빡이는 방식을 설정합니다.&#xA;&#xA;&quot;count&quot; 설정 시 지정된 횟수만큼 깜빡인 후 종료됩니다.&#xA;&quot;timer&quot; 설정 시 &quot;stop&quot; 값으로 flashWindow() 메서드를 실행할 때까지 계속 깜빡입니다.&#xA;&quot;timernofg&quot; 설정 시 해당 어플리케이션이 활성화 될 때까지 깜빡입니다.&#xA;&quot;stop&quot; 설정 시 현재 깜빡이는 동작을 중지합니다." />
             <Argument name="nCount" type="Number" in="false" out="false" option="false" variable="false" description="enumType 값이 &quot;count&quot; 인 경우 깜박이는 횟수를 숫자로 설정합니다.&#xA;&#xA;enumType 값이 &quot;count&quot; 가 아닌 경우 설정값은 무시됩니다." />
             <Argument name="nInterval" type="Number" in="false" out="false" option="false" variable="false" description="어플리케이션 아이콘이 깜박이는 간격을 밀리초(milliseconds) 단위의 숫자로 설정합니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 내림한 값을 반환하는 메소드입니다.">
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 내림한 값을 반환하는 메서드입니다.">
         <Syntax text="nexacro.floor( nVal [,nFractionDigit] );">
           <Return type="Number" description="내림한 값을 반환합니다." />
           <Arguments>
@@ -69,19 +69,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="gc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="메모리에서 사용하지 않는 데이터를 즉시 삭제하는 메소드입니다.">
+      <Method name="gc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="메모리에서 사용하지 않는 데이터를 즉시 삭제하는 메서드입니다.">
         <Syntax text="nexacro.gc()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getApplication" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 실행된 어플리케이션의 Application 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getApplication" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 실행된 어플리케이션의 Application 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="nexacro.getApplication()">
           <Return type="Object" description="Application 오브젝트를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에 정의된 쿠키의 값을 반환하는 메소드입니다.">
+      <Method name="getCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에 정의된 쿠키의 값을 반환하는 메서드입니다.">
         <Syntax text="nexacro.getCookieVariable( strID [, bSecure] )">
           <Return type="String" description="Cookies 영역에 정의된 쿠키변수의 값을 반환합니다.&#xA;&#xA;조건에 만족하는 쿠키변수가 없을 경우 undefined 를 반환합니다." />
           <Arguments>
@@ -90,7 +90,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="지정된 Frame 이 속한 window 의 Zoom 기능 설정여부를 반환하는 메소드입니다.">
+      <Method name="getEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="지정된 Frame 이 속한 window 의 Zoom 기능 설정여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.getEnableWheelZoom( objFrame )">
           <Return type="Boolean" description="지정된 Frame 이 속한 window 에 Zoom 기능이 설정되어 있으면 true 를 반환합니다.&#xA;&#xA;지정된 Frame 이 속한 window 에 Zoom 기능이 설정되어 있지 않으면 false 를 반환합니다." />
           <Arguments>
@@ -98,13 +98,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getEnvironment" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 실행된 어플리케이션의 Environment 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getEnvironment" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 실행된 어플리케이션의 Environment 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="nexacro.getEnvironment()">
           <Return type="Object" description="Environment 오브젝트를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Variables 영역에 정의된 변수의 값을 반환하는 메소드입니다.">
+      <Method name="getEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Variables 영역에 정의된 변수의 값을 반환하는 메서드입니다.">
         <Syntax text="nexacro.getEnvironmentVariable( strID )">
           <Return type="String" description="Environment 의 Variable 영역에 정의된 변수의 값을 반환합니다." />
           <Arguments>
@@ -112,7 +112,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 HTTP Header 영역에 정의된 변수의 값을 반환하는 메소드입니다.">
+      <Method name="getHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 HTTP Header 영역에 정의된 변수의 값을 반환하는 메서드입니다.">
         <Syntax text="nexacro.getHTTPHeaderVariable( strID )">
           <Return type="" description="" />
           <Arguments>
@@ -120,13 +120,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getLogFilePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="앱에서 로그 파일을 저장하는 경로를 반환하는 메소드입니다.">
+      <Method name="getLogFilePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="앱에서 로그 파일을 저장하는 경로를 반환하는 메서드입니다.">
         <Syntax text="nexacro.getLogFilePath()">
           <Return type="String" description="로그 파일이 저장된 경로를 문자열로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPopupFrames" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파라미터로 설정한 Frame 이 속한 Window 를 기준으로 팝업된 ChildFrame 을 Collection 형태로 반환하는 메소드입니다.">
+      <Method name="getPopupFrames" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파라미터로 설정한 Frame 이 속한 Window 를 기준으로 팝업된 ChildFrame 을 Collection 형태로 반환하는 메서드입니다.">
         <Syntax text="nexacro.getPopupFrames( [objFrame] )">
           <Return type="Array" description="파라미터로 설정한 Frame 이 속한 Window 에서 팝업으로 실행된 Frame 을 Collection 형태로 반환합니다.&#xA;&#xA;objFrame 파라미터에 null 또는 잘못된 값을 설정할 경우 undefined 를 반환합니다." />
           <Arguments>
@@ -134,7 +134,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에서 저장한 개인화 데이터를 반환하는 메소드입니다.">
+      <Method name="getPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에서 저장한 개인화 데이터를 반환하는 메서드입니다.">
         <Syntax text="nexacro.getPrivateProfile( strKey )">
           <Return type="Variant" description="인수로 전달된 키값에 해당하는 개인화 데이터를 저장 시 설정한 데이터 타입으로 반환합니다." />
           <Arguments>
@@ -142,13 +142,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getProjectPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애플리케이션의 실행 경로를 반환하는 메소드입니다.">
+      <Method name="getProjectPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애플리케이션의 실행 경로를 반환하는 메서드입니다.">
         <Syntax text="nexacro.getProjectPath()">
           <Return type="String" description="애플리케이션의 실행 경로를 문자열로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getTextSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 값을 기준으로 텍스트가 표시되는 영역의 크기를 계산하여 반환하는 메소드입니다.">
+      <Method name="getTextSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 값을 기준으로 텍스트가 표시되는 영역의 크기를 계산하여 반환하는 메서드입니다.">
         <Syntax text="nexacro.getTextSize( strText, strFont [, nLimitWidth, strWordWrap] );">
           <Return type="Object" description="인수값을 기준으로 계산된 텍스트가 표시되는 영역의 크기 정보를 오브젝트로 반환합니다.&#xA;&#xA;반환된 오브젝트의 &quot;nx&quot; 속성에 텍스트의 가로크기가 저장됩니다.&#xA;반환된 오브젝트의 &quot;ny&quot; 속성에 텍스트의 세로크기가 저장됩니다." />
           <Arguments>
@@ -159,7 +159,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 Frame 이 속한 window 의 Zoom 배율을 반환하는 메소드입니다.">
+      <Method name="getWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 Frame 이 속한 window 의 Zoom 배율을 반환하는 메서드입니다.">
         <Syntax text="nexacro.getWheelZoom( objFrame )">
           <Return type="Number" description="지정된 Frame 이 속한 window 의 Zoom 배율을 &quot;%&quot; 단위의 숫자로 반환합니다." />
           <Arguments>
@@ -167,7 +167,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isAlpha" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳인지 여부를 반환하는 메소드입니다.">
+      <Method name="isAlpha" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳인지 여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.isAlpha( nChar )&#xA;nexacro.isAlpha( strChar )">
           <Return type="Boolean" description="전달된 문자코드 또는 문자열이 알파벳이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 알파벳이 아니면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -176,7 +176,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isAlphaNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 또는 숫자인지 여부를 반환하는 메소드입니다.">
+      <Method name="isAlphaNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 또는 숫자인지 여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.isAlphaNumeric( nChar )&#xA;nexacro.isAlphaNumeric( strChar )">
           <Return type="Boolean" description="전달된 문자코드가 알파벳 또는 숫자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자열이 알파벳과 숫자로만 이루어져 있다면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;전달된 문자코드가 알파벳 또는 숫자가 아니면 &quot;false&quot; 를 반환합니다.&#xA;전달된 문자열에 알파벳과 숫자 이외의 문자가 있다면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -185,7 +185,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isExistCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에서 특정 쿠키변수의 존재여부를 반환하는 메소드입니다.">
+      <Method name="isExistCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에서 특정 쿠키변수의 존재여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.isExistCookieVariable( strID [, bSecure] )">
           <Return type="Boolean" description="Cookies 영역에 쿠키변수가 존재하면 true 를 반환합니다.&#xA;Cookies 영역에 쿠키변수가 존재하지 않으면 false 를 반환합니다.&#xA;&#xA;bSecure 설정 시 bSecure 에 설정한 값까지 일치할 경우 true 를 반환합니다." />
           <Arguments>
@@ -194,7 +194,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isLower" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 소문자인지 여부를 반환하는 메소드입니다.">
+      <Method name="isLower" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 소문자인지 여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.isLower( nChar )&#xA;nexacro.isLower( strChar )">
           <Return type="Boolean" description="전달된 문자코드 또는 문자열이 알파벳 소문자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 알파벳 소문자가 아니면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -203,7 +203,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 숫자인지 여부를 반환하는 메소드입니다.">
+      <Method name="isNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 숫자인지 여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.isNumeric( nChar )&#xA;nexacro.isNumeric( strChar )">
           <Return type="Boolean" description="전달된 문자코드 또는 문자열이 숫자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 숫자가 아니면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -212,7 +212,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isSpace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 공백문자인지 여부를 반환하는 메소드입니다.">
+      <Method name="isSpace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 공백문자인지 여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.isSpace( nChar )&#xA;nexacro.isSpace( strChar )">
           <Return type="Boolean" description="전달된 문자코드 또는 문자열이 공백문자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 공백문자가 아니면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -221,7 +221,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isUpper" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 대문자인지 여부를 반환하는 메소드입니다.">
+      <Method name="isUpper" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 대문자인지 여부를 반환하는 메서드입니다.">
         <Syntax text="nexacro.isUpper( nChar );&#xA;nexacro.isUpper( strChar );">
           <Return type="Boolean" description="전달된 문자코드 또는 문자열이 알파벳 대문자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 알파벳 대문자가 아니면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -230,7 +230,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="loadStyle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에 XCSS 파일을 로드하여 적용하는 메소드입니다.">
+      <Method name="loadStyle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에 XCSS 파일을 로드하여 적용하는 메서드입니다.">
         <Syntax text="nexacro.loadStyle( strURL )">
           <Return type="" description="" />
           <Arguments>
@@ -238,7 +238,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="동적으로 생성한 ChildFrame 을 Modeless Window 로 표시하는 메소드입니다.">
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="동적으로 생성한 ChildFrame 을 Modeless Window 로 표시하는 메서드입니다.">
         <Syntax text="nexacro.open( strID, strFormURL, objParentFrame, {objArguList}, strOpenStyle, nLeft, nTop [, nWidth, nHeight [, objOpener [, strExtOpenStyle ]]])">
           <Return type="Boolean" description="Modeless Window 가 정상으로 표시되면 true 를 반환합니다.&#xA;&#xA;Modeless Window 가 정상으로 표시되지 않으면 false 를 반환합니다." />
           <Arguments>
@@ -256,7 +256,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="parseDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="날짜형식의 문자열을 분석해 1970년 1월 1일 자정부터 해당 날짜 사이의 시간을 밀리초로 반환하는 메소드입니다.">
+      <Method name="parseDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="날짜형식의 문자열을 분석해 1970년 1월 1일 자정부터 해당 날짜 사이의 시간을 밀리초로 반환하는 메서드입니다.">
         <Syntax text="nexacro.parseDate( strDate )">
           <Return type="Number" description="1970년 1월 1일 자정부터 인수로 전달된 날짜 사이의 시간을 밀리초로 반환합니다.&#xA;&#xA;유효하지 않은 날짜형식으로 오류로 처리되면 undefined 를 반환합니다." />
           <Arguments>
@@ -264,7 +264,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에서 쿠키변수를 제거하는 메소드입니다.">
+      <Method name="removeCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에서 쿠키변수를 제거하는 메서드입니다.">
         <Syntax text="nexacro.removeCookieVariable( strID [, bSecure] )">
           <Return type="" description="" />
           <Arguments>
@@ -273,7 +273,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Variables 영역에 정의된 변수를 제거하는 메소드입니다.">
+      <Method name="removeEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Variables 영역에 정의된 변수를 제거하는 메서드입니다.">
         <Syntax text="nexacro.removeEnvironmentVariable( strID )">
           <Return type="" description="" />
           <Arguments>
@@ -281,7 +281,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 HTTP Header 영역에서 변수를 제거하는 메소드입니다.">
+      <Method name="removeHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 HTTP Header 영역에서 변수를 제거하는 메서드입니다.">
         <Syntax text="nexacro.removeHTTPHeaderVariable( strID )">
           <Return type="" description="" />
           <Arguments>
@@ -289,7 +289,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removePrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애플리케이션에서 저장한 개인화 데이터를 삭제하는 메소드입니다.">
+      <Method name="removePrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애플리케이션에서 저장한 개인화 데이터를 삭제하는 메서드입니다.">
         <Syntax text="nexacro.removePrivateProfile( strKey )">
           <Return type="" description="" />
           <Arguments>
@@ -297,7 +297,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="replaceAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열에서 특정 문자열을 새 문자열로 모두 변환하여 반환하는 메소드입니다.">
+      <Method name="replaceAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열에서 특정 문자열을 새 문자열로 모두 변환하여 반환하는 메서드입니다.">
         <Syntax text="nexacro.replaceAll( strText, strOrgText, strRepText );">
           <Return type="String" description="특정 문자열을 새 문자열로 변환한 문자열을 반환합니다." />
           <Arguments>
@@ -307,7 +307,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 반올림한 값을 반환하는 메소드입니다.">
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 반올림한 값을 반환하는 메서드입니다.">
         <Syntax text="nexacro.round( nVal [,nFractionDigit] );">
           <Return type="Number" description="반올림한 값을 반환합니다." />
           <Arguments>
@@ -316,7 +316,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에 쿠키를 추가하는 메소드입니다.">
+      <Method name="setCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Cookies 영역에 쿠키를 추가하는 메서드입니다.">
         <Syntax text="nexacro.setCookieVariable( strID, varVal [, bSecure] )">
           <Return type="" description="" />
           <Arguments>
@@ -326,7 +326,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="지정된 Frame 이 속한 window 의 Zoom 기능을 설정하는 메소드입니다.">
+      <Method name="setEnableWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="지정된 Frame 이 속한 window 의 Zoom 기능을 설정하는 메서드입니다.">
         <Syntax text="nexacro.setEnableWheelZoom( objFrame, bZoom)">
           <Return type="" description="" />
           <Arguments>
@@ -335,7 +335,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Variables 영역에 변수를 추가하는 메소드입니다.">
+      <Method name="setEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 Variables 영역에 변수를 추가하는 메서드입니다.">
         <Syntax text="nexacro.setEnvironmentVariable( strID, varVal )">
           <Return type="" description="" />
           <Arguments>
@@ -344,7 +344,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 HTTP Header 영역에 변수를 추가하는 메소드입니다.">
+      <Method name="setHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Environment 의 HTTP Header 영역에 변수를 추가하는 메서드입니다.">
         <Syntax text="nexacro.setHTTPHeaderVariable( strID, varVal )">
           <Return type="" description="" />
           <Arguments>
@@ -353,7 +353,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setInitialVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="웹브라우저 환경에서 어플리케이션이 로드되기 전 Global 영역 변수에 값을 설정하는 메소드입니다.">
+      <Method name="setInitialVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="웹브라우저 환경에서 어플리케이션이 로드되기 전 Global 영역 변수에 값을 설정하는 메서드입니다.">
         <Syntax text="nexacro.setInitialVariable( strType, strID, varVal )">
           <Return type="" description="" />
           <Arguments>
@@ -363,7 +363,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에서 개인화 데이터를 저장하는 메소드입니다.">
+      <Method name="setPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="어플리케이션에서 개인화 데이터를 저장하는 메서드입니다.">
         <Syntax text="nexacro.setPrivateProfile( strKey, varVal )">
           <Return type="Boolean" description="개인화 데이터 저장에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;개인화 데이터 저장에 실패하면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -372,7 +372,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setProtocolVar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="통신에 사용되는 Protocol 어답터에 설정값을 전달하는 메소드입니다.">
+      <Method name="setProtocolVar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="통신에 사용되는 Protocol 어답터에 설정값을 전달하는 메서드입니다.">
         <Syntax text="nexacro.setProtocolVar(strName, strKey, strValue) ;">
           <Return type="" description="" />
           <Arguments>
@@ -382,7 +382,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setRenderingType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Windows NRE에서 렌더링 방식을 설정하는 메소드입니다.">
+      <Method name="setRenderingType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Windows NRE에서 렌더링 방식을 설정하는 메서드입니다.">
         <Syntax text="nexacro.setRenderingType( nType )">
           <Return type="" description="" />
           <Arguments>
@@ -400,16 +400,16 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="지정된 Frame 이 속한 window 의 Zoom 배율을 설정하는 메소드입니다.">
+      <Method name="setWheelZoom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="지정된 Frame 이 속한 window 의 Zoom 배율을 설정하는 메서드입니다.">
         <Syntax text="nexacro.setWheelZoom( objFrame, nZoomScale)">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="nZoomScale" type="Number" in="false" out="false" option="false" variable="false" description="objFrame 이 속한 window  의 Zoom 배율을 &quot;%&quot; 단위의 숫자로 설정합니다.&#xA;&#xA;50%~200% 범위 내에서 10% 단위로 설정하여야 합니다.&#xA;설정값이 범위를 벗어나거나 10% 단위가 아닌 경우 메소드가 실행되지 않습니다." />
+            <Argument name="nZoomScale" type="Number" in="false" out="false" option="false" variable="false" description="objFrame 이 속한 window  의 Zoom 배율을 &quot;%&quot; 단위의 숫자로 설정합니다.&#xA;&#xA;50%~200% 범위 내에서 10% 단위로 설정하여야 합니다.&#xA;설정값이 범위를 벗어나거나 10% 단위가 아닌 경우 메서드가 실행되지 않습니다." />
             <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="Zoom 배율을 설정할 window 에 속한 Frame 을 오브젝트 형태로 설정합니다.&#xA;&#xA;동일한 window 에 속한 Frame 중 어느것을 설정하여도 동일하게 설정됩니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="stripQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에서 따옴표를 제거한 후 반환하는 메소드입니다.">
+      <Method name="stripQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에서 따옴표를 제거한 후 반환하는 메서드입니다.">
         <Syntax text="nexacro.stripQuote( strText )">
           <Return type="String" description="전달된 문자열의 양쪽 끝에서 따옴표를 제거하여 반환합니다." />
           <Arguments>
@@ -417,7 +417,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="toNumber" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열을 숫자로 변환하여 반환하는 메소드입니다.">
+      <Method name="toNumber" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열을 숫자로 변환하여 반환하는 메서드입니다.">
         <Syntax text="nexacro.toNumber( varValue [, varNanVal [, varPinfVal [, varNinfVal]]] )">
           <Return type="Number" description="문자열을 숫자로 변환하여 반환합니다." />
           <Arguments>
@@ -428,7 +428,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="trim" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메소드입니다.">
+      <Method name="trim" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메서드입니다.">
         <Syntax text="nexacro.trim( strText [,strChar] )">
           <Return type="String" description="문자열의 양쪽 끝에서 공백문자 또는 지정된 문자가 제거된 문자열을 반환합니다." />
           <Arguments>
@@ -437,7 +437,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="trimLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 왼쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메소드입니다.">
+      <Method name="trimLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 왼쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메서드입니다.">
         <Syntax text="nexacro.trimLeft( strText [,strChar] )">
           <Return type="String" description="문자열의 왼쪽 끝에서 공백문자 또는 지정된 문자가 제거된 문자열을 반환합니다." />
           <Arguments>
@@ -446,7 +446,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="trimRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 오른쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메소드입니다.">
+      <Method name="trimRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 오른쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메서드입니다.">
         <Syntax text="nexacro.trimRight( strText [,strChar] )">
           <Return type="String" description="문자열의 오른쪽 끝에서 공백문자 또는 지정된 문자가 제거된 문자열을 반환합니다." />
           <Arguments>
@@ -455,7 +455,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="wrapQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에 큰따옴표를 붙여 반환하는 메소드입니다.">
+      <Method name="wrapQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에 큰따옴표를 붙여 반환하는 메서드입니다.">
         <Syntax text="nexacro.wrapQuote( strText )">
           <Return type="String" description="전달된 문자열의 양쪽 끝에 큰따옴표를 붙여 반환합니다." />
           <Arguments>

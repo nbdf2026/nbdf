@@ -15,7 +15,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="Network.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -25,7 +25,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="Network.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -33,7 +33,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Network.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -43,7 +43,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="Network.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -52,7 +52,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isReachable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기에서 특정 URL 의 접속 가능 여부를 반환하는 메소드입니다.">
+      <Method name="isReachable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기에서 특정 URL 의 접속 가능 여부를 반환하는 메서드입니다.">
         <Syntax text="Network.isReachable(strURL)">
           <Return type="Boolean" description="strURL 이 생략되거나 허용되지 않는 문자가 사용된 경우에는 &quot;false&quot; 를 반환합니다.&#xA;그 외의 정상적인 경우에는 &quot;true&quot; 를 반환합니다." />
           <Arguments>
@@ -60,7 +60,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Network.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -70,7 +70,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Network 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="Network.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -80,7 +80,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="watchStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기에서 네트워크 상태를 일정 간격으로 수신하도록 설정하는 메소드입니다.">
+      <Method name="watchStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기에서 네트워크 상태를 일정 간격으로 수신하도록 설정하는 메서드입니다.">
         <Syntax text="Network.watchStart(nIntervalTime)">
           <Return type="Boolean" description="nIntervalTime 이 생략되거나 허용되지 않는 문자가 사용된 경우에는 &quot;false&quot; 를 반환합니다.&#xA;그 외의 정상적인 경우에는 &quot;true&quot; 를 반환합니다." />
           <Arguments>
@@ -88,7 +88,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="watchStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="watchStart() 메소드로 설정한 주기적인 네트워크 상태확인을 종료하는 메소드입니다.">
+      <Method name="watchStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="watchStart() 메서드로 설정한 주기적인 네트워크 상태확인을 종료하는 메서드입니다.">
         <Syntax text="Network.watchStop()">
           <Return type="" description="" />
           <Arguments />

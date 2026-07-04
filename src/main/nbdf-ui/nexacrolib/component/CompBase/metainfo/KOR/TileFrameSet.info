@@ -115,7 +115,7 @@
       <Control name="statusbar" classname="nexacro.StatusBarControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
     </ControlInfo>
     <MethodInfo>
-      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Frame 을 TileFrameSet 의 자식 Frame 으로 추가하는 메소드입니다.">
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Frame 을 TileFrameSet 의 자식 Frame 으로 추가하는 메서드입니다.">
         <Syntax text="TileFrameSet.addChild( strChildID, objFrame )">
           <Return type="Number" description="추가된 자식 Frame 의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -130,7 +130,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="TileFrameSet.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -140,7 +140,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 TileFrameSet 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 TileFrameSet 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="TileFrameSet.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -150,7 +150,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 경고 대화상자를 표시하는 메소드입니다.">
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 경고 대화상자를 표시하는 메서드입니다.">
         <Syntax text="TileFrameSet.alert( strText )">
           <Return type="" description="" />
           <Arguments>
@@ -170,7 +170,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="TileFrameSet.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -178,7 +178,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 선택 대화상자를 표시하는 메소드입니다.">
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 선택 대화상자를 표시하는 메서드입니다.">
         <Syntax text="TileFrameSet.confirm( strText [,strCaption [,strType]] )">
           <Return type="Boolean" description="표시된 선택 대화상자에서 &quot;확인&quot; 버튼을 선택하면 &quot;true&quot;를 반환합니다.&#xA;표시된 선택 대화상자에서 &quot;취소&quot; 버튼을 선택하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -188,13 +188,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 TileFrameSet 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 TileFrameSet 을(를) 삭제하는 메서드입니다.">
         <Syntax text="TileFrameSet.destroy()">
           <Return type="Boolean" description="TileFrameSet 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;TileFrameSet 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -204,19 +204,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 자식 Frame 중 활성화 상태인 Frame 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 자식 Frame 중 활성화 상태인 Frame 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getActiveFrame() ;">
           <Return type="Object" description="TileFrameSet 의 자식 Frame 중 활성화 상태일 Frame 오브젝트를 반환합니다.&#xA;TileFrameSet 의 자식 Frame 중 활성화 상태인 Frame 이 없을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 에 표시된 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 에 표시된 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getDisplayText()">
           <Return type="String" description="TileFrameSet 에 표시된 텍스트값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -225,97 +225,97 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getFocus()">
           <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getNativeHandle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="TileFrameSet이 속한 윈도우 핸들(HWND)값을 반환하는 메소드입니다.">
+      <Method name="getNativeHandle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="TileFrameSet이 속한 윈도우 핸들(HWND)값을 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getNativeHandle();">
           <Return type="Number" description="TileFrameSet이 속한 윈도우 핸들(HWND)값" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Top 위치를 기준으로 TileFrameSet 의 bottom 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Top 위치를 기준으로 TileFrameSet 의 bottom 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getOffsetBottom();">
           <Return type="Number" description="부모 Frame 의 Top 위치를 기준으로 TileFrameSet 의 bottom 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 높이를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 높이를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getOffsetHeight();">
           <Return type="Number" description="TileFrameSet 의 높이를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Left 위치를 기준으로 TileFrameSet 의 left 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Left 위치를 기준으로 TileFrameSet 의 left 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getOffsetLeft();">
           <Return type="Number" description="부모 Frame 의 Left 위치를 기준으로 TileFrameSet 의 left 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Left 위치를 기준으로 TileFrameSet 의 right 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Left 위치를 기준으로 TileFrameSet 의 right 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getOffsetLeft();">
           <Return type="Number" description="부모 Frame 의 Left 위치를 기준으로 TileFrameSet 의 right 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Top 위치를 기준으로 TileFrameSet 의 top 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 Frame 의 Top 위치를 기준으로 TileFrameSet 의 top 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getOffsetTop();">
           <Return type="Number" description="부모 Frame 의 Top 위치를 기준으로 TileFrameSet 의 top 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 너비를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 너비를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getOffsetWidth();">
           <Return type="Number" description="TileFrameSet 의 너비를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 소속된 부모 Frame 을 반환하는 메소드입니다.">
+      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 소속된 부모 Frame 을 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getOwnerFrame()">
           <Return type="Object" description="TileFrameSet 이 소속된 부모 Frame 오브젝트를 반환합니다.&#xA;TileFrameSet 이 소속된 Frame 이 없을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 bottom 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getPixelBottom();">
           <Return type="Number" description="TileFrameSet 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;bottom 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 height 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getPixelHeight();">
           <Return type="Number" description="TileFrameSet 의 height 속성값을 픽셀단위로 반환합니다.&#xA;height 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 left 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getPixelLeft();">
           <Return type="Number" description="TileFrameSet 의 left 속성값을 픽셀단위로 반환합니다.&#xA;left 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 right 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getPixelRight();">
           <Return type="Number" description="TileFrameSet 의 right 속성값을 픽셀단위로 반환합니다.&#xA;right 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 top 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getPixelTop();">
           <Return type="Number" description="TileFrameSet 의 top 속성값을 픽셀단위로 반환합니다.&#xA;top 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 width 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="TileFrameSet.getPixelWidth();">
           <Return type="Number" description="TileFrameSet 의 width 속성값을 픽셀단위로 반환합니다.&#xA;width 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 TileFrameSet 을 동적 생성한 후에 초기화하는 메소드입니다.">
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 TileFrameSet 을 동적 생성한 후에 초기화하는 메서드입니다.">
         <Syntax text="TileFrameSet.init( strName, nLeft, nTop, nWidth, nHeight [, nRight, nBottom] )">
           <Return type="" description="" />
           <Arguments>
@@ -329,7 +329,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Frame 을 TileFrameSet 의 자식 Frame 으로 특정 순서에 추가하는 메소드입니다.">
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Frame 을 TileFrameSet 의 자식 Frame 으로 특정 순서에 추가하는 메서드입니다.">
         <Syntax text="TileFrameSet.insertChild( nIdx, strChildID, objComp )">
           <Return type="Number" description="추가된 자식 Frame 의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -339,7 +339,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="TileFrameSet.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -350,7 +350,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 위치와 크기를 변경하는 메소드입니다.">
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 위치와 크기를 변경하는 메서드입니다.">
         <Syntax text="TileFrameSet.move( nLeft, nTop [, nWidth, nHeight [, nRight, nBottom]] )">
           <Return type="" description="" />
           <Arguments>
@@ -375,7 +375,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 에 동적으로 추가된 Frame 을 제거하는 메소드입니다.">
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 에 동적으로 추가된 Frame 을 제거하는 메서드입니다.">
         <Syntax text="TileFrameSet.removeChild( strChildID )">
           <Return type="Object" description="Frame 제거에 성공하면 제거된 Frame 의 오브젝트를 반환합니다.&#xA;Frame 제거에 실패하면 &quot;null&quot;을 반환합니다." />
           <Arguments>
@@ -389,7 +389,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="TileFrameSet.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -399,7 +399,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="TileFrameSet.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -409,7 +409,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 크기를 변경하는 메소드입니다.">
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 크기를 변경하는 메서드입니다.">
         <Syntax text="TileFrameSet.resize( nWidth, nHeight )">
           <Return type="" description="" />
           <Arguments>
@@ -430,7 +430,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="TileFrameSet.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -440,7 +440,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="TileFrameSet.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -450,13 +450,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 을 활성화하고 포커스를 주는 메소드입니다.">
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 을 활성화하고 포커스를 주는 메서드입니다.">
         <Syntax text="TileFrameSet.setFocus()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 bottom 을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 bottom 을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="TileFrameSet.setOffsetBottom( nBottom );">
           <Return type="" description="" />
           <Arguments>
@@ -464,7 +464,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 높이를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 높이를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="TileFrameSet.setOffsetHeight( nHeight );">
           <Return type="" description="" />
           <Arguments>
@@ -472,7 +472,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 left 를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 left 를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="TileFrameSet.setOffsetLeft( nLeft );">
           <Return type="" description="" />
           <Arguments>
@@ -480,7 +480,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 right 를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 right 를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="TileFrameSet.setOffsetRight( nRight );">
           <Return type="" description="" />
           <Arguments>
@@ -488,7 +488,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 top 을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 top 을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="TileFrameSet.setOffsetTop( nTop );">
           <Return type="" description="" />
           <Arguments>
@@ -496,7 +496,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 너비를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="TileFrameSet 이 FrameSet 의 하위에 속해 있을 때 TileFrameSet 의 너비를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="TileFrameSet.setOffsetWidth( nWidth );">
           <Return type="" description="" />
           <Arguments>
@@ -504,7 +504,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 TileFrameSet 을 화면에 표시하는 메소드입니다">
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 TileFrameSet 을 화면에 표시하는 메서드입니다">
         <Syntax text="TileFrameSet.show()">
           <Return type="" description="" />
           <Arguments />

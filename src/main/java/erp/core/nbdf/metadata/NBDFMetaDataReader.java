@@ -45,7 +45,7 @@ public final class NBDFMetaDataReader {
 	* @methodName     : read
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 메타정보를 읽어 NBDFColumn 목록을 생성하는 메소드
+	* @description    : 메타정보를 읽어 NBDFColumn 목록을 생성하는 메서드
 	* @param rs		  : ResultSet
 	* @return columns : NBDFColumn 목록
 	* @throws SQLException

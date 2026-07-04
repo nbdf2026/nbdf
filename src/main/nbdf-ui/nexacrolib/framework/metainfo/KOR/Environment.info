@@ -72,7 +72,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="findAccessibility" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파라미터로 전달된 텍스트가 접근성 관련 속성값에 설정된 오브젝트를 특정범위에서 검색하여 반환하는 메소드입니다.">
+      <Method name="findAccessibility" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="파라미터로 전달된 텍스트가 접근성 관련 속성값에 설정된 오브젝트를 특정범위에서 검색하여 반환하는 메서드입니다.">
         <Syntax text="Environment.findAccessibility( objParent, objStartComp, strFindText [, strProp [, strDirection [, strScope]]] );">
           <Return type="Object" description="파라미터로 전달된 텍스트가 접근성 관련 속성값으로 설정된 오브젝트를 검색하여 반환합니다." />
           <Arguments>
@@ -85,7 +85,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getDeviceAdaptor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="DeviceAdaptors 영역에 정의된 디바이스를 반환하는 메소드입니다.">
+      <Method name="getDeviceAdaptor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,Android NRE,iOS/iPadOS NRE" description="DeviceAdaptors 영역에 정의된 디바이스를 반환하는 메서드입니다.">
         <Syntax text="Environment.getDeviceAdaptor( strID )">
           <Return type="Object" description="TypeDefinition 의 DeviceAdaptors 영역에 정의된 디바이스를 반환합니다." />
           <Arguments>
@@ -93,7 +93,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="playAccessibility" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE" description="파라미터로 전달된 오브젝트의 접근성을 실행하는 메소드입니다.">
+      <Method name="playAccessibility" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE" description="파라미터로 전달된 오브젝트의 접근성을 실행하는 메서드입니다.">
         <Syntax text="Environment.playAccessibility( objComp  );">
           <Return type="Boolean" description="오브젝트의 접근성을 정상적으로 실행하면 true 를 반환합니다.&#xA;&#xA;오브젝트의 접근성을 정상적으로 실행하지 못하면 false 를 반환합니다." />
           <Arguments>
@@ -101,13 +101,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setDesktopScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Screen 의 type 속성값이 &quot;desktop&quot; 이고, 모바일 웹브라우저에서 구동될 때 최초 줌배율을 조정할 수 있는 메소드입니다.">
+      <Method name="setDesktopScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Screen 의 type 속성값이 &quot;desktop&quot; 이고, 모바일 웹브라우저에서 구동될 때 최초 줌배율을 조정할 수 있는 메서드입니다.">
         <Syntax text="Environment.setDesktopScreenWidth();">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="userNotify" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="넥사크로가 다른 어플리케이션에 포함되어 있을 때 상위 어플리케이션으로 정보를 전달하는 메소드입니다.">
+      <Method name="userNotify" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="넥사크로가 다른 어플리케이션에 포함되어 있을 때 상위 어플리케이션으로 정보를 전달하는 메서드입니다.">
         <Syntax text="Environment.userNotify( nNotifyID, strMessage )">
           <Return type="" description="" />
           <Arguments>

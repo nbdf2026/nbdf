@@ -32,7 +32,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 특정 이벤트를 선언하여 추가하는 메소드입니다.">
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 특정 이벤트를 선언하여 추가하는 메서드입니다.">
         <Syntax text="ExcelExportObject.addEvent( strEventID )">
           <Return type="Boolean" description="이벤트 추가에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 추가에 실패하거나 선언되어 있는 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -40,7 +40,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="ExcelExportObject.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -50,7 +50,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 ExcelExportObject 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 ExcelExportObject 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="ExcelExportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -60,7 +60,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Export 할 Item을 ExcelExportObject 에 추가하는 메소드입니다.">
+      <Method name="addExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Export 할 Item을 ExcelExportObject 에 추가하는 메서드입니다.">
         <Syntax text="ExcelExportObject.addExportItem( constExportItemType, objExportItem )&#xA;ExcelExportObject.addExportItem( constExportItemType, varExportSource, strRange [,strExportHead [,strExportSelect [,strExportMerge [,strExportValue [,strExportImage [,strExceptStyle [,strExportSize [,arrCellIndex, [strBandId]]]]]]]]])">
           <Return type="Number" description="ExcelExportObject 에 추가된 Item 의 인덱스를 반환합니다.&#xA;&#xA;추가에 실패하였을 경우 &quot;-1&quot; 을 반환합니다." />
           <Arguments>
@@ -71,7 +71,7 @@
             <Argument name="strExceptStyle" type="String" in="false" out="false" option="false" variable="false" description="Grid 의 Cell 에 적용된 CSS 관련 속성 중 Export 시 제외할 속성을 설정합니다.&#xA;&#xA;&quot;none&quot; 설정 시 Export 에서 제외되는 속성이 없습니다.&#xA;&quot;align&quot; 설정 시 Align 관련 -nexa-text-align, -nexa-vertical-align 속성값을 Export 에서 제외됩니다.&#xA;&quot;background&quot; 설정 시 background 의 color 관련 속성값을 Export 에서 제외됩니다.&#xA;&quot;color&quot; 설정 시 color 속성값을 Export 에서 제외됩니다.&#xA;&quot;font&quot; 설정 시 font 속성값을 Export 에서 제외됩니다.&#xA;&quot;border&quot; 설정 시 -nexa-border 속성값을 Export 에서 제외됩니다.&#xA;&#xA;각 설정값을 콤마(&quot;,&quot;)로 구분하여 중복 설정할 수 있습니다." />
             <Argument name="strExportHead" type="String" in="false" out="false" option="false" variable="false" description="Grid 의 Head, Summary 영역에 대한 Export 방식을 설정합니다.&#xA;&#xA;&quot;allband&quot; 설정 시 Head, Summary 영역을 모두 Export 합니다.&#xA;&quot;nohead&quot; 설정 시 Head 영역은 Export 하지 않고, Summary 영역만 Export 합니다.&#xA;&quot;nosumm&quot; 설정 시 Head 영역만 Export 하고, Summary 영역은 Export 하지 않습니다.&#xA;&quot;nohead,nosumm&quot; 설정 시 Head, Summary 영역을 모두 Export 하지 않습니다.&#xA;&#xA;값 생략 시 strExportSelect 값이 &quot;allrecord&quot; 이면 &quot;allband&quot; 로 적용되고, &quot;selectrecord&quot; 이면 &quot;nohead,nosumm&quot; 으로 적용됩니다.&#xA;&#xA;* Grid 의 selecttype 속성값이 &quot;area&quot;, 'multiarea&quot; 이면 설정값과 관계없이 항상 &quot;nohead,nosumm&quot; 으로 적용됩니다." />
             <Argument name="strExportImage" type="String" in="false" out="false" option="false" variable="false" description="Grid 의 Cell 에 설정된 이미지의 Export 방식을 설정합니다.&#xA;&#xA;&quot;none&quot; 설정 시 설정된 이미지 정보를 무시하고 공백으로 Export 합니다.&#xA;&quot;url&quot; 설정 시 설정된 이미지의 위치정보를 URL 형식의 문자열로 Export 합니다.&#xA;&quot;image&quot; 설정 시, 설정된 이미지의 위치가 &quot;http://&quot; 또는 &quot;https://&quot;로 시작하는 인터넷 URL 경로이거나 &quot;data&quot;로 시작하는 Base 64 인코딩 데이터인 경우만 이미지를 그대로 Export 합니다.&#xA;&#xA;값 생략 시 &quot;none&quot; 으로 적용됩니다." />
-            <Argument name="strExportMerge" type="String" in="false" out="false" option="false" variable="false" description="Grid 에서 포맷과 관계없이 논리적으로 병합된 Cell 의 Export 방식을 설정합니다.&#xA;strExportSelect 값을 &quot;selectrecord&quot; 로 설정 시 항상 &quot;nosuppress&quot; 로 적용됩니다.&#xA;&#xA;&quot;suppress&quot; 설정 시 병합된 결과대로 1 개 Cell 만 값을 Export 합니다.&#xA;나머지 Cell 은 병합되지 않으며 모두 공백으로 처리됩니다.&#xA;&#xA;&quot;nosuppress&quot; 설정 시 병합된 결과를 무시하고 각 Cell 에 모두 값을 Export 합니다.&#xA;&#xA;&quot;merge&quot; 설정 시 병합된 결과대로 1 개 Cell 만 값을 Export 합니다.&#xA;나머지 Cell 은 병합되어 처리됩니다.&#xA;&#xA;값 생략 시 &quot;suppress&quot; 로 적용됩니다.&#xA;&#xA;* 논리적인 병합이란 suppress 속성 또는 mergeCell() 메소드에 의해 Grid 에 표시된 데이터가 병합된 것을 의미합니다." />
+            <Argument name="strExportMerge" type="String" in="false" out="false" option="false" variable="false" description="Grid 에서 포맷과 관계없이 논리적으로 병합된 Cell 의 Export 방식을 설정합니다.&#xA;strExportSelect 값을 &quot;selectrecord&quot; 로 설정 시 항상 &quot;nosuppress&quot; 로 적용됩니다.&#xA;&#xA;&quot;suppress&quot; 설정 시 병합된 결과대로 1 개 Cell 만 값을 Export 합니다.&#xA;나머지 Cell 은 병합되지 않으며 모두 공백으로 처리됩니다.&#xA;&#xA;&quot;nosuppress&quot; 설정 시 병합된 결과를 무시하고 각 Cell 에 모두 값을 Export 합니다.&#xA;&#xA;&quot;merge&quot; 설정 시 병합된 결과대로 1 개 Cell 만 값을 Export 합니다.&#xA;나머지 Cell 은 병합되어 처리됩니다.&#xA;&#xA;값 생략 시 &quot;suppress&quot; 로 적용됩니다.&#xA;&#xA;* 논리적인 병합이란 suppress 속성 또는 mergeCell() 메서드에 의해 Grid 에 표시된 데이터가 병합된 것을 의미합니다." />
             <Argument name="strExportSelect" type="String" in="false" out="false" option="false" variable="false" description="Grid 에서 선택영역에 대한 Export 방식을 설정합니다.&#xA;&#xA;&quot;allrecord&quot; 설정 시 선택영역에 관계없이 모든 Row 를 Export 합니다.&#xA;&quot;selectrecord&quot; 설정 시 선택된 Row, Cell, Area 만 Export 합니다.&#xA;&#xA;값 생략 시 &quot;allrecord&quot; 로 적용됩니다." />
             <Argument name="strExportSize" type="String" in="false" out="false" option="false" variable="false" description="Grid Cell 의 Column size(width), Row size(height) 값을 엑셀에 적용할지 설정합니다.&#xA;&#xA;&quot;width&quot; 설정 시 너비를 같게 Export 합니다.&#xA;&quot;height&quot; 설정 시 높이를 같게 Export 합니다.&#xA;&quot;both&quot; 설정 시 너비와 높이를 같게 Export 합니다.&#xA;&#xA;값 생략 시 &quot;width&quot;로 적용됩니다.&#xA;&#xA;&quot;height&quot; 또는 &quot;both&quot;로 설정하더라도 autofittype, autosizingtype, extendsizetype 등 데이터에 따라 Grid Cell 높이에 영향을 미치는 속성을 설정했다면 화면에 표시되는 Grid Cell 높이와 Export 처리된 파일 내 Cell 높이를 같게 처리할 수 없습니다." />
             <Argument name="strExportValue" type="String" in="false" out="false" option="false" variable="false" description="엑셀 파일로 Export 시킬 경우 Export 되는 내용과 형식을 설정합니다.&#xA;&#xA;&quot;allstyle&quot; 설정 시 선택된 영역이 있을 경우 선택에 의해 변경된 속성은 Export 되지 않습니다.&#xA;&quot;selectstyle&quot; 설정 시 선택된 영역이 있을 경우 선택에 의해 변경된 속성도 Export 됩니다.&#xA;&#xA;값 설정 시 value, format, calendardateformat, font, color, background(color), -nexa-text-aign, -nexa-vertical-align, -nexa-border(style,color) 속성이 Export 됩니다.&#xA;&#xA;값 생략 시 &quot;allstyle&quot; 로 적용됩니다." />
@@ -80,13 +80,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 추가된 모든 Item 을 삭제하는 메소드입니다.">
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 추가된 모든 Item 을 삭제하는 메서드입니다.">
         <Syntax text="ExcelExportObject.clear()">
           <Return type="Number" description="삭제된 Item 의 갯수를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="ExcelExportObject.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -94,7 +94,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 만 삭제하는 메소드입니다.">
+      <Method name="clearExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 만 삭제하는 메서드입니다.">
         <Syntax text="ExcelExportObject.clearExportItems(constExportItemType)">
           <Return type="Number" description="삭제된 Item의 갯수를 반환합니다." />
           <Arguments>
@@ -102,13 +102,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="count" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 등록된 Item 의 갯수를 반환하는 메소드입니다.">
+      <Method name="count" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 등록된 Item 의 갯수를 반환하는 메서드입니다.">
         <Syntax text="ExcelExportObject.count()">
           <Return type="Number" description="모든 item의 갯수를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="countExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 갯수를 반환하는 메소드입니다.">
+      <Method name="countExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 갯수를 반환하는 메서드입니다.">
         <Syntax text="ExcelExportObject.countExportItems(constExportItemType)">
           <Return type="Number" description="지정한 타입의 item 갯수를 반환합니다." />
           <Arguments>
@@ -116,7 +116,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="delExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 특정 Item 을 삭제하는 메소드입니다.">
+      <Method name="delExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 특정 Item 을 삭제하는 메서드입니다.">
         <Syntax text="ExcelExportObject.delExportItem(constExportItemType,nItemIndex)">
           <Return type="Boolean" description="Item 삭제에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;파라미터가 유효하지 않거나 Item 삭제에 실패하면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -125,24 +125,24 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 ExcelExportObject 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 ExcelExportObject 을(를) 삭제하는 메서드입니다.">
         <Syntax text="ExcelExportObject.destroy()">
           <Return type="Boolean" description="ExcelExportObject 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;ExcelExportObject 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="exportData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 설정된 Item 을 모두 Export 하는 메소드입니다.">
+      <Method name="exportData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 설정된 Item 을 모두 Export 하는 메서드입니다.">
         <Syntax text="ExcelExportObject.exportData( [strParam, strParamDS, nOrgValue, bFileDown] ) ;">
           <Return type="Number" description="Export 요청에 성공한 Item 의 갯수를 반환합니다.&#xA;&#xA;Export 시킬 Item 이 없는 경우 0 을 반환합니다.&#xA;&#xA;파라미터가 유효하지 않은 값일 경우 -1 을 반환합니다." />
           <Arguments>
             <Argument name="bFileDown" type="Boolean" in="false" out="false" option="false" variable="false" description="Export 가 완료된 후 생성된 파일의 다운로드 여부를 설정합니다.&#xA;&#xA;true 설정 시 파일을 자동으로 다운로드 받습니다.&#xA;false 설정 시 파일을 자동으로 다운로드 받지 않습니다.&#xA;&#xA;값 생략 시 true 로 적용됩니다." />
-            <Argument name="nOrgValue" type="Number" in="false" out="false" option="false" variable="false" description="Export 시 Cell 값으로 처리될 대상을 설정합니다.&#xA;&#xA;0 또는 false 설정 시 Cell 에 표시되는 텍스트값을 Export 합니다.&#xA;1 또는 true 설정 시 Cell 에 바인드된 Column 값을 Export 합니다.&#xA;2 설정 시 Cell 의 displaytype 속성값이 &quot;date&quot; 이면 0 으로 적용되고, &quot;date&quot; 가 아니면 1 로 적용됩니다.&#xA;&#xA;값 생략 시 0 으로 적용됩니다.&#xA;&#xA;* valuetypecellindex 속성에 설정된 Cell 은 nOrgValue 파라미터값에 상관없이 바인드 된 Column 값을 Export 합니다.&#xA;   valuetypecellindex 속성에 설정되지 않은 Cell 은 nOrgValue 파라미터값에 맞게 Export 됩니다.&#xA;&#xA;* Export 결과의 일관성을 위하여 valuetypecellindex 속성과 exportDataEx() 메소드를 사용하는 것을 권장합니다." />
+            <Argument name="nOrgValue" type="Number" in="false" out="false" option="false" variable="false" description="Export 시 Cell 값으로 처리될 대상을 설정합니다.&#xA;&#xA;0 또는 false 설정 시 Cell 에 표시되는 텍스트값을 Export 합니다.&#xA;1 또는 true 설정 시 Cell 에 바인드된 Column 값을 Export 합니다.&#xA;2 설정 시 Cell 의 displaytype 속성값이 &quot;date&quot; 이면 0 으로 적용되고, &quot;date&quot; 가 아니면 1 로 적용됩니다.&#xA;&#xA;값 생략 시 0 으로 적용됩니다.&#xA;&#xA;* valuetypecellindex 속성에 설정된 Cell 은 nOrgValue 파라미터값에 상관없이 바인드 된 Column 값을 Export 합니다.&#xA;   valuetypecellindex 속성에 설정되지 않은 Cell 은 nOrgValue 파라미터값에 맞게 Export 됩니다.&#xA;&#xA;* Export 결과의 일관성을 위하여 valuetypecellindex 속성과 exportDataEx() 메서드를 사용하는 것을 권장합니다." />
             <Argument name="strParam" type="String" in="false" out="false" option="false" variable="false" description="서버 통신시에 파라미터로 전달 될 값을 설정합니다.&#xA;&#xA;DB key 와 같은 값을 전달할 때 사용하는 확장기능입니다." />
             <Argument name="strParamDS" type="String" in="false" out="false" option="false" variable="false" description="서버에 전달될 DataSet 을 &quot;Param_DataSet=export_DataSet&quot; 형태로 설정합니다.&#xA;&#xA;개발환경에 따라 서버에 추가적인 기능구현을 위해 DataSet 을 전달할 때 사용하는 확장기능입니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="exportDataEx" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시된 값을 기준으로 ExcelExportObject 에 설정된 Item 을 모두 Export 하는 메소드입니다.">
+      <Method name="exportDataEx" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 에 표시된 값을 기준으로 ExcelExportObject 에 설정된 Item 을 모두 Export 하는 메서드입니다.">
         <Syntax text="ExcelExportObject.exportDataEx( [strParam, strParamDS, bFileDown] ) ;">
           <Return type="Number" description="Export 요청에 성공한 Item 의 갯수를 반환합니다.&#xA;&#xA;Export 시킬 Item 이 없는 경우 0 을 반환합니다.&#xA;&#xA;파라미터가 유효하지 않은 값일 경우 -1 을 반환합니다." />
           <Arguments>
@@ -152,7 +152,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="exportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 만 Export 하는 메소드입니다.">
+      <Method name="exportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 만 Export 하는 메서드입니다.">
         <Syntax text="ExcelExportObject.exportItems(constExportItemType)">
           <Return type="Number" description="Export 요청에 성공한 Item 의 갯수를 반환합니다.&#xA;Export 시킬 Item 이 없는 경우 &quot;0&quot; 을 반환합니다.&#xA;파라미터가 유효하지 않은 값일 경우 &quot;-1&quot; 을 반환합니다." />
           <Arguments>
@@ -160,7 +160,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="ExcelExportObject.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -170,7 +170,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="ExcelExportObject.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -179,7 +179,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 특정 Item 을 반환하는 메소드입니다.">
+      <Method name="getExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 특정 Item 을 반환하는 메서드입니다.">
         <Syntax text="ExcelExportObject.getExportItem(constExportItemType,nItemIndex)">
           <Return type="Object" description="지정된 인덱스에 해당하는 Item 을 ExportItem 오브젝트로 반환합니다.&#xA;지정된 인덱스에 해당하는 Item 이 없을 경우 &quot;null&quot; 을 반환합니다." />
           <Arguments>
@@ -188,7 +188,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="ExcelExportObject.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -199,7 +199,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 선언된 특정 이벤트를 삭제하는 메소드입니다.">
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 에 선언된 특정 이벤트를 삭제하는 메서드입니다.">
         <Syntax text="ExcelExportObject.removeEvent( strEventID )">
           <Return type="Boolean" description="이벤트 삭제에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 삭제에 실패하거나 선언되지 않은 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -207,7 +207,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="ExcelExportObject.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -217,7 +217,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="ExcelExportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -227,7 +227,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="ExcelExportObject.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -237,7 +237,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ExcelExportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="ExcelExportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -247,7 +247,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Export 할 Item을 ExcelExportObject 의 특정 위치에 추가하는 메소드입니다.">
+      <Method name="setExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Export 할 Item을 ExcelExportObject 의 특정 위치에 추가하는 메서드입니다.">
         <Syntax text="ExcelExportObject.setExportItem( constExportItemType,nItemIndex,objExportItem )">
           <Return type="Boolean" description="Item 추가에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;파라미터가 유효하지 않거나 Item 추가에 실패하면 &quot;false&quot; 를 반환합니다." />
           <Arguments>

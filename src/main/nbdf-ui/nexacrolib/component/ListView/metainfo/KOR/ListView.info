@@ -133,7 +133,7 @@
       <Control name="vscrollindicator" classname="nexacro.ScrollIndicatorControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
     </ControlInfo>
     <MethodInfo>
-      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 특정 이벤트를 선언하여 추가하는 메소드입니다.">
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 특정 이벤트를 선언하여 추가하는 메서드입니다.">
         <Syntax text="ListView.addEvent( strEventID )">
           <Return type="Boolean" description="이벤트 추가에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 추가에 실패하거나 선언되어 있는 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -141,7 +141,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="ListView.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -151,7 +151,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 ListView 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 ListView 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="ListView.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -173,7 +173,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="ListView.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -181,19 +181,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 선택된 아이템의 선택상태를 해제하는 메소드입니다.">
+      <Method name="clearSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 선택된 아이템의 선택상태를 해제하는 메서드입니다.">
         <Syntax text="ListView.clearSelect()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="createFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 와 바인딩 된 DataSet 의 Column 정보를 기준으로 새로운 포맷을 생성하는 메소드입니다.">
+      <Method name="createFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 와 바인딩 된 DataSet 의 Column 정보를 기준으로 새로운 포맷을 생성하는 메서드입니다.">
         <Syntax text="ListView.createFormat()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 ListView 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 ListView 을(를) 삭제하는 메서드입니다.">
         <Syntax text="ListView.destroy()">
           <Return type="Boolean" description="ListView 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;ListView 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
@@ -205,19 +205,19 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="dropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 edittype 속성값이 &quot;date&quot; 인 Cell 이 편집상태일 때 팝업달력을 표시하는 메소드입니다.">
+      <Method name="dropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 edittype 속성값이 &quot;date&quot; 인 Cell 이 편집상태일 때 팝업달력을 표시하는 메서드입니다.">
         <Syntax text="ListView.dropdownCalendar()">
           <Return type="Boolean" description="팝업달력이 정상적으로 표시되면 true 를 반환합니다.&#xA;&#xA;팝업달력이 정상적으로 표시되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="dropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 edittype 속성값이 &quot;combo&quot; 인 Cell 이 편집상태일 때 Combo 아이템 리스트를 표시하는 메소드입니다.">
+      <Method name="dropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 edittype 속성값이 &quot;combo&quot; 인 Cell 이 편집상태일 때 Combo 아이템 리스트를 표시하는 메서드입니다.">
         <Syntax text="ListView.dropdownCombo()">
           <Return type="Boolean" description="Combo 아이템 리스트가 정상적으로 표시되면 true 를 반환합니다.&#xA;&#xA;Combo 아이템 리스트가 정상적으로 표시되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="ListView.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -227,7 +227,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBandExpandStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 아이템의 Detail 밴드 표시여부를 반환하는 메소드입니다.">
+      <Method name="getBandExpandStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 아이템의 Detail 밴드 표시여부를 반환하는 메서드입니다.">
         <Syntax text="ListView.getBandExpandStatus( nRow )">
           <Return type="Boolean" description="특정 아이템의 Detail 밴드가 표시되어 있으면 true 를 반환합니다.&#xA;특정 아이템의 Detail 밴드가 표시되어 있지 않으면 false 를 반환합니다.&#xA;&#xA;Detail 밴드가 존재하지 않거나 nRow 파라미터를 잘 못 설정한 경우 false 를 반환합니다." />
           <Arguments>
@@ -235,7 +235,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 밴드에서 지정된 속성의 값을 반환하는 메소드입니다.">
+      <Method name="getBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 밴드에서 지정된 속성의 값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getBandProperty( enumBand, strPropID )">
           <Return type="String" description="특정 밴드에서 지정된 속성의 값을 반환합니다." />
           <Arguments>
@@ -244,7 +244,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBindCellId" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSet 의 특정 Column 과 바인드된 Cell 의 ID 를 반환하는 메소드입니다.">
+      <Method name="getBindCellId" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSet 의 특정 Column 과 바인드된 Cell 의 ID 를 반환하는 메서드입니다.">
         <Syntax text="ListView.getBindCellId( enumBand, strColID )">
           <Return type="String" description="ID 가 strColID 인 Column 과 바인드 된 첫번째 Cell 의 ID 를 반환합니다.&#xA;&#xA;ID 가 strColID 인 Column 과 바인드 된 Cell 이 없다면 빈문자열(Empty String) 을 반환합니다." />
           <Arguments>
@@ -253,13 +253,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 binddataset 속성에 설정되어 있는 DataSet 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 binddataset 속성에 설정되어 있는 DataSet 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="ListView.getBindDataset()">
           <Return type="Object" description="binddataset 속성에 설정되어 있는 DataSet 오브젝트를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getCellCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 밴드에 정의된 Cell 의 갯수를 반환하는 메소드입니다.">
+      <Method name="getCellCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 밴드에 정의된 Cell 의 갯수를 반환하는 메서드입니다.">
         <Syntax text="ListView.getCellCount( enumBand )">
           <Return type="Number" description="enumBand 에 설정한 밴드 영역에 정의된 Cell 의 갯수를 반환합니다." />
           <Arguments>
@@ -267,7 +267,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 특정 속성값을 반환하는 메소드입니다.">
+      <Method name="getCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 특정 속성값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getCellProperty( enumBand, strCellID, strPropID )">
           <Return type="String" description="특정 Cell 의 특정 속성값을 반환합니다." />
           <Arguments>
@@ -277,7 +277,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 의 위치영역 정보를 Rect 오브젝트로 반환하는 메소드입니다.">
+      <Method name="getCellRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 의 위치영역 정보를 Rect 오브젝트로 반환하는 메서드입니다.">
         <Syntax text="ListView.getCellRect( nRow, strBandID, strCellID )">
           <Return type="Object" description="인수로 전달된 Cell 의 위치영역 정보를 갖는 Rect 오브젝트를 반환합니다.&#xA;잘못된 Cell 지정 시 모든 속성값이 &quot;0&quot; 인 Rect 오브젝트를 반환합니다.&#xA;&#xA;Rect 오브젝트는 &quot;left&quot;, &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;width&quot;, &quot;height&quot; 속성을 갖습니다.&#xA;Cell 영역의 정보는 Rect 오브젝트의 각 속성에 저장됩니다." />
           <Arguments>
@@ -287,7 +287,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 에 표시되는 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getCellText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 에 표시되는 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getCellText( nRow, strBandID, strCellID )">
           <Return type="String" description="인수로 전달된 Cell 에 표시되는 텍스트값을 반환합니다." />
           <Arguments>
@@ -297,7 +297,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 의 text 속성에 설정된 값을 반환하는 메소드입니다.">
+      <Method name="getCellValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 의 text 속성에 설정된 값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getCellValue( nRow, strBandID, strCellID )">
           <Return type="String" description="Cell 의 text 속성이 DataSet 에 바인드 되어 있다면 바인드된 DataSet 의 Column 값을 반환합니다.&#xA;Cell 의 text 속성에 값이 설정되어 있다면 설정된 값을 반환합니다.&#xA;Cell 의 text 속성이 EXPR 형식으로 설정되어 있다면 EXPR 이 적용된 값을 반환합니다." />
           <Arguments>
@@ -307,13 +307,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCurEditType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 선택된 Cell 의 edittype 속성값을 반환하는 메소드입니다.">
+      <Method name="getCurEditType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 선택된 Cell 의 edittype 속성값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getCurEditType()">
           <Return type="String" description="현재 선택된 Cell 의 editytype 속성값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getCurFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 현재 표시되고 있는 포맷을 XML 형식의 문자열로 반환하는 메소드입니다.">
+      <Method name="getCurFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 현재 표시되고 있는 포맷을 XML 형식의 문자열로 반환하는 메서드입니다.">
         <Syntax text="ListView.getCurFormatString( [bOrginal] )">
           <Return type="String" description="현재 ListView 에 표시되고 있는 포맷을 XML 형식의 문자열로 반환합니다.&#xA;&#xA;기본적인 XML 형식은 아래와 같으며 Body, Detail 정의는 포맷에 따라 없을 수 있습니다.&#xA;&#xA;&lt;code&gt;&amp;lt;Format id=&quot;default&quot;&amp;gt;&#xA;  &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;Band id=&quot;detail&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;&amp;lt;/Format&amp;gt; &lt;/code&gt;" />
           <Arguments>
@@ -321,7 +321,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getDatasetRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 아이템 인덱스에 해당하는 DataSet 의 Row 인덱스를 반환하는 메소드입니다.">
+      <Method name="getDatasetRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 아이템 인덱스에 해당하는 DataSet 의 Row 인덱스를 반환하는 메서드입니다.">
         <Syntax text="ListView.getDatasetRow( nRowIndex )">
           <Return type="Number" description="ListView 의 아이템 인덱스에 해당하는 DataSet 의 Row 인덱스값을 반환합니다.&#xA;&#xA;정상적으로 값을 구할 수 없을 경우는 -1 을 반환합니다." />
           <Arguments>
@@ -335,49 +335,49 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditCaret" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 캐럿이 위치한 인덱스를 반환하는 메소드입니다.">
+      <Method name="getEditCaret" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 캐럿이 위치한 인덱스를 반환하는 메서드입니다.">
         <Syntax text="ListView.getEditCaret()">
           <Return type="Number" description="인덱스는 0 부터 시작하며 캐럿이 위치한 인덱스를 반환합니다.&#xA;&#xA;Cell 이 편집상태가 아니면 -1 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditingText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 text 값을 반환하는 메소드입니다.">
+      <Method name="getEditingText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 text 값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getEditingText()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤에 입력중인 text 값을 문자열로 반환합니다.&#xA;&#xA;Cell 의 edittype 속성값이 &quot;checkbox&quot; 이면 undefined 를 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;date&quot;, &quot;mask&quot; 이면 마스크 문자가 포함된 입력중인 값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditingValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 value 값을 반환하는 메소드입니다.">
+      <Method name="getEditingValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 value 값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getEditingValue()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤에 입력중인 value 값을 문자열로 반환합니다.&#xA;&#xA;Cell 의 edittype 속성값이 &quot;button&quot;, &quot;checkbox&quot; 이면 undefined 를 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;date&quot; 이면 마스크 문자가 제외된 입력중인 원본값을 날짜형식에 맞게 보정하여 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;mask&quot; 이면 마스크 문자가 제외된 입력중인 원본값만 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트의 인덱스를 배열로 반환하는 메소드입니다.">
+      <Method name="getEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트의 인덱스를 배열로 반환하는 메서드입니다.">
         <Syntax text="ListView.getEditSelect()">
           <Return type="Array" description="선택된 텍스트의 시작 인덱스와 끝 인덱스를 각각 배열의 0번, 1번 원소로 반환합니다.&#xA;선택된 텍스트가 없는 경우 현재 캐럿 위치를 배열의 0번, 1번 원소로 반환합니다.&#xA;&#xA;인덱스는 0 부터 시작합니다" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditSelectedText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트를 반환하는 메소드입니다.">
+      <Method name="getEditSelectedText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트를 반환하는 메서드입니다.">
         <Syntax text="ListView.getEditSelectedText()">
           <Return type="String" description="선택된 텍스트를 반환합니다.&#xA;&#xA;선택된 텍스트가 없을 경우 빈문자열(Empty String)을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 text 속성값을 반환하는 메소드입니다.">
+      <Method name="getEditText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 text 속성값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getEditText()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤의 text 속성값을 문자열로 반환합니다.&#xA;&#xA;ListView 의 edittype 속성값이 &quot;checkbox&quot; 인 경우 undefined 를 반환합니다.&#xA;ListView 의 edittype 속성값이 &quot;combo&quot;, &quot;date&quot; 인 경우 컨트롤에 입력중인 값이 아닌 원본 text 속성값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성값을 반환하는 메소드입니다.">
+      <Method name="getEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getEditValue()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤의 value 속성값을 문자열로 반환합니다.&#xA;&#xA;Cell 의 edittype 속성값이 &quot;button&quot;, &quot;checkbox&quot; 이면 undefined 를 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;combo&quot;, &quot;date&quot; 이면 컨트롤에 입력중인 값이 아닌 원본 value 속성값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="ListView.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -392,103 +392,103 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getFormatIdList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Format id 배열값을 반환하는 메소드입니다.">
+      <Method name="getFormatIdList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Format id 배열값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getFormatIdList();">
           <Return type="Object" description="Format id 목록을 배열로 반환합니다.&#xA;값이 없는 경우에는 빈 배열을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="디자인 시 정의된 전체 포맷을 XML 형식의 문자열로 반환하는 메소드입니다.">
+      <Method name="getFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="디자인 시 정의된 전체 포맷을 XML 형식의 문자열로 반환하는 메서드입니다.">
         <Syntax text="ListView.getFormatString()">
           <Return type="String" description="디자인 시 정의된 전체 포맷을 XML 형식의 문자열로 반환합니다.&#xA;동적으로 변경된 포맷값은 반영되지 않습니다.&#xA;&#xA;기본적인 XML 형식은 아래와 같으며 Body, Detail 정의는 포맷에 따라 없을 수 있습니다.&#xA;&lt;code&gt;&#xA;&amp;lt;Formats&amp;gt;&#xA;  &amp;lt;Format id=&quot;default&quot;&amp;gt;&#xA;    &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;detail&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;/Format&amp;gt;&#xA;  &amp;lt;Format id=&quot;format00&quot;&amp;gt;&#xA;    &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;detail&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;/Format&amp;gt;&#xA;&amp;lt;/Formats&amp;gt;&#xA;&lt;/code&gt;" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 bottom 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 bottom 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="ListView.getOffsetBottom();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 bottom 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 높이를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 높이를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="ListView.getOffsetHeight();">
           <Return type="Number" description="ListView 의 높이를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 left 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 left 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="ListView.getOffsetLeft();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 left 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 right 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 right 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="ListView.getOffsetRight();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 right 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 top 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 top 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="ListView.getOffsetTop();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 top 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 너비를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 너비를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="ListView.getOffsetWidth();">
           <Return type="Number" description="ListView 의 너비를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 bottom 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="ListView.getPixelBottom();">
           <Return type="Number" description="ListView 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;bottom 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 height 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="ListView.getPixelHeight();">
           <Return type="Number" description="ListView 의 height 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;height 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 left 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="ListView.getPixelLeft();">
           <Return type="Number" description="ListView 의 left 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;left 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 right 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="ListView.getPixelRight();">
           <Return type="Number" description="ListView 의 right 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;right 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 top 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="ListView.getPixelTop();">
           <Return type="Number" description="ListView 의 top 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;top 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 width 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="ListView.getPixelWidth();">
           <Return type="Number" description="ListView 의 width 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;width 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getSelectedRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 선택되어 있는 아이템의 인덱스를 배열로 반환하는 메소드입니다.">
+      <Method name="getSelectedRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 선택되어 있는 아이템의 인덱스를 배열로 반환하는 메서드입니다.">
         <Syntax text="ListView.getSelectedRows()">
           <Return type="Array" description="ListView 에 선택되어 있는 아이템의 인덱스를 배열로 반환합니다.&#xA;&#xA;선택된 아이템이 없을 경우 빈 배열을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViw 에 표시된 수직스크롤바의 트랙바 위치값을 반환하는 메소드입니다.">
+      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListViw 에 표시된 수직스크롤바의 트랙바 위치값을 반환하는 메서드입니다.">
         <Syntax text="ListView.getVScrollPos()">
           <Return type="Number" description="수직스크롤바의 현재 트랙바 위치값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="hideDetailBand" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 아이템의 Detail 밴드를 숨기는 메소드입니다.">
+      <Method name="hideDetailBand" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 아이템의 Detail 밴드를 숨기는 메서드입니다.">
         <Syntax text="ListView.hideDetailBand( nRow )">
           <Return type="" description="" />
           <Arguments>
@@ -496,7 +496,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 ListView 을(를) 동적 생성한 후에 초기화하는 메소드입니다.">
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 ListView 을(를) 동적 생성한 후에 초기화하는 메서드입니다.">
         <Syntax text="ListView.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
           <Return type="" description="" />
           <Arguments>
@@ -514,7 +514,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="ListView.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -525,25 +525,25 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isDropdown" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 컴포넌트에 아이템 리스트가 표시되어 있는지 여부를 반환하는 메소드입니다.">
+      <Method name="isDropdown" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 컴포넌트에 아이템 리스트가 표시되어 있는지 여부를 반환하는 메서드입니다.">
         <Syntax text="ListView.isDropdown()">
           <Return type="Boolean" description="ListView 컴포넌트에 아이템 리스트가 표시되어 있으면 true를 반환합니다.&#xA;ListView 컴포넌트에 아이템 리스트가 표시되어 있지 않으면 false를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isDropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 팝업달력이 표시되어 있는지 여부를 반환하는 메소드입니다.">
+      <Method name="isDropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 팝업달력이 표시되어 있는지 여부를 반환하는 메서드입니다.">
         <Syntax text="ListView.isDropdownCalendar()">
           <Return type="Boolean" description="ListView 에 팝업달력이 표시되어 있으면 true 를 반환합니다.&#xA;&#xA;ListView 에 팝업달력이 표시되어 있지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isDropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 Combo 아이템 리스트가 표시되어 있는지 여부를 반환하는 메소드입니다.">
+      <Method name="isDropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 Combo 아이템 리스트가 표시되어 있는지 여부를 반환하는 메서드입니다.">
         <Syntax text="ListView.isDropdownCombo()">
           <Return type="Boolean" description="ListView 에 Combo 아이템 리스트가 표시되어 있으면 true 를 반환합니다.&#xA;&#xA;ListView 에 Combo 아이템 리스트가 표시되어 있지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 위치와 크기를 변경하는 메소드입니다.">
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 위치와 크기를 변경하는 메서드입니다.">
         <Syntax text="ListView.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
           <Return type="" description="" />
           <Arguments>
@@ -565,7 +565,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="moveToNextCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 Cell 포커스를 편집 가능한 다음 Cell 로 이동시키는 메소드입니다.">
+      <Method name="moveToNextCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 Cell 포커스를 편집 가능한 다음 Cell 로 이동시키는 메서드입니다.">
         <Syntax text="ListView.moveToNextCell()">
           <Return type="Boolean" description="Cell 포커스 이동에 성공하면 true 를 반환합니다.&#xA;&#xA;Cell 포커스 이동에 실패하면 false 를 반환합니다." />
           <Arguments />
@@ -580,13 +580,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="moveToPrevCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 Cell 포커스를 편집 가능한 이전 Cell 로 이동시키는 메소드입니다.">
+      <Method name="moveToPrevCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 Cell 포커스를 편집 가능한 이전 Cell 로 이동시키는 메서드입니다.">
         <Syntax text="">
           <Return type="Boolean" description="Cell 포커스 이동에 성공하면 true 를 반환합니다.&#xA;&#xA;Cell 포커스 이동에 실패하면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 선언된 특정 이벤트를 삭제하는 메소드입니다.">
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 선언된 특정 이벤트를 삭제하는 메서드입니다.">
         <Syntax text="ListView.removeEvent( strEventID )">
           <Return type="Boolean" description="이벤트 삭제에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 삭제에 실패하거나 선언되지 않은 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -594,7 +594,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="ListView.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -604,7 +604,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="ListView.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -614,7 +614,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 크기를 변경하는 메소드입니다.">
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 크기를 변경하는 메서드입니다.">
         <Syntax text="ListView.resize( vWidth, vHeight )">
           <Return type="" description="" />
           <Arguments>
@@ -623,9 +623,9 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="selectRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 인수로 전달된 위치의 아이템을 선택 또는 선택해제 하는 메소드입니다.">
+      <Method name="selectRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 인수로 전달된 위치의 아이템을 선택 또는 선택해제 하는 메서드입니다.">
         <Syntax text="ListView.selectRow( nRowIdx [,bSelect] )">
-          <Return type="Boolean" description="아이템의 선택상태가 메소드 실행 전과 반대 상태로 변경되면 true 를 반환합니다.&#xA;&#xA;아이템의 선택상태가 메소드 실행 전과 동일하면 false 를 반환합니다." />
+          <Return type="Boolean" description="아이템의 선택상태가 메서드 실행 전과 반대 상태로 변경되면 true 를 반환합니다.&#xA;&#xA;아이템의 선택상태가 메서드 실행 전과 동일하면 false 를 반환합니다." />
           <Arguments>
             <Argument name="bSelect" type="Boolean" in="false" out="false" option="false" variable="false" description="true 설정 시 아이템의 선택상태와 관계없이 아이템을 선택 합니다.&#xA;false 설정 시 아이템의 선택상태와 관계없이 아이템을 선택해제 합니다.&#xA;&#xA;값 생략 시 true 로 적용됩니다." />
             <Argument name="nRowIdx" type="Number" in="false" out="false" option="false" variable="false" description="선택상태를 변경 할 ListView 아이템의 인덱스를 숫자로 설정합니다.&#xA;&#xA;전체 아이템 갯수보다 큰값 또는 음수를 설정할 경우 선택이 모두 해제됩니다." />
@@ -644,7 +644,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 밴드에서 지정된 속성의 값을 설정하는 메소드입니다.">
+      <Method name="setBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 밴드에서 지정된 속성의 값을 설정하는 메서드입니다.">
         <Syntax text="ListView.setBandProperty( enumBand, strPropID, varValue )">
           <Return type="Boolean" description="지정한 밴드의 속성값 설정에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;지정한 밴드의 속성값 설정에 실패하면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -654,7 +654,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 binddataset 속성에 DataSet 오브젝트를 설정하는 메소드입니다.">
+      <Method name="setBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 binddataset 속성에 DataSet 오브젝트를 설정하는 메서드입니다.">
         <Syntax text="ListView.setBindDataset( objDataset )">
           <Return type="" description="" />
           <Arguments>
@@ -662,7 +662,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setCellPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 현재 선택된 아이템에 속한 Cell 중 특정 Cell 에 포커스를 이동하는 메소드입니다.">
+      <Method name="setCellPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 현재 선택된 아이템에 속한 Cell 중 특정 Cell 에 포커스를 이동하는 메서드입니다.">
         <Syntax text="ListView.setCellPos( strBandID, strCellID )">
           <Return type="Boolean" description="Cell 포커스 이동에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;Cell 포커스 이동에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -671,7 +671,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 Cell 의 속성값을 설정하는 메소드입니다.">
+      <Method name="setCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 Cell 의 속성값을 설정하는 메서드입니다.">
         <Syntax text="ListView.setCellProperty( enumBand, strCellID, strPropID, varValue )">
           <Return type="Boolean" description="특정 Cell 의 속성값 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;특정 Cell 의 속성값 설정에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -682,7 +682,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEditingValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤 또는 서브컨트롤의 value 속성을 설정하는 메소드입니다.">
+      <Method name="setEditingValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤 또는 서브컨트롤의 value 속성을 설정하는 메서드입니다.">
         <Syntax text="ListView.setEditingValue( strValue )">
           <Return type="" description="" />
           <Arguments>
@@ -690,7 +690,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 편집기에 표시되는 텍스트를 인수로 전달된 영역만큼 선택하는 메소드입니다.">
+      <Method name="setEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 편집기에 표시되는 텍스트를 인수로 전달된 영역만큼 선택하는 메서드입니다.">
         <Syntax text="ListView.setEditSelect( nBegin [,nEnd] )">
           <Return type="Boolean" description="텍스트의 영역선택에 성공하면 true 를 반환합니다.&#xA;&#xA;텍스트의 영역선택에 실패하면 false 를 반환합니다." />
           <Arguments>
@@ -699,7 +699,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성을 설정하는 메소드입니다.">
+      <Method name="setEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성을 설정하는 메서드입니다.">
         <Syntax text="ListView.setEditValue( strValue )">
           <Return type="" description="" />
           <Arguments>
@@ -707,7 +707,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="ListView.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -717,7 +717,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="ListView.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -727,15 +727,15 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 포커스를 주는 메소드입니다.">
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 포커스를 주는 메서드입니다.">
         <Syntax text="ListView.setFocus( [bMoveScroll] )">
-          <Return type="Object" description="ListView 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메소드 실행에 실패한 경우에는 null을 반환합니다." />
+          <Return type="Object" description="ListView 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메서드 실행에 실패한 경우에는 null을 반환합니다." />
           <Arguments>
             <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우, ListView 기준으로 스크롤을 이동할지 여부를 설정합니다.&#xA;&#xA;true: ListView 이(가) 화면에 표시되도록 스크롤을 이동합니다.&#xA;false: ListView 위치와 관계없이 스크롤을 이동하지 않습니다.&#xA;&#xA;값을 지정하지 않으면 기본값은 true입니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 표시 할 포맷의 ID 를 설정하는 메소드입니다.">
+      <Method name="setFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에 표시 할 포맷의 ID 를 설정하는 메서드입니다.">
         <Syntax text="ListView.setFormat( strFormatID )">
           <Return type="Boolean" description="ListView 에 표시할 포맷의 ID 설정에 성공했을 경우 &quot;true&quot;를 반환합니다.&#xA;&#xA;ListView 에 표시할 포맷의 ID 설정에 실패했을 경우 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -743,7 +743,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 bottom 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="ListView.setOffsetBottom( nBottom );">
           <Return type="" description="" />
           <Arguments>
@@ -751,7 +751,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 높이를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 높이를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="ListView.setOffsetHeight( nHeight );">
           <Return type="" description="" />
           <Arguments>
@@ -759,7 +759,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 left 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="ListView.setOffsetLeft( nLeft );">
           <Return type="" description="" />
           <Arguments>
@@ -767,7 +767,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 ListView 의 right 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="ListView.setOffsetRight( nRight );">
           <Return type="" description="" />
           <Arguments>
@@ -775,7 +775,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 ListView 의 top 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="ListView.setOffsetTop( nTop );">
           <Return type="" description="" />
           <Arguments>
@@ -783,7 +783,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 너비를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 의 너비를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="ListView.setOffsetWidth( nWidth );">
           <Return type="" description="" />
           <Arguments>
@@ -791,13 +791,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 ListView 을(를) 화면에 표시하는 메소드입니다.">
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 ListView 을(를) 화면에 표시하는 메서드입니다.">
         <Syntax text="ListView.show()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="showDetailBand" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 아이템의 Detail 밴드를 표시하는 메소드입니다.">
+      <Method name="showDetailBand" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="ListView 에서 특정 아이템의 Detail 밴드를 표시하는 메서드입니다.">
         <Syntax text="ListView.showDetailBand( nRow );">
           <Return type="" description="" />
           <Arguments>
@@ -805,9 +805,9 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="showEditor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 선택된 Cell 이 편집 가능할 경우 편집모드용 컨트롤을 표시하거나 숨기는 메소드입니다.">
+      <Method name="showEditor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 선택된 Cell 이 편집 가능할 경우 편집모드용 컨트롤을 표시하거나 숨기는 메서드입니다.">
         <Syntax text="ListView.showEditor( bShow )">
-          <Return type="Boolean" description="메소드가 정상적으로 수행되면 true 를 반환합니다.&#xA;&#xA;메소드가 정상적으로 수행되지 못하면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드가 정상적으로 수행되면 true 를 반환합니다.&#xA;&#xA;메서드가 정상적으로 수행되지 못하면 false 를 반환합니다." />
           <Arguments>
             <Argument name="bShow" type="Boolean" in="false" out="false" option="false" variable="false" description="현재 선택된 Cell 에 편집모드용 컨트롤을 표시할지 설정합니다.&#xA;&#xA;true 설정 시 현재 선택된 Cell 이 편집가능한 상태이면 편집모드용 컨트롤을 표시합니다.&#xA;false 설정 시 현재 선택된 Cell 의 편집모드가 해제되고 편집모드용 컨트롤을 표시하지 않습니다." />
           </Arguments>

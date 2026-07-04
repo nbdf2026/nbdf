@@ -14,19 +14,19 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 모든 속성값을 0 으로 초기화하는 메소드입니다.">
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 모든 속성값을 0 으로 초기화하는 메서드입니다.">
         <Syntax text="">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 속성값을 복사하여 새로운 Rect 오브젝트를 반환하는 메소드입니다.">
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 속성값을 복사하여 새로운 Rect 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="Rect.clone()">
           <Return type="Object" description="현재 Rect 오브젝트의 값을 복사한 새로운 Rect 오브젝트를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 Rect 오브젝트의 속성값을 현재 Rect 오브젝트의 속성값으로 복사하는 메소드입니다.">
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 Rect 오브젝트의 속성값을 현재 Rect 오브젝트의 속성값으로 복사하는 메서드입니다.">
         <Syntax text="Rect.copy( objRect )">
           <Return type="" description="" />
           <Arguments>
@@ -34,7 +34,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 속성값 일치여부를 반환하는 메소드입니다.">
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 속성값 일치여부를 반환하는 메서드입니다.">
         <Syntax text="Rect.equals( objRect )">
           <Return type="Boolean" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 속성값이 모두 일치하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 속성값이 하나라도 다르면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -42,19 +42,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBottom" group="Position" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 하단 좌표값을 반환하는 메소드입니다.">
+      <Method name="getBottom" group="Position" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 하단 좌표값을 반환하는 메서드입니다.">
         <Syntax text="Rect.getBottom()">
           <Return type="Number" description="Rect 오브젝트의 하단 좌표값을 pixel 단위의 정수로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 우측 좌표값을 반환하는 메소드입니다.">
+      <Method name="getRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Rect 오브젝트의 우측 좌표값을 반환하는 메서드입니다.">
         <Syntax text="Rect.getRight()">
           <Return type="Number" description="Rect 오브젝트의 우측 좌표값을 pixel 단위의 정수로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isSameSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 넓이와 높이가 일치하는지 반환하는 메소드입니다.">
+      <Method name="isSameSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 넓이와 높이가 일치하는지 반환하는 메서드입니다.">
         <Syntax text="Rect.isSameSize( objRect )">
           <Return type="Boolean" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 넓이와 높이가 일치하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 넓이 또는 높이가 다르면 &quot;false&quot; 를 반환합니다." />
           <Arguments>

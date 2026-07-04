@@ -23,7 +23,7 @@ public interface COM10000MMapper {
 	* @methodName     : selectCodeTypeList
 	* @author         : built1
 	* @date           : 2026.06.19
-	* @description    : 공통코드 데이터를 조회하는 메소드
+	* @description    : 공통코드 데이터를 조회하는 메서드
 	* @param inSearch
 	* @return
 	* @throws Exception
@@ -34,7 +34,7 @@ public interface COM10000MMapper {
 	* @methodName     : insertCodeType
 	* @author         : built1
 	* @date           : 2026.06.19
-	* @description    : 공통코드 데이터를 신규 저장하는 메소드
+	* @description    : 공통코드 데이터를 신규 저장하는 메서드
 	* @param inCodeTypeMap
 	* @throws Exception
 	*/
@@ -44,7 +44,7 @@ public interface COM10000MMapper {
 	* @methodName     : updateCodeType
 	* @author         : built1
 	* @date           : 2026.06.19
-	* @description    : 공통코드 데이터를 수정하는 메소드
+	* @description    : 공통코드 데이터를 수정하는 메서드
 	* @param inCodeTypeMap
 	* @throws Exception
 	*/
@@ -54,7 +54,7 @@ public interface COM10000MMapper {
 	* @methodName     : deleteCodeType
 	* @author         : built1
 	* @date           : 2026.06.19
-	* @description    : 공통코드 데이터를 삭제하는 메소드
+	* @description    : 공통코드 데이터를 삭제하는 메서드
 	* @param inCodeTypeMap
 	* @throws Exception
 	*/
@@ -64,7 +64,7 @@ public interface COM10000MMapper {
 	* @methodName     : insertCode
 	* @author         : built1
 	* @date           : 2026.06.23
-	* @description    : 코드 데이터를 신규 저장하는 메소드
+	* @description    : 코드 데이터를 신규 저장하는 메서드
 	* @param inCodeMap
 	* @throws Exception
 	*/
@@ -74,7 +74,7 @@ public interface COM10000MMapper {
 	* @methodName     : updateCode
 	* @author         : built1
 	* @date           : 2026.06.23
-	* @description    : 코드 데이터를 수정하는 메소드
+	* @description    : 코드 데이터를 수정하는 메서드
 	* @param inCodeMap
 	* @throws Exception
 	*/
@@ -84,7 +84,7 @@ public interface COM10000MMapper {
 	* @methodName     : deleteCode
 	* @author         : built1
 	* @date           : 2026.06.23
-	* @description    : 코드 데이터를 삭제하는 메소드
+	* @description    : 코드 데이터를 삭제하는 메서드
 	* @param inCodeMap
 	* @throws Exception
 	*/

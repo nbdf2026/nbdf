@@ -22,7 +22,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과가 적용될 대상 컴포넌트를 Animation 오브젝트에 아이템으로 추가하는 메소드입니다.">
+      <Method name="addTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과가 적용될 대상 컴포넌트를 Animation 오브젝트에 아이템으로 추가하는 메서드입니다.">
         <Syntax text="Animation.addTarget( strID, objComp, strProps );">
           <Return type="Number" description="추가된 AnimationItem 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;AnimationItem 오브젝트가 정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -32,25 +32,25 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 Animation 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 Animation 을(를) 삭제하는 메서드입니다.">
         <Syntax text="Animation.destroy()">
           <Return type="Boolean" description="Animation 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;Animation 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="pause" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 애니메이션 효과를 일시 중지하는 메소드입니다.">
+      <Method name="pause" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 애니메이션 효과를 일시 중지하는 메서드입니다.">
         <Syntax text="Animation.pause()">
-          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메서드 실행에 실패하면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="play" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과를 시작하는 메소드입니다.">
+      <Method name="play" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과를 시작하는 메서드입니다.">
         <Syntax text="Animation.play()">
-          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메서드 실행에 실패하면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="removeTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Animation 오브젝트에 아이템으로 추가된 AnimationItem 오브젝트를 제거하는 메소드입니다.">
+      <Method name="removeTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Animation 오브젝트에 아이템으로 추가된 AnimationItem 오브젝트를 제거하는 메서드입니다.">
         <Syntax text="Animation.removeTarget( strID );">
           <Return type="Object" description="Animation 오브젝트에서 제거된 AnimationItem 오브젝트를 반환합니다." />
           <Arguments>
@@ -58,23 +58,23 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="reverse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과의 방향을 반대로 변경하는 메소드입니다.">
+      <Method name="reverse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과의 방향을 반대로 변경하는 메서드입니다.">
         <Syntax text="Animation.reverse()">
-          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메서드 실행에 실패하면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과의 진행위치를 특정 시간으로 이동하는 메소드입니다.">
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="애니메이션 효과의 진행위치를 특정 시간으로 이동하는 메서드입니다.">
         <Syntax text="Animation.seek( nMSecond )">
-          <Return type="Number" description="메소드 실행에 의해 실제로 변경된 위치의 진행시간을 반환합니다." />
+          <Return type="Number" description="메서드 실행에 의해 실제로 변경된 위치의 진행시간을 반환합니다." />
           <Arguments>
             <Argument name="nMSecond" type="Number" in="false" out="false" option="false" variable="false" description="이동시킬 위치의 시간을 밀리세컨드 단위의 숫자로 설정합니다.&#xA;&#xA;duration 속성에 설정된 전체 진행시간 범위 안의 값을 설정하여야 합니다.&#xA;진행시간을 벗어난 값을 설정하면 최소 또는 최대값으로 적용됩니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="stop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 애니메이션 효과를 중지하는 메소드입니다.">
+      <Method name="stop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 애니메이션 효과를 중지하는 메서드입니다.">
         <Syntax text="Animation.stop()">
-          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메서드 실행에 실패하면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
@@ -107,7 +107,7 @@
           </Arguments>
         </Syntax>
       </EventHandler>
-      <EventHandler name="onupdate" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="play() 메소드가 실행되면 애니메이션 효과가 종료될 때까지 Tick 마다 발생하는 이벤트입니다.">
+      <EventHandler name="onupdate" group="" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="play() 메서드가 실행되면 애니메이션 효과가 종료될 때까지 Tick 마다 발생하는 이벤트입니다.">
         <Syntax text="Animation.onupdate(obj:nexacro.Animation,e:nexacro.AnimationEventInfo);">
           <Return type="" description="" />
           <Arguments>

@@ -154,7 +154,7 @@ public final class NBDFDataTypeMapper {
 	* @methodName     : mapString
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 문자형으로 전환(자바, 넥사크로)하는 메소드
+	* @description    : 문자형으로 전환(자바, 넥사크로)하는 메서드
 	* @param column
 	*/
 	private static void mapString(NBDFColumn column) {
@@ -167,7 +167,7 @@ public final class NBDFDataTypeMapper {
 	* @methodName     : mapNumber
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 숫자형으로 전환(자바, 넥사크로)하는 메소드
+	* @description    : 숫자형으로 전환(자바, 넥사크로)하는 메서드
 	* @param column
 	*/
 	private static void mapNumber(NBDFColumn column) {
@@ -200,7 +200,7 @@ public final class NBDFDataTypeMapper {
 	* @methodName     : mapDate
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 날짜형으로 전환(자바, 넥사크로)하는 메소드
+	* @description    : 날짜형으로 전환(자바, 넥사크로)하는 메서드
 	*/
 	private static void mapDate(NBDFColumn column) {
 		// 날짜형으로 전환 : DATE, DATE
@@ -212,7 +212,7 @@ public final class NBDFDataTypeMapper {
 	* @methodName     : mapDateTime
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 날짜일시형으로 전환(자바, 넥사크로)하는 메소드
+	* @description    : 날짜일시형으로 전환(자바, 넥사크로)하는 메서드
 	*/
 	private static void mapDateTime(NBDFColumn column) {
 		// 날짜일시형으로 전환 : DATETIME, DATETIME
@@ -224,7 +224,7 @@ public final class NBDFDataTypeMapper {
 	* @methodName     : mapBoolean
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 논리형으로 전환(자바, 넥사크로)하는 메소드
+	* @description    : 논리형으로 전환(자바, 넥사크로)하는 메서드
 	*/
 	private static void mapBoolean(NBDFColumn column) {
 		// 논리형으로 전환 : BOOLEAN, BOOLEAN

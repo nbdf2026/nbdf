@@ -108,7 +108,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 된 대상의 이벤트 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 된 대상의 이벤트 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="addEventHandler(eventid,objFunction,target)">
           <Return type="Integer" description="성공하면 추가된 인덱스값을 반환하고 실패하면 -1을 반환합니다." />
           <Arguments>
@@ -118,7 +118,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에 검색된 함수를 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에 검색된 함수를 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Integer" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -140,16 +140,16 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="callMethod" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 연결된 객체의 메소드를 호출하는 메소드입니다.">
+      <Method name="callMethod" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 연결된 객체의 메서드를 호출하는 메서드입니다.">
         <Syntax text="Plugin.callMethod( strMethodID, [varArg1, [varArg2...]])">
-          <Return type="Variant" description="객체의 메소드에서 리턴값이 있을 경우 해당값을 반환합니다.&#xA;&#xA;객체의 메소드에서 오브젝트를 리턴한 경우 PluginObject 로 Wrapping 되어 반환될 수 있습니다." />
+          <Return type="Variant" description="객체의 메서드에서 리턴값이 있을 경우 해당값을 반환합니다.&#xA;&#xA;객체의 메서드에서 오브젝트를 리턴한 경우 PluginObject 로 Wrapping 되어 반환될 수 있습니다." />
           <Arguments>
-            <Argument name="strMethodID" type="String" in="false" out="false" option="false" variable="false" description="호출할 메소드의 이름을 문자열로 설정합니다." />
-            <Argument name="varArgN" type="Object" in="false" out="false" option="false" variable="false" description="호출할 메소드에 전달될 인수를 설정합니다." />
+            <Argument name="strMethodID" type="String" in="false" out="false" option="false" variable="false" description="호출할 메서드의 이름을 문자열로 설정합니다." />
+            <Argument name="varArgN" type="Object" in="false" out="false" option="false" variable="false" description="호출할 메서드에 전달될 인수를 설정합니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="clearEventHandler( strEventID )">
           <Return type="Integer" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -157,13 +157,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="스크립트에서 동적으로 생성한 Plugin 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="스크립트에서 동적으로 생성한 Plugin 을(를) 삭제하는 메서드입니다.">
         <Syntax text="Plugin.destroy()">
           <Return type="Boolean" description="Plugin 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;Plugin 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Integer" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -173,13 +173,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 표시된 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 표시된 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="Plugin.getDisplayText()">
           <Return type="String" description="Plugin 에 표시된 텍스트값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
           <Arguments>
@@ -188,85 +188,85 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Plugin.getFocus()">
           <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 bottom 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 bottom 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getOffsetBottom();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 bottom 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 높이를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 높이를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getOffsetHeight();">
           <Return type="Number" description="Plugin 의 높이를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 left 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 left 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getOffsetLeft();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 left 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 right 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 right 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getOffsetRight();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 right 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 top 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 top 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getOffsetTop();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 top 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 너비를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 너비를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getOffsetWidth();">
           <Return type="Number" description="Plugin 의 너비를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 bottom 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getPixelBottom();">
           <Return type="Number" description="Plugin 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;bottom 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 height 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getPixelHeight();">
           <Return type="Number" description="Plugin 의 height 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;height 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 left 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getPixelLeft();">
           <Return type="Number" description="Plugin 의 left 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;left 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 right 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getPixelRight();">
           <Return type="Number" description="Plugin 의 right 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;right 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 top 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getPixelTop();">
           <Return type="Number" description="Plugin 의 top 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;top 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 width 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Plugin.getPixelWidth();">
           <Return type="Number" description="Plugin 의 width 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;width 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 연결된 객체에 정의된 속성의 값을 반환하는 메소드입니다.">
+      <Method name="getProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 연결된 객체에 정의된 속성의 값을 반환하는 메서드입니다.">
         <Syntax text="Plugin.getProperty( strPropID )">
           <Return type="Variant" description="객체의 속성이 가지고 있는 값을 반환합니다.&#xA;&#xA;객체의 속성값이 오브젝트인  경우 PluginObject 로 Wrapping 되어 반환될 수 있습니다." />
           <Arguments>
@@ -274,7 +274,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="스크립트로 Plugin 을(를) 동적 생성한 후에 초기화하는 메소드입니다.">
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="스크립트로 Plugin 을(를) 동적 생성한 후에 초기화하는 메서드입니다.">
         <Syntax text="Plugin.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
           <Return type="" description="" />
           <Arguments>
@@ -298,25 +298,25 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="install" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Plugin 에 연결할 객체를 설치하는 메소드입니다.">
+      <Method name="install" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Plugin 에 연결할 객체를 설치하는 메서드입니다.">
         <Syntax text="Plugin.install();">
           <Return type="Boolean" description="객체 설치에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;객체가 이미 설치되어 있거나 설치에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isInstalled" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Plugin 에 연결된 객체가 시스템에 설치되어 있는지를 확인하는 메소드입니다.">
+      <Method name="isInstalled" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Plugin 에 연결된 객체가 시스템에 설치되어 있는지를 확인하는 메서드입니다.">
         <Syntax text="plugin.isInstalled();">
           <Return type="Boolean" description="객체가 시스템에 설치되어 있으면 &quot;true&quot;를 반환합니다.&#xA;&#xA;객체가 시스템에 설치되어 있지 않으면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isLoaded" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Plugin 에 객체가 정상적으로 생성 및 로드했는지 확인하는 메소드입니다.">
+      <Method name="isLoaded" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Plugin 에 객체가 정상적으로 생성 및 로드했는지 확인하는 메서드입니다.">
         <Syntax text="Plugin.isLoaded();">
           <Return type="Boolean" description="객체가 Plugin 컴포넌트에 정상적으로 로드 되었으면 &quot;true&quot;를 반환합니다.&#xA;&#xA;객체가 Plugin 컴포넌트에 정상적으로 로드 되지 않았으면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 위치와 크기를 변경하는 메소드입니다.">
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 위치와 크기를 변경하는 메서드입니다.">
         <Syntax text="Plugin.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
           <Return type="" description="" />
           <Arguments>
@@ -353,7 +353,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Plugin.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -363,7 +363,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Integer" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
           <Arguments>
@@ -373,7 +373,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 크기를 변경하는 메소드입니다.">
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 크기를 변경하는 메서드입니다.">
         <Syntax text="Plugin.resize( nWidth, nHeight )">
           <Return type="" description="" />
           <Arguments>
@@ -394,7 +394,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Integer" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -404,7 +404,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Integer" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -414,15 +414,15 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 포커스를 주는 메소드입니다.">
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 포커스를 주는 메서드입니다.">
         <Syntax text="Plugin.setFocus( [bMoveScroll] )">
-          <Return type="Object" description="Plugin 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메소드 실행에 실패한 경우에는 null을 반환합니다." />
+          <Return type="Object" description="Plugin 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메서드 실행에 실패한 경우에는 null을 반환합니다." />
           <Arguments>
             <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우, Plugin 기준으로 스크롤을 이동할지 여부를 설정합니다.&#xA;&#xA;true: Plugin 이(가) 화면에 표시되도록 스크롤을 이동합니다.&#xA;false: Plugin 위치와 관계없이 스크롤을 이동하지 않습니다.&#xA;&#xA;값을 지정하지 않으면 기본값은 true입니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 bottom 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Plugin.setOffsetBottom( nBottom );">
           <Return type="" description="" />
           <Arguments>
@@ -430,7 +430,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 높이를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 높이를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Plugin.setOffsetHeight( nHeight );">
           <Return type="" description="" />
           <Arguments>
@@ -438,7 +438,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 left 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Plugin.setOffsetLeft( nLeft );">
           <Return type="" description="" />
           <Arguments>
@@ -446,7 +446,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Left 위치를 기준으로 Plugin 의 right 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Plugin.setOffsetRight( nRight );">
           <Return type="" description="" />
           <Arguments>
@@ -454,7 +454,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="부모 컴포넌트의 Top 위치를 기준으로 Plugin 의 top 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Plugin.setOffsetTop( nTop );">
           <Return type="" description="" />
           <Arguments>
@@ -462,7 +462,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 너비를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 의 너비를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Plugin.setOffsetWidth( nWidth );">
           <Return type="" description="" />
           <Arguments>
@@ -470,7 +470,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 연결된 객체에 정의된 속성의 값을 설정하는 메소드입니다.">
+      <Method name="setProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="Plugin 에 연결된 객체에 정의된 속성의 값을 설정하는 메서드입니다.">
         <Syntax text="Plugin.setProeprty( strPropID, varVal )">
           <Return type="" description="" />
           <Arguments>
@@ -479,7 +479,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="스크립트로 동적 생성한 Plugin 을(를) 화면에 표시하는 메소드입니다.">
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE" description="스크립트로 동적 생성한 Plugin 을(를) 화면에 표시하는 메서드입니다.">
         <Syntax text="Plugin.show()">
           <Return type="" description="" />
           <Arguments />

@@ -119,7 +119,7 @@
       <Control name="vscrollindicator" classname="nexacro.ScrollIndicatorControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
     </ControlInfo>
     <MethodInfo>
-      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 컴포넌트를 Form 의 자식 컴포넌트로 추가하는 메소드입니다.">
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 컴포넌트를 Form 의 자식 컴포넌트로 추가하는 메서드입니다.">
         <Syntax text="Form.addChild( strChildID, objComp )">
           <Return type="Number" description="추가된 자식 컴포넌트의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -134,7 +134,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="Form.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -144,7 +144,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 Form 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 Form 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="Form.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -154,7 +154,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="경고 대화상자를 표시하는 메소드입니다.">
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="경고 대화상자를 표시하는 메서드입니다.">
         <Syntax text="Form.alert( strText )">
           <Return type="" description="" />
           <Arguments>
@@ -174,15 +174,15 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 트랜잭션을 중지 시키는 메소드입니다.">
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="진행중인 트랜잭션을 중지 시키는 메서드입니다.">
         <Syntax text="cancelTransaction( [strSvcID] )">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="중지할 트랜잭션의 ID를 문자열로 설정합니다.&#xA;transaction() 메소드 수행 시 설정한 ID값입니다." />
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="중지할 트랜잭션의 ID를 문자열로 설정합니다.&#xA;transaction() 메서드 수행 시 설정한 ID값입니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="Form.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -190,7 +190,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="실행된 Form을 종료하는 메소드입니다.">
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="실행된 Form을 종료하는 메서드입니다.">
         <Syntax text="Form.close( [strReturn] )">
           <Return type="" description="" />
           <Arguments>
@@ -198,7 +198,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="선택 대화상자를 표시하는 메소드입니다.">
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="선택 대화상자를 표시하는 메서드입니다.">
         <Syntax text="Form.confirm( strText [,strCaption [,strType]] )">
           <Return type="Boolean" description="표시된 선택 대화상자에서 &quot;확인&quot; 버튼을 선택하면 &quot;true&quot;를 반환합니다.&#xA;표시된 선택 대화상자에서 &quot;취소&quot; 버튼을 선택하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -208,13 +208,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 Form 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 Form 을(를) 삭제하는 메서드입니다.">
         <Syntax text="Form.destroy()">
           <Return type="Boolean" description="Form 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;Form 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Form.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -224,19 +224,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCurrentLayoutID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form에 정의된 레이아웃 중 현재 화면에 표시되는 레이아웃의 name 속성값을 반환하는 메소드입니다.">
+      <Method name="getCurrentLayoutID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form에 정의된 레이아웃 중 현재 화면에 표시되는 레이아웃의 name 속성값을 반환하는 메서드입니다.">
         <Syntax text="Form.getCurrentLayoutID()">
           <Return type="String" description="현재 레이아웃 name 속성값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="Form.getDisplayText()">
           <Return type="String" description="Form 에 표시된 텍스트값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="Form.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -245,7 +245,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFirstAccessibilityComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE,Android NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 오브젝트 내 accessibilityenable 속성값이 true이고 taborder 속성값이 가장 작은 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getFirstAccessibilityComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE,Android NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 오브젝트 내 accessibilityenable 속성값이 true이고 taborder 속성값이 가장 작은 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Form.getFirstAccessibilityComponent( [bStepIn] )">
           <Return type="Object" description="Form 오브젝트 내 accessibilityenable 속성값이 true이고 taborder 속성값이 가장 작은 컴포넌트를 반환합니다." />
           <Arguments>
@@ -253,7 +253,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFirstComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에서 탭키로 포커스 이동 시 제일 처음에 포커스를 받는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getFirstComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에서 탭키로 포커스 이동 시 제일 처음에 포커스를 받는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Form.getFirstComponent( [bStepIn] )">
           <Return type="Object" description="포커스를 제일 처음에 받는 컴포넌트를 반환합니다." />
           <Arguments>
@@ -261,19 +261,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Form.getFocus()">
           <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;&#xA;포커스를 가진 자식 컴포넌트가 없으면 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getHScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 수평스크롤바의 트랙바 위치값을 반환하는 메소드입니다.">
+      <Method name="getHScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 수평스크롤바의 트랙바 위치값을 반환하는 메서드입니다.">
         <Syntax text="Form.getHScrollPos()">
           <Return type="Number" description="수평스크롤바의 현재 트랙바 위치값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getLastAccessibilityComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE,Android NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 오브젝트 내 accessibilityenable 속성값이 true이고 taborder 속성값이 가장 큰 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getLastAccessibilityComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Chrome,Windows NRE,Android NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 오브젝트 내 accessibilityenable 속성값이 true이고 taborder 속성값이 가장 큰 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Form.getLastAccessibilityComponent( [bStepIn] )">
           <Return type="Object" description="Form 오브젝트 내 accessibilityenable 속성값이 true이고 taborder 속성값이 가장 큰 컴포넌트를 반환합니다." />
           <Arguments>
@@ -281,7 +281,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getLastComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에서 탭키로 포커스 이동 시 제일 마지막에 포커스를 받는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getLastComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에서 탭키로 포커스 이동 시 제일 마지막에 포커스를 받는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Form.getLastComponent( [bStepIn] )">
           <Return type="Object" description="포커스를 제일 마지막에 받는 컴포넌트를 반환합니다." />
           <Arguments>
@@ -289,7 +289,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getLayoutInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 정의된 레이아웃 중 특정 레이아웃의 속성값을 반환하는 메소드입니다.">
+      <Method name="getLayoutInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 정의된 레이아웃 중 특정 레이아웃의 속성값을 반환하는 메서드입니다.">
         <Syntax text="Form.getLayoutInfo ( strLayoutID, strPropID )">
           <Return type="String" description="strPropID 속성에 설정된 값을 반환합니다." />
           <Arguments>
@@ -298,7 +298,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getNextComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 컴포넌트에서 탭키 입력 시 포커스가 이동되는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getNextComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 컴포넌트에서 탭키 입력 시 포커스가 이동되는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Form.getNextComponent( objComp [, bStepIn] )">
           <Return type="Object" description="objComp 컴포넌트에서 탭키로 포커스가 이동되는 컴포넌트를 반환합니다." />
           <Arguments>
@@ -307,13 +307,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Form 의 bottom 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Form 의 bottom 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Form.getOffsetBottom();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 Form 의 bottom 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 높이를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 높이를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Form.getOffsetHeight();">
           <Return type="Number" description="Form 의 높이를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
@@ -337,55 +337,55 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 너비를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 너비를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Form.getOffsetWidth();">
           <Return type="Number" description="Form 의 너비를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 이 소속된 부모 Frame 을 반환하는 메소드입니다.">
+      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 이 소속된 부모 Frame 을 반환하는 메서드입니다.">
         <Syntax text="Form.getOwnerFrame()">
           <Return type="Object" description="Form 이 소속된 부모 Frame 오브젝트를 반환합니다.&#xA;Form 이 소속된 Frame 이 없을 경우 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 bottom 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Form.getPixelBottom();">
           <Return type="Number" description="Form 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;bottom 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 height 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Form.getPixelHeight();">
           <Return type="Number" description="Form 의 height 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;height 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 left 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Form.getPixelLeft();">
           <Return type="Number" description="Form 의 left 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;left 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 right 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Form.getPixelRight();">
           <Return type="Number" description="Form 의 right 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;right 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 top 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Form.getPixelTop();">
           <Return type="Number" description="Form 의 top 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;top 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 width 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Form.getPixelWidth();">
           <Return type="Number" description="Form 의 width 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;width 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPrevComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 컴포넌트에서 Shift+탭키 입력 시 포커스가 이동되는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getPrevComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 컴포넌트에서 Shift+탭키 입력 시 포커스가 이동되는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Form.getPrevtComponent( objComp [, bStepIn] )">
           <Return type="Object" description="objComp 컴포넌트에서 Shift+탭키로 포커스가 이동되는 컴포넌트를 반환합니다." />
           <Arguments>
@@ -394,25 +394,25 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getStepCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 화면이 분할되었을 때 화면의 갯수를 반환하는 메소드입니다.">
+      <Method name="getStepCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 화면이 분할되었을 때 화면의 갯수를 반환하는 메서드입니다.">
         <Syntax text="Form.getStepCount();">
           <Return type="Number" description="분할된 화면의 갯수를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 이 화면분할 되었을 때 현재 표시되는 화면의 인덱스를 반환하는 메소드입니다.">
+      <Method name="getStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 이 화면분할 되었을 때 현재 표시되는 화면의 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Form.getStepIndex()">
           <Return type="Number" description="현재 표시되는 화면의 인덱스값이 반환됩니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 수직스크롤바의 트랙바 위치값을 반환하는 메소드입니다.">
+      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 수직스크롤바의 트랙바 위치값을 반환하는 메서드입니다.">
         <Syntax text="Form.getVScrollPos()">
           <Return type="Number" description="수직스크롤바의 현재 트랙바 위치값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="go" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="화면에 표시된 Form 대신 인수로 전달된 Form을 로딩하는 메소드입니다.">
+      <Method name="go" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="화면에 표시된 Form 대신 인수로 전달된 Form을 로딩하는 메서드입니다.">
         <Syntax text="Form.go( strURL )">
           <Return type="" description="" />
           <Arguments>
@@ -420,13 +420,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="hasPopupFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Form에서 스크립트로 실행된 Form이 있는지 확인하는 메소드입니다.">
+      <Method name="hasPopupFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Form에서 스크립트로 실행된 Form이 있는지 확인하는 메서드입니다.">
         <Syntax text="Form.hasPopupFrame()">
           <Return type="Boolean" description="현재 Form에서 스크립트로 실행된 Form이 있다면 &quot;true&quot;를 반환합니다.&#xA;현재 Form에서 스크립트로 실행된 Form이 없다면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 Form 을(를) 동적 생성한 후에 초기화하는 메소드입니다.">
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 Form 을(를) 동적 생성한 후에 초기화하는 메서드입니다.">
         <Syntax text="Form.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
           <Return type="" description="" />
           <Arguments>
@@ -444,7 +444,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 컴포넌트를 Form 의 자식 컴포넌트로 특정 순서에 추가하는 메소드입니다.">
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 컴포넌트를 Form 의 자식 컴포넌트로 특정 순서에 추가하는 메서드입니다.">
         <Syntax text="Form.insertChild( nIdx, strChildID, objComp )">
           <Return type="Number" description="추가된 자식 컴포넌트의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -454,7 +454,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="Form.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -465,7 +465,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isValidObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 특정 오브젝트가 존재하는지 확인하는 메소드입니다.">
+      <Method name="isValidObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 특정 오브젝트가 존재하는지 확인하는 메서드입니다.">
         <Syntax text="Form.isValidObject( objName )&#xA;Form.isValidObject( strName )">
           <Return type="Boolean" description="인수로 전달된 오브젝트가 Form 에 존재하면 &quot;true&quot;를 반환합니다.&#xA;인수로 전달된 오브젝트가 Form 에 존재하지 않으면 &quot;false&quot;를 반환합니다.&#xA;잘못된 값을 인수로 전달했을 경우도 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -474,15 +474,15 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="killTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="setTimer() 메소드로 생성된 타이머를 삭제하는 메소드입니다.">
+      <Method name="killTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="setTimer() 메서드로 생성된 타이머를 삭제하는 메서드입니다.">
         <Syntax text="Form.killTimer( nTimerID )">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="nTimerID" type="Number" in="false" out="false" option="false" variable="false" description="setTimer() 메소드에서 타이머 생성 시 설정했던 ID를 숫자로 설정합니다." />
+            <Argument name="nTimerID" type="Number" in="false" out="false" option="false" variable="false" description="setTimer() 메서드에서 타이머 생성 시 설정했던 ID를 숫자로 설정합니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 오브젝트를 Form 영역부터 상위 영역으로 검색하여 반환하는 메소드입니다.">
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 오브젝트를 Form 영역부터 상위 영역으로 검색하여 반환하는 메서드입니다.">
         <Syntax text="Form.lookup( strObjectID )">
           <Return type="Object" description="검색하여 찾아낸 오브젝트를 반환합니다." />
           <Arguments>
@@ -490,7 +490,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 위치와 크기를 변경하는 메소드입니다.">
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 위치와 크기를 변경하는 메서드입니다.">
         <Syntax text="Form.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
           <Return type="" description="" />
           <Arguments>
@@ -527,7 +527,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form에 동적으로 추가된 컴포넌트를 제거하는 메소드입니다.">
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form에 동적으로 추가된 컴포넌트를 제거하는 메서드입니다.">
         <Syntax text="Form.removeChild( strChildID )">
           <Return type="Object" description="컴포넌트 제거에 성공하면 제거된 컴포넌트의 오브젝트를 반환합니다.&#xA;컴포넌트 제거에 실패하면 &quot;null&quot;을 반환합니다." />
           <Arguments>
@@ -541,7 +541,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Form.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -551,7 +551,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Form.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -561,13 +561,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="resetScroll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 스크롤바와 내부 컴포넌트를 현재 화면 상태에 맞게 갱신하는 메소드입니다.">
+      <Method name="resetScroll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 스크롤바와 내부 컴포넌트를 현재 화면 상태에 맞게 갱신하는 메서드입니다.">
         <Syntax text="Form.resetScroll()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 크기를 변경하는 메소드입니다.">
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 크기를 변경하는 메서드입니다.">
         <Syntax text="Form.resize( vWidth, vHeight )">
           <Return type="" description="" />
           <Arguments>
@@ -576,7 +576,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="scrollBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 스크롤을 현재 위치에서 인수로 전달된 값만큼 이동시키는 메소드입니다.">
+      <Method name="scrollBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 스크롤을 현재 위치에서 인수로 전달된 값만큼 이동시키는 메서드입니다.">
         <Syntax text="Form.scrollBy( nHoffsetpos, nVoffsetpos )">
           <Return type="" description="" />
           <Arguments>
@@ -585,7 +585,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="scrollTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 스크롤을 특정 위치로 이동시키는 메소드입니다.">
+      <Method name="scrollTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 에 표시된 스크롤을 특정 위치로 이동시키는 메서드입니다.">
         <Syntax text="Form.scrollTo( nHpos, nVpos )">
           <Return type="" description="" />
           <Arguments>
@@ -606,7 +606,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="Form.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -616,7 +616,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="Form.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -626,7 +626,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFluidLayoutProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form Layout 오브젝트의 속성 중 FluidLayout 관련 속성값을 동적으로 설정하는 메소드입니다.">
+      <Method name="setFluidLayoutProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form Layout 오브젝트의 속성 중 FluidLayout 관련 속성값을 동적으로 설정하는 메서드입니다.">
         <Syntax text="Form.setFluidLayoutProperty(strLayoutName, strPropID, strValue)">
           <Return type="" description="" />
           <Arguments>
@@ -638,14 +638,14 @@
       </Method>
       <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 컴포넌트(오브젝트)에 포커스를 설정하는 메서드입니다.">
         <Syntax text="Form.setFocus( [bMoveScroll [, bInnerFocus]] )">
-          <Return type="Object" description="Form 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메소드 실행에 실패한 경우에는 null을 반환합니다." />
+          <Return type="Object" description="Form 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메서드 실행에 실패한 경우에는 null을 반환합니다." />
           <Arguments>
             <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="자식 컴포넌트(또는 아이템으로 등록된 컴포넌트)로 포커스를 이동할지 여부를 설정합니다.&#xA;&#xA;true: 포커스를 받을 수 있는 첫 번째 컴포넌트로 포커스를 이동합니다.&#xA;       포커스를 받을 수 있는 컴포넌트가 없는 경우 Form 에 포커스가 설정됩니다.&#xA;false: Form 에 포커스를 설정합니다.&#xA;&#xA;값을 설정하지 않으면 기본값은 true입니다." />
             <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우, Form 기준으로 스크롤을 이동할지 여부를 설정합니다.&#xA;&#xA;true: Form 이(가) 화면에 표시되도록 스크롤을 이동합니다.&#xA;false: Form 위치와 관계없이 스크롤을 이동하지 않습니다.&#xA;&#xA;값을 지정하지 않으면 기본값은 true입니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Form 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Form 의 bottom 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Form.setOffsetBottom( nBottom );">
           <Return type="" description="" />
           <Arguments>
@@ -653,7 +653,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 높이를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 의 높이를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Form.setOffsetHeight( nHeight );">
           <Return type="" description="" />
           <Arguments>
@@ -661,7 +661,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Form 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Form 의 left 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Form.setOffsetLeft( nLeft );">
           <Return type="" description="" />
           <Arguments>
@@ -687,7 +687,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setStepCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 레이아웃의 화면을 지정한 숫자만큼 분할하도록 설정하는 메소드입니다.">
+      <Method name="setStepCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 레이아웃의 화면을 지정한 숫자만큼 분할하도록 설정하는 메서드입니다.">
         <Syntax text="Form.setStepCount(nStepcount)">
           <Return type="" description="" />
           <Arguments>
@@ -695,7 +695,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 이 화면분할 되었을 때 표시할 화면을 인덱스로 설정하는 메소드입니다.">
+      <Method name="setStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Form 이 화면분할 되었을 때 표시할 화면을 인덱스로 설정하는 메서드입니다.">
         <Syntax text="Form.setStepIndex( nIndex )">
           <Return type="Boolean" description="분할된 화면 이동에 성공하면 &quot;true&quot;가 반환됩니다.&#xA;분할된 화면 이동에 실패하면 &quot;false&quot;가 반환됩니다." />
           <Arguments>
@@ -703,7 +703,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="주기적으로 ontimer 이벤트를 발생시키기 위해 타이머를 생성하는 메소드입니다.">
+      <Method name="setTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="주기적으로 ontimer 이벤트를 발생시키기 위해 타이머를 생성하는 메서드입니다.">
         <Syntax text="Form.setTimer( nTimerID, nElapse )">
           <Return type="" description="" />
           <Arguments>
@@ -712,22 +712,22 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setWaitCursor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Wait Cursor 를 표시하거나 해제하는 메소드입니다.">
+      <Method name="setWaitCursor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Wait Cursor 를 표시하거나 해제하는 메서드입니다.">
         <Syntax text="Form.setWaitCursor( [bWaitFlag [, bForcely]] )">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="bForcely" type="Boolean" in="false" out="false" option="false" variable="false" description="Environment 의 usewaitcursor 속성값에 관계없이 메소드를 실행 시킬지 여부를 설정합니다.&#xA;&#xA;true 설정 시 userwaitcursor 속성값에 관계없이 Wait Cursor 를 표시/해제 합니다.&#xA;false 설정 시 usewaitcursor 속성값이 true 이면 Wait Cursor 를 표시/해제 합니다.&#xA;false 설정 시 usewaitcursor 속성값이 false 이면 메소드가 실행되지 않습니다.&#xA;&#xA;값 생략 시 false 로 적용됩니다." />
+            <Argument name="bForcely" type="Boolean" in="false" out="false" option="false" variable="false" description="Environment 의 usewaitcursor 속성값에 관계없이 메서드를 실행 시킬지 여부를 설정합니다.&#xA;&#xA;true 설정 시 userwaitcursor 속성값에 관계없이 Wait Cursor 를 표시/해제 합니다.&#xA;false 설정 시 usewaitcursor 속성값이 true 이면 Wait Cursor 를 표시/해제 합니다.&#xA;false 설정 시 usewaitcursor 속성값이 false 이면 메서드가 실행되지 않습니다.&#xA;&#xA;값 생략 시 false 로 적용됩니다." />
             <Argument name="bWaitFlag" type="Boolean" in="false" out="false" option="false" variable="false" description="화면에 Wait Cursor의 표시 여부를 설정합니다.&#xA;&#xA;true 설정 시 Wait Cursor가 화면에 표시됩니다.&#xA;false 설정 시 화면에 표시된 Wait Cursor 를 해제합니다.&#xA;&#xA;값 생략 시 true 로 적용됩니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Form 을(를) 화면에 표시하는 메소드입니다.">
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Form 을(를) 화면에 표시하는 메서드입니다.">
         <Syntax text="Form.show()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="sleep" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="설정한 시간만큼 스크립트 실행을 멈추는 메소드입니다.">
+      <Method name="sleep" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="설정한 시간만큼 스크립트 실행을 멈추는 메서드입니다.">
         <Syntax text="Form.sleep( nMilliseconds )">
           <Return type="" description="" />
           <Arguments>
@@ -735,7 +735,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSet 의 데이터를 갱신하기 위한 서비스를 호출하고,트랜잭션이 완료되면 콜백 함수를 수행하는 메소드입니다.">
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSet 의 데이터를 갱신하기 위한 서비스를 호출하고,트랜잭션이 완료되면 콜백 함수를 수행하는 메서드입니다.">
         <Syntax text="Form.transaction( strSvcID, strURL, strInDatasets, strOutDatasets, strArgument, strCallbackFunc [,bAsync [,nDataType [,bCompress]]] )">
           <Return type="" description="" />
           <Arguments>
@@ -1103,7 +1103,7 @@
           </Arguments>
         </Syntax>
       </EventHandler>
-      <EventHandler name="ontimer" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="setTimer() 메소드로 생성한 타이머의 시간 간격마다 발생하는 이벤트입니다.">
+      <EventHandler name="ontimer" group="Event" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="setTimer() 메서드로 생성한 타이머의 시간 간격마다 발생하는 이벤트입니다.">
         <Syntax text="Form.ontimer(obj:nexacro.Form,e:nexacro.TimerEventInfo);">
           <Return type="" description="" />
           <Arguments>

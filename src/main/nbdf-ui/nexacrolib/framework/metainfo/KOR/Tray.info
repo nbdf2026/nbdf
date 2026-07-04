@@ -14,7 +14,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 TrayPopupMenu 오브젝트를 추가하는 메소드입니다.">
+      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 TrayPopupMenu 오브젝트를 추가하는 메서드입니다.">
         <Syntax text="Tray.addItem(strID,objPopupMenu)">
           <Return type="Number" description="items 속성에 추가된 TrayPopupMenu 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;TrayPopupMenu 오브젝트 추가에 실패했을 경우 &quot;-1&quot; 을 반환합니다." />
           <Arguments>
@@ -23,7 +23,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="deleteItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 등록된 TrayPopupMenu 오브젝트를 삭제하는 메소드입니다.">
+      <Method name="deleteItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 등록된 TrayPopupMenu 오브젝트를 삭제하는 메서드입니다.">
         <Syntax text="Tray.deleteItem( strID )">
           <Return type="Number" description="items 속성에서 삭제된 TrayPopupMenu 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;TrayPopupMenu 오브젝트 삭제에 실패했을 경우 -1 을 반환합니다." />
           <Arguments>
@@ -31,13 +31,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="스크립트에서 동적으로 생성한 Tray 를 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="스크립트에서 동적으로 생성한 Tray 를 삭제하는 메서드입니다.">
         <Syntax text="Tray.destroy()">
           <Return type="Boolean" description="Tray 가 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;Tray 가 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 등록된 특정 TrayPopupMenu 오브젝트의 인덱스를 반환하는 메소드입니다.">
+      <Method name="findItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 등록된 특정 TrayPopupMenu 오브젝트의 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Tray.findItem(strID)">
           <Return type="Number" description="items 속성에 등록된 strID 의 인덱스를 반환합니다." />
           <Arguments>
@@ -45,19 +45,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getItemCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 등록된 TrayPopupMenu 오브젝트의 갯수를 반환하는 메소드입니다.">
+      <Method name="getItemCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성에 등록된 TrayPopupMenu 오브젝트의 갯수를 반환하는 메서드입니다.">
         <Syntax text="Tray.getItemCount()">
           <Return type="Number" description="items 속성에 등록된 TrayPopupMenu 오브젝트의 갯수를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="hideBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Tray에 표시된 풍선팁을 숨기는 메소드입니다.">
+      <Method name="hideBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Tray에 표시된 풍선팁을 숨기는 메서드입니다.">
         <Syntax text="Tray.hideBalloonTip()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="스크립트로 Tray 를 동적 생성한 후에 초기화하는 메소드입니다.">
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="스크립트로 Tray 를 동적 생성한 후에 초기화하는 메서드입니다.">
         <Syntax text="Tray.init(strID, icon, tooltip);">
           <Return type="" description="" />
           <Arguments>
@@ -67,7 +67,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성의 특정 위치에 TrayPopupMenu 오브젝트를 추가하는 메소드입니다.">
+      <Method name="insertItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="Tray 의 items 속성의 특정 위치에 TrayPopupMenu 오브젝트를 추가하는 메서드입니다.">
         <Syntax text="Tray.insertItem(nIndex, strID, objPopupMenu)">
           <Return type="Number" description="TrayPopupMenu 오브젝트가 추가된 위치의 인덱스를 반환합니다.&#xA;&#xA;TrayPopupMenu 오브젝트 추가에 실패했을 경우 &quot;-1&quot; 을 반환합니다." />
           <Arguments>
@@ -77,13 +77,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="스크립트에서 동적으로 생성한 Tray 를 작업표시줄에 표시하는 메소드입니다.">
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE" description="스크립트에서 동적으로 생성한 Tray 를 작업표시줄에 표시하는 메서드입니다.">
         <Syntax text="Tray.show()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="showBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Tray 에 풍선팁을 표시하는 메소드입니다.">
+      <Method name="showBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="Tray 에 풍선팁을 표시하는 메서드입니다.">
         <Syntax text="Tray.showBalloonTip(strTitleIcon, strTitle, strText [, bNoSound])">
           <Return type="" description="" />
           <Arguments>

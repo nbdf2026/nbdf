@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="delegatecomment_context" deleted="false" description="Comment for delegate methods" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.delegatecomment" name="delegatecomment">/**
+* @methodName     	: ${enclosing_method}
+* @author         	: Built1
+* @date           	: ${id:date('YYYY.MM.dd')}
+* @description    	: XXXX 데이터를 조회/저장하는 위임메서드
+* ${tags}
+*/
+</template></templates>

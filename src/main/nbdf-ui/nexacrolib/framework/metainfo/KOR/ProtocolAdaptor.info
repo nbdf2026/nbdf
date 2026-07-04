@@ -22,7 +22,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 ProtocolAdaptor 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 ProtocolAdaptor 을(를) 삭제하는 메서드입니다.">
         <Syntax text="ProtocolAdaptor.destroy()">
           <Return type="Boolean" description="ProtocolAdaptor 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;ProtocolAdaptor 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />

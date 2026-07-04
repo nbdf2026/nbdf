@@ -9,7 +9,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="makeCall" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기에서 인수로 전달된 번호로 전화연결 화면을 표시하는 정적 메소드입니다.">
+      <Method name="makeCall" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기에서 인수로 전달된 번호로 전화연결 화면을 표시하는 정적 메서드입니다.">
         <Syntax text="Phone.makeCall( strPhoneNumber [, bAutoDialing] )">
           <Return type="Boolean" description="strPhoneNumber 가 생략되거나 허용되지 않는 문자가 사용된 경우에는 false 를 반환합니다.&#xA;&#xA;그 외의 정상적인 경우에는 true 를 반환합니다." />
           <Arguments>

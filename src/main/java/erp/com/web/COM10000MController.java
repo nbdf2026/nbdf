@@ -40,7 +40,7 @@ public class COM10000MController {
 	* @methodName     : selectCodeList
 	* @author         : built1
 	* @date           : 2026.06.23
-	* @description    : 코드유형 데이터를 조회하는 메소드
+	* @description    : 코드유형 데이터를 조회하는 메서드
 	* @param inSearch
 	* @param userId
 	* @return
@@ -82,7 +82,7 @@ public class COM10000MController {
 	* @methodName     : saveCodeData
 	* @author         : built1
 	* @date           : 2026.06.23
-	* @description    : 공통코드 데이터를 조회/저장하는 메소드
+	* @description    : 공통코드 데이터를 조회/저장하는 메서드
 	* @param inCodeType
 	* @param inCode
 	* @param userId

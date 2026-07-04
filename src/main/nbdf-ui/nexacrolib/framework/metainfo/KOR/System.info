@@ -25,7 +25,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera" description="웹브라우저에서 넥사크로 스튜디오로 Generate 된 &quot;xfdl&quot; 파일을 사용자 DOM 에 로드하는 메소드입니다.">
+      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera" description="웹브라우저에서 넥사크로 스튜디오로 Generate 된 &quot;xfdl&quot; 파일을 사용자 DOM 에 로드하는 메서드입니다.">
         <Syntax text="system.attachChildFrame(window, document, strKey, stradlurl, strDivId, strxfdlurl)">
           <Return type="" description="" />
           <Arguments>
@@ -38,7 +38,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="checkDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="권한 설정 여부를 확인하는 메소드입니다.">
+      <Method name="checkDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="권한 설정 여부를 확인하는 메서드입니다.">
         <Syntax text="system.checkDevicePermission(arrPermissiontypes);">
           <Return type="" description="" />
           <Arguments>
@@ -46,13 +46,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,iOS/iPadOS NRE" description="시스템의 클립보드에 저장된 내용을 삭제하는 메소드입니다.">
+      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,iOS/iPadOS NRE" description="시스템의 클립보드에 저장된 내용을 삭제하는 메서드입니다.">
         <Syntax text="system.clearClipboard()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="컴포넌트의 클라이언트 기준의 x 좌표값을 스크린 기준의 x 좌표값으로 반환하는 메소드입니다.">
+      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="컴포넌트의 클라이언트 기준의 x 좌표값을 스크린 기준의 x 좌표값으로 반환하는 메서드입니다.">
         <Syntax text="system.clientToScreenX(objComp, nPosX)">
           <Return type="Number" description="스크린 기준의 x 좌표값을 반환합니다." />
           <Arguments>
@@ -61,7 +61,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="컴포넌트의 클라이언트 기준의 y 좌표값을 스크린 기준의 y 좌표값으로 반환하는 메소드입니다.">
+      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="컴포넌트의 클라이언트 기준의 y 좌표값을 스크린 기준의 y 좌표값으로 반환하는 메서드입니다.">
         <Syntax text="system.clientToScreenY(objComp, nPosY)">
           <Return type="Number" description="스크린 기준의 y 좌표값을 반환합니다." />
           <Arguments>
@@ -70,7 +70,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="Alias 가 포함된 경로를 실제 절대경로로 변환하는 메소드입니다.">
+      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="Alias 가 포함된 경로를 실제 절대경로로 변환하는 메서드입니다.">
         <Syntax text="system.convertRealPath(strAlias)">
           <Return type="String" description="실제 절대경로를 반환합니다." />
           <Arguments>
@@ -78,7 +78,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="전달된 문자열 정보에 따라 브라우저(또는 앱)를 실행하는 메소드입니다.">
+      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="전달된 문자열 정보에 따라 브라우저(또는 앱)를 실행하는 메서드입니다.">
         <Syntax text="system.execBrowser( strUrl )">
           <Return type="" description="" />
           <Arguments>
@@ -86,7 +86,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="execDefaultBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="전달된 URL을 기본앱으로 지정한 웹브라우저에서 실행하는 메소드입니다.">
+      <Method name="execDefaultBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="전달된 URL을 기본앱으로 지정한 웹브라우저에서 실행하는 메서드입니다.">
         <Syntax text="system.execDefaultBrowser( strUrl, [bNewWindow] );">
           <Return type="" description="" />
           <Arguments>
@@ -95,7 +95,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="전달된 실행경로와 인수값으로 넥사크로를 실행하는 메소드입니다.">
+      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="전달된 실행경로와 인수값으로 넥사크로를 실행하는 메서드입니다.">
         <Syntax text="system.execNexacro(strCommand)">
           <Return type="" description="" />
           <Arguments>
@@ -103,7 +103,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="윈도우 셸(Shell)에 설정한 값을 전달하는 메소드입니다.">
+      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="윈도우 셸(Shell)에 설정한 값을 전달하는 메서드입니다.">
         <Syntax text="system.execShell( strShellCmd )">
           <Return type="" description="" />
           <Arguments>
@@ -111,7 +111,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="exportPDF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="지정한 컴포넌트의 이미지를 PDF 파일로 출력하는 메소드입니다.">
+      <Method name="exportPDF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="지정한 컴포넌트의 이미지를 PDF 파일로 출력하는 메서드입니다.">
         <Syntax text="system.exportPDF(objComponent, strFileName)">
           <Return type="Boolean" description="이미지 출력에 성공하면 true를 반환하고 실패하면 false를 반환합니다." />
           <Arguments>
@@ -120,7 +120,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="시스템의 클립보드에 저장된 데이터를 지정된 형식으로 반환하는 메소드입니다.">
+      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="시스템의 클립보드에 저장된 데이터를 지정된 형식으로 반환하는 메서드입니다.">
         <Syntax text="system.getClipboard( strFormat [, objCallBackFunc [, objTarget]] )">
           <Return type="Variant" description="시스템 클립보드의 데이터를 지정된 형식으로 반환합니다.&#xA;&#xA;* Chrome, Opera 브라우저는 undefined 를 반환합니다." />
           <Arguments>
@@ -130,19 +130,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="마우스 커서가 위치한 곳의 x 좌표값을 반환하는 메소드입니다.">
+      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="마우스 커서가 위치한 곳의 x 좌표값을 반환하는 메서드입니다.">
         <Syntax text="system.getCursorX()">
           <Return type="Number" description="마우스 커서가 위치한 곳의 x 좌표값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="마우스 커서가 위치한 곳의 y 좌표값을 반환하는 메소드입니다.">
+      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="마우스 커서가 위치한 곳의 y 좌표값을 반환하는 메서드입니다.">
         <Syntax text="system.getCursorY()">
           <Return type="Number" description="마우스 커서가 위치한 곳의 y 좌표값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="다중 모니터 일 때 전달된 좌표값에 가장 가까운 모니터의 번호를 반환하는 메소드입니다.">
+      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="다중 모니터 일 때 전달된 좌표값에 가장 가까운 모니터의 번호를 반환하는 메서드입니다.">
         <Syntax text="system.getMonitorIndex(nCursorX, nCursorY)">
           <Return type="Number" description="좌표에 해당하는 모니터 번호를 반환합니다." />
           <Arguments>
@@ -151,13 +151,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getPackageVersion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="앱 버전 정보를 반환하는 메소드입니다.">
+      <Method name="getPackageVersion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE" description="앱 버전 정보를 반환하는 메서드입니다.">
         <Syntax text="system.getPackageVersion()">
           <Return type="Array" description="Package version code, Package version name을 배열로 반환합니다.&#xA;&#xA;[0] Package version code&#xA;[1] Package version name" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="어플리케이션이 실행된 스크린의 높이를 반환하는 메소드입니다.">
+      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="어플리케이션이 실행된 스크린의 높이를 반환하는 메서드입니다.">
         <Syntax text="system.getScreenHeight()">
           <Return type="Number" description="스크린의 높이를 반환합니다." />
           <Arguments />
@@ -171,7 +171,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getScreenPrintString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정한 컴포넌트를 HTML 문자열 형태로 출력하는 메소드입니다.">
+      <Method name="getScreenPrintString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="지정한 컴포넌트를 HTML 문자열 형태로 출력하는 메서드입니다.">
         <Syntax text="system.getScreenPrintString(objComponent)">
           <Return type="String" description="HTML 문자열을 반환합니다.&#xA;실행 환경에 따라 반환되는 HTML 변환 방식이 다릅니다.&#xA;- WRE: 컴포넌트를 HTML 형태로 변환해 출력&#xA;- NRE: 컴포넌트를 Base64 인코딩 데이터로 변환해 img 태그로 출력&#xA;&#xA;출력할 내용이 없거나 objComponet가 잘못 설정된 경우 빈 문자열을 반환합니다." />
           <Arguments>
@@ -179,7 +179,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="지정한 모니터의 스크린정보를 Rect 오브젝트로 반환하는 메소드입니다.">
+      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="지정한 모니터의 스크린정보를 Rect 오브젝트로 반환하는 메서드입니다.">
         <Syntax text="system.getScreenRect(nMonitorIndex)">
           <Return type="Object" description="인수로 전달된 모니터의 스크린정보를 갖는 Rect 오브젝트를 반환합니다.&#xA;&#xA;Rect 오브젝트는 &quot;left&quot;, &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;width&quot;, &quot;height&quot; 속성을 갖습니다." />
           <Arguments>
@@ -187,7 +187,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="지정한 모니터의 해상도를 반환하는 메소드입니다.">
+      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="지정한 모니터의 해상도를 반환하는 메서드입니다.">
         <Syntax text="system.getScreenResolution(nMonitorIndex)">
           <Return type="String" description="지정된 모니터의 해상도값을 문자열로 반환합니다.&#xA;&#xA;잘못된 모니터 번호를 입력 시 &quot;0&quot; 을 반환합니다." />
           <Arguments>
@@ -195,13 +195,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="어플리케이션이 실행된 스크린의 너비를 반환하는 메소드입니다.">
+      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="어플리케이션이 실행된 스크린의 너비를 반환하는 메서드입니다.">
         <Syntax text="system.getScreenWidth()">
           <Return type="Number" description="스크린의 너비를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="다중 모니터 일 때, 지정한 모니터가 주 모니터인지 반환하는 메소드입니다.">
+      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="다중 모니터 일 때, 지정한 모니터가 주 모니터인지 반환하는 메서드입니다.">
         <Syntax text="system.isPrimaryMonitor(nMonitorIndex)">
           <Return type="Boolean" description="지정한 모니터가 주 모니터이면 &quot;true&quot; 를 반환합니다.&#xA;지정한 모니터가 주 모니터가 아니면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
@@ -209,9 +209,9 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE" description="지정한 컴포넌트의 이미지를 프린터로 출력하는 메소드입니다.">
+      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE" description="지정한 컴포넌트의 이미지를 프린터로 출력하는 메서드입니다.">
         <Syntax text="system.print( objComponent [, bHideDialog [, strVAlign [, strHAlign [, bFitOnePage [, strOrientation]]]]] )">
-          <Return type="Boolean" description="이미지 출력 요청에 성공하면 true 를 반환합니다.&#xA;이미지 출력 요청에 실패하면 false 를 반환합니다.&#xA;&#xA;실제 프린트 성공과 관계없이 메소드 호출 성공유무를 반환합니다." />
+          <Return type="Boolean" description="이미지 출력 요청에 성공하면 true 를 반환합니다.&#xA;이미지 출력 요청에 실패하면 false 를 반환합니다.&#xA;&#xA;실제 프린트 성공과 관계없이 메서드 호출 성공유무를 반환합니다." />
           <Arguments>
             <Argument name="bFitOnePage" type="Boolean" in="false" out="false" option="false" variable="false" description="true 설정 시 이미지가 한페이지를 초과하는 경우 축소하여 한페이지로 출력합니다.&#xA;true 설정 시 이미지가 한페이지보다 작은 경우 비율에 맞게 확대하여 한페이지로 출력합니다.&#xA;&#xA;false 설정 시 이미지 크기에 맞게 여러페이지로 출력합니다.&#xA;false 설정 시 strVAlign 은 &quot;top&quot; 으로 적용되고, strHAlign 은 &quot;left&quot; 로 적용됩니다.&#xA;&#xA;값 생략 시 false 로 적용됩니다.&#xA;&#xA;* Desktop WRE 는 지원하지 않으며 항상 false 로 적용됩니다." />
             <Argument name="bHideDialog" type="Boolean" in="false" out="false" option="false" variable="false" description="true 설정 시 프린터 설정창으로 표시하지 않고 출력합니다.&#xA;false 설정 시 프린터로 출력 전에 프린터 설정창을 표시합니다.&#xA;&#xA;값 생략 시 true 로 적용됩니다.&#xA;&#xA;* Desktop WRE 는 지원하지 않으며 항상 false 로 적용됩니다." />
@@ -222,7 +222,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="requestDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="설정한 권한을 요청하는 메소드입니다.">
+      <Method name="requestDevicePermission" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="설정한 권한을 요청하는 메서드입니다.">
         <Syntax text="system.requestDevicePermission(arrPermissionTypes[, strDescription])">
           <Return type="" description="" />
           <Arguments>
@@ -231,7 +231,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="saveToImageBase64String" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="지정한 컴포넌트의 이미지를 Base64 로 인코딩 된 String 으로 반환하는 메소드입니다.">
+      <Method name="saveToImageBase64String" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="지정한 컴포넌트의 이미지를 Base64 로 인코딩 된 String 으로 반환하는 메서드입니다.">
         <Syntax text="system.saveToImageBase64String( objComponent [, bWholeForm [,strImageType [,strOptions]]] )">
           <Return type="String" description="- 컴포넌트의 이미지를 Base64 로 인코딩 된 문자열로 반환합니다.&#xA;  인코딩에 실패하였을 경우 빈문자열을 반환합니다." />
           <Arguments>
@@ -242,7 +242,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="지정한 컴포넌트의 이미지를 파일로 출력하는 메소드입니다.">
+      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE,macOS NRE,Android NRE" description="지정한 컴포넌트의 이미지를 파일로 출력하는 메서드입니다.">
         <Syntax text="system.saveToImageFile(objComponent, strFileName, strImageType[,strOptions [,bWholeForm]])">
           <Return type="Boolean" description="이미지 출력에 성공하면 true 를 반환합니다.&#xA;&#xA;이미지 출력에 실패하면 false 를 반환합니다." />
           <Arguments>
@@ -254,7 +254,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크린 기준의 x 좌표값을 컴포넌트의 클라이언트 기준 x 좌표값으로 반환하는 메소드입니다.">
+      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크린 기준의 x 좌표값을 컴포넌트의 클라이언트 기준 x 좌표값으로 반환하는 메서드입니다.">
         <Syntax text="system.screenToClientX(objComp, nPosX)">
           <Return type="Number" description="컴포넌트의 클라이언트 기준 x 좌표값을 반환합니다." />
           <Arguments>
@@ -263,7 +263,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크린 기준의 y 좌표값을 컴포넌트의 클라이언트 기준 y 좌표값으로 반환하는 메소드입니다.">
+      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크린 기준의 y 좌표값을 컴포넌트의 클라이언트 기준 y 좌표값으로 반환하는 메서드입니다.">
         <Syntax text="system.screenToClientY(objComp, nPosY)">
           <Return type="Number" description="컴포넌트의 클라이언트 기준 y 좌표값을 반환합니다." />
           <Arguments>
@@ -272,7 +272,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="시스템의 클립보드에 지정된 형식으로 데이터를 저장하는 메소드입니다.">
+      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE" description="시스템의 클립보드에 지정된 형식으로 데이터를 저장하는 메서드입니다.">
         <Syntax text="system.setClipboard( strFormat, varData )">
           <Return type="" description="" />
           <Arguments>
@@ -281,7 +281,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="동적으로 생성한 ChildFrame 을 Sync 로 동작하는 Modal 형태로 표시하는 메소드입니다.">
+      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="동적으로 생성한 ChildFrame 을 Sync 로 동작하는 Modal 형태로 표시하는 메서드입니다.">
         <Syntax text="system.showModalSync( objChildframe [, strID ] , objParentFrame, [{objArguList} [, objOpener]] );">
           <Return type="Boolean" description="Modal 로 표시된 ChildFrame 이 종료된 후 성공/실패 여부를 반환합니다." />
           <Arguments>
@@ -293,9 +293,9 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="동적으로 생성한 ChildFrame 을 별도의 Modal Window 로 표시하는 메소드입니다.">
+      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows NRE" description="동적으로 생성한 ChildFrame 을 별도의 Modal Window 로 표시하는 메서드입니다.">
         <Syntax text="system.showModalWindow( objChildFrame [, strID] , objParentFrame[, {objArguList} [, objOpener]] );">
-          <Return type="String" description="Modal Window 로 표시된 ChildFrame 에서 close() 메소드에 설정한 파라미터값을 반환합니다." />
+          <Return type="String" description="Modal Window 로 표시된 ChildFrame 에서 close() 메서드에 설정한 파라미터값을 반환합니다." />
           <Arguments>
             <Argument name="objArguList" type="Object" in="true" out="false" option="false" variable="false" description="Modal Window 로 표시할 ChildFrame 에 추가될 변수리스트를 &quot;{변수명:변수값 , 변수명:변수값}&quot; 형식으로 설정합니다." />
             <Argument name="objChildFrame" type="Object" in="true" out="false" option="false" variable="false" description="Modal Window 로 표시할 ChildFrame 을 오브젝트로 설정합니다." />

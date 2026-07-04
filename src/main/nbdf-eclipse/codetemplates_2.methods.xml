@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="methodcomment_context" deleted="false" description="Comment for non-overriding methods" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.methodcomment" name="methodcomment">/**
+* @methodName     	: ${enclosing_method}
+* @author         	: Built1
+* @date           	: ${id:date('YYYY.MM.dd')}
+* @description    	: XXXX 데이터를 조회/저장하는 메서드
+* ${tags}
+*/
+</template></templates>

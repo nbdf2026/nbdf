@@ -67,7 +67,7 @@ public final class NBDFDataSetBuilder {
 	* @methodName     : build
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    :  NBDFColumn 정보와 조회 데이터를 이용하여 Nexacro DataSet 생성 메소드
+	* @description    :  NBDFColumn 정보와 조회 데이터를 이용하여 Nexacro DataSet 생성 메서드
 	* @param dataSetName	: 데이터셋 이름
 	* @param column			: 컬럼 메타정보
 	* @param data			: 조회 데이터(List<Map>)
@@ -95,7 +95,7 @@ public final class NBDFDataSetBuilder {
 	* @methodName     : createColumns
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 메타정보를 이용하여 DataSet 컬럼을 생성하는 메소드
+	* @description    : 메타정보를 이용하여 DataSet 컬럼을 생성하는 메서드
 	* @param dataSet  : DataSet 객체
 	* @param columns  : 컬럼 메타정보
 	*/
@@ -114,7 +114,7 @@ public final class NBDFDataSetBuilder {
 	* @methodName     : createRows
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : 조회 데이터를 이용하여 DataSet Row 및 Column 값을 생성하는 메소드
+	* @description    : 조회 데이터를 이용하여 DataSet Row 및 Column 값을 생성하는 메서드
 	* @param dataSet
 	* @param columns
 	* @param rows
@@ -147,7 +147,7 @@ public final class NBDFDataSetBuilder {
 	* @methodName     : convertValue
 	* @author         : built1
 	* @date           : 2026.07.03
-	* @description    : DataSet에 저장 가능한 데이터로 변환하는 메소드
+	* @description    : DataSet에 저장 가능한 데이터로 변환하는 메서드
 	* @param value	  : 원본 데이터
 	* @return		  : 변환된 데이터
 	*/

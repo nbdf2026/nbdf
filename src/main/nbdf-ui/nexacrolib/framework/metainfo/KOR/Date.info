@@ -9,7 +9,7 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="addDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 날짜(Day)만큼 더하는 메소드입니다.">
+      <Method name="addDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 날짜(Day)만큼 더하는 메서드입니다.">
         <Syntax text="Date.addDate(nDays)">
           <Return type="Number" description="Date 오브젝트에 저장된 날짜에 지정한 날짜만큼 더한 날짜를 반환합니다.&#xA;&#xA;UTC(협정세계시) 1970년 1월 1일 자정부터 밀리초 단위로 저장된 시간 값을 반환합니다." />
           <Arguments>
@@ -17,7 +17,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 시간(Hour)만큼 더하는 메소드입니다.">
+      <Method name="addHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 시간(Hour)만큼 더하는 메서드입니다.">
         <Syntax text="Date.addHours(nHours)">
           <Return type="Number" description="Date 오브젝트에 저장된 날짜에 지정한 시간만큼 더한 날짜를 반환합니다.&#xA;&#xA;UTC(협정세계시) 1970년 1월 1일 자정부터 밀리초 단위로 저장된 시간 값을 반환합니다." />
           <Arguments>
@@ -25,7 +25,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 밀리초(MilliSecond)만큼 더하는 메소드입니다.">
+      <Method name="addMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 밀리초(MilliSecond)만큼 더하는 메서드입니다.">
         <Syntax text="Date.addMilliseconds(nMsec)">
           <Return type="Number" description="Date 오브젝트에 저장된 날짜에 지정한 밀리초만큼 더한 날짜를 반환합니다.&#xA;&#xA;UTC(협정세계시) 1970년 1월 1일 자정부터 밀리초 단위로 저장된 시간 값을 반환합니다." />
           <Arguments>
@@ -33,7 +33,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 분(Minutes)만큼 더하는 메소드입니다.">
+      <Method name="addMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 분(Minutes)만큼 더하는 메서드입니다.">
         <Syntax text="Date.addMinutes(nMinutes)">
           <Return type="Number" description="Date 오브젝트에 저장된 날짜에 지정한 분(Minutes)만큼 더한 날짜를 반환합니다.&#xA;&#xA;UTC(협정세계시) 1970년 1월 1일 자정부터 밀리초 단위로 저장된 시간 값을 반환합니다." />
           <Arguments>
@@ -41,7 +41,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 월(Month)만큼 더하는 메소드입니다.">
+      <Method name="addMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 월(Month)만큼 더하는 메서드입니다.">
         <Syntax text="Date.addMonth(nMonths)">
           <Return type="Number" description="Date 오브젝트에 저장된 날짜에 지정한 월(Month)만큼 더한 날짜를 반환합니다.&#xA;&#xA;UTC(협정세계시) 1970년 1월 1일 자정부터 밀리초 단위로 저장된 시간 값을 반환합니다." />
           <Arguments>
@@ -49,7 +49,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 초(Second)만큼 더하는 메소드입니다.">
+      <Method name="addSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 초(Second)만큼 더하는 메서드입니다.">
         <Syntax text="Date.addSeconds(nSeconds)">
           <Return type="Number" description="Date 오브젝트에 저장된 날짜에 지정한 초(Second)만큼 더한 날짜를 반환합니다.&#xA;&#xA;UTC(협정세계시) 1970년 1월 1일 자정부터 밀리초 단위로 저장된 시간 값을 반환합니다." />
           <Arguments>
@@ -57,7 +57,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 년도(Year)만큼 더하는 메소드입니다.">
+      <Method name="addYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 지정된 년도(Year)만큼 더하는 메서드입니다.">
         <Syntax text="Date.addYear(nYears)">
           <Return type="Number" description="Date 오브젝트에 저장된 날짜에 지정한 년수(Year)만큼 더한 날짜를 반환합니다.&#xA;&#xA;UTC(협정세계시) 1970년 1월 1일 자정부터 밀리초 단위로 저장된 시간 값을 반환합니다." />
           <Arguments>
@@ -65,121 +65,121 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 날짜(Day)를 반환하는 메소드입니다.">
+      <Method name="getDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 날짜(Day)를 반환하는 메서드입니다.">
         <Syntax text="Date.getDate()">
           <Return type="Number" description="1 부터 31 사이의 날짜 값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 요일를 반환하는 메소드입니다.">
+      <Method name="getDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 요일를 반환하는 메서드입니다.">
         <Syntax text="Date.getDay()">
           <Return type="Number" description="0 (일요일) 부터 6 (토요일) 사이의 요일 코드값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 네자리 년도(Year)를 반환하는 메소드입니다.">
+      <Method name="getFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 네자리 년도(Year)를 반환하는 메서드입니다.">
         <Syntax text="Date.getFullYear()">
           <Return type="Number" description="네자리 년도(Year)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 시(Hour)값을 반환하는 메소드입니다.">
+      <Method name="getHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 시(Hour)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getHours()">
           <Return type="Number" description="0 부터 23 까지의 시(Hour)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)값을 반환하는 메소드입니다.">
+      <Method name="getMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getMilliseconds()">
           <Return type="Number" description="0 부터 999 사이의 밀리초(MilliSecond)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 분(Minute)값을 반환하는 메소드입니다.">
+      <Method name="getMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 분(Minute)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getMinutes()">
           <Return type="Number" description="0 부터 59 사이의 분(Minute)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 월(Month)값을 반환하는 메소드입니다.">
+      <Method name="getMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 월(Month)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getMonth()">
           <Return type="Number" description="0 (1월) 부터 11 (12월) 사이의 월(Month) 코드값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 초(Second)값을 반환하는 메소드입니다.">
+      <Method name="getSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 초(Second)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getSeconds()">
           <Return type="Number" description="0 부터 59 사이의 초(Second)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값을 밀리초(MilliSecond)값으로 반환하는 메소드입니다.">
+      <Method name="getTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값을 밀리초(MilliSecond)값으로 반환하는 메서드입니다.">
         <Syntax text="Date.getTime()">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getTimezoneOffset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값과 UTC(협정세계시) 사이의 시간차를 분(Minute)값으로 반환하는 메소드입니다.">
+      <Method name="getTimezoneOffset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값과 UTC(협정세계시) 사이의 시간차를 분(Minute)값으로 반환하는 메서드입니다.">
         <Syntax text="Date.getTimezoneOffset()">
           <Return type="Number" description="Date 오브젝트에 저장된 값과 UTC(협정세계시) 사이의 시간차를 분(Minute)값으로 반환합니다.&#xA;&#xA;Date 오브젝트에 저장된 값이 태평양 일광 절약 시간(PDT)처럼 UTC보다 느리면 양수가 되고 한국이나 일본처럼 UTC보다 빠르면 음수가 됩니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 날짜(Day)를 반환하는 메소드입니다.">
+      <Method name="getUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 날짜(Day)를 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCDate()">
           <Return type="Number" description="1 부터 31 사이의 날짜 값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 요일를 반환하는 메소드입니다.">
+      <Method name="getUTCDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 요일를 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCDay()">
           <Return type="Number" description="0 (일요일) 부터 6 (토요일) 사이의 요일 코드값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 네자리 년도(Year)를 반환하는 메소드입니다.">
+      <Method name="getUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 네자리 년도(Year)를 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCFullYear()">
           <Return type="Number" description="네자리 년도(Year)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 시(Hour)값을 반환하는 메소드입니다.">
+      <Method name="getUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 시(Hour)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCHours()">
           <Return type="Number" description="0 부터 23 까지의 시(Hour)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)값을 반환하는 메소드입니다.">
+      <Method name="getUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCMilliseconds()">
           <Return type="Number" description="0 부터 999 사이의 밀리초(MilliSecond)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 분(Minute)값을 반환하는 메소드입니다.">
+      <Method name="getUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 분(Minute)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCMinutes()">
           <Return type="Number" description="0 부터 59 사이의 분(Minute)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 월(Month)값을 반환하는 메소드입니다.">
+      <Method name="getUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 월(Month)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCMonth()">
           <Return type="Number" description="0 (1월) 부터 11 (12월) 사이의 월(Month) 코드값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 초(Second)값을 반환하는 메소드입니다.">
+      <Method name="getUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 초(Second)값을 반환하는 메서드입니다.">
         <Syntax text="Date.getUTCSeconds()">
           <Return type="Number" description="0 부터 59 사이의 초(Second)값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 년도(Year)를 반환하는 메소드입니다.">
+      <Method name="getYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 년도(Year)를 반환하는 메서드입니다.">
         <Syntax text="Date.getYear()">
           <Return type="Number" description="1900년에서 1999년까지의 날짜는 두자리 년도(Year)값을 반환합니다.&#xA;이 기간 외의 날짜는 네자리 년도(Year)값을 반환합니다.&#xA;&#xA;예를 들어, 1996년은 96으로 반환하고 1825년이나 2025년은 네자리 그대로 반환됩니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="parse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="날짜가 포함된 문자열을 분석해 1970년 1월 1일 자정부터 해당 날짜 사이의 시간을 밀리초로 반환하는 메소드입니다.">
+      <Method name="parse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="날짜가 포함된 문자열을 분석해 1970년 1월 1일 자정부터 해당 날짜 사이의 시간을 밀리초로 반환하는 메서드입니다.">
         <Syntax text="Date.parse(strDate)">
           <Return type="Number" description="1970년 1월 1일 자정과 지정된 날짜 사이의 시간을 밀리초(MilliSecond)로 반환합니다.&#xA;&#xA;유효하지 않은 날짜형식으로 오류로 처리되면 NaN을 반환합니다." />
           <Arguments>
@@ -187,7 +187,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 날짜(Day)를 변경하는 메소드입니다.">
+      <Method name="setDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 날짜(Day)를 변경하는 메서드입니다.">
         <Syntax text="Date.setDate(nDate)">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 변경된 날짜까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -195,7 +195,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 년도(Year) 또는 전체 날짜를 변경하는 메소드입니다.">
+      <Method name="setFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 년도(Year) 또는 전체 날짜를 변경하는 메서드입니다.">
         <Syntax text="Date.setFullYear(nYear[, nMonth[, nDate]])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -205,7 +205,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 시(Hour) 또는 전체 시간를 변경하는 메소드입니다.">
+      <Method name="setHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 시(Hour) 또는 전체 시간를 변경하는 메서드입니다.">
         <Syntax text="Date.setHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -216,7 +216,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)를 변경하는 메소드입니다.">
+      <Method name="setMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)를 변경하는 메서드입니다.">
         <Syntax text="Date.setMilliseconds(nMilliSecond)">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -224,7 +224,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 분(Minute)을 변경하는 메소드입니다.">
+      <Method name="setMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 분(Minute)을 변경하는 메서드입니다.">
         <Syntax text="Date.setMinutes(nMinutes[, nSeconds[, nMillisecond]])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -234,7 +234,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 월(Month)을 변경하는 메소드입니다.">
+      <Method name="setMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 월(Month)을 변경하는 메서드입니다.">
         <Syntax text="Date.setMonth(nMonth[, nDate])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -243,7 +243,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 초(Second)를 변경하는 메소드입니다.">
+      <Method name="setSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 초(Second)를 변경하는 메서드입니다.">
         <Syntax text="Date.setSeconds(nSeconds[, nMillisecond])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -252,7 +252,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 날짜와 시간을 밀리초(MilliSecond)값으로 설정하는 메소드입니다.">
+      <Method name="setTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 날짜와 시간을 밀리초(MilliSecond)값으로 설정하는 메서드입니다.">
         <Syntax text="Date.setTime(nMs)">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -260,7 +260,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 날짜(Day)를 변경하는 메소드입니다.">
+      <Method name="setUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 날짜(Day)를 변경하는 메서드입니다.">
         <Syntax text="Date.setUTCDate(nDate)">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -268,7 +268,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 년도(Year) 또는 전체 날짜를 변경하는 메소드입니다.">
+      <Method name="setUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 년도(Year) 또는 전체 날짜를 변경하는 메서드입니다.">
         <Syntax text="Date.setUTCFullYear(nYears[, nMonths[, nDate]])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -278,7 +278,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 시(Hour) 또는 전체 시간를 변경하는 메소드입니다.">
+      <Method name="setUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 시(Hour) 또는 전체 시간를 변경하는 메서드입니다.">
         <Syntax text="Date.setUTCHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -289,7 +289,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)를 변경하는 메소드입니다.">
+      <Method name="setUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 밀리초(MilliSecond)를 변경하는 메서드입니다.">
         <Syntax text="Date.setUTCMilliseconds(nMs)">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -297,7 +297,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 분(Minute)을 변경하는 메소드입니다.">
+      <Method name="setUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 분(Minute)을 변경하는 메서드입니다.">
         <Syntax text="Date.setUTCMinutes(nMinutes[, nSeconds[, nMillisecond]])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -307,7 +307,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 월(Month)을 변경하는 메소드입니다.">
+      <Method name="setUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 월(Month)을 변경하는 메서드입니다.">
         <Syntax text="Date.setUTCMonth(nMonth[, nDate])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -316,7 +316,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 초(Second)를 변경하는 메소드입니다.">
+      <Method name="setUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 값에서 초(Second)를 변경하는 메서드입니다.">
         <Syntax text="Date.setUTCSeconds(nSeconds[, nMillisecond])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -325,7 +325,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 년도(Year)를 변경하는 메소드입니다.">
+      <Method name="setYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 값에서 년도(Year)를 변경하는 메서드입니다.">
         <Syntax text="Date.setYear(nYears)">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -333,19 +333,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="toDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜를 문자열로 반환하는 메소드입니다.">
+      <Method name="toDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜를 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toDateString()">
           <Return type="String" description="문자열로 변환된 날짜를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="toGMTString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GMT(그리니치 표준시)를 기준으로 Date 오브젝트에 저장된 날짜와 시간을 문자열로 반환하는 메소드입니다.">
+      <Method name="toGMTString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GMT(그리니치 표준시)를 기준으로 Date 오브젝트에 저장된 날짜와 시간을 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toGMTString()">
           <Return type="String" description="문자열로 변환된 날짜와 시간을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="toLocaleDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜를 특정 로케일 형식의 문자열로 반환하는 메소드입니다.">
+      <Method name="toLocaleDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜를 특정 로케일 형식의 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toLocaleDateString( [strLocale] )">
           <Return type="String" description="특정 로케일 형식에 맞게 변환된 날짜를 문자열로 반환합니다." />
           <Arguments>
@@ -353,7 +353,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="toLocaleString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜와 시간을 특정 로케일 형식의 문자열로 반환하는 메소드입니다.">
+      <Method name="toLocaleString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜와 시간을 특정 로케일 형식의 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toLocaleString( [strLocale] )">
           <Return type="String" description="특정 로케일 형식에 맞게 변환된 날짜와 시간을 문자열로 반환합니다." />
           <Arguments>
@@ -361,7 +361,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="toLocaleTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 시간을 특정 로케일 형식의 문자열로 반환하는 메소드입니다.">
+      <Method name="toLocaleTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 시간을 특정 로케일 형식의 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toLocaleTimeString( [strLocale] )">
           <Return type="String" description="특정 로케일 형식에 맞게 변환된 시간을 문자열로 반환합니다." />
           <Arguments>
@@ -369,25 +369,25 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜와 시간값을 문자열로 반환하는 메소드입니다.">
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜와 시간값을 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toString()">
           <Return type="String" description="Date 오브젝트에 저장된 값에서 날짜와 시간을 문자열로 반환합니다.&#xA;&#xA;Date 오브젝트에 날짜값만 있을 경우 8 자리 날짜형식으로 반환합니다.&#xA;Date 오브젝트에 시간값만 있을 경우 9 자리 시간형식으로 반환합니다.&#xA;Date 오브젝트에 날짜와 시간값이 모두 있을 경우 17 자리 날짜시간형식으로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="toTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 시간을 문자열로 반환하는 메소드입니다.">
+      <Method name="toTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 시간을 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toTimeString()">
           <Return type="String" description="문자열로 변환된 시간을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="toUTCString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 날짜와 시간을 문자열로 반환하는 메소드입니다.">
+      <Method name="toUTCString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시)를 기준으로 Date 오브젝트에 저장된 날짜와 시간을 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.toUTCString()">
           <Return type="String" description="문자열로 변환된 날짜와 시간을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="UTC" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시) 또는 GMT(그리니치 표준시)를 기준으로 1970년 1월 1일 자정부터 인수로 전달된 날짜까지의 시간을 밀리초(MilliSecond)값으로 반환하는 메소드입니다.">
+      <Method name="UTC" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="UTC(협정세계시) 또는 GMT(그리니치 표준시)를 기준으로 1970년 1월 1일 자정부터 인수로 전달된 날짜까지의 시간을 밀리초(MilliSecond)값으로 반환하는 메서드입니다.">
         <Syntax text="Date.UTC(nYear, nMonth, nDay[, nHours[, nMinutes[, nSeconds[,nMillisecond]]]])">
           <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
           <Arguments>
@@ -401,7 +401,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="valueOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜와 시간값을 문자열로 반환하는 메소드입니다.">
+      <Method name="valueOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Date 오브젝트에 저장된 날짜와 시간값을 문자열로 반환하는 메서드입니다.">
         <Syntax text="Date.valueOf()">
           <Return type="String" description="Date 오브젝트에 저장된 값에서 날짜와 시간을 문자열로 반환합니다.&#xA;&#xA;Date 오브젝트에 날짜값만 있을 경우 8 자리 날짜형식으로 반환합니다.&#xA;Date 오브젝트에 시간값만 있을 경우 9 자리 시간형식으로 반환합니다.&#xA;Date 오브젝트에 날짜와 시간값이 모두 있을 경우 17 자리 날짜시간형식으로 반환합니다." />
           <Arguments />

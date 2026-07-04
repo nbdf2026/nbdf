@@ -23,7 +23,7 @@ public class SqlFormat implements MessageFormattingStrategy {
 	* @methodName     : splitCommaOutsideParentheses
 	* @author         : built1
 	* @date           : 2026.06.22
-	* @description    : 콤마 구분자로 분리된 쿼리 내용을 한문장으로 출력하는 메소드
+	* @description    : 콤마 구분자로 분리된 쿼리 내용을 한문장으로 출력하는 메서드
 	* @param sql
 	* @return
 	*/
@@ -63,7 +63,7 @@ public class SqlFormat implements MessageFormattingStrategy {
 	* @methodName     : alignSelectAs
 	* @author         : built1
 	* @date           : 2026.06.22
-	* @description    : Select 문장의 As 줄간격 치환하는 메소드
+	* @description    : Select 문장의 As 줄간격 치환하는 메서드
 	* @param sql
 	* @return
 	*/
@@ -122,7 +122,7 @@ public class SqlFormat implements MessageFormattingStrategy {
 	* @methodName     : alignUpdateSet
 	* @author         : built1
 	* @date           : 2026.06.22
-	* @description    : Update 문장의 "=" 간격을 일정 길이로 치환하는 메소드
+	* @description    : Update 문장의 "=" 간격을 일정 길이로 치환하는 메서드
 	* @param sql
 	* @return
 	*/
@@ -204,7 +204,7 @@ public class SqlFormat implements MessageFormattingStrategy {
 	* @methodName     : alignWhereCondition
 	* @author         : built1
 	* @date           : 2026.06.22
-	* @description    : where 조건절 들여쓰기 처리하는 메소드
+	* @description    : where 조건절 들여쓰기 처리하는 메서드
 	* @param sql
 	* @return
 	*/
@@ -311,7 +311,7 @@ public class SqlFormat implements MessageFormattingStrategy {
 	* @methodName     : alignJoinCondition
 	* @author         : built1
 	* @date           : 2026.06.22
-	* @description    : 조인 문장 들여쓰기 처리하는 메소드
+	* @description    : 조인 문장 들여쓰기 처리하는 메서드
 	* @param sql
 	* @return
 	*/
@@ -379,7 +379,7 @@ public class SqlFormat implements MessageFormattingStrategy {
 	* @methodName     : alignCaseWhen
 	* @author         : built1
 	* @date           : 2026.06.22
-	* @description    : case when 들여쓰기 처리하는 메소드
+	* @description    : case when 들여쓰기 처리하는 메서드
 	* @param sql
 	* @return
 	*/
@@ -398,7 +398,7 @@ public class SqlFormat implements MessageFormattingStrategy {
 	* @methodName     : formatMessage
 	* @author         : built1
 	* @date           : 2026.06.22
-	* @description    : 콘솔에 쿼리 문장을 출력하는 상속메소드
+	* @description    : 콘솔에 쿼리 문장을 출력하는 상속메서드
 	* @param connectionId
 	* @param now
 	* @param elapsed

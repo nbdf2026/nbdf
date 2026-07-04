@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="false" context="typecomment_context" deleted="false" description="Comment for created types" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.typecomment" name="typecomment">/**
+* @packageName    	: ${package_name}
+* @fileName       	: ${file_name}
+* @author         	: Built1
+* @date           	: ${id:date('YYYY.MM.dd')}
+* @description    	: XXXX 데이터를 조회/저장하는 클래스/인터페이스
+* ===========================================================
+* DATE              AUTHOR             NOTE
+* -----------------------------------------------------------
+* ${id:date('YYYY.MM.dd')}        Built1             최초 생성
+*/
+</template></templates>

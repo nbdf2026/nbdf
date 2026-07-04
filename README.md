@@ -5,6 +5,7 @@
   - scr/main/java/erp : nbdf core 폴더로 이동 분리
     : nbdf framework 구성
     : nbdf utility 폴더 구성 (기존 전자정보 프레임워크에서 제공된 핸들러 귀속)
+  - Eclipse Java template : XML 파일 Import
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.03
@@ -35,7 +36,7 @@
  2. 작업내용
   - 로그인 사용자정보(사용자+인사정보+발령정보) 조회 추가 및 gds_user 반영
   - 로그인 사용자정보 application variable 등록(userId, userName, userEmailAddress, userMobileNumber)
-  - COM10010M : 자바 메소드 및 인터페이스 자동 주석 처리
+  - COM10010M : 자바 메서드 및 인터페이스 자동 주석 처리
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.30

@@ -25,67 +25,67 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 를 메모리에서 완전히 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 를 메모리에서 완전히 삭제하는 메서드입니다.">
         <Syntax text="GraphicsLine.destroy()">
           <Return type="Boolean" description="GraphicsLine 가 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;GraphicsLine 가 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 바깥쪽 외곽선 영역을 포함하여 반환하는 메소드입니다.">
+      <Method name="getBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 바깥쪽 외곽선 영역을 포함하여 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getBoundRect( );">
           <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;&#xA;GraphicsEllipse, GraphicsLine, GraphicsPath, GraphicsPaths, GraphicsRect 오브젝트의 strokepen 속성값을 설정한 경우 반환되는 영역정보에 바깥쪽 외곽선 영역이 포함됩니다.&#xA;strokepen 속성값을 설정하지 않았거나 GraphicsGroup, GraphicsImage, GraphicsText 오브젝트의 경우에는 외곽선 정보가 없으며 반환되는 영역정보에 외곽선 영역이 포함되지 않습니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 와 부모가 동일한 Graphics 오브젝트 중 다음 순서의 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getNextSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 와 부모가 동일한 Graphics 오브젝트 중 다음 순서의 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getNextSibling()">
           <Return type="Object" description="부모가 동일한 다음 순서의 Graphics 오브젝트를 반환합니다.&#xA;&#xA;다음 순서의 Graphics 오브젝트가 없을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 Graphics 부모 오브젝트 기준으로 바깥쪽 외곽선 영역을 포함하여 반환하는 메소드입니다.">
+      <Method name="getOffsetBoundRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 Graphics 부모 오브젝트 기준으로 바깥쪽 외곽선 영역을 포함하여 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getOffsetBoundRect( );">
           <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;&#xA;GraphicsEllipse, GraphicsLine, GraphicsPath, GraphicsPaths, GraphicsRect 오브젝트의 strokepen 속성값을 설정한 경우 반환되는 영역정보에 바깥쪽 외곽선 영역이 포함됩니다.&#xA;strokepen 속성값을 설정하지 않았거나 GraphicsGroup, GraphicsImage, GraphicsText 오브젝트의 경우에는 외곽선 정보가 없으며 반환되는 영역정보에 외곽선 영역이 포함되지 않습니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 부모 오브젝트 기준으로 반환하는 메소드입니다.">
+      <Method name="getOffsetRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 부모 오브젝트 기준으로 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getOffsetRect( );">
           <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;&#xA;GraphicsLine 오브젝트의 strokepen 속성값을 설정했더라도 외곽선 영역과 관계없이 GraphicsLine 오브젝트의 실제 영역이 반환됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 부모 오브젝트 컴포넌트 기준으로 안쪽 외곽선 영역을 제외하고 반환하는 메소드입니다.">
+      <Method name="getOffsetRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 부모 오브젝트 컴포넌트 기준으로 안쪽 외곽선 영역을 제외하고 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getOffsetRegion( );">
           <Return type="Object" description="부모 오브젝트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;&#xA;GraphicsLine 오브젝트의 strokepen 속성값을 설정했더라도 반환되는 영역정보에는 안쪽 외곽선 영역이 제외됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 와 부모가 동일한 Graphics 오브젝트 중 이전 순서의 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getPreviousSibling" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 와 부모가 동일한 Graphics 오브젝트 중 이전 순서의 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getPreviousSibling()">
           <Return type="Object" description="부모가 동일한 이전 순서의 Graphics 오브젝트를 반환합니다.&#xA;&#xA;이전 순서의 Graphics 오브젝트가 없을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 영역정보를 Graphics 컴포넌트 기준으로 반환하는 메소드입니다.">
+      <Method name="getRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 영역정보를 Graphics 컴포넌트 기준으로 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getRect( );">
           <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;&#xA;GraphicsLine 오브젝트의 strokepen 속성값을 설정했더라도 외곽선 영역과 관계없이 GraphicsLine 오브젝트의 실제 영역이 반환됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 안쪽 외곽선 영역을 제외하고 반환하는 메소드입니다.">
+      <Method name="getRegion" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 가 표시되는 영역정보를 Graphics 컴포넌트 기준으로 안쪽 외곽선 영역을 제외하고 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.getRegion( );">
           <Return type="Object" description="Graphics 컴포넌트의 left, top 위치를 기준으로 계산된 영역정보가 Rect 오브젝트로 반환됩니다.&#xA;&#xA;GraphicsLine 오브젝트의 strokepen 속성값을 설정한 경우 반환되는 영역정보에는 안쪽 외곽선 영역이 제외됩니다.&#xA;&#xA;* Rect 오브젝트는 &quot;left&quot;,&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;width&quot;,&quot;height&quot; 속성을 갖습니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="hasSegments" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 직선 데이터가 설정되어 있는지 여부를 반환하는 메소드입니다.">
+      <Method name="hasSegments" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 직선 데이터가 설정되어 있는지 여부를 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.hasSegments()">
           <Return type="Boolean" description="GraphicsLine 에 직선 데이터가 설정되어 있으면 true 를 반환합니다.&#xA;&#xA;GraphicsLine 에 직선 데이터가 설정되어 있지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 좌표위치가 GraphicsLine 영역에 포함되는지 여부를 반환하는 메소드입니다.">
+      <Method name="isHitTest" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 좌표위치가 GraphicsLine 영역에 포함되는지 여부를 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.isHitTest( nX, nY )">
           <Return type="Boolean" description="인수로 전달된 좌표위치가 GraphicsLine 영역에 포함되면 true 를 반환합니다.&#xA;&#xA;인수로 전달된 좌표위치가 GraphicsLine 영역에 포함되지 않으면 false 를 반환합니다." />
           <Arguments>
@@ -94,7 +94,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isPointInPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 좌표위치가 GraphicsLine 영역에 포함되는지 여부를 반환하는 메소드입니다.">
+      <Method name="isPointInPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 좌표위치가 GraphicsLine 영역에 포함되는지 여부를 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.isPointInPath( objPoint [, nTolerance] )">
           <Return type="Boolean" description="objPoint 좌표위치가 GraphicsLine 영역에 포함되면 true 를 반환합니다.&#xA;&#xA;objPoint 좌표위치가 GraphicsLine 영역에 포함되지 않으면 false 를 반환합니다." />
           <Arguments>
@@ -103,7 +103,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 회전효과를 적용하는 메소드입니다.">
+      <Method name="rotate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 회전효과를 적용하는 메서드입니다.">
         <Syntax text="GraphicsLine.rotate( nAngle [, nCenterX, nCenterY] );">
           <Return type="" description="" />
           <Arguments>
@@ -113,7 +113,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 확대/축소 효과를 적용하는 메소드입니다.">
+      <Method name="scale" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 확대/축소 효과를 적용하는 메서드입니다.">
         <Syntax text="GraphicsLine.scale( nScaleX, nScaleY [, nCenterX, nCenterY] );">
           <Return type="" description="" />
           <Arguments>
@@ -124,7 +124,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 일부 영역만 표시되게 Clipping 할 영역의 좌표를 설정하는 메소드입니다.">
+      <Method name="setClipRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 일부 영역만 표시되게 Clipping 할 영역의 좌표를 설정하는 메서드입니다.">
         <Syntax text="GraphicsLine.setClipRect( nX, nY, nWidth, nHeight );">
           <Return type="" description="" />
           <Arguments>
@@ -135,15 +135,15 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 원본 위치를 기준으로 Transform 관련 효과를 연속적으로 적용하는 메소드입니다.">
+      <Method name="setTransform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 원본 위치를 기준으로 Transform 관련 효과를 연속적으로 적용하는 메서드입니다.">
         <Syntax text="GraphicsLine.setTransform( strMethod );">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="GraphicsLine 에 적용할 Transform 관련 메소드를 &quot;,&quot; 로 구분하여 설정합니다.&#xA;translate(), scale(), rotate(), shear() 메소드를 사용할 수 있습니다.&#xA;null 값 설정 시 transform 효과가 지정되지 않은 상태로 초기화합니다." />
+            <Argument name="strMethod" type="String" in="false" out="false" option="false" variable="false" description="GraphicsLine 에 적용할 Transform 관련 메서드를 &quot;,&quot; 로 구분하여 설정합니다.&#xA;translate(), scale(), rotate(), shear() 메서드를 사용할 수 있습니다.&#xA;null 값 설정 시 transform 효과가 지정되지 않은 상태로 초기화합니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 비틀기 효과를 적용하는 메소드입니다.">
+      <Method name="shear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 비틀기 효과를 적용하는 메서드입니다.">
         <Syntax text="GraphicsLine.shear( nRadianX, nRadianY [, nCenterX, nCenterY] );">
           <Return type="" description="" />
           <Arguments>
@@ -154,13 +154,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 타입을 문자열로 반환하는 메소드입니다.">
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 타입을 문자열로 반환하는 메서드입니다.">
         <Syntax text="GraphicsLine.toString();">
           <Return type="String" description="일반적으로 &quot;[object GraphicsLine]&quot; 형태의 문자열을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 Transform 관련 효과를 적용하는 메소드입니다.">
+      <Method name="transform" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 에 Transform 관련 효과를 적용하는 메서드입니다.">
         <Syntax text="GraphicsLine.transform( nScaleX, nShearX, nShearY, nScaleY, nTransX, nTransY );">
           <Return type="" description="" />
           <Arguments>
@@ -173,7 +173,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 위치가 이동되는 효과를 적용하는 메소드입니다.">
+      <Method name="translate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="GraphicsLine 의 위치가 이동되는 효과를 적용하는 메서드입니다.">
         <Syntax text="GraphicsLine.translate( nTransX, nTransY );">
           <Return type="" description="" />
           <Arguments>

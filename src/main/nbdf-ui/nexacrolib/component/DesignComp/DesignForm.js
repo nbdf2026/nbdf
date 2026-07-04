@@ -1599,7 +1599,7 @@ if (!nexacro.DesignForm)
         }
     };
 
-    // framework내부 메소드와 이름이 중복되어 이름변경 (+byrect)
+    // framework내부 메서드와 이름이 중복되어 이름변경 (+byrect)
     // classname : comp classname
     // parentid : parent fullname
     // left, top, width, height  
@@ -1767,7 +1767,7 @@ if (!nexacro.DesignForm)
         }
     };
 
-    // framework내부 메소드와 이름이 중복되어 이름변경 (+byrect)
+    // framework내부 메서드와 이름이 중복되어 이름변경 (+byrect)
     // classname : comp classname
     // parentid : parent fullname
     // left, top, width, height  
@@ -5863,7 +5863,7 @@ if (!nexacro.DesignForm)
         return eval("obj." + methodname + "();");
     };
 
-    // TODO check Command형태로 바뀌어야함 하드코딩 메소드는 제거하는게 맞을듯? 2014.06.19 neoarc
+    // TODO check Command형태로 바뀌어야함 하드코딩 메서드는 제거하는게 맞을듯? 2014.06.19 neoarc
     _pDesignForm.setActiveTabpage = function (compid, index)
     {
         var obj = this._getObject(compid);
@@ -8310,7 +8310,7 @@ if (!nexacro.DesignForm)
         var ds = this._getObject(datasetid);
         if (ds && ds instanceof nexacro.Dataset)
         {
-            // deleteColumn 메소드는 컬럼 index와 컴럼 id 모두 사용 가능.
+            // deleteColumn 메서드는 컬럼 index와 컴럼 id 모두 사용 가능.
             var colinfo = ds.getColumnInfo(col);
             if (colinfo)
             {
@@ -8343,7 +8343,7 @@ if (!nexacro.DesignForm)
         var ds = this._getObject(datasetid);
         if (ds && ds instanceof nexacro.Dataset)
         {
-            // deleteColumn 메소드는 컬럼 index와 컴럼 id 모두 사용 가능.
+            // deleteColumn 메서드는 컬럼 index와 컴럼 id 모두 사용 가능.
             var colinfo = ds.getColumnInfo(col);
             if (colinfo)
             {

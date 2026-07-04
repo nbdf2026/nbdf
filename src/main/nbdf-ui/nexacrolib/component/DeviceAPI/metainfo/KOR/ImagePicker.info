@@ -18,12 +18,12 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기의 사진앨범이나 카메라 앱 또는 연결된 다른 앱을 구동시켜 이미지를 가져오는 메소드입니다.">
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android NRE,iOS/iPadOS NRE" description="모바일 기기의 사진앨범이나 카메라 앱 또는 연결된 다른 앱을 구동시켜 이미지를 가져오는 메서드입니다.">
         <Syntax text="ImagePicker.open( enumGettype, enumEncodingype )">
-          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하거나 파라미터값을 잘 못 설정하면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메서드 실행에 실패하거나 파라미터값을 잘 못 설정하면 false 를 반환합니다." />
           <Arguments>
-            <Argument name="enumEncodingtype" type="String" in="false" out="false" option="false" variable="false" description="이미지가 전달되는 파일 형식을 설정합니다.&#xA;&#xA;&quot;JPEG&quot; 설정 시 이미지가 &quot;JPEG&quot; 파일로 전달됩니다.&#xA;&quot;PNG&quot; 설정 시 이미지가 &quot;PNG&quot; 파일로 전달됩니다.&#xA;&#xA;메소드 수행 후 encodingtype 속성에 파라미터값이 저장됩니다." />
-            <Argument name="enumGettype" type="String" in="false" out="false" option="false" variable="false" description="이미지가 전달되는 방식을 설정합니다.&#xA;&#xA;&quot;url&quot; 설정 시 이미지의 위치정보가 &quot;URL&quot; 형태로 전달됩니다.&#xA;&quot;imagedata&quot; 설정 시 이미지가 오브젝트 형태로 전달됩니다.&#xA;&#xA;메소드 수행 후 gettype 속성에 파라미터값이 저장됩니다." />
+            <Argument name="enumEncodingtype" type="String" in="false" out="false" option="false" variable="false" description="이미지가 전달되는 파일 형식을 설정합니다.&#xA;&#xA;&quot;JPEG&quot; 설정 시 이미지가 &quot;JPEG&quot; 파일로 전달됩니다.&#xA;&quot;PNG&quot; 설정 시 이미지가 &quot;PNG&quot; 파일로 전달됩니다.&#xA;&#xA;메서드 수행 후 encodingtype 속성에 파라미터값이 저장됩니다." />
+            <Argument name="enumGettype" type="String" in="false" out="false" option="false" variable="false" description="이미지가 전달되는 방식을 설정합니다.&#xA;&#xA;&quot;url&quot; 설정 시 이미지의 위치정보가 &quot;URL&quot; 형태로 전달됩니다.&#xA;&quot;imagedata&quot; 설정 시 이미지가 오브젝트 형태로 전달됩니다.&#xA;&#xA;메서드 수행 후 gettype 속성에 파라미터값이 저장됩니다." />
           </Arguments>
         </Syntax>
       </Method>

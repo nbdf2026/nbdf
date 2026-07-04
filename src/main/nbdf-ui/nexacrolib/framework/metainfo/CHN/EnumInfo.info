@@ -708,7 +708,7 @@
     <Enum name="all" description="FrameSet 내 전체 Frame을 순환합니다 (기본값)" />
     <Enum name="all,no_minimize" description="최소화된 창을 제외한 Frame을 순환합니다." />
     <Enum name="active_only" description="active 상태의 창만 순환합니다." />
-    <Enum name="auto" description="arrange 메소드 실행 시 파라미터에 따라 동작이 달라집니다.&#xA;- 파라미터가 &quot;cascade&quot;인 경우: &quot;active_only&quot;로 동작합니다.&#xA;- 파라미터가 &quot;cascade&quot;가 아닌 경우: &quot;all&quot;로 동작합니다." />
+    <Enum name="auto" description="arrange 메서드 실행 시 파라미터에 따라 동작이 달라집니다.&#xA;- 파라미터가 &quot;cascade&quot;인 경우: &quot;active_only&quot;로 동작합니다.&#xA;- 파라미터가 &quot;cascade&quot;가 아닌 경우: &quot;all&quot;로 동작합니다." />
   </EnumInfo>
   <EnumInfo id="FrameSetType" composit="" delimiter="" description="">
     <Enum name="horizontal" description="" />

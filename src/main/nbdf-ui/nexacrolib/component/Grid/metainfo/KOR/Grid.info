@@ -180,7 +180,7 @@
       <Control name="vscrollindicator" classname="nexacro.ScrollIndicatorControl" unusedstatus="" unusedcontrol="" deprecated="false" unused="false" group="" subgroup="" />
     </ControlInfo>
     <MethodInfo>
-      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 특정 이벤트를 선언하여 추가하는 메소드입니다.">
+      <Method name="addEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 특정 이벤트를 선언하여 추가하는 메서드입니다.">
         <Syntax text="Grid.addEvent( strEventID )">
           <Return type="Boolean" description="이벤트 추가에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 추가에 실패하거나 선언되어 있는 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -188,7 +188,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에 핸들러 함수를 추가하는 메서드입니다.">
         <Syntax text="Grid.addEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -198,7 +198,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 Grid 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="함수를 검색하여 Grid 의 특정 이벤트에 핸들러 함수로 추가하는 메서드입니다.">
         <Syntax text="Grid.addEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -208,7 +208,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="appendContentsCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시된 포맷에 Column 을 추가하는 메소드입니다.">
+      <Method name="appendContentsCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시된 포맷에 Column 을 추가하는 메서드입니다.">
         <Syntax text="Grid.appendContentsCol( enumBand [, bBandAppend] )">
           <Return type="Number" description="전체 Column 을 기준으로 Column 이 추가된 위치의 인덱스 값을 반환합니다.&#xA;enumBand 에 설정한 밴드 영역내의 인덱스가 아닙니다.&#xA;&#xA;정상적으로 추가하지 못했을 경우 -1 을 반환합니다." />
           <Arguments>
@@ -217,7 +217,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="appendContentsRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 포맷에 Sub Row 를 추가하는 메소드입니다.">
+      <Method name="appendContentsRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 포맷에 Sub Row 를 추가하는 메서드입니다.">
         <Syntax text="Grid.appendContentsRow( enumBand )">
           <Return type="Number" description="전체 Row 를 기준으로 Row 가 추가된 위치의 인덱스 값을 반환합니다.&#xA;enumBand 에 설정한 밴드 영역내의 인덱스가 아닙니다.&#xA;&#xA;정상적으로 추가하지 못했을 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -225,13 +225,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="autoFitCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 스크롤 없이 전체 Column 이 표시되도록 Column 의 너비를 자동으로 조절하는 메소드입니다.">
+      <Method name="autoFitCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 스크롤 없이 전체 Column 이 표시되도록 Column 의 너비를 자동으로 조절하는 메서드입니다.">
         <Syntax text="Grid.autoFitCol()">
           <Return type="Boolean" description="Column 너비 자동조절에 성공하면 &quot;true&quot;를 반환합니다.&#xA;Column 너비 자동조절에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="autoSizeCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 텍스트가 모두 표시되도록 특정 Column 의 너비를 자동조절하는 메소드입니다.">
+      <Method name="autoSizeCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 텍스트가 모두 표시되도록 특정 Column 의 너비를 자동조절하는 메서드입니다.">
         <Syntax text="Grid.autoSizeCol( enumBand, nColIndex [,bBandIndex] )">
           <Return type="" description="" />
           <Arguments>
@@ -241,7 +241,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="autoSizeRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 텍스트가 모두 표시되도록 특정 Row 의 높이를 자동조절하는 메소드입니다.">
+      <Method name="autoSizeRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 텍스트가 모두 표시되도록 특정 Row 의 높이를 자동조절하는 메서드입니다.">
         <Syntax text="Grid.autoSizeRow( nRowIndex [, nSubRowIndex [, bDatasetRow]] )">
           <Return type="" description="" />
           <Arguments>
@@ -251,25 +251,25 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="blinkCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 설정한 시간동안 특정 Cell 에 깜빡임(Blink) 효과를 주는 메소드입니다.">
+      <Method name="blinkCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 설정한 시간동안 특정 Cell 에 깜빡임(Blink) 효과를 주는 메서드입니다.">
         <Syntax text="Grid.blinkCell( nRow, vCell, nKeepMSec, nBlinkCnt );">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="nBlinkCnt" type="Number" in="false" out="false" option="false" variable="false" description="nKeepMSec 에 설정한 시간동안 깜빡임(Blink) 효과가 적용될 횟수를 숫자로 설정합니다.&#xA;&#xA;0 설정 시 nRow, vCell 에 설정된 Cell 영역에 적용된 깜빡임(Blink) 효과를 취소합니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메소드가 실행되지 않습니다." />
-            <Argument name="nKeepMSec" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 전체 시간을 밀리초 단위의 숫자로 설정합니다.&#xA;&#xA;0 설정 시 nRow, vCell 에 설정된 Cell 영역에 적용된 깜빡임(Blink) 효과를 취소합니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메소드가 실행되지 않습니다." />
-            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 데이터 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;음수, 잘못된 값, 존재하지 않는 인덱스값 설정 시 메소드가 실행되지 않습니다." />
-            <Argument name="vCell" type="String, Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 Cell 의 인덱스 또는 ID 를 설정합니다.&#xA;&#xA;인덱스 설정 시 한 개의 Cell 만 설정할 수 있습니다.&#xA;한 개 이상의 Cell 에 깜빡임 효과를 적용하려면 Cell 의 ID 를 콤마(&quot;,&quot;)로 구분하여 설정합니다.&#xA;&#xA;음수, 빈값, 존재하지 않는 인덱스값, 존재하지 않는 아이디 설정 시 메소드가 실행되지 않습니다." />
+            <Argument name="nBlinkCnt" type="Number" in="false" out="false" option="false" variable="false" description="nKeepMSec 에 설정한 시간동안 깜빡임(Blink) 효과가 적용될 횟수를 숫자로 설정합니다.&#xA;&#xA;0 설정 시 nRow, vCell 에 설정된 Cell 영역에 적용된 깜빡임(Blink) 효과를 취소합니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메서드가 실행되지 않습니다." />
+            <Argument name="nKeepMSec" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 전체 시간을 밀리초 단위의 숫자로 설정합니다.&#xA;&#xA;0 설정 시 nRow, vCell 에 설정된 Cell 영역에 적용된 깜빡임(Blink) 효과를 취소합니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메서드가 실행되지 않습니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 데이터 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;음수, 잘못된 값, 존재하지 않는 인덱스값 설정 시 메서드가 실행되지 않습니다." />
+            <Argument name="vCell" type="String, Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 Cell 의 인덱스 또는 ID 를 설정합니다.&#xA;&#xA;인덱스 설정 시 한 개의 Cell 만 설정할 수 있습니다.&#xA;한 개 이상의 Cell 에 깜빡임 효과를 적용하려면 Cell 의 ID 를 콤마(&quot;,&quot;)로 구분하여 설정합니다.&#xA;&#xA;음수, 빈값, 존재하지 않는 인덱스값, 존재하지 않는 아이디 설정 시 메서드가 실행되지 않습니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="blinkCellByInterval" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 설정한 횟수만큼 특정 Cell 에 깜빡임(Blink) 효과를 주는 메소드입니다.">
+      <Method name="blinkCellByInterval" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 설정한 횟수만큼 특정 Cell 에 깜빡임(Blink) 효과를 주는 메서드입니다.">
         <Syntax text="Grid.blinkCellByInterval( nRow, vCell, nInterMSec, nBlinkCnt );">
           <Return type="" description="" />
           <Arguments>
-            <Argument name="nBlinkCnt" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용되어 Cell 이 깜빡이는 횟수를 숫자로 설정합니다.&#xA;&#xA;깜빡임(Blink) 효과는 500 밀리초 동안 적용되며, 적용시간을 변경할 수 없습니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메소드가 실행되지 않습니다." />
-            <Argument name="nInterMSec" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 시간 간격을 밀리초 단위의 숫자로 설정합니다.&#xA;&#xA;깜빡임(Blink) 효과가 꺼진 후 다음 깜빡임(Blink) 효과가 적용될 때까지의 사이 시간을 설정합니다.&#xA;0 설정 시 nRow, vCell 에 설정된 Cell 영역에 적용된 깜빡임(Blink) 효과를 취소합니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메소드가 실행되지 않습니다." />
-            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 행의 인덱스를 숫자로 설정합니다.&#xA;&#xA;음수, 잘못된 값, 존재하지 않는 인덱스값 설정 시 메소드가 실행되지 않습니다." />
-            <Argument name="vCell" type="String, Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 Cell 의 인덱스 또는 ID 를 설정합니다.&#xA;&#xA;인덱스 설정 시 한 개의 Cell 만 설정할 수 있습니다.&#xA;한 개 이상의 Cell 에 깜빡임 효과를 적용하려면 Cell 의 ID 를 콤마(&quot;,&quot;)로 구분하여 설정합니다.&#xA;&#xA;음수, 빈값, 존재하지 않는 인덱스값, 존재하지 않는 아이디 설정 시 메소드가 실행되지 않습니다." />
+            <Argument name="nBlinkCnt" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용되어 Cell 이 깜빡이는 횟수를 숫자로 설정합니다.&#xA;&#xA;깜빡임(Blink) 효과는 500 밀리초 동안 적용되며, 적용시간을 변경할 수 없습니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메서드가 실행되지 않습니다." />
+            <Argument name="nInterMSec" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 시간 간격을 밀리초 단위의 숫자로 설정합니다.&#xA;&#xA;깜빡임(Blink) 효과가 꺼진 후 다음 깜빡임(Blink) 효과가 적용될 때까지의 사이 시간을 설정합니다.&#xA;0 설정 시 nRow, vCell 에 설정된 Cell 영역에 적용된 깜빡임(Blink) 효과를 취소합니다.&#xA;&#xA;음수, 잘못된 값 설정 시 메서드가 실행되지 않습니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 행의 인덱스를 숫자로 설정합니다.&#xA;&#xA;음수, 잘못된 값, 존재하지 않는 인덱스값 설정 시 메서드가 실행되지 않습니다." />
+            <Argument name="vCell" type="String, Number" in="false" out="false" option="false" variable="false" description="깜빡임(Blink) 효과가 적용될 Cell 의 인덱스 또는 ID 를 설정합니다.&#xA;&#xA;인덱스 설정 시 한 개의 Cell 만 설정할 수 있습니다.&#xA;한 개 이상의 Cell 에 깜빡임 효과를 적용하려면 Cell 의 ID 를 콤마(&quot;,&quot;)로 구분하여 설정합니다.&#xA;&#xA;음수, 빈값, 존재하지 않는 인덱스값, 존재하지 않는 아이디 설정 시 메서드가 실행되지 않습니다." />
           </Arguments>
         </Syntax>
       </Method>
@@ -285,7 +285,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메서드입니다.">
         <Syntax text="Grid.clearEventHandler( strEventID )">
           <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
           <Arguments>
@@ -293,19 +293,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="clearSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 선택된 영역을 모두 해제하는 메소드입니다.">
+      <Method name="clearSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 선택된 영역을 모두 해제하는 메서드입니다.">
         <Syntax text="Grid.clearSelect()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="createFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 와 바인딩 된 DataSet 의 Column 정보를 기준으로 새로운 포맷을 생성하는 메소드입니다.">
+      <Method name="createFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 와 바인딩 된 DataSet 의 Column 정보를 기준으로 새로운 포맷을 생성하는 메서드입니다.">
         <Syntax text="Grid.createFormat()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="deleteContentsCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시된 포맷에서 특정 Column 을 삭제하는 메소드입니다.">
+      <Method name="deleteContentsCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시된 포맷에서 특정 Column 을 삭제하는 메서드입니다.">
         <Syntax text="Grid.deleteContentsCol( enumBand, nColIndex [, bBandIndex] )">
           <Return type="Number" description="전체 Column 을 기준으로 삭제된 Column 의 인덱스 값을 반환합니다.&#xA;enumBand 에 설정한 밴드 영역내의 인덱스가 아닙니다.&#xA;&#xA;정상적으로 삭제하지 못했을 경우 -1 을 반환합니다." />
           <Arguments>
@@ -315,7 +315,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="deleteContentsRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시되는 포맷에서 특정 Sub Row 를 삭제하는 메소드입니다.">
+      <Method name="deleteContentsRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시되는 포맷에서 특정 Sub Row 를 삭제하는 메서드입니다.">
         <Syntax text="Grid.deleteContentsRow( enumBand, nSubRowIndex )">
           <Return type="Number" description="삭제된 Sub Row 가 밴드 내에서 위치했던 인덱스 값을 반환합니다.&#xA;&#xA;정상적으로 삭제하지 못했을 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -324,7 +324,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 Grid 을(를) 삭제하는 메소드입니다.">
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트에서 동적으로 생성한 Grid 을(를) 삭제하는 메서드입니다.">
         <Syntax text="Grid.destroy()">
           <Return type="Boolean" description="Grid 이(가) 정상적으로 삭제되면 true 를 반환합니다.&#xA;&#xA;Grid 이(가) 정상적으로 삭제되지 않으면 false 를 반환합니다." />
           <Arguments />
@@ -336,19 +336,19 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="dropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 edittype 속성값이 &quot;date&quot; 인 Cell 이 편집상태일 때 팝업달력을 표시하는 메소드입니다.">
+      <Method name="dropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 edittype 속성값이 &quot;date&quot; 인 Cell 이 편집상태일 때 팝업달력을 표시하는 메서드입니다.">
         <Syntax text="Grid.dropdownCalendar()">
           <Return type="Boolean" description="팝업달력이 정상적으로 표시되면 true 를 반환합니다.&#xA;&#xA;팝업달력이 정상적으로 표시되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="dropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 edittype 속성값이 &quot;combo&quot; 인 Cell 이 편집상태일 때 Combo 아이템 리스트를 표시하는 메소드입니다.">
+      <Method name="dropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 edittype 속성값이 &quot;combo&quot; 인 Cell 이 편집상태일 때 Combo 아이템 리스트를 표시하는 메서드입니다.">
         <Syntax text="Grid.dropdownCombo()">
           <Return type="Boolean" description="Combo 아이템 리스트가 정상적으로 표시되면 true 를 반환합니다.&#xA;&#xA;Combo 아이템 리스트가 정상적으로 표시되지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Grid.findEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="특정 이벤트에서 찾은 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;특정 이벤트에 찾으려는 핸들러 함수가 존재하지 않으면 -1 을 반환합니다." />
           <Arguments>
@@ -358,7 +358,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 밴드에서 지정된 속성의 속성값을 반환하는 메소드입니다.">
+      <Method name="getBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 밴드에서 지정된 속성의 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getBandProperty( enumBand, strPropID )">
           <Return type="String" description="특정 밴드에서 지정된 속성의 속성값을 반환합니다." />
           <Arguments>
@@ -367,7 +367,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBindCellIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSet 의 특정 Column 과 바인드된 Cell 의 인덱스를 반환하는 메소드입니다.">
+      <Method name="getBindCellIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="DataSet 의 특정 Column 과 바인드된 Cell 의 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Grid.getBindCellIndex( enumBand, strColID )">
           <Return type="Number" description="ID 가 strColID 인 Column 과 바인드 된 첫번째 Cell 의 인덱스를 반환합니다.&#xA;&#xA;ID 가 strColID 인 Column 과 바인드 된 Cell 이 없다면 -1 을 반환합니다." />
           <Arguments>
@@ -376,13 +376,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 binddataset 속성에 설정되어 있는 DataSet 오브젝트를 반환하는 메소드입니다.">
+      <Method name="getBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 binddataset 속성에 설정되어 있는 DataSet 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="Grid.getBindDataset()">
           <Return type="Object" description="binddataset 속성에 설정되어 있는 DataSet 오브젝트를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getCellCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 특정 밴드에 정의된 Cell 의 갯수를 반환하는 메소드입니다.">
+      <Method name="getCellCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 특정 밴드에 정의된 Cell 의 갯수를 반환하는 메서드입니다.">
         <Syntax text="Grid.getCellCount( enumBand )">
           <Return type="Number" description="enumBand 에 설정한 밴드 영역에 정의된 Cell 의 갯수를 반환합니다." />
           <Arguments>
@@ -390,13 +390,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 선택된 Cell 의 Cell 인덱스 값을 반환하는 메소드입니다.">
+      <Method name="getCellPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 선택된 Cell 의 Cell 인덱스 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getCellPos()">
           <Return type="Number" description="선택된 Cell 의 Cell 인덱스 값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 특정 속성값을 반환하는 메소드입니다.">
+      <Method name="getCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 특정 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getCellProperty( enumBand, nCellIdx, strPropID )">
           <Return type="String" description="특정 Cell 의 특정 속성값을 반환합니다." />
           <Arguments>
@@ -406,7 +406,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellPropertyValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 Cell 에 적용된 속성값을 반환하는 메소드입니다.">
+      <Method name="getCellPropertyValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 Cell 에 적용된 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getCellPropertyValue( nRowIdx, nCellIdx, strPropID )">
           <Return type="String" description="Cell 의 속성이 DataSet 에 바인드 되어 있다면 바인드된 DataSet 의 Column 값을 반환합니다.&#xA;Cell 의 속성이 EXPR 형식으로 설정되어 있다면 EXPR 이 적용된 값을 반환합니다.&#xA;Cell 의 속성에 값이 설정되어 있다면 설정된 값을 반환합니다." />
           <Arguments>
@@ -425,7 +425,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 위치의 Cell 에 표시되는 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getCellText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 위치의 Cell 에 표시되는 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getCellText( nRow, nCellIdx )">
           <Return type="String" description="인수로 전달된 위치의 Cell 에 표시되는 텍스트값을 반환합니다." />
           <Arguments>
@@ -434,7 +434,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCellValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 위치의 Cell 의 text 속성에 설정된 값을 반환하는 메소드입니다.">
+      <Method name="getCellValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 위치의 Cell 의 text 속성에 설정된 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getCellValue( nRow, nCellIdx )">
           <Return type="String" description="Cell 의 text 속성이 DataSet 에 바인드 되어 있다면 바인드된 DataSet 의 Column 값을 반환합니다.&#xA;Cell 의 text 속성에 값이 설정되어 있다면 설정된 값을 반환합니다.&#xA;Cell 의 text 속성이 EXPR 형식으로 설정되어 있다면 EXPR 이 적용된 값을 반환합니다." />
           <Arguments>
@@ -443,13 +443,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getCurEditType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 선택된 Cell 의 edittype 속성값을 반환하는 메소드입니다.">
+      <Method name="getCurEditType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 선택된 Cell 의 edittype 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getCurEditType()">
           <Return type="String" description="선택된 Cell 의 editytype 속성값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getCurFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시되고 있는 포맷을 XML 형식의 문자열로 반환하는 메소드입니다.">
+      <Method name="getCurFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시되고 있는 포맷을 XML 형식의 문자열로 반환하는 메서드입니다.">
         <Syntax text="Grid.getCurFormatString( [bOrginal] )">
           <Return type="String" description="현재 Grid 에 표시되고 있는 포맷을 XML 형식의 문자열로 반환합니다.&#xA;&#xA;기본적인 XML 형식은 아래와 같으며 Head, Body, Summary 정의는 포맷에 따라 없을 수 있습니다.&#xA;&#xA;&lt;code&gt;&amp;lt;Format id=&quot;default&quot;&amp;gt;&#xA;  &amp;lt;Columns&amp;gt;....&amp;lt;/Columns&amp;gt;&#xA;  &amp;lt;Rows&amp;gt;....&amp;lt;/Rows&amp;gt;&#xA;  &amp;lt;Band id=&quot;head&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;Band id=&quot;summary&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;&amp;lt;/Format&amp;gt; &lt;/code&gt;" />
           <Arguments>
@@ -457,7 +457,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getDatasetRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Row 인덱스에 해당하는 DataSet 의 Row 인덱스를 반환하는 메소드입니다.">
+      <Method name="getDatasetRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Row 인덱스에 해당하는 DataSet 의 Row 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Grid.getDatasetRow( nRowIndex )">
           <Return type="Number" description="Grid 의 Row 인덱스에 해당하는 DataSet 의 Row 인덱스값을 반환합니다.&#xA;&#xA;정상적으로 값을 구할 수 없을 경우는 -1 을 반환합니다." />
           <Arguments>
@@ -465,55 +465,55 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getDisplayText()">
           <Return type="String" description="Grid 에 표시된 텍스트값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditCaret" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 캐럿이 위치한 인덱스를 반환하는 메소드입니다.">
+      <Method name="getEditCaret" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 캐럿이 위치한 인덱스를 반환하는 메서드입니다.">
         <Syntax text="Grid.getEditCaret()">
           <Return type="Number" description="인덱스는 0 부터 시작하며 캐럿이 위치한 인덱스를 반환합니다.&#xA;&#xA;Cell 이 편집상태가 아니면 -1 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditingText" group="Style_old" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 text 값을 반환하는 메소드입니다.">
+      <Method name="getEditingText" group="Style_old" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 text 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getEditingText()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤에 입력중인 text 값을 문자열로 반환합니다.&#xA;&#xA;Cell 의 edittype 속성값이 &quot;checkbox&quot;, &quot;tree&quot; 이면 undefined 를 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;date&quot;, &quot;mask&quot; 이면 마스크 문자가 포함된 입력중인 값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditingValue" group="Style_old" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 value 값을 반환하는 메소드입니다.">
+      <Method name="getEditingValue" group="Style_old" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤에 입력중인 value 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getEditingValue()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤에 입력중인 value 값을 문자열로 반환합니다.&#xA;&#xA;Cell 의 edittype 속성값이 &quot;button&quot;, &quot;checkbox&quot;, &quot;tree&quot; 이면 undefined 를 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;date&quot; 이면 마스크 문자가 제외된 입력중인 원본값을 날짜형식에 맞게 보정하여 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;mask&quot; 이면 마스크 문자가 제외된 입력중인 원본값만 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트의 인덱스를 배열로 반환하는 메소드입니다.">
+      <Method name="getEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트의 인덱스를 배열로 반환하는 메서드입니다.">
         <Syntax text="Grid.getEditSelect()">
           <Return type="Array" description="선택된 텍스트의 시작 인덱스와 끝 인덱스를 각각 배열의 0번, 1번 원소로 반환합니다.&#xA;선택된 텍스트가 없는 경우 현재 캐럿 위치를 배열의 0번, 1번 원소로 반환합니다.&#xA;&#xA;인덱스는 0 부터 시작합니다" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditSelectedText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트를 반환하는 메소드입니다.">
+      <Method name="getEditSelectedText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 선택된 텍스트를 반환하는 메서드입니다.">
         <Syntax text="Grid.getEditSelectedText()">
           <Return type="String" description="선택된 텍스트를 반환합니다.&#xA;&#xA;선택된 텍스트가 없을 경우 빈문자열(Empty String)을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 text 속성값을 반환하는 메소드입니다.">
+      <Method name="getEditText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 text 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getEditText()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤의 text 속성값을 문자열로 반환합니다.&#xA;&#xA;Grid 의 edittype 속성값이 &quot;checkbox&quot;, &quot;tree&quot; 이면 undefined 를 반환합니다.&#xA;Grid 의 edittype 속성값이 &quot;combo&quot;, &quot;date&quot; 이면 컨트롤에 입력중인 값이 아닌 원본 text 속성값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성값을 반환하는 메소드입니다.">
+      <Method name="getEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getEditValue()">
           <Return type="String" description="Cell 에 표시된 편집모드용 컨트롤의 value 속성값을 문자열로 반환합니다.&#xA;&#xA;Cell 의 edittype 속성값이 &quot;button&quot;, &quot;checkbox&quot;, &quot;tree&quot; 이면 undefined 를 반환합니다.&#xA;Cell 의 edittype 속성값이 &quot;combo&quot;, &quot;date&quot; 이면 컨트롤에 입력중인 값이 아닌 원본 value 속성값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메서드입니다.">
         <Syntax text="Grid.getEventHandler( strEventID, nIdx )">
           <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
           <Arguments>
@@ -522,19 +522,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메서드입니다.">
         <Syntax text="Grid.getFocus()">
           <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getFormatColCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Column 의 갯수를 반환하는 메소드입니다.">
+      <Method name="getFormatColCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Column 의 갯수를 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatColCount()">
           <Return type="Number" description="현재 Grid 에 표시되고 있는 포맷에 정의된 Column 의 갯수를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getFormatColProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Column 의 특정 속성값을 반환하는 메소드입니다.">
+      <Method name="getFormatColProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Column 의 특정 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatColProperty( nColIdx, strPropId )">
           <Return type="String" description="특정 Column 의 특정 속성값을 반환합니다." />
           <Arguments>
@@ -543,7 +543,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFormatColSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 포맷에 정의된 Column 의 너비를 반환하는 메소드입니다.">
+      <Method name="getFormatColSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 포맷에 정의된 Column 의 너비를 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatColSize( nColIdx )">
           <Return type="Number" description="디자인 시 설정한 Column 의 너비를 반환합니다.&#xA;존재하지 않는 인덱스를 지정하면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -551,19 +551,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFormatIdList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Format id 배열값을 반환하는 메소드입니다.">
+      <Method name="getFormatIdList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Format id 배열값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatIdList();">
           <Return type="Object" description="Format id 목록을 배열로 반환합니다.&#xA;값이 없는 경우에는 빈 배열을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getFormatRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 모든 Row 또는 Sub Row 의 갯수를 반환하는 메소드입니다.">
+      <Method name="getFormatRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 모든 Row 또는 Sub Row 의 갯수를 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatRowCount()">
           <Return type="Number" description="현재 Grid 에 표시되고 있는 포맷에 정의된 Row 또는 Sub Row 의 총 갯수를 반환합니다.&#xA;&#xA;Head, Body, Summary 밴드에 정의된 각 Row 의 총 갯수의 합을 반환합니다.&#xA;Row 에 Sub Row 가 정의되어 있다면 Sub Row 의 갯수를 반영합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getFormatRowProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Row 의 특정 속성값을 반환하는 메소드입니다.">
+      <Method name="getFormatRowProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Row 의 특정 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatRowProperty( nRowIdx, strPropId )">
           <Return type="String" description="특정 Row 의 특정 속성값을 반환합니다." />
           <Arguments>
@@ -572,7 +572,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFormatRowSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 포맷에 정의된 Row 또는 Sub Row 의 높이를 반환하는 메소드입니다.">
+      <Method name="getFormatRowSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 포맷에 정의된 Row 또는 Sub Row 의 높이를 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatRowSize( nRowIdx )">
           <Return type="Number" description="디자인 시 설정한 Row 또는 Sub Row 의 높이를 반환합니다.&#xA;존재하지 않는 인덱스를 지정하면 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -580,7 +580,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="디자인 시 정의된 전체 포맷을 XML 형식의 문자열로 반환하는 메소드입니다.">
+      <Method name="getFormatString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="디자인 시 정의된 전체 포맷을 XML 형식의 문자열로 반환하는 메서드입니다.">
         <Syntax text="Grid.getFormatString()">
           <Return type="String" description="디자인 시 정의된 전체 포맷을 XML 형식의 문자열로 반환합니다.&#xA;동적으로 변경된 포맷값은 반영되지 않습니다.&#xA;&#xA;기본적인 XML 형식은 아래와 같으며 Head, Body, Summary 정의는 포맷에 따라 없을 수 있습니다.&#xA;&lt;code&gt;&#xA;&amp;lt;Formats&amp;gt;&#xA;  &amp;lt;Format id=&quot;default&quot;&amp;gt;&#xA;    &amp;lt;Columns&amp;gt;....&amp;lt;/Columns&amp;gt;&#xA;    &amp;lt;Rows&amp;gt;....&amp;lt;/Rows&amp;gt;&#xA;    &amp;lt;Band id=&quot;head&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;summary&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;/Format&amp;gt;&#xA;  &amp;lt;Format id=&quot;format00&quot;&amp;gt;&#xA;    &amp;lt;Columns&amp;gt;....&amp;lt;/Columns&amp;gt;&#xA;    &amp;lt;Rows&amp;gt;....&amp;lt;/Rows&amp;gt;&#xA;    &amp;lt;Band id=&quot;head&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;body&quot;&amp;gt;...&amp;lt;/Band&amp;gt;&#xA;    &amp;lt;Band id=&quot;summary&quot;&amp;gt;..&amp;lt;/Band&amp;gt;&#xA;  &amp;lt;/Format&amp;gt;&#xA;&amp;lt;/Formats&amp;gt;&#xA;&lt;/code&gt;" />
           <Arguments />
@@ -594,85 +594,85 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getHScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 수평스크롤바의 트랙바 위치값을 반환하는 메소드입니다.">
+      <Method name="getHScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 수평스크롤바의 트랙바 위치값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getHScrollPos()">
           <Return type="Number" description="수평스크롤바의 현재 트랙바 위치값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 bottom 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 bottom 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Grid.getOffsetBottom();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 bottom 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 높이를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 높이를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Grid.getOffsetHeight();">
           <Return type="Number" description="Grid 의 높이를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 left 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 left 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Grid.getOffsetLeft();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 left 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 right 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 right 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Grid.getOffsetRight();">
           <Return type="Number" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 right 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 top 값을 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 top 값을 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Grid.getOffsetTop();">
           <Return type="Number" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 top 값을 픽셀단위의 숫자로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 너비를 픽셀단위의 숫자로 반환하는 메소드입니다.">
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 너비를 픽셀단위의 숫자로 반환하는 메서드입니다.">
         <Syntax text="Grid.getOffsetWidth();">
           <Return type="Number" description="Grid 의 너비를 픽셀단위의 숫자로 변환하여 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 bottom 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Grid.getPixelBottom();">
           <Return type="Number" description="Grid 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;bottom 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 height 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Grid.getPixelHeight();">
           <Return type="Number" description="Grid 의 height 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;height 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 left 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Grid.getPixelLeft();">
           <Return type="Number" description="Grid 의 left 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;left 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 right 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Grid.getPixelRight();">
           <Return type="Number" description="Grid 의 right 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;right 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 top 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Grid.getPixelTop();">
           <Return type="Number" description="Grid 의 top 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;top 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 width 속성값을 픽셀단위로 반환하는 메서드입니다.">
         <Syntax text="Grid.getPixelWidth();">
           <Return type="Number" description="Grid 의 width 속성값을 픽셀단위로 반환합니다.&#xA;&#xA;width 속성값을 설정하지 않았을 경우 null 을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getRealColFullSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 전체 Column 의 너비를 반환하는 메소드입니다.">
+      <Method name="getRealColFullSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 전체 Column 의 너비를 반환하는 메서드입니다.">
         <Syntax text="Grid.getRealColFullSize( [enumBand] )">
           <Return type="Number" description="지정된 영역에서 전체 Column의 너비를 반환합니다.&#xA;Column 의 너비를 구하지 못했을 경우 &quot;0&quot; 을 반환합니다." />
           <Arguments>
@@ -680,7 +680,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getRealColSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 특정 Column 의 너비를 반환하는 메소드입니다.">
+      <Method name="getRealColSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 특정 Column 의 너비를 반환하는 메서드입니다.">
         <Syntax text="Grid.getRealColSize( nColIdx [, bBodyIdx] )">
           <Return type="Number" description="현재 표시되는 포맷에서 특정 Column의 너비를 반환합니다.&#xA;Column 의 너비를 구하지 못했을 경우 &quot;0&quot; 을 반환합니다." />
           <Arguments>
@@ -689,7 +689,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getRealRowFullSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 전체 Row 의 높이를 반환하는 메소드입니다.">
+      <Method name="getRealRowFullSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 전체 Row 의 높이를 반환하는 메서드입니다.">
         <Syntax text="Grid.getRealRowFullSize( [enumBand] )">
           <Return type="Number" description="지정된 영역에서 전체 Row 의 높이를 반환합니다.&#xA;Row 의 높이를 구하지 못했을 경우 &quot;0&quot; 을 반환합니다." />
           <Arguments>
@@ -697,7 +697,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getRealRowSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 데이터 Row 에서 특정 Row 또는 SubRow 의 높이를 반환하는 메소드입니다.">
+      <Method name="getRealRowSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 데이터 Row 에서 특정 Row 또는 SubRow 의 높이를 반환하는 메서드입니다.">
         <Syntax text="Grid.getRealRowSize( nRowIdx [, nSubRowIdx [, bBody]] )">
           <Return type="Number" description="파라미터로 지정한 Row 또는 SubRow 의 높이를 반환합니다.&#xA;&#xA;Row 또는 SubRow 의 높이를 구하지 못했을 경우 0 을 반환합니다." />
           <Arguments>
@@ -707,19 +707,19 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getSelectedDatasetRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 선택되어 있는 Row 들에 해당하는 DataSet 의 Row 인덱스를 배열로 반환하는 메소드입니다.">
+      <Method name="getSelectedDatasetRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 선택되어 있는 Row 들에 해당하는 DataSet 의 Row 인덱스를 배열로 반환하는 메서드입니다.">
         <Syntax text="Grid.getSelectedDatasetRows()">
           <Return type="Array" description="Grid 에 선택된 Row 들에 해당하는 DataSet 의 Row 인덱스를 배열로 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getSelectedRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 선택되어 있는 Row 의 인덱스를 배열로 반환하는 메소드입니다.">
+      <Method name="getSelectedRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 선택되어 있는 Row 의 인덱스를 배열로 반환하는 메서드입니다.">
         <Syntax text="Grid.getSelectedRows()">
           <Return type="Array" description="Grid 에 선택되어 있는 Row 의 인덱스를 배열로 반환합니다.&#xA;&#xA;선택된 Row 가 없을 경우 빈 배열을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="getSubCellCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달 된 Cell 이 Sub Cell 구조일 때 Sub Cell 의 갯수를 반환하는 메소드입니다.">
+      <Method name="getSubCellCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달 된 Cell 이 Sub Cell 구조일 때 Sub Cell 의 갯수를 반환하는 메서드입니다.">
         <Syntax text="Grid.getSubCellCount( enumBand, nCellIdx )">
           <Return type="Number" description="인수로 전달 된 Cell 의 Sub Cell 갯수를 반환합니다.&#xA;&#xA;Sub Cell 이 아닐 경우 &quot;0&quot; 을 반환합니다." />
           <Arguments>
@@ -728,7 +728,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getSubCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Sub Cell 구조일 때 특정 Sub Cell 의 속성값을 반환하는 메소드입니다.">
+      <Method name="getSubCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Sub Cell 구조일 때 특정 Sub Cell 의 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getSubCellProperty( enumBand, nCellIdx, nSubCellIdx, strPropID )">
           <Return type="String" description="특정 Sub Cell 의 속성값을 반환합니다." />
           <Arguments>
@@ -739,7 +739,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getSubCellPropertyValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 SubCell 에 적용된 속성값을 반환하는 메소드입니다.">
+      <Method name="getSubCellPropertyValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 SubCell 에 적용된 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getSubCellPropertyValue( nRowIdx, nCellIdx, nSubCellIdx, strPropID )">
           <Return type="String" description="SubCell 의 속성이 DataSet 에 바인드 되어 있다면 바인드된 DataSet 의 Column 값을 반환합니다.&#xA;SubCell 의 속성이 EXPR 형식으로 설정되어 있다면 EXPR 이 적용된 값을 반환합니다.&#xA;SubCell 의 속성에 값이 설정되어 있다면 설정된 값을 반환합니다." />
           <Arguments>
@@ -750,7 +750,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getSubCellRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 에서 Sub Cell 영역을 Rect 오브젝트로 반환하는 메소드입니다.">
+      <Method name="getSubCellRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 에서 Sub Cell 영역을 Rect 오브젝트로 반환하는 메서드입니다.">
         <Syntax text="Grid.getSubCellRect(nRow,nCellIdx,nSubCellIdx)">
           <Return type="Object" description="특정 Cell 의 Sub Cell 영역 정보를 갖는 Rect 오브젝트를 반환합니다.&#xA;Sub Cell 이 아니거나 잘못된 위치의 Sub Cell 지정 시 모든 속성값이 &quot;0&quot; 인 Rect 오브젝트를 반환합니다.&#xA;&#xA;Rect 오브젝트는 &quot;left&quot;, &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;width&quot;, &quot;height&quot; 속성을 갖습니다.&#xA;Cell 영역의 정보는 Rect 오브젝트의 각 속성에 저장됩니다." />
           <Arguments>
@@ -760,7 +760,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getSubCellText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 의 Sub Cell 에 표시되는 텍스트값을 반환하는 메소드입니다.">
+      <Method name="getSubCellText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Cell 의 Sub Cell 에 표시되는 텍스트값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getSubCellText( nRow, nCellIdx, nSubCellIdx )">
           <Return type="String" description="특정 Cell 의 Sub Cell 에 표시되는 텍스트값을 반환합니다." />
           <Arguments>
@@ -770,7 +770,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getSubCellValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Sub Cell 의 text 속성에 설정된 값을 반환하는 메소드입니다.">
+      <Method name="getSubCellValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="특정 Sub Cell 의 text 속성에 설정된 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getSubCellValue( nRow, nCellIdx, nSubCellIdx )">
           <Return type="String" description="Sub Cell 의 text 속성이 DataSet 에 바인드 되어 있다면 바인드된 DataSet 의 Column 값을 반환합니다.&#xA;Sub Cell 의 text 속성에 값이 설정되어 있다면 설정된 값을 반환합니다.&#xA;Sub Cell 의 expr 속성이 설정되어 있다면 text 속성값에 EXPR 이 적용된 값을 반환합니다." />
           <Arguments>
@@ -780,7 +780,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getSummValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Summary 밴드 영역에서 특정 Cell 의 text 속성에 설정된 값을 반환하는 메소드입니다.">
+      <Method name="getSummValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Summary 밴드 영역에서 특정 Cell 의 text 속성에 설정된 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getSummValue( nCellIdx )">
           <Return type="String" description="Cell 의 text 속성에 값이 설정되어 있다면 설정된 값을 반환합니다.&#xA;Cell 의 expr 속성이 설정되어 있다면 text 속성값에 EXPR 이 적용된 값을 반환합니다.&#xA;Cell 의 text 속성이 DataSet 에 바인드 되어 있다면 바인드된 DataSet 에서 현재 선택된 Row의 Column 값을 반환합니다.&#xA;&#xA;존재하지 않는 Cell 인덱스를 설정하면 &quot;null&quot;을 반환합니다." />
           <Arguments>
@@ -788,7 +788,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getTreeChildCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 에 자식으로 존재하는 Row 의 갯수를 반환하는 메소드입니다.">
+      <Method name="getTreeChildCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 에 자식으로 존재하는 Row 의 갯수를 반환하는 메서드입니다.">
         <Syntax text="Grid.getTreeChildCount( nRowIndex [,bDatasetRow] )">
           <Return type="Number" description="특정 Row 의 자식 Row 갯수를 반환합니다.&#xA;&#xA;자식 Row 의 갯수를 구할 수 없거나 존재하는 자식 Row 가 없을 경우 &quot;0&quot;을 반환합니다.&#xA;Grid 가 트리 형식이 아니어도 &quot;0&quot;을 반환합니다." />
           <Arguments>
@@ -797,7 +797,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getTreeChildRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 자식 Row 에 해당하는 DataSet Row 값을 반환하는 메소드입니다.">
+      <Method name="getTreeChildRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 자식 Row 에 해당하는 DataSet Row 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getTreeChildRow( nRowIndex, nChildIndex [,bDatasetRow] )">
           <Return type="Number" description="특정 Row 의 자식 Row 에 해당하는 DataSet Row 값을 반환합니다.&#xA;&#xA;Grid 가 트리 형식이 아니거나 nRowIndex 에 해당하는 Row 가 단말(Leaf) Row 일 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -807,7 +807,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getTreeParentRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 부모 Row 에 해당하는 DataSet Row 값을 반환하는 메소드입니다.">
+      <Method name="getTreeParentRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 부모 Row 에 해당하는 DataSet Row 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getTreeParentRow( nRowIndex[,bDatasetRow] )">
           <Return type="Number" description="특정 Row 의 부모 Row 에 해당하는 DataSet Row 값을 반환합니다.&#xA;&#xA;Grid 가 트리 형식이 아니거나 nRowIndex 에 해당하는 Row 가 뿌리(Root) Row 일 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -816,7 +816,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getTreePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 뿌리(Root) Row 에서 특정 Row 까지 각 Row 의 text 속성값을 반환하는 메소드입니다.">
+      <Method name="getTreePath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 뿌리(Root) Row 에서 특정 Row 까지 각 Row 의 text 속성값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getTreePath( nRowIndex [,bDatasetRow] )">
           <Return type="String" description="뿌리(Root) Row 에서 특정 Row 까지 트리 Cell 에 표시되는 텍스트를 마침표(&quot;.&quot;)로 연결하여 반환합니다.&#xA;&#xA;Grid 가 트리  형식이 아니거나 뿌리(Root) Row 까지의 경로를 구할 수 없을 때는 빈 문자열을 반환합니다." />
           <Arguments>
@@ -825,7 +825,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getTreeRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 DataSet 의 Row 값에 해당하는 Grid 의 Row 값을 반환하는 메소드입니다.">
+      <Method name="getTreeRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 DataSet 의 Row 값에 해당하는 Grid 의 Row 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getTreeRow( nDSRowIndex )">
           <Return type="Number" description="DataSet 의 Row 값에 해당하는 데이터가 Grid 에 표시되는 위치의 Row 값을 반환합니다.&#xA;&#xA;트리 Cell 이 Collapse 되어 Grid 에 데이터가 표시되지 않으면 &quot;-1&quot;을 반환합니다.&#xA;Grid 가 트리 형식이 아니어도 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -833,7 +833,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getTreeSiblingRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 형제(Sibling) Row 에 해당하는 DataSet Row 값을 반환하는 메소드입니다.">
+      <Method name="getTreeSiblingRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 형제(Sibling) Row 에 해당하는 DataSet Row 값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getTreeSiblingRow( nRowIndex [,nOffset [,bDatasetRow]] )">
           <Return type="Number" description="특정 Row 의 형제 Row 에 해당하는 DataSet Row 값을 반환합니다.&#xA;&#xA;Grid 가 트리 형식이 아니거나 형제(Sibling) Row 가 없을 경우 &quot;-1&quot;을 반환합니다" />
           <Arguments>
@@ -843,7 +843,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getTreeStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 트리 상태를 반환하는 메소드입니다.">
+      <Method name="getTreeStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 트리 상태를 반환하는 메서드입니다.">
         <Syntax text="Grid.getTreeStatus( nRowIndex )">
           <Return type="Number" description="Row 가 Collapse 상태이면 &quot;0&quot;을 반환합니다.&#xA;Row 가 Expand 상태이면 &quot;1&quot;을 반환합니다.&#xA;Row 가 Collapse/Expand 상태를 가질 수 없는 단말(Leaf) Row 이면 &quot;3&quot;을 반환합니다.&#xA;&#xA;Row 의 트리 상태를 얻지 못했을 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -851,13 +851,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 수직스크롤바의 트랙바 위치값을 반환하는 메소드입니다.">
+      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 수직스크롤바의 트랙바 위치값을 반환하는 메서드입니다.">
         <Syntax text="Grid.getVScrollPos()">
           <Return type="Number" description="수직스크롤바의 현재 트랙바 위치값을 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 Grid 을(를) 동적 생성한 후에 초기화하는 메소드입니다.">
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 Grid 을(를) 동적 생성한 후에 초기화하는 메서드입니다.">
         <Syntax text="Grid.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
           <Return type="" description="" />
           <Arguments>
@@ -875,7 +875,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertContentsCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시된 포맷의 특정 위치에 Column 을 삽입하는 메소드입니다.">
+      <Method name="insertContentsCol" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시된 포맷의 특정 위치에 Column 을 삽입하는 메서드입니다.">
         <Syntax text="Grid.insertContentsCol( enumBand, nColIndex [, bBandIndex] )">
           <Return type="Number" description="전체 Column 을 기준으로 Column 이 삽입된 위치의 인덱스 값을 반환합니다.&#xA;enumBand 에 설정한 밴드 영역내의 인덱스가 아닙니다.&#xA;&#xA;정상적으로 삽입하지 못했을 경우 -1 을 반환합니다." />
           <Arguments>
@@ -885,7 +885,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertContentsRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시되는 포맷의 특정 위치에 Sub Row 를 삽입하는 메소드입니다.">
+      <Method name="insertContentsRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 현재 표시되는 포맷의 특정 위치에 Sub Row 를 삽입하는 메서드입니다.">
         <Syntax text="Grid.insertContentsRow( enumBand, nSubRowIndex )">
           <Return type="Number" description="전체 Sub Row 를 기준으로 Sub Row 가 삽입된 위치의 인덱스 값을 반환합니다.&#xA;enumBand 에 설정한 밴드 영역내의 인덱스가 아닙니다.&#xA;&#xA;정상적으로 추가하지 못했을 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -894,7 +894,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메소드입니다.">
+      <Method name="insertEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에 핸들러 함수를 지정한 위치에 삽입하는 메서드입니다.">
         <Syntax text="Grid.insertEventHandler( strEventID, nIndex, objFunc, objTarget )">
           <Return type="Number" description="이벤트에 삽입된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;핸들러 함수가 정상적으로 삽입되지 않은 경우에는 -1 을 반환합니다." />
           <Arguments>
@@ -905,25 +905,25 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isDropdown" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 컴포넌트에 아이템 리스트가 표시되어 있는지 여부를 반환하는 메소드입니다.">
+      <Method name="isDropdown" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 컴포넌트에 아이템 리스트가 표시되어 있는지 여부를 반환하는 메서드입니다.">
         <Syntax text="Grid.isDropdown()">
           <Return type="Boolean" description="Grid 컴포넌트에 아이템 리스트가 표시되어 있으면 true를 반환합니다.&#xA;Grid 컴포넌트에 아이템 리스트가 표시되어 있지 않으면 false를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isDropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 팝업달력이 표시되어 있는지 여부를 반환하는 메소드입니다.">
+      <Method name="isDropdownCalendar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 팝업달력이 표시되어 있는지 여부를 반환하는 메서드입니다.">
         <Syntax text="Grid.isDropdownCalendar()">
           <Return type="Boolean" description="Grid 에 팝업달력이 표시되어 있으면 true 를 반환합니다.&#xA;&#xA;Grid 에 팝업달력이 표시되어 있지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isDropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 Combo 아이템 리스트가 표시되어 있는지 여부를 반환하는 메소드입니다.">
+      <Method name="isDropdownCombo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 Combo 아이템 리스트가 표시되어 있는지 여부를 반환하는 메서드입니다.">
         <Syntax text="Grid.isDropdownCombo()">
           <Return type="Boolean" description="Grid 에 Combo 아이템 리스트가 표시되어 있으면 true 를 반환합니다.&#xA;&#xA;Grid 에 Combo 아이템 리스트가 표시되어 있지 않으면 false 를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="isSelectedCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 위치의 Cell 이 선택 상태인지 반환하는 메소드입니다.">
+      <Method name="isSelectedCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 위치의 Cell 이 선택 상태인지 반환하는 메서드입니다.">
         <Syntax text="Grid.isSelectedCell( nCellIdx [,enumBand, [nRowIdx]] );">
           <Return type="Boolean" description="인수로 전달된 위치의 Cell 이 선택상태이면 &quot;true&quot;를 반환합니다.&#xA;인수로 전달된 위치의 Cell 이 선택상태가 아니면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -933,7 +933,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isTreeCollapsedRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 Collapse 상태인지 반환하는 메소드입니다.">
+      <Method name="isTreeCollapsedRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 Collapse 상태인지 반환하는 메서드입니다.">
         <Syntax text="Grid.isTreeCollapsedRow( nRowIndex [,bDatasetRow] )">
           <Return type="Boolean" description="특정 Row 의 부모 Row 가 Collapse 되어 Grid 에 특정 Row 가 표시되지 않으면 &quot;true&quot;를 반환합니다.&#xA;&#xA;특정 Row 의 부모 Row 가 Expand 되어 Grid 에 특정 Row 가 표시되어 있으면 &quot;false&quot;를 반환합니다.&#xA;Grid 가 트리형식이 아니거나 nRowIndex 에 해당하는 Row 가 없는 경우 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -942,7 +942,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isTreeExpandedRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 Expand 상태인지 반환하는 메소드입니다.">
+      <Method name="isTreeExpandedRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 Expand 상태인지 반환하는 메서드입니다.">
         <Syntax text="Grid.isTreeExpandedRow( nRowIndex [,bDatasetRow] )">
           <Return type="Boolean" description="특정 Row 의 부모 Row 가 Expand 되어 Grid 에 특정 Row 가 표시되면 &quot;true&quot;를 반환합니다.&#xA;&#xA;특정 Row 의 부모 Row 가 Collapse 되어 Grid 에 특정 Row 가 표시되지 않으면 &quot;false&quot;를 반환합니다.&#xA;Grid 가 트리형식이 아니거나 nRowIndex 에 해당하는 Row 가 없는 경우 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -951,7 +951,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isTreeLeafRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 단말(Leaf) Row 인지 반환하는 메소드입니다.">
+      <Method name="isTreeLeafRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 단말(Leaf) Row 인지 반환하는 메서드입니다.">
         <Syntax text="Grid.isTreeLeafRow( nRowIndex[,bDatasetRow] )">
           <Return type="Boolean" description="특정 Row 가 자식 Row 가 없는 단말(Leaf) Row 이면 &quot;true&quot;를 반환합니다.&#xA;&#xA;특정 Row 가 자식 Row 를 갖는 비단말 Row 이면 &quot;false&quot;를 반환합니다.&#xA;Grid 가 트리형식이 아니거나 nRowIndex 에 해당하는 Row 가 없는 경우 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -960,7 +960,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="isTreeRootRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 뿌리(Root) Row 인지 반환하는 메소드입니다.">
+      <Method name="isTreeRootRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 가 뿌리(Root) Row 인지 반환하는 메서드입니다.">
         <Syntax text="Grid.isTreeRootRow( nRowIndex [,bDatasetRow] )">
           <Return type="Boolean" description="특정 Row 가 부모 Row 가 없는 뿌리(Root) Row 이면 &quot;true&quot;를 반환합니다.&#xA;&#xA;특정 Row 가 부모 Row 를 갖는 Row 이면 &quot;false&quot;를 반환합니다.&#xA;Grid 가 트리형식이 아니거나 nRowIndex 에 해당하는 Row 가 없는 경우 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -969,18 +969,18 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="mergeCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 영역의 Cell 들을 병합하여 하나의 Cell 로 표시하는 메소드입니다.">
+      <Method name="mergeCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 영역의 Cell 들을 병합하여 하나의 Cell 로 표시하는 메서드입니다.">
         <Syntax text="Grid.mergeCell( nStartCol, nEndCol, nStartRow, nEndRow )">
-          <Return type="Boolean" description="메소드가 정상적으로 수행되면 true 를 반환합니다.&#xA;&#xA;메소드가 정상적으로 수행되지 않으면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드가 정상적으로 수행되면 true 를 반환합니다.&#xA;&#xA;메서드가 정상적으로 수행되지 않으면 false 를 반환합니다." />
           <Arguments>
             <Argument name="nEndCol" type="Number" in="false" out="false" option="false" variable="false" description="병합 하려는 Cell 중 오른쪽에 위치한 Cell 의 Column 인덱스를 숫자로 설정합니다.&#xA;&#xA;Grid 의 전체 Column 을 기준으로 Column 인덱스를 설정하여야 합니다." />
-            <Argument name="nEndRow" type="Number" in="false" out="false" option="false" variable="false" description="병합 하려는 Cell 중 하단에 위치한 Cell 이 속한 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;&quot;0 ~ Row 갯수-1&quot; 범위로 설정하면 Body 밴드를 대상으로 병합됩니다. &#xA;-1 설정 시 Head 밴드를 대상으로 병합됩니다.&#xA;-2 설정 시 Summary 밴드를 대상으로 병합됩니다.&#xA;&#xA;-1 또는 -2 설정 시 nStartRow 값과 다를 경우 메소드가 정상적으로 수행되지 않습니다." />
+            <Argument name="nEndRow" type="Number" in="false" out="false" option="false" variable="false" description="병합 하려는 Cell 중 하단에 위치한 Cell 이 속한 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;&quot;0 ~ Row 갯수-1&quot; 범위로 설정하면 Body 밴드를 대상으로 병합됩니다. &#xA;-1 설정 시 Head 밴드를 대상으로 병합됩니다.&#xA;-2 설정 시 Summary 밴드를 대상으로 병합됩니다.&#xA;&#xA;-1 또는 -2 설정 시 nStartRow 값과 다를 경우 메서드가 정상적으로 수행되지 않습니다." />
             <Argument name="nStartCol" type="Number" in="false" out="false" option="false" variable="false" description="병합 하려는 Cell 중 왼쪽에 위치한 Cell 의 Column 인덱스를 숫자로 설정합니다.&#xA;&#xA;Grid 의 전체 Column 을 기준으로 Column 인덱스를 설정하여야 합니다." />
             <Argument name="nStartRow" type="Number" in="false" out="false" option="false" variable="false" description="병합 하려는 Cell 중 상단에 위치한 Cell 이 속한 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;&quot;0 ~ Row 갯수-1&quot; 범위로 설정하면 Body 밴드를 대상으로 병합됩니다. &#xA;-1 설정 시 Head 밴드를 대상으로 병합됩니다.&#xA;-2 설정 시 Summary 밴드를 대상으로 병합됩니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="mergeContentsCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되어 있는 포맷에서 특정 Cell 들을 병합(Merge) 하여 하나의 Cell로 만드는 메소드입니다.">
+      <Method name="mergeContentsCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되어 있는 포맷에서 특정 Cell 들을 병합(Merge) 하여 하나의 Cell로 만드는 메서드입니다.">
         <Syntax text="Grid.mergeContentsCell( enumBand, nStartSubRow, nStartCol, nEndSubRow, nEndCol, nFirstCell, bKeepSubCell )">
           <Return type="Number" description="병합(Merge) 한 Cell 이 속한 밴드 영역을 기준으로 Cell 인덱스를 반환합니다.&#xA;&#xA;병합(Merge)에 실패했을 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
@@ -994,7 +994,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 위치와 크기를 변경하는 메소드입니다.">
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 위치와 크기를 변경하는 메서드입니다.">
         <Syntax text="Grid.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
           <Return type="" description="" />
           <Arguments>
@@ -1016,7 +1016,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="moveToNextCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 밴드 영역에서 Cell 포커스를 편집 가능한 다음 Cell로 이동시키는 메소드입니다.">
+      <Method name="moveToNextCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 밴드 영역에서 Cell 포커스를 편집 가능한 다음 Cell로 이동시키는 메서드입니다.">
         <Syntax text="Grid.moveToNextCell()">
           <Return type="Boolean" description="Cell 포커스 이동에 성공하면 &quot;true&quot;를 반환합니다.&#xA;Cell 포커스 이동에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments />
@@ -1031,13 +1031,13 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="moveToPrevCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 밴드 영역에서 Cell 포커스를 편집 가능한 이전 Cell로 이동시키는 메소드입니다.">
+      <Method name="moveToPrevCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 밴드 영역에서 Cell 포커스를 편집 가능한 이전 Cell로 이동시키는 메서드입니다.">
         <Syntax text="Grid.moveToPrevCell()">
           <Return type="Boolean" description="Cell 포커스 이동에 성공하면 &quot;true&quot;를 반환합니다.&#xA;Cell 포커스 이동에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="redrawExprCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 Cell 에 설정된 Expr 값을 모두 갱신하는 메소드입니다.">
+      <Method name="redrawExprCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 Cell 에 설정된 Expr 값을 모두 갱신하는 메서드입니다.">
         <Syntax text="Grid.redrawExprCell( [enumBand] )">
           <Return type="" description="" />
           <Arguments>
@@ -1045,7 +1045,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 선언된 특정 이벤트를 삭제하는 메소드입니다.">
+      <Method name="removeEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 선언된 특정 이벤트를 삭제하는 메서드입니다.">
         <Syntax text="Grid.removeEvent( strEventID )">
           <Return type="Boolean" description="이벤트 삭제에 성공하면 true 를 반환합니다.&#xA;&#xA;이벤트 삭제에 실패하거나 선언되지 않은 이벤트 ID 설정 시 false 를 반환합니다." />
           <Arguments>
@@ -1053,7 +1053,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Grid.removeEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -1063,7 +1063,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메서드입니다.">
         <Syntax text="Grid.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="핸들러 함수 제거에 성공하면 1 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 0 을 반환합니다." />
           <Arguments>
@@ -1073,7 +1073,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 크기를 변경하는 메소드입니다.">
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 크기를 변경하는 메서드입니다.">
         <Syntax text="Grid.resize( vWidth, vHeight )">
           <Return type="" description="" />
           <Arguments>
@@ -1082,7 +1082,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="scrollBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 스크롤을 현재 위치에서 인수로 전달된 값만큼 이동시키는 메소드입니다.">
+      <Method name="scrollBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 스크롤을 현재 위치에서 인수로 전달된 값만큼 이동시키는 메서드입니다.">
         <Syntax text="Grid.scrollBy( nHoffsetpos, nVoffsetpos )">
           <Return type="" description="" />
           <Arguments>
@@ -1091,7 +1091,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="scrollTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 스크롤을 특정 위치로 이동시키는 메소드입니다.">
+      <Method name="scrollTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 스크롤을 특정 위치로 이동시키는 메서드입니다.">
         <Syntax text="Grid.scrollTo( nHpos, nVpos )">
           <Return type="" description="" />
           <Arguments>
@@ -1100,7 +1100,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="selectArea" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 밴드 영역에서 인수로 전달된 영역을 선택하는 메소드입니다.">
+      <Method name="selectArea" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 밴드 영역에서 인수로 전달된 영역을 선택하는 메서드입니다.">
         <Syntax text="Grid.selectArea( nStartRow, nStartCellIdx, nEndRow, nEndCellIdx )">
           <Return type="Boolean" description="인수로 전달된 영역이 정상적으로 선택되면 true 를 반환합니다.&#xA;&#xA;인수로 전달된 영역의 선택에 실패하면 false 를 반환합니다." />
           <Arguments>
@@ -1111,9 +1111,9 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="selectCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 영역에서 인수로 전달된 위치의 Cell 을 선택 또는 선택해제 하는 메소드입니다.">
+      <Method name="selectCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 영역에서 인수로 전달된 위치의 Cell 을 선택 또는 선택해제 하는 메서드입니다.">
         <Syntax text="Grid.selectCell( nRowIdx, nCellIdx [,bSelect] )">
-          <Return type="Boolean" description="메소드 수행 후 Cell 이 선택상태이면 &quot;true&quot; 를 반환합니다.&#xA;메소드 수행 후 Cell 이 선택해제 상태이면 &quot;false&quot; 를 반환합니다." />
+          <Return type="Boolean" description="메서드 수행 후 Cell 이 선택상태이면 &quot;true&quot; 를 반환합니다.&#xA;메서드 수행 후 Cell 이 선택해제 상태이면 &quot;false&quot; 를 반환합니다." />
           <Arguments>
             <Argument name="bSelect" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 Cell 의 선택상태와 관계없이 Cell 을 선택 합니다.&#xA;&quot;false&quot; 설정 시 Cell 의 선택상태와 관계없이 Cell 을 선택해제 합니다.&#xA;&#xA;값 생략 시 &quot;true&quot;로 적용됩니다." />
             <Argument name="nCellIdx" type="Number" in="false" out="false" option="false" variable="false" description="Body 밴드 영역에서 선택상태를 변경 할 Cell 의 Cell 인덱스를 설정합니다." />
@@ -1121,7 +1121,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="selectMultiRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid의 body 밴드 영역에서 파라미터로 전달된 영역에 해당하는 Row를 선택하는 메소드입니다.">
+      <Method name="selectMultiRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid의 body 밴드 영역에서 파라미터로 전달된 영역에 해당하는 Row를 선택하는 메서드입니다.">
         <Syntax text="Grid.selectMultiRow(nStrarRow, nEndRow)">
           <Return type="Boolean" description="파라미터로 전달된 영역이 정상적으로 선택되면 true를 반환합니다.&#xA;&#xA;파라미터로 전달된 영역 선택에 실패하면 fasle를 반환합니다." />
           <Arguments>
@@ -1130,9 +1130,9 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="selectRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 영역에서 인수로 전달된 위치의 Row 를 선택 또는 선택해제 하는 메소드입니다.">
+      <Method name="selectRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 Body 영역에서 인수로 전달된 위치의 Row 를 선택 또는 선택해제 하는 메서드입니다.">
         <Syntax text="Grid.selectRow( nRowIdx [,bSelect] )">
-          <Return type="Boolean" description="Row 의 선택상태가 메소드 실행 전과 반대 상태로 변경되면 true 를 반환합니다.&#xA;&#xA;Row 의 선택상태가 메소드 실행 전과 동일하면 false 를 반환합니다." />
+          <Return type="Boolean" description="Row 의 선택상태가 메서드 실행 전과 반대 상태로 변경되면 true 를 반환합니다.&#xA;&#xA;Row 의 선택상태가 메서드 실행 전과 동일하면 false 를 반환합니다." />
           <Arguments>
             <Argument name="bSelect" type="Boolean" in="false" out="false" option="false" variable="false" description="true 설정 시 Row 의 선택상태와 관계없이 Row 를 선택 합니다.&#xA;false 설정 시 Row 의 선택상태와 관계없이 Row 를 선택해제 합니다.&#xA;&#xA;값 생략 시 true 로 적용됩니다." />
             <Argument name="nRowIdx" type="Number" in="false" out="false" option="false" variable="false" description="Body 영역에서 선택상태를 변경 할 Grid 의 Row  인덱스를 숫자로 설정합니다." />
@@ -1151,7 +1151,7 @@
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="setBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Row 관련 밴드의 특정 속성값을 설정하는 메소드입니다.">
+      <Method name="setBandProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Row 관련 밴드의 특정 속성값을 설정하는 메서드입니다.">
         <Syntax text="Grid.setBandProperty( enumBand, strPropID, varValue )">
           <Return type="Boolean" description="특정 밴드의 속성값 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;특정 밴드의 속성값 설정에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1161,7 +1161,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 binddataset 속성에 DataSet 오브젝트를 설정하는 메소드입니다.">
+      <Method name="setBindDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 binddataset 속성에 DataSet 오브젝트를 설정하는 메서드입니다.">
         <Syntax text="Grid.setBindDataset( objDataset )">
           <Return type="" description="" />
           <Arguments>
@@ -1169,7 +1169,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setCellPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 Cell 을 선택하는 메소드입니다.">
+      <Method name="setCellPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 Cell 중 특정 Cell 을 선택하는 메서드입니다.">
         <Syntax text="Grid.setCellPos( nCellIdx [, nRowIdx] )">
           <Return type="Boolean" description="특정 Cell 선택에 성공하면 true 를 반환합니다.&#xA;&#xA;특정 Cell 선택에 실패하면 false 를 반환합니다." />
           <Arguments>
@@ -1178,7 +1178,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 특정 속성값을 설정하는 메소드입니다.">
+      <Method name="setCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 의 특정 속성값을 설정하는 메서드입니다.">
         <Syntax text="Grid.setCellProperty( enumBand, nCellIdx, strPropID, varValue )">
           <Return type="Boolean" description="Cell 의 특정 속성값 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;Cell 의 특정 속성값 설정에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1189,7 +1189,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEditingValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤 또는 서브컨트롤의 value 속성을 설정하는 메소드입니다.">
+      <Method name="setEditingValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤 또는 서브컨트롤의 value 속성을 설정하는 메서드입니다.">
         <Syntax text="Grid.setEditingValue( strValue )">
           <Return type="" description="" />
           <Arguments>
@@ -1197,7 +1197,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 편집기에 표시되는 텍스트를 인수로 전달된 영역만큼 선택하는 메소드입니다.">
+      <Method name="setEditSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집상태일 때 편집기에 표시되는 텍스트를 인수로 전달된 영역만큼 선택하는 메서드입니다.">
         <Syntax text="Grid.setEditSelect( nBegin [,nEnd] )">
           <Return type="Boolean" description="텍스트의 영역선택에 성공하면 true 를 반환합니다.&#xA;&#xA;텍스트의 영역선택에 실패하면 false 를 반환합니다." />
           <Arguments>
@@ -1206,7 +1206,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성을 설정하는 메소드입니다.">
+      <Method name="setEditValue" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 편집모드일 때 표시되는 컨트롤의 value 속성을 설정하는 메서드입니다.">
         <Syntax text="Grid.setEditValue( strValue )">
           <Return type="" description="" />
           <Arguments>
@@ -1214,7 +1214,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메서드입니다.">
         <Syntax text="Grid.setEventHandler( strEventID, objFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -1224,7 +1224,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메서드입니다.">
         <Syntax text="Grid.setEventHandlerLookup( strEventID, strFunc, objTarget )">
           <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 0 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 -1 을 반환합니다." />
           <Arguments>
@@ -1234,7 +1234,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFixedRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 스크롤 시 인수로 전달된 Row 까지 스크롤 되지 않고 행고정 시키는 메소드입니다.">
+      <Method name="setFixedRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 스크롤 시 인수로 전달된 Row 까지 스크롤 되지 않고 행고정 시키는 메서드입니다.">
         <Syntax text="Grid.setFixedRow( nRowIndex );">
           <Return type="" description="" />
           <Arguments>
@@ -1242,15 +1242,15 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 포커스를 주는 메소드입니다.">
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 포커스를 주는 메서드입니다.">
         <Syntax text="Grid.setFocus( [bMoveScroll] )">
-          <Return type="Object" description="Grid 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메소드 실행에 실패한 경우에는 null을 반환합니다." />
+          <Return type="Object" description="Grid 이(가) 포커스를 얻기 전에 포커스를 가지고 있던 컴포넌트를 반환합니다.&#xA;이전에 포커스를 가진 컴포넌트가 없거나 메서드 실행에 실패한 경우에는 null을 반환합니다." />
           <Arguments>
             <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우, Grid 기준으로 스크롤을 이동할지 여부를 설정합니다.&#xA;&#xA;true: Grid 이(가) 화면에 표시되도록 스크롤을 이동합니다.&#xA;false: Grid 위치와 관계없이 스크롤을 이동하지 않습니다.&#xA;&#xA;값을 지정하지 않으면 기본값은 true입니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 여러개의 포맷이 정의되어 있을 때 화면에 표시할 포맷을 설정하는 메소드입니다.">
+      <Method name="setFormat" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 여러개의 포맷이 정의되어 있을 때 화면에 표시할 포맷을 설정하는 메서드입니다.">
         <Syntax text="Grid.setFormat( strFormatID )">
           <Return type="Boolean" description="화면에 표시되는 포맷 설정에 성공했을 경우 &quot;true&quot;를 반환합니다.&#xA;화면에 표시되는 포맷 설정에 실패했을 경우 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1258,7 +1258,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFormatColProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Column 의 속성값을 설정하는 메소드입니다.">
+      <Method name="setFormatColProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Column 의 속성값을 설정하는 메서드입니다.">
         <Syntax text="Grid.setFormatColProperty( nColIdx, strPropID, varValue )">
           <Return type="Boolean" description="Column 의 속성값 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;Column 의 속성값 설정에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1268,7 +1268,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setFormatRowProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Row 의 속성값을 설정하는 메소드입니다">
+      <Method name="setFormatRowProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에 정의된 Row 의 속성값을 설정하는 메서드입니다">
         <Syntax text="Grid.setFormatRowProperty( nRowIdx, strPropID, varValue )">
           <Return type="Boolean" description="Row 의 속성값 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;Row 의 속성값 설정에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1287,7 +1287,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 bottom 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Grid.setOffsetBottom( nBottom );">
           <Return type="" description="" />
           <Arguments>
@@ -1295,7 +1295,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 높이를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 높이를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Grid.setOffsetHeight( nHeight );">
           <Return type="" description="" />
           <Arguments>
@@ -1303,7 +1303,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 left 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Grid.setOffsetLeft( nLeft );">
           <Return type="" description="" />
           <Arguments>
@@ -1311,7 +1311,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Left 위치를 기준으로 Grid 의 right 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Grid.setOffsetRight( nRight );">
           <Return type="" description="" />
           <Arguments>
@@ -1319,7 +1319,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="부모 컴포넌트의 Top 위치를 기준으로 Grid 의 top 값을 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Grid.setOffsetTop( nTop );">
           <Return type="" description="" />
           <Arguments>
@@ -1327,7 +1327,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 너비를 픽셀단위로 설정하는 메소드입니다.">
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 의 너비를 픽셀단위로 설정하는 메서드입니다.">
         <Syntax text="Grid.setOffsetWidth( nWidth );">
           <Return type="" description="" />
           <Arguments>
@@ -1335,7 +1335,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setRealColSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 특정 Column 의 너비를 설정하는 메소드입니다.">
+      <Method name="setRealColSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되고 있는 포맷에서 특정 Column 의 너비를 설정하는 메서드입니다.">
         <Syntax text="Grid.setRealColSize( enumBand, nColIndex, nSize [, bBandIndex] )">
           <Return type="Boolean" description="특정 Column 의 너비 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;특정 Column 의 너비 설정에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1346,7 +1346,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setRealRowSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 데이터 Row 에서 특정 Row 또는 SubRow 의 높이를 설정하는 메소드입니다.">
+      <Method name="setRealRowSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시된 데이터 Row 에서 특정 Row 또는 SubRow 의 높이를 설정하는 메서드입니다.">
         <Syntax text="Grid.setRealRowSize( nRowIdx, nSize [, nSubRowIdx [, bBody]] )">
           <Return type="Boolean" description="특정 Row 또는 SubRow 의 높이 설정에 성공하면 true 를 반환합니다.&#xA;&#xA;특정 Row 또는 SubRow 의 높이 설정에 실패하거나 동일한 높이를 설정하면 false 를 반환합니다." />
           <Arguments>
@@ -1357,7 +1357,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setSubCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Sub Cell 구조일 때 특정 Sub Cell 의 속성값을 설정하는 메소드입니다.">
+      <Method name="setSubCellProperty" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Cell 이 Sub Cell 구조일 때 특정 Sub Cell 의 속성값을 설정하는 메서드입니다.">
         <Syntax text="Grid.setSubCellProperty( enumBand, nCelIdx, nSubCellIdx, strPropID, varValue )">
           <Return type="Boolean" description="특정 Sub Cell 의 속성값 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;특정 Sub Cell 의 속성값 설정에 실패하면 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1369,7 +1369,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="setTreeStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 트리 상태를 설정하는 메소드입니다.">
+      <Method name="setTreeStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 가 트리 형식일 때 특정 Row 의 트리 상태를 설정하는 메서드입니다.">
         <Syntax text="Grid.setTreeStatus( nRowIndex, bTreeStatus )">
           <Return type="Boolean" description="특정 Row 의 트리 상태 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;특정 Row 의 트리 상태 설정에 실패하면 &quot;false&quot;를 반환합니다.&#xA;Grid 가 트리형식이 아니거나 nRowIndex 에 해당하는 Row 가 없는 경우 &quot;false&quot;를 반환합니다." />
           <Arguments>
@@ -1378,34 +1378,34 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Grid 을(를) 화면에 표시하는 메소드입니다.">
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="스크립트로 동적 생성한 Grid 을(를) 화면에 표시하는 메서드입니다.">
         <Syntax text="Grid.show()">
           <Return type="" description="" />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="showEditor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 선택된 Cell 이 편집 가능할 경우에 편집기 표시 여부를 설정하는 메소드입니다.">
+      <Method name="showEditor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 선택된 Cell 이 편집 가능할 경우에 편집기 표시 여부를 설정하는 메서드입니다.">
         <Syntax text="Grid.showEditor( bShow )">
-          <Return type="Boolean" description="메소드가 정상적으로 수행되면 true 를 반환합니다.&#xA;메소드가 정상적으로 수행되지 못하면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드가 정상적으로 수행되면 true 를 반환합니다.&#xA;메서드가 정상적으로 수행되지 못하면 false 를 반환합니다." />
           <Arguments>
             <Argument name="bShow" type="Boolean" in="false" out="false" option="false" variable="false" description="현재 선택된 Cell 에 편집기를 표시할지 설정합니다.&#xA;&#xA;true 설정 시 현재 선택된 Cell 이 편집상태가 되며 편집기가 표시됩니다.&#xA;false 설정 시 현재 선택된 Cell 의 편집상태가 해제되고 편집기가 표시되지 않습니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="splitCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="mergeCell() 메소드로 병합된 Cell 을 분할하는 메소드입니다.">
+      <Method name="splitCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="mergeCell() 메서드로 병합된 Cell 을 분할하는 메서드입니다.">
         <Syntax text="Grid.splitCell( nStartCol, nEndCol, nStartRow, nEndRow )">
-          <Return type="Boolean" description="메소드가 정상적으로 수행되면 true 를 반환합니다.&#xA;&#xA;메소드가 정상적으로 수행되지 않으면 false 를 반환합니다." />
+          <Return type="Boolean" description="메서드가 정상적으로 수행되면 true 를 반환합니다.&#xA;&#xA;메서드가 정상적으로 수행되지 않으면 false 를 반환합니다." />
           <Arguments>
             <Argument name="nEndCol" type="Number" in="false" out="false" option="false" variable="false" description="병합 Cell 내에서 오른쪽에 위치한 Cell 의 Column 인덱스를 숫자로 설정합니다.&#xA;&#xA;Grid 의 전체 Column 을 기준으로 Column 인덱스를 설정하여야 합니다." />
-            <Argument name="nEndRow" type="Number" in="false" out="false" option="false" variable="false" description="병합 Cell 내에서 하단에 위치한 Cell 이 속한 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;&quot;0 ~ Row 갯수-1&quot; 범위로 설정하면 Body 밴드를 대상으로 분할됩니다. &#xA;-1 설정 시 Head 밴드를 대상으로 분할됩니다.&#xA;-2 설정 시 Summary 밴드를 대상으로 분할됩니다.&#xA;&#xA;-1 또는 -2 설정 시 nStartRow 값과 다를 경우 메소드가 정상적으로 수행되지 않습니다." />
+            <Argument name="nEndRow" type="Number" in="false" out="false" option="false" variable="false" description="병합 Cell 내에서 하단에 위치한 Cell 이 속한 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;&quot;0 ~ Row 갯수-1&quot; 범위로 설정하면 Body 밴드를 대상으로 분할됩니다. &#xA;-1 설정 시 Head 밴드를 대상으로 분할됩니다.&#xA;-2 설정 시 Summary 밴드를 대상으로 분할됩니다.&#xA;&#xA;-1 또는 -2 설정 시 nStartRow 값과 다를 경우 메서드가 정상적으로 수행되지 않습니다." />
             <Argument name="nStartCol" type="Number" in="false" out="false" option="false" variable="false" description="병합 Cell 내에서 왼쪽에 위치한 Cell 의 Column 인덱스를 숫자로 설정합니다.&#xA;&#xA;Grid 의 전체 Column 을 기준으로 Column 인덱스를 설정하여야 합니다." />
             <Argument name="nStartRow" type="Number" in="false" out="false" option="false" variable="false" description="병합 Cell 내에서 상단에 위치한 Cell 이 속한 Row 의 인덱스를 숫자로 설정합니다.&#xA;&#xA;&quot;0 ~ Row 갯수-1&quot; 범위로 설정하면 Body 밴드를 대상으로 분할됩니다. &#xA;-1 설정 시 Head 밴드를 대상으로 분할됩니다.&#xA;-2 설정 시 Summary 밴드를 대상으로 분할됩니다." />
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="splitContentsCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되어 있는 포맷의 Cell 중 병합(Merge) 된 Cell 을 분할하는 메소드입니다.">
+      <Method name="splitContentsCell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에 표시되어 있는 포맷의 Cell 중 병합(Merge) 된 Cell 을 분할하는 메서드입니다.">
         <Syntax text="Grid.splitContentsCell( enumBand, nStartSubRow, nStartCol, nEndSubRow, nEndCol, bMakeSubCell )">
-          <Return type="Number" description="병합(Merge) Cell 이 분할되어 생성된 Cell 의 갯수를 반환합니다.&#xA;메소드가 정상적으로 수행되지 않은 경우 &quot;-1&quot;을 반환합니다." />
+          <Return type="Number" description="병합(Merge) Cell 이 분할되어 생성된 Cell 의 갯수를 반환합니다.&#xA;메서드가 정상적으로 수행되지 않은 경우 &quot;-1&quot;을 반환합니다." />
           <Arguments>
             <Argument name="bMakeSubCell" type="Boolean" in="false" out="false" option="false" variable="false" description="Sub Cell 이 없는 Merge Cell을 분할할지 여부를 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 Sub Cell 이 없는 Merge Cell 도 분할합니다.&#xA;&quot;false&quot; 설정 시 Sub Cell 이 없는 Merge Cell 은 분할하지 않습니다." />
             <Argument name="enumBand" type="String" in="false" out="false" option="false" variable="false" description="분할 하려는 Cell 이 속한 밴드 영역을 문자열로 설정합니다.&#xA;&#xA;&quot;head&quot; 설정 시 Head 밴드 영역의 Cell 을 분할 합니다.&#xA;&quot;body&quot; 설정 시 Body 밴드 밴드 영역의 Cell 을 분할 합니다.&#xA;&quot;summary&quot; 설정 시 Summary 밴드 영역의 Cell 을 분할 합니다." />
@@ -1416,7 +1416,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="updateToDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 편집중인 값을 바인드 된 DataSet 에 즉시 반영시키는 메소드입니다.">
+      <Method name="updateToDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Grid 에서 편집중인 값을 바인드 된 DataSet 에 즉시 반영시키는 메서드입니다.">
         <Syntax text="Grid.updateToDataset()">
           <Return type="Boolean" description="Grid 에서 편집중인 값을 바인드 된 DataSet 에 반영하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;Grid 에서 편집중인 값을 바인드 된 DataSet 에 반영하지 못하거나 Grid 가 편집중이 아니면 &quot;false&quot; 를 반환합니다." />
           <Arguments />

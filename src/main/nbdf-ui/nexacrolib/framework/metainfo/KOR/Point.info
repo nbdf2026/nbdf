@@ -12,13 +12,13 @@
     <StatusInfo />
     <ControlInfo />
     <MethodInfo>
-      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Point 오브젝트의 속성값을 복사하여 새로운 Point 오브젝트를 반환하는 메소드입니다.">
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="Point 오브젝트의 속성값을 복사하여 새로운 Point 오브젝트를 반환하는 메서드입니다.">
         <Syntax text="Point.clone()">
           <Return type="Object" description="현재 Point 오브젝트의 값을 복사한 새로운 Point 오브젝트를 반환합니다." />
           <Arguments />
         </Syntax>
       </Method>
-      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 값을 Point 오브젝트의 x, y 속성값으로 복사하는 메소드입니다.">
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="인수로 전달된 값을 Point 오브젝트의 x, y 속성값으로 복사하는 메서드입니다.">
         <Syntax text="Point.copy( objPoint )&#xA;Point.copy( nX, nY )">
           <Return type="" description="" />
           <Arguments>
@@ -28,7 +28,7 @@
           </Arguments>
         </Syntax>
       </Method>
-      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Point 오브젝트의 속성값과 인수로 전달된 값의 일치여부를 반환하는 메소드입니다.">
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Edge,Chrome,Safari,Firefox,Opera,Windows NRE,macOS NRE,Android NRE,iOS/iPadOS NRE,Android Default Web Browser,iOS/iPadOS Default Web Browser" description="현재 Point 오브젝트의 속성값과 인수로 전달된 값의 일치여부를 반환하는 메서드입니다.">
         <Syntax text="Point.equals( objPoint )&#xA;Point.equals( arrVal )&#xA;Point.equals( nX, nY )">
           <Return type="Boolean" description="Point 오브젝트에 저장된 x, y 속성값과 인수로 전달된 값이 모두 일치하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;Point 오브젝트에 저장된 x, y 속성값과 인수로 전달된 값이 하나라도 다르면 &quot;false&quot; 를 반환합니다." />
           <Arguments>

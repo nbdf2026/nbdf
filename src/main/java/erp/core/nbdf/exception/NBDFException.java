@@ -74,8 +74,7 @@ public class NBDFException extends RuntimeException {
 	}
 	
 	/**
-	 * 메시지 코드를 반환
-	 * 
+	 * 메시지 코드를 반환 
 	 * @return 	: 메시지 코드
 	 */
 	public String getMessageCode() {
@@ -84,7 +83,6 @@ public class NBDFException extends RuntimeException {
 	
 	/**
 	 * 메시지 치환 변수를 반환
-	 * 
 	 * @return 	: 메시지 치환 변수
 	 */
 	public Object[] getMessageArguments() {
