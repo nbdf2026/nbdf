@@ -1,0 +1,33 @@
+NBDF Framework Architecture Guide
+
+1. Overview
+
+2. Package Structure
+
+3. Layer Structure
+
+4. Class Diagram
+
+5. Sequence Diagram
+
+6. Builder Pattern
+
+7. Metadata Design
+
+8. Exception Policy
+
+9. Message Policy
+
+10. Coding Convention
+
+11. Naming Convention
+
+12. Version History
+
+
+
+SRP(단일 책임 원칙): 클래스는 하나의 역할만 담당
+레이어 분리: Metadata, Builder, Result, Converter 등 계층 간 책임을 명확히 분리
+확장성 우선: 기능 추가 시 기존 코드 수정은 최소화
+표준화: 주석, 네이밍, 예외 처리, 메시지 체계를 일관되게 유지
+Nexacro 의존 최소화: 가능한 한 NBDF 내부 모델을 중심으로 설계하고, Nexacro 연계는 Converter에

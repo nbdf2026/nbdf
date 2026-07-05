@@ -67,7 +67,7 @@ public class COM10000MController {
 		log.debug("userID					: " + userId);
 		log.debug("############################################################");
 		
-		//자바 데이터 형식에서 넥사크로 데이터셋 형식으로 데이터 전환을 위한 변수
+		//자바 데이터 형식에서 넥사크로 DataSet 형식으로 데이터 전환을 위한 변수
 		NexacroResult result = new NexacroResult();
 		
 		//공통코드 조회

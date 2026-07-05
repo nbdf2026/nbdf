@@ -11,7 +11,7 @@
 
 /**
  * @description		dataSet 데이터 변경여부 체크
- * @param 			{objDs			: nexacro.NormalDataset} 	데이터셋
+ * @param 			{objDs			: nexacro.NormalDataset} 	DataSet
  * @return 			{bDsChange		: boolen} 					true, false
  */  
 pForm.gfn_dataSetChange = function(objDs)
@@ -49,8 +49,8 @@ pForm.gfn_dataSetChange = function(objDs)
  * @description		DataSet 데이터를 갱신하기 위한 서비스를 호출하는 트랜잭션 함수
  * @param 			{sSvcID			: String}	서비스ID 명칭
  * @param  			{sSvcURL		: String} 	controller 호출하기 위한 서비스 URL
- * @param  			{sInDataSets	: String} 	input 데이터셋 (input=ds_codeType)
- * @param  			{sOutDataSets	: String} 	output 데이터셋 (ds_codeType=output)
+ * @param  			{sInDataSets	: String} 	input DataSet (input=ds_codeType)
+ * @param  			{sOutDataSets	: String} 	output DataSet (ds_codeType=output)
  * @param  			{sCallbackFunc	: String} 	call back function 명칭
  * @param  			{bAsync			: Boolean} 	true(비동기), false(동기)
  * @param  			{nDataType		: Number} 	서버로 데이터 전송 형식 (XML-0, binary-1, SSV-2, JSON-2)

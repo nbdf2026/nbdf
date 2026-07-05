@@ -10,118 +10,119 @@ import erp.core.nbdf.constants.NBDFNexacroType;
 * @fileName       	: NBDFColumn.java
 * @author         	: Built1
 * @date           	: 2026.07.01
-* @description    	: JDBC ResultSet 기반 컬럼 정보를 NBDF 표준 메타데이터로 관리하는 클래스
-*  
- * <pre>
- * --------------------------------------------------------------
- * [1] NBDF Layer Structure
- * --------------------------------------------------------------
- * 1. Metadata Layer (Current)
- * 2. Builder Layer
- * 3. Constants Layer
- * 4. Exception Layer
- * 5. Type Mapping Layer
- * 6. Utility Layer
- * 7. Result Layer
- * 8. Message Layer
- * 9. Validation Layer
- * 10. Converter Layer
- * 11. Configuration Layer
- * 12. Extension Layer
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [2] NBDF Processing Flow
- * --------------------------------------------------------------
- * Database
- *      ↓
- * ResultSetMetaData
- *      ↓
- * NBDFMetaDataReader
- *      ↓
- * NBDFColumn (Current Module)
- *      ↓
- * NBDFDataSetBuilder
- *      ↓
- * DataSet ColumnInfo
- *      ↓
- * NBDFTransferData
- *      ↓
- * PlatformData
- *      ↓
- * Nexacro Client
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [3] Responsibilities
- * --------------------------------------------------------------
- * 1. 데이터베이스 컬럼 메타데이터를 관리
- * 2. 컬럼명, 데이터 타입, 길이 등의 속성을 보관
- * 3. Java, JDBC, NBDF 및 Nexacro 타입 정보를 관리
- * 4. DataSet ColumnInfo 생성의 기준 정보를 제공
- * 5. Metadata Layer의 표준 컬럼 객체 역할을 수행
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [4] Key Features
- * --------------------------------------------------------------
- * 1. 컬럼 메타데이터 통합 관리
- * 2. JDBC / Java / NBDF / Nexacro 타입 정보 제공
- * 3. 컬럼 길이, 정밀도, Scale 정보 관리
- * 4. Nullable 및 Primary Key 속성 관리
- * 5. DataSet ColumnInfo 생성 지원
- * 6. DBMS 독립적인 컬럼 정보 관리
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [5] Design Principles
- * --------------------------------------------------------------
- * 1. 컬럼 메타데이터만 관리하는 POJO 객체
- * 2. Builder Layer와 역할 분리
- * 3. DBMS 독립적인 구조 유지
- * 4. 데이터 타입의 일관성 유지
- * 5. 확장 가능한 메타데이터 모델 제공
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [6] Related Classes
- * --------------------------------------------------------------
- * ResultSetMetaData
- *      ↓
- * NBDFMetaDataReader
- *      ↓
- * NBDFColumn (Current)
- *      ↓
- * NBDFDataTypeMapper
- *      ↓
- * NBDFDataSetBuilder
- *      ↓
- * NBDFTransferDataBuilder
- *      ↓
- * NBDFTransferData
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [7] Extension Point
- * --------------------------------------------------------------
- * 컬럼 기본값(Default Value),
- * 컬럼 설명(Comment),
- * Unique 여부,
- * Auto Increment,
- * Display Format,
- * Mask 정보 등
- * 추가 메타데이터가 필요한 경우,
- * NBDFColumn 속성을 확장하여 Builder Layer에서 동일하게 활용할 수 있음
- * --------------------------------------------------------------
- *
- * </pre>
-* 
+* @description    	: JDBC ResultSet 기반 컬럼 정보를 NBDF 표준 메타데이터로 관리하는 클래스 
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
 * 2026.07.01        Built1             최초 생성
 */
 public class NBDFColumn implements Serializable {
+	
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
+	 * [1] NBDF Layer Structure
+	 * --------------------------------------------------------------
+	 * 1. Metadata Layer (Current)
+	 * 2. Builder Layer
+	 * 3. Constants Layer
+	 * 4. Exception Layer
+	 * 5. Type Mapping Layer
+	 * 6. Utility Layer
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
+	 * 11. Configuration Layer
+	 * 12. Extension Layer
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [2] NBDF Processing Flow
+	 * --------------------------------------------------------------
+	 * Database
+	 *      ↓
+	 * ResultSetMetaData
+	 *      ↓
+	 * NBDFMetaDataReader
+	 *      ↓
+	 * NBDFColumn (Current Module)
+	 *      ↓
+	 * NBDFDataSetBuilder
+	 *      ↓
+	 * DataSet ColumnInfo
+	 *      ↓
+	 * NBDFTransferData
+	 *      ↓
+	 * PlatformData
+	 *      ↓
+	 * Nexacro Client
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [3] Responsibilities
+	 * --------------------------------------------------------------
+	 * 1. 데이터베이스 컬럼 메타데이터를 관리
+	 * 2. 컬럼명, 데이터 타입, 길이 등의 속성을 보관
+	 * 3. Java, JDBC, NBDF 및 Nexacro 타입 정보를 관리
+	 * 4. DataSet ColumnInfo 생성의 기준 정보를 제공
+	 * 5. Metadata Layer의 표준 컬럼 객체 역할을 수행
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [4] Key Features
+	 * --------------------------------------------------------------
+	 * 1. 컬럼 메타데이터 통합 관리
+	 * 2. JDBC / Java / NBDF / Nexacro 타입 정보 제공
+	 * 3. 컬럼 길이, 정밀도, Scale 정보 관리
+	 * 4. Nullable 및 Primary Key 속성 관리
+	 * 5. DataSet ColumnInfo 생성 지원
+	 * 6. DBMS 독립적인 컬럼 정보 관리
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [5] Design Principles
+	 * --------------------------------------------------------------
+	 * 1. 컬럼 메타데이터만 관리하는 POJO 객체
+	 * 2. Builder Layer와 역할 분리
+	 * 3. DBMS 독립적인 구조 유지
+	 * 4. 데이터 타입의 일관성 유지
+	 * 5. 확장 가능한 메타데이터 모델 제공
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [6] Related Classes
+	 * --------------------------------------------------------------
+	 * ResultSetMetaData
+	 *      ↓
+	 * NBDFMetaDataReader
+	 *      ↓
+	 * NBDFColumn (Current)
+	 *      ↓
+	 * NBDFDataTypeMapper
+	 *      ↓
+	 * NBDFDataSetBuilder
+	 *      ↓
+	 * NBDFTransferDataBuilder
+	 *      ↓
+	 * NBDFTransferData
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [7] Extension Point
+	 * --------------------------------------------------------------
+	 * 컬럼 기본값(Default Value),
+	 * 컬럼 설명(Comment),
+	 * Unique 여부,
+	 * Auto Increment,
+	 * Display Format,
+	 * Mask 정보 등
+	 * 추가 메타데이터가 필요한 경우,
+	 * NBDFColumn 속성을 확장하여 Builder Layer에서 동일하게 활용할 수 있음
+	 * --------------------------------------------------------------
+	 *
+	 * </pre>
+	 */
 	
 	/**
 	 * Serializable Version UID

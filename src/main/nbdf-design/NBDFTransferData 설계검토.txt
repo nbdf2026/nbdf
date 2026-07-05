@@ -1,0 +1,203 @@
+NBDFTransferData.java 설계검토
+
+NBDF의 핵심(Core)
+- 실제 데이터가 흘러가는 구조를 구현
+
+                Controller
+                     │
+                     ▼
+                Service Layer
+                     │
+                     ▼
+             Mapper(MyBatis)
+                     │
+                     ▼
+               ResultSet(JDBC)
+                     │
+                     ▼
+            NBDFMetaDataReader
+                     │
+                     ▼
+               List<NBDFColumn>
+                     │
+                     ▼
+            NBDFDataSetBuilder
+                     │
+                     ▼
+                 DataSet
+                     │
+                     ▼
+         NBDFTransferDataBuilder
+                     │
+                     ▼
+             NBDFTransferData
+                     │
+                     ▼
+                 NBDFResult
+                     │
+                     ▼
+               PlatformData
+                     │
+                     ▼
+          HttpPlatformResponse
+                     │
+                     ▼
+              Nexacro Client
+              
+              
+NBDFTransferData
+- ransfer Object + Container
+- 전송 객체의 부모
+
+NBDFTransferData
+├── Variables
+├── DataSets
+├── Message(확장)
+├── Paging(확장)
+├── File(확장)
+└── Etc...
+
+제공될 메서드
+addDataSet()
+getDataSet()
+containsDataSet()
+removeDataSet()
+clearDataSet()
+getDataSets()
+
+addVariable()
+getVariable()
+containsVariable()
+removeVariable()
+clearVariable()
+getVariables()
+
+isEmpty()
+size()
+clear()
+
+
+NBDFTransferData
+        ↓
+NBDFTransferDataBuilder
+        ↓
+NBDFPlatformDataConverter
+        ↓
+NBDFResult 완성
+        ↓
+NBDFExceptionHandler
+        ↓
+Message Layer
+        ↓
+Validation Layer
+
+
+설명 및 다음 개발 순서
+NBDFTransferData (전송 데이터 컨테이너 구현)
+NBDFTransferDataBuilder (전송 객체 생성)
+NBDFPlatformDataConverter (NBDFTransferData → PlatformData 변환)
+NBDFResult 보완 및 완료
+NBDFExceptionHandler 및 메시지 연계
+
+
+최종적으로 정리한 NBDF Architecture (Ver 1.0)
+erp.core.nbdf
+│
+├── builder
+│     ├── NBDFDataSetBuilder
+│     ├── NBDFTransferDataBuilder
+│     └── NBDFResultBuilder (예정)
+│
+├── constants
+│     ├── NBDFConstants
+│     ├── NBDFJavaType
+│     └── NBDFNexacroType
+│
+├── converter
+│     └── NBDFPlatformDataConverter (예정)
+│
+├── exception
+│     ├── NBDFException
+│     └── NBDFExceptionHandler (예정)
+│
+├── metadata
+│     ├── NBDFColumn
+│     ├── NBDFMetaDataReader
+│     └── NBDFDataTypeMapper
+│
+├── result
+│     ├── NBDFTransferData
+│     └── NBDFResult
+│
+├── validation (예정)
+│
+├── message (예정)
+│
+└── util (예정)
+
+
+① 역할(Responsibility)
+
+② 처리 흐름(Flow)
+
+③ 클래스 관계(Related Classes)
+
+④ 확장성(Extension Point)
+
+
+
+
+최종 NBDF Architecture
+
+Application
+──────────────────────────────────────────────
+
+Controller
+
+↓
+
+Service
+
+↓
+
+MyBatis
+
+↓
+
+JDBC
+
+──────────────────────────────────────────────
+
+NBDF Framework
+
+Metadata Layer
+
+↓
+
+Builder Layer
+
+↓
+
+Transfer Layer
+
+↓
+
+Result Layer
+
+↓
+
+Converter Layer
+
+──────────────────────────────────────────────
+
+Nexacro
+
+PlatformData
+
+↓
+
+HttpPlatformResponse
+
+↓
+
+Client

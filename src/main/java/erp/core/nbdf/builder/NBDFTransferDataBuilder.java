@@ -12,105 +12,6 @@ import erp.core.nbdf.exception.NBDFException;
 * @date           : 2026.07.03
 * @description    : NBDF 전송 데이터(TransferData)를 생성하는 Builder 클래스
 * 					View ↔ Service ↔ DAO 간 데이터 전달 표준화
-* 
-*  <pre>
- * --------------------------------------------------------------
- * [1] NBDF Layer Structure
- * --------------------------------------------------------------
- * 1. Metadata Layer
- * 2. Builder Layer (Current)
- * 3. Constants Layer
- * 4. Exception Layer
- * 5. Type Mapping Layer
- * 6. Utility Layer
- * 7. Result Layer
- * 8. Message Layer
- * 9. Validation Layer
- * 10. Converter Layer
- * 11. Configuration Layer
- * 12. Extension Layer
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [2] NBDF Processing Flow
- * --------------------------------------------------------------
- * Database
- *      ↓
- * ResultSet
- *      ↓
- * NBDFMetaDataReader
- *      ↓
- * NBDFDataSetBuilder
- *      ↓
- * NBDFTransferDataBuilder (Current Module)
- *      ↓
- * NBDFTransferData
- *      ↓
- * NBDFResult
- *      ↓
- * PlatformData
- *      ↓
- * Nexacro Client
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [3] Responsibilities
- * --------------------------------------------------------------
- * 1. NBDFTransferData 객체를 생성
- * 2. DataSet 및 Variable 정보를 통합
- * 3. Metadata Layer와 Builder Layer를 연결
- * 4. 전송 가능한 표준 데이터 객체를 구성
- * 5. Result Layer에서 사용할 데이터를 제공
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [4] Key Features
- * --------------------------------------------------------------
- * 1. NBDFTransferData 생성
- * 2. DataSet 통합 관리
- * 3. Variable 통합 관리
- * 4. Builder Layer의 중심 역할 수행
- * 5. 표준 전송 객체 구성
- * 6. Nexacro 전송 데이터 생성 지원
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [5] Design Principles
- * --------------------------------------------------------------
- * 1. Builder Pattern 적용
- * 2. Metadata와 DataSet 생성 로직 분리
- * 3. 전송 객체 생성 책임 집중
- * 4. 상위 계층과 하위 계층의 결합도 최소화
- * 5. 확장 가능한 Builder 구조 제공
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [6] Related Classes
- * --------------------------------------------------------------
- * ResultSet
- *      ↓
- * NBDFMetaDataReader
- *      ↓
- * NBDFDataSetBuilder
- *      ↓
- * NBDFTransferDataBuilder (Current)
- *      ↓
- * NBDFTransferData
- *      ↓
- * NBDFResult
- *      ↓
- * PlatformData
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [7] Extension Point
- * --------------------------------------------------------------
- * 신규 DataSet, Variable 또는 전송 정책이 추가되는 경우,
- * Builder 내부 구성 로직만 확장하여 상위 계층의 변경 없이 적용할 수 있음
- * --------------------------------------------------------------
- *
- * </pre>
- * 
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
@@ -118,65 +19,103 @@ import erp.core.nbdf.exception.NBDFException;
 */
 public final class NBDFTransferDataBuilder {
 	
-	/**
+	/** 
 	 * <pre>
 	 * --------------------------------------------------------------
-	 * NBDF Framework Layer
+	 * [1] NBDF Layer Structure
 	 * --------------------------------------------------------------
 	 * 1. Metadata Layer
-	 * 2. Builder Layer(현재)
+	 * 2. Builder Layer
 	 * 3. Constants Layer
 	 * 4. Exception Layer
 	 * 5. Type Mapping Layer
 	 * 6. Utility Layer
-	 * 7. Result Layer
+	 * 7. Result Layer (Current)
 	 * 8. Message Layer
 	 * 9. Validation Layer
 	 * 10. Converter Layer
+	 * 11. Configuration Layer
+	 * 12. Extension Layer
 	 * --------------------------------------------------------------
-	 * </pre>
-	 */
-	
-    /**
-     * <pre>
-     * --------------------------------------------------------------
-     * 데이터 전송 생성 흐름
-     * --------------------------------------------------------------
-     * 
-     * ResultSet
-     *      ↓
-     * NBDFMetaDataReader
-     *      ↓
-     * List<NBDFColumn>
-     *      ↓
-     * NBDFDataSetBuilder
-     *      ↓
-     * DataSet
-     *      ↓
-     * NBDFTransferDataBuilder (현재)
-     *      ↓
-     * PlatformData
-     *      ↓
-     * Nexacro Client
-     * 
-     * </pre>
-     */
-	
-	/**
-	 * <pre>
+	 *
 	 * --------------------------------------------------------------
-	 * 클래스 내 메소드 작성 순서
+	 * [2] NBDF Processing Flow
 	 * --------------------------------------------------------------
-	 * 
-	 * 1. 상수(static final) 
-	 * 2. 멤버 변수(field)
-	 * 3. 생성자(Constructor)	: NBDFTransferDataBuilder()
-	 * 4. Static Factory Method : create()
-	 * 5. 데이터 추가(Put)		: put(), putAll()
-	 * 6. 데이터 조회(Get)    	: get(), getString(), getInt()
-	 * 7. 결과 생성(Build)		: build()
-	 * 8. 초기화(Clear)    		: clear()
-	 * 
+	 * Database
+	 *      ↓
+	 * ResultSet
+	 *      ↓
+	 * NBDFMetaDataReader
+	 *      ↓
+	 * NBDFDataSetBuilder
+	 *      ↓
+	 * NBDFTransferDataBuilder (Current Module)
+	 *      ↓
+	 * NBDFTransferData
+	 *      ↓
+	 * NBDFResult
+	 *      ↓
+	 * PlatformData
+	 *      ↓
+	 * Nexacro Client
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [3] Responsibilities
+	 * --------------------------------------------------------------
+	 * 1. NBDFTransferData 객체를 생성
+	 * 2. DataSet 및 Variable 정보를 통합
+	 * 3. Metadata Layer와 Builder Layer를 연결
+	 * 4. 전송 가능한 표준 데이터 객체를 구성
+	 * 5. Result Layer에서 사용할 데이터를 제공
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [4] Key Features
+	 * --------------------------------------------------------------
+	 * 1. NBDFTransferData 생성
+	 * 2. DataSet 통합 관리
+	 * 3. Variable 통합 관리
+	 * 4. Builder Layer의 중심 역할 수행
+	 * 5. 표준 전송 객체 구성
+	 * 6. Nexacro 전송 데이터 생성 지원
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [5] Design Principles
+	 * --------------------------------------------------------------
+	 * 1. Builder Pattern 적용
+	 * 2. Metadata와 DataSet 생성 로직 분리
+	 * 3. 전송 객체 생성 책임 집중
+	 * 4. 상위 계층과 하위 계층의 결합도 최소화
+	 * 5. 확장 가능한 Builder 구조 제공
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [6] Related Classes
+	 * --------------------------------------------------------------
+	 * ResultSet
+	 *      ↓
+	 * NBDFMetaDataReader
+	 *      ↓
+	 * NBDFDataSetBuilder
+	 *      ↓
+	 * NBDFTransferDataBuilder (Current)
+	 *      ↓
+	 * NBDFTransferData
+	 *      ↓
+	 * NBDFResult
+	 *      ↓
+	 * PlatformData
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [7] Extension Point
+	 * --------------------------------------------------------------
+	 * 신규 DataSet, Variable 또는 전송 정책이 추가되는 경우,
+	 * Builder 내부 구성 로직만 확장하여 상위 계층의 변경 없이 적용할 수 있음
+	 * --------------------------------------------------------------
+	 *
 	 * </pre>
 	 */
 
@@ -212,7 +151,7 @@ public final class NBDFTransferDataBuilder {
     */
     public NBDFTransferDataBuilder put(String key, Object value) {
     	if (key == null || key.trim().isEmpty()) {
-    	    throw new NBDFException("MSG-A-20000", key); //데이터맵 저장시 키 값이 존재하지 않습니다.
+    	    throw new NBDFException("FMSG-RST-10000", key); //데이터맵 저장시 키 값이 존재하지 않습니다.
     	}
     	this.dataMap.put(key, value);
     	return this;

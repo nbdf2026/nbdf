@@ -11,120 +11,121 @@ import java.util.List;
 * @fileName       	: NBDFMetaDataReader.java
 * @author         	: Built1
 * @date           	: 2026.07.03
-* @description    	: JDBC의 ResultSetMetaData를 읽어 NBDFColumn 목록을 생성하는 클래스
-* 
- * <pre>
- * --------------------------------------------------------------
- * [1] NBDF Layer Structure
- * --------------------------------------------------------------
- * 1. Metadata Layer (Current)
- * 2. Builder Layer
- * 3. Constants Layer
- * 4. Exception Layer
- * 5. Type Mapping Layer
- * 6. Utility Layer
- * 7. Result Layer
- * 8. Message Layer
- * 9. Validation Layer
- * 10. Converter Layer
- * 11. Configuration Layer
- * 12. Extension Layer
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [2] NBDF Processing Flow
- * --------------------------------------------------------------
- * Database
- *      ↓
- * ResultSet
- *      ↓
- * ResultSetMetaData
- *      ↓
- * NBDFMetaDataReader (Current Module)
- *      ↓
- * NBDFDataTypeMapper
- *      ↓
- * NBDFColumn List
- *      ↓
- * NBDFDataSetBuilder
- *      ↓
- * NBDFTransferDataBuilder
- *      ↓
- * PlatformData
- *      ↓
- * Nexacro Client
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [3] Responsibilities
- * --------------------------------------------------------------
- * 1. ResultSetMetaData 정보를 분석
- * 2. 컬럼 메타데이터를 NBDFColumn 객체로 생성
- * 3. JDBC 데이터 타입을 NBDF 표준 타입으로 변환
- * 4. 컬럼명, 데이터 타입, 길이, 정밀도 등의 속성을 추출
- * 5. Builder Layer에서 사용할 메타데이터를 제공
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [4] Key Features
- * --------------------------------------------------------------
- * 1. ResultSetMetaData 기반 메타데이터 분석
- * 2. NBDFColumn 객체 자동 생성
- * 3. JDBC → NBDF 데이터 타입 변환
- * 4. 컬럼 속성 표준화
- * 5. DBMS 독립적인 메타데이터 처리
- * 6. Builder Layer 연계 지원
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [5] Design Principles
- * --------------------------------------------------------------
- * 1. Metadata 조회 기능만 담당(SRP)
- * 2. Builder Layer와 역할을 분리
- * 3. DBMS 독립적인 메타데이터 구조를 제공
- * 4. NBDFColumn 중심의 메타데이터 모델을 구성
- * 5. 유지보수와 확장이 용이한 구조를 제공
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [6] Related Classes
- * --------------------------------------------------------------
- * ResultSet
- *      ↓
- * ResultSetMetaData
- *      ↓
- * NBDFMetaDataReader (Current)
- *      ↓
- * NBDFDataTypeMapper
- *      ↓
- * NBDFColumn
- *      ↓
- * NBDFDataSetBuilder
- *      ↓
- * NBDFTransferDataBuilder
- * --------------------------------------------------------------
- *
- * --------------------------------------------------------------
- * [7] Extension Point
- * --------------------------------------------------------------
- * 컬럼 설명(Remarks),
- * Primary Key,
- * Auto Increment,
- * Default Value,
- * Unique,
- * Display Format 등의
- * 메타데이터가 필요한 경우,
- * Reader와 NBDFColumn만 확장하면 Builder Layer에서 동일하게 활용할 수 있음
- * --------------------------------------------------------------
- *
- * </pre>
- * 
+* @description    	: JDBC의 ResultSetMetaData를 읽어 NBDFColumn 목록을 생성하는 클래스* 
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
 * 2026.07.03        Built1             최초 생성
 */
 public final class NBDFMetaDataReader {
+	
+	/**
+	 * <pre>
+	 * --------------------------------------------------------------
+	 * [1] NBDF Layer Structure
+	 * --------------------------------------------------------------
+	 * 1. Metadata Layer (Current)
+	 * 2. Builder Layer
+	 * 3. Constants Layer
+	 * 4. Exception Layer
+	 * 5. Type Mapping Layer
+	 * 6. Utility Layer
+	 * 7. Result Layer
+	 * 8. Message Layer
+	 * 9. Validation Layer
+	 * 10. Converter Layer
+	 * 11. Configuration Layer
+	 * 12. Extension Layer
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [2] NBDF Processing Flow
+	 * --------------------------------------------------------------
+	 * Database
+	 *      ↓
+	 * ResultSet
+	 *      ↓
+	 * ResultSetMetaData
+	 *      ↓
+	 * NBDFMetaDataReader (Current Module)
+	 *      ↓
+	 * NBDFDataTypeMapper
+	 *      ↓
+	 * NBDFColumn List
+	 *      ↓
+	 * NBDFDataSetBuilder
+	 *      ↓
+	 * NBDFTransferDataBuilder
+	 *      ↓
+	 * PlatformData
+	 *      ↓
+	 * Nexacro Client
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [3] Responsibilities
+	 * --------------------------------------------------------------
+	 * 1. ResultSetMetaData 정보를 분석
+	 * 2. 컬럼 메타데이터를 NBDFColumn 객체로 생성
+	 * 3. JDBC 데이터 타입을 NBDF 표준 타입으로 변환
+	 * 4. 컬럼명, 데이터 타입, 길이, 정밀도 등의 속성을 추출
+	 * 5. Builder Layer에서 사용할 메타데이터를 제공
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [4] Key Features
+	 * --------------------------------------------------------------
+	 * 1. ResultSetMetaData 기반 메타데이터 분석
+	 * 2. NBDFColumn 객체 자동 생성
+	 * 3. JDBC → NBDF 데이터 타입 변환
+	 * 4. 컬럼 속성 표준화
+	 * 5. DBMS 독립적인 메타데이터 처리
+	 * 6. Builder Layer 연계 지원
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [5] Design Principles
+	 * --------------------------------------------------------------
+	 * 1. Metadata 조회 기능만 담당(SRP)
+	 * 2. Builder Layer와 역할을 분리
+	 * 3. DBMS 독립적인 메타데이터 구조를 제공
+	 * 4. NBDFColumn 중심의 메타데이터 모델을 구성
+	 * 5. 유지보수와 확장이 용이한 구조를 제공
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [6] Related Classes
+	 * --------------------------------------------------------------
+	 * ResultSet
+	 *      ↓
+	 * ResultSetMetaData
+	 *      ↓
+	 * NBDFMetaDataReader (Current)
+	 *      ↓
+	 * NBDFDataTypeMapper
+	 *      ↓
+	 * NBDFColumn
+	 *      ↓
+	 * NBDFDataSetBuilder
+	 *      ↓
+	 * NBDFTransferDataBuilder
+	 * --------------------------------------------------------------
+	 *
+	 * --------------------------------------------------------------
+	 * [7] Extension Point
+	 * --------------------------------------------------------------
+	 * 컬럼 설명(Remarks),
+	 * Primary Key,
+	 * Auto Increment,
+	 * Default Value,
+	 * Unique,
+	 * Display Format 등의
+	 * 메타데이터가 필요한 경우,
+	 * Reader와 NBDFColumn만 확장하면 Builder Layer에서 동일하게 활용할 수 있음
+	 * --------------------------------------------------------------
+	 *
+	 * </pre>
+	 */
 	
 	/**
 	 * 생성자(Constructor)

@@ -4,6 +4,8 @@
  2. 작업내용
   - NBDF Framework Class 주석 재조정
     : NBDF Layer Structure,  NBDF Processing Flow, Responsibilities, Key Features,  Design Principles, Related Classes, Extension Point
+  - NBDFDataSetBuilder : NBDF 메타정보와 조회 데이터를 Nexacro DataSet으로 생성하는 Builder 클래스
+  - NBDFTransferDataBuilder : NBDF 전송 데이터(TransferData)를 생성하는 Builder 클래스
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.04
@@ -30,8 +32,8 @@
  2. 작업내용
   - NBDFConstants 	: NBDF 프레임워크 전체에서 공통으로 사용하고 변경되지 않는 기준값을 관리하는 클래스
   - NBDFJavaType	: Java 데이터 유형을 관리하는 클래스
-  - NBDFNexacroType	: Nexacro 데이터셋 데이터 유형을 관리하는 클래스
-  - NBDFColumn		: 데이터셋 컬럼정보를 관리하는 메타 객체 클래스
+  - NBDFNexacroType	: Nexacro DataSet 데이터 유형을 관리하는 클래스
+  - NBDFColumn		: DataSet 컬럼정보를 관리하는 메타 객체 클래스
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.01
@@ -90,7 +92,7 @@
   - 메시지 테이블 생성
   - 메시지 데이터 추가 및 스크립트 작성
   - COM10010M : 메시지등록 자바 프로그램 완료 / 넥사크로 프로그램 개발 예정
-  - 로그인 완료 후 gds_message 데이터셋에 적재 및 화면에서 메시지번호로 조회 후 출력 (미진행)
+  - 로그인 완료 후 gds_message DataSet에 적재 및 화면에서 메시지번호로 조회 후 출력 (미진행)
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.06.22

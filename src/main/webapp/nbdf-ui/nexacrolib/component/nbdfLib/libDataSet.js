@@ -14,7 +14,7 @@
 
 /**
  * @description		dataSet 데이터 변경여부 체크
- * @param 			{objDs			: nexacro.NormalDataset} 	데이터셋
+ * @param 			{objDs			: nexacro.NormalDataset} 	DataSet
  * @return 			{bDsChange		: boolen} 					true, false
  */  
 pForm.gfn_dataSetChange = function(objDs)
@@ -52,8 +52,8 @@ pForm.gfn_dataSetChange = function(objDs)
  * @description		DataSet 데이터를 갱신하기 위한 서비스를 호출하는 트랜잭션 함수
  * @param 			{sSvcID			: String}	서비스ID 명칭
  * @param  			{sSvcURL		: String} 	controller 호출하기 위한 서비스 URL
- * @param  			{sInDataSets	: String} 	input 데이터셋 (input=ds_codeType)
- * @param  			{sOutDataSets	: String} 	output 데이터셋 (ds_codeType=output)
+ * @param  			{sInDataSets	: String} 	input DataSet (input=ds_codeType)
+ * @param  			{sOutDataSets	: String} 	output DataSet (ds_codeType=output)
  * @param  			{sCallbackFunc	: String} 	call back function 명칭
  * @param  			{bAsync			: Boolean} 	true(비동기), false(동기)
  * @param  			{nDataType		: Number} 	서버로 데이터 전송 형식 (XML-0, binary-1, SSV-2, JSON-2)
@@ -130,16 +130,16 @@ pForm.gfn_checkRequired = function(objGrid, arrRequired)
     var app   = nexacro.getApplication();
     var objDs = objGrid.getBindDataset();
 
-	//그리드에 바인드된 데이터셋이 없으면 리턴
+	//그리드에 바인드된 DataSet이 없으면 리턴
     if (!objDs) return true;
 
 	//찾은 바인드셋의 데이터 건수
     var nRowCnt = objDs.rowcount;
 
-	//데이터셋 데이터 건수 기준으로 필수항목 체크
+	//DataSet 데이터 건수 기준으로 필수항목 체크
     for (var nRow=0; nRow<nRowCnt; nRow++) {
 	
-        //데이터셋 상태가 : 초기 데이터는 Skip
+        //DataSet 상태가 : 초기 데이터는 Skip
         if (objDs.getRowType(nRow) == Dataset.ROWTYPE_NORMAL) continue;
 		
 		//매개변수의 필수항목 만큼 체크
