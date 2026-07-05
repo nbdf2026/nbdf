@@ -1,5 +1,11 @@
 # nbdf 프로젝트
 [nbdf 프로젝트]
+ 1. 작업일자 : 2026.07.05
+ 2. 작업내용
+  - NBDF Framework Class 주석 재조정
+    : NBDF Layer Structure,  NBDF Processing Flow, Responsibilities, Key Features,  Design Principles, Related Classes, Extension Point
+  
+[nbdf 프로젝트]
  1. 작업일자 : 2026.07.04
  2. 작업내용
   - scr/main/java/erp : nbdf core 폴더로 이동 분리

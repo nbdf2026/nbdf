@@ -10,125 +10,137 @@ import erp.core.nbdf.constants.NBDFNexacroType;
 * @fileName       	: NBDFDataTypeMapper.java
 * @author         	: Built1
 * @date           	: 2026.07.03
-* @description    	: JDBC 데이터 유형을 Java 및 Nexacro 데이터 유형으로 변환하는 클래스
+* @description    	: JDBC DataType과 NBDF 내부 데이터 타입을 상호 변환하기 위한 매핑 클래스 
+* 
+ * <pre>
+ * --------------------------------------------------------------
+ * [1] NBDF Layer Structure
+ * --------------------------------------------------------------
+ * 1. Metadata Layer
+ * 2. Builder Layer
+ * 3. Constants Layer
+ * 4. Exception Layer
+ * 5. Type Mapping Layer (Current)
+ * 6. Utility Layer
+ * 7. Result Layer
+ * 8. Message Layer
+ * 9. Validation Layer
+ * 10. Converter Layer
+ * 11. Configuration Layer
+ * 12. Extension Layer
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [2] NBDF Processing Flow
+ * --------------------------------------------------------------
+ * Database
+ *      ↓
+ * JDBC(java.sql.Types)
+ *      ↓
+ * NBDFDataTypeMapper (Current Module)
+ *      ↓
+ * NBDFJavaType
+ *      ↓
+ * NBDFNexacroType
+ *      ↓
+ * NBDFColumn
+ *      ↓
+ * NBDFDataSetBuilder
+ *      ↓
+ * PlatformData
+ *      ↓
+ * Nexacro Client
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [3] Responsibilities
+ * --------------------------------------------------------------
+ * 1. JDBC 데이터 타입을 NBDF 표준 타입으로 변환
+ * 2. Java 데이터 타입과 Nexacro 데이터 타입을 매핑
+ * 3. DBMS별 데이터 타입 차이를 표준화
+ * 4. Metadata Layer와 Builder Layer의 타입 기준을 제공
+ * 5. 프레임워크 전체의 데이터 타입 일관성을 유지
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [4] Key Features
+ * --------------------------------------------------------------
+ * 1. JDBC → NBDF 데이터 타입 변환
+ * 2. Java ↔ NBDF 타입 매핑
+ * 3. Nexacro 데이터 타입 매핑
+ * 4. DBMS 독립적인 타입 관리
+ * 5. Immutable Mapping 구조
+ * 6. Thread Safe Utility Class
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [5] Design Principles
+ * --------------------------------------------------------------
+ * 1. Utility Class Pattern 적용
+ * 2. 객체 생성 금지(private Constructor)
+ * 3. Static Method 기반 제공
+ * 4. 변경 불가능한(Immutable) Mapping 관리
+ * 5. 타입 변환 책임만 담당(SRP)
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [6] Related Classes
+ * --------------------------------------------------------------
+ * java.sql.Types
+ *      ↓
+ * NBDFJavaType
+ *      ↓
+ * NBDFDataTypeMapper (Current)
+ *      ↓
+ * NBDFNexacroType
+ *      ↓
+ * NBDFColumn
+ *      ↓
+ * NBDFMetaDataReader
+ *      ↓
+ * NBDFDataSetBuilder
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [7] Extension Point
+ * --------------------------------------------------------------
+ * 신규 JDBC Type, Java Type 또는 Nexacro Type이 추가되는 경우,
+ * Mapping 정보만 확장하면 프레임워크 전체에서 동일한 기준으로 사용할 수 있음
+ * --------------------------------------------------------------
+ *  * 
+ * --------------------------------------------------------------
+ * [8] NBDF Data type Structures
+ * --------------------------------------------------------------
+ *                     java.sql.Types
+ *                         │
+ *                         ▼
+ *                  NBDFDataTypeMapper
+ *               ┌─────────┼──────────┐
+ *               ▼         ▼          ▼
+ *        NBDFJavaType  NBDFType  NBDFNexacroType
+ *               │         │          │
+ *               └─────────┼──────────┘
+ *                         ▼
+ *                     NBDFColumn
+ *                         ▼
+ *                 NBDFMetaDataReader
+ *                         ▼
+ *                 NBDFDataSetBuilder
+ *
+ * </pre>
+ *
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
 * 2026.07.03        Built1             최초 생성
 */
 public final class NBDFDataTypeMapper {
-	
-	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * NBDF Framework Layer
-	 * --------------------------------------------------------------
-	 * 1. Metadata Layer(현재)
-	 * 2. Builder Layer
-	 * 3. Constants Layer
-	 * 4. Exception Layer
-	 * 5. Type Mapping Layer
-	 * 6. Utility Layer
-	 * 7. Result Layer
-	 * 8. Message Layer
-	 * 9. Validation Layer
-	 * 10. Converter Layer
-	 * --------------------------------------------------------------
-	 * </pre>
-	 */
-	
-	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * 데이터 유형에 따른 데이터 전환
-	 * --------------------------------------------------------------
-	 * 
-	 * Database 데이터 추출 : 컬럼, 데이터유형, 데이터 
-	 * ↓
-	 * JDBC Type : 컬럼, 데이터유형, 데이터 
-	 * ↓
-	 * Java Type : 컬럼, 데이터유형, 데이터 
-	 * ↓
-	 * Nexacro Type : 컬럼, 데이터유형, 데이터 
-	 * 
-	 * </pre>
-	 */
-	
-	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * 개발유형에 따른 데이터 유형 매핑
-	 * --------------------------------------------------------------
-	 * 
-	 * DB Type			JDBC		Java			Nexacro
-	 * --------------------------------------------------------------
-	 * VARCHAR2			VARCHAR		String			STRING
-	 * CHAR				CHAR		String			STRING
-	 * NUMBER(10)		INTEGER		Integer			INT
-	 * NUMBER(18)		BIGINT		Long			LONG
-	 * NUMBER(18,2)		NUMERIC		BigDecimal		BIGDECIMAL
-	 * DATE				DATE		Date			DATE
-	 * TIMESTAMP		TIMESTAMP	DateTime		DATETIME
-	 * 
-	 * </pre>
-	 */
-	
-	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * NUMBER 처리 규칙
-	 * --------------------------------------------------------------
-	 * 
-	 * Oracle NUMBER	Java		Nexacro
-	 * --------------------------------------------------------------
-	 * NUMBER(1~9)		Integer		INT
-	 * NUMBER(10~18)	Long		LONG
-	 * NUMBER(19 이상)	BigDecimal	BIGDECIMAL
-	 * NUMBER(*,2)		BigDecimal	BIGDECIMAL
-	 * 
-	 * </pre>
-	 */
-	
-	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * 문자열 처리 규칙
-	 * --------------------------------------------------------------
-	 * 
-	 * JDBC Type		Java		Nexacro
-	 * --------------------------------------------------------------
-	 * VARCHAR			String		STRING
-	 * CHAR				String		STRING
-	 * LONGVARCHAR		String		STRING
-	 * CLOB				String		STRING
-	 * 
-	 * </pre>
-	 */
-	
-	/*
-	 * 날짜 처리 규칙
-	 * 
-	 * JDBC Type		Java		Nexacro
-	 * -----------------------------------------------------
-	 * DATE				Date		DATE
-	 * TIMESTAMP		DateTime	DATETIME
-	 */
-	
-	/*
-	 * 기타 처리 규칙
-	 * 
-	 * JDBC Type		Java		Nexacro
-	 * -----------------------------------------------------
-	 * 유형매핑되지않음	String		STRING
-	 */
-	
-	
+
 	/**
 	 * 생성자(Constructor)
 	 * Utility 클래스이므로 객체 생성 방지
 	 */
-	private NBDFDataTypeMapper() {
-		
+	private NBDFDataTypeMapper() {		
 	}
 	
 	/**

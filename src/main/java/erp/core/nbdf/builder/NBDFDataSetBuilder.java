@@ -13,6 +13,107 @@ import erp.core.nbdf.metadata.NBDFColumn;
 * @author         	: Built1
 * @date           	: 2026.07.03
 * @description    	: NBDF 메타정보와 조회 데이터를 Nexacro DataSet으로 생성하는 Builder 클래스
+* 
+*  <pre>
+ * --------------------------------------------------------------
+ * [1] NBDF Layer Structure
+ * --------------------------------------------------------------
+ * 1. Metadata Layer
+ * 2. Builder Layer (Current)
+ * 3. Constants Layer
+ * 4. Exception Layer
+ * 5. Type Mapping Layer
+ * 6. Utility Layer
+ * 7. Result Layer
+ * 8. Message Layer
+ * 9. Validation Layer
+ * 10. Converter Layer
+ * 11. Configuration Layer
+ * 12. Extension Layer
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [2] NBDF Processing Flow
+ * --------------------------------------------------------------
+ * Database
+ * 		↓
+ * ResultSet
+ *      ↓
+ * ResultSetMetaData
+ *      ↓
+ * NBDFMetaDataReader
+ *      ↓
+ * List<NBDFColumn>
+ *      ↓
+ * NBDFDataSetBuilder (Current Module)
+ *      ↓
+ * DataSet
+ *      ↓
+ * NBDFTransferData
+ *      ↓
+ * PlatformData
+ *      ↓
+ * Nexacro Client
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [3] Responsibilities
+ * --------------------------------------------------------------
+ * 1. NBDFColumn 정보를 이용하여 DataSet을 생성
+ * 2. DataSet 컬럼(ColumnInfo)을 구성
+ * 3. 컬럼의 데이터 타입 및 크기를 설정
+ * 4. ResultSet 데이터를 DataSet Row로 변환
+ * 5. Builder Layer의 DataSet 생성 기능을 담당
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [4] Key Features
+ * --------------------------------------------------------------
+ * 1. DataSet 자동 생성
+ * 2. ColumnInfo 자동 구성
+ * 3. ResultSet Row 자동 매핑
+ * 4. JDBC ↔ Nexacro 데이터 변환 지원
+ * 5. NBDFColumn 기반 표준 DataSet 생성
+ * 6. Builder Pattern 기반 구현
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [5] Design Principles
+ * --------------------------------------------------------------
+ * 1. Builder Pattern 적용
+ * 2. Metadata와 Data 생성 로직 분리
+ * 3. 데이터 타입 일관성 유지
+ * 4. 재사용 가능한 DataSet 생성 구조 제공
+ * 5. 확장 가능한 Builder 구조 설계
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [6] Related Classes
+ * --------------------------------------------------------------
+ * ResultSet
+ *      ↓
+ * NBDFMetaDataReader
+ *      ↓
+ * NBDFColumn
+ *      ↓
+ * NBDFDataSetBuilder (Current)
+ *      ↓
+ * DataSet
+ *      ↓
+ * NBDFTransferData
+ *      ↓
+ * NBDFResult
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [7] Extension Point
+ * --------------------------------------------------------------
+ * DataSet 생성 정책이 변경되거나 신규 데이터 타입 또는 컬럼 속성이 추가되는 경우,
+ * Builder 내부 로직만 확장하면 상위 계층의 변경 없이 적용할 수 있음
+ * --------------------------------------------------------------
+ *
+ * </pre>
+ * 
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
@@ -21,75 +122,10 @@ import erp.core.nbdf.metadata.NBDFColumn;
 public final class NBDFDataSetBuilder {
 	
 	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * NBDF Framework Layer
-	 * --------------------------------------------------------------
-	 * 1. Metadata Layer
-	 * 2. Builder Layer(현재)
-	 * 3. Constants Layer
-	 * 4. Exception Layer
-	 * 5. Type Mapping Layer
-	 * 6. Utility Layer
-	 * 7. Result Layer
-	 * 8. Message Layer
-	 * 9. Validation Layer
-	 * 10. Converter Layer
-	 * --------------------------------------------------------------
-	 * </pre>
-	 */
-	
-	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * 메타데이터를 실제 데이터셋으로 변환하는 단계
-	 * --------------------------------------------------------------
-	 * 
-	 * ResultSet
-	 * 		↓
-	 * NBDFMetaDataReader
-	 * 		↓
-	 * List<NBDFColumn>
-	 * 		↓
-	 * NBDFDataSetBuilder (현재)
-	 * 		↓
-	 * PlatformData
-	 * 		↓
-	 * DataSet
-	 * 
-	 * </pre> 
-	 */
-	
-	/**
-	 * <pre>
-	 * --------------------------------------------------------------
-	 * Oracle, MyBatis, Nexacro의 쿼리 메타정보 및 쿼리 데이터 분리 
-	 * --------------------------------------------------------------
-	 * 
-	 * NBDFQueryExecutor
-	 *  │
-	 *  ├──────────────────────┐
-	 *  ▼                      ▼
-	 *  ResultSetMetaData   ResultSet
-	 *  │                      │
-	 *  ▼                      ▼
-	 *  NBDFMetaDataReader  List<Map>
-	 *  │                      │
-	 *  └───────────┬──────────┘
-	 *              ▼
-	 *      NBDFDataSetBuilder
-	 *              ▼
-	 *        Nexacro Dataset
-	 * 
-	 * </pre>
-	 */
-	
-	/**
 	 * 생성자(Constructor)
 	 * Utility 클래스이므로 객체 생성 방지
 	 */
-	private NBDFDataSetBuilder() {
-		
+	private NBDFDataSetBuilder() {		
 	}
 	
 	/**

@@ -13,7 +13,7 @@ package erp.core.nbdf.constants;
  * --------------------------------------------------------------
  * 1. Metadata Layer
  * 2. Builder Layer
- * 3. Constants Layer (Current Module)
+ * 3. Constants Layer (Current)
  * 4. Exception Layer
  * 5. Type Mapping Layer
  * 6. Utility Layer
@@ -24,32 +24,84 @@ package erp.core.nbdf.constants;
  * 11. Configuration Layer
  * 12. Extension Layer
  * --------------------------------------------------------------
- * 
+ *
  * --------------------------------------------------------------
  * [2] NBDF Processing Flow
  * --------------------------------------------------------------
- * Framework
- *       ↓
- * NBDFConstants (Current)
- *       ↓
- * Builder
- *       ↓
- * Exception
- *       ↓
- * Result
- *       ↓
  * Application
- * 
+ *      ↓
+ * NBDFConstants (Current Module)
+ *      ↓
+ * Metadata Layer
+ *      ↓
+ * Builder Layer
+ *      ↓
+ * Result Layer
+ *      ↓
+ * PlatformData
+ *      ↓
+ * Nexacro Client
  * --------------------------------------------------------------
- * [3] Key Features
+ *
  * --------------------------------------------------------------
- * 1. 프레임워크 공통 상수를 정의
- * 2. 처리 결과(SUCCESS/FAIL)를 관리
- * 3. NBDF 표준 데이터 유형 및 공통 상수를 제공
- * 4. NBDF 전역에서 공통으로 사용
+ * [3] Responsibilities
  * --------------------------------------------------------------
- * 
- *</pre>
+ * 1. NBDF 프레임워크의 공통 상수를 정의
+ * 2. 데이터 타입 상수를 제공
+ * 3. DataSet 관련 상수를 제공
+ * 4. Result 및 Message 관련 상수를 제공
+ * 5. 프레임워크 전역에서 사용하는 표준 값을 관리
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [4] Key Features
+ * --------------------------------------------------------------
+ * 1. Framework 공통 상수 관리
+ * 2. 데이터 타입 상수 제공
+ * 3. Result Code 상수 제공
+ * 4. Message 관련 상수 제공
+ * 5. DataSet 및 Variable 상수 제공
+ * 6. Magic Number 및 Magic String 제거
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [5] Design Principles
+ * --------------------------------------------------------------
+ * 1. 변경되지 않는 값만 정의
+ * 2. 모든 상수는 public static final로 선언
+ * 3. 기능별로 상수를 그룹화하여 관리
+ * 4. 프레임워크 전역에서 동일한 값을 사용
+ * 5. 유지보수성과 가독성을 향상
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [6] Related Classes
+ * --------------------------------------------------------------
+ * NBDFConstants (Current)
+ *      ↓
+ * NBDFDataTypeMapper
+ *      ↓
+ * NBDFColumn
+ *      ↓
+ * NBDFMetaDataReader
+ *      ↓
+ * NBDFDataSetBuilder
+ *      ↓
+ * NBDFTransferDataBuilder
+ *      ↓
+ * NBDFResult
+ *      ↓
+ * NBDFException
+ * --------------------------------------------------------------
+ *
+ * --------------------------------------------------------------
+ * [7] Extension Point
+ * --------------------------------------------------------------
+ * 새로운 데이터 타입, Result Code, 메시지 코드, DataSet 속성 등이
+ * 추가되는 경우 Constants만 확장하면 프레임워크 전체에서 동일한 기준으로 사용할 수 있음
+ * --------------------------------------------------------------
+ *
+ * </pre>
  *
 * ===========================================================
 * DATE              AUTHOR             NOTE
@@ -62,8 +114,7 @@ public final class NBDFConstants {
 	 * 생성자(Constructor)
 	 * Constants 클래스로 객체 생성 방지
 	 */
-	private NBDFConstants() {
-		
+	private NBDFConstants() {		
     }
 
     /**
