@@ -316,7 +316,7 @@
         			gdsUser.clearData();
         			gdsUser.copyData(this.ds_user);
 
-        			//글러벌 DataSet
+        			//글러벌DataSet셋
         			sUserId   = gdsUser.getColumn(0, "USER_ID");
         			sUserName = gdsUser.getColumn(0, "USER_NAME");
 

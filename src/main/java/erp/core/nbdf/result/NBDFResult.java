@@ -1,13 +1,19 @@
 package erp.core.nbdf.result;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
 * @packageName    	: erp.core.nbdf.result
 * @fileName       	: NBDFResult.java
 * @author         	: Built1
 * @date           	: 2026.07.04
-* @description    	: 서비스 처리 결과를 저장하는 표준 반환 객체 클래스
+* @description    	: NBDF Framework의 표준 응답(Result) 객체 클래스
+*                     Controller → Service → Nexacro 화면까지 전달되는
+*                     모든 응답 데이터를 표준화하기 위한 Wrapper 클래스
 * ===========================================================
 * DATE              AUTHOR             NOTE
 * -----------------------------------------------------------
@@ -38,18 +44,16 @@ public class NBDFResult implements Serializable {
 	 * [2] NBDF Processing Flow
 	 * --------------------------------------------------------------
 	 * Controller
-	 *      ↓
+	 *     ↓
 	 * Service
-	 *      ↓
-	 * NBDFResult (Current Module)
-	 *      ↓
-	 * NBDFTransferData
-	 *      ↓
-	 * PlatformData
-	 *      ↓
-	 * HttpPlatformResponse
-	 *      ↓
-	 * Nexacro Client
+	 *     ↓
+	 * NBDFResult 생성 (success / fail)
+	 *     ↓
+	 * NBDFTransferData 추가 (비즈니스 데이터)
+	 *     ↓
+	 * Controller 반환
+	 *     ↓
+	 * Nexacro PlatformData 변환 
 	 * --------------------------------------------------------------
 	 *
 	 * --------------------------------------------------------------
@@ -108,7 +112,7 @@ public class NBDFResult implements Serializable {
 	 * --------------------------------------------------------------
 	 *
 	 * --------------------------------------------------------------
-	 * [7] Comment rules
+	 * [8] Comment rules
 	 * --------------------------------------------------------------
 	 * get 		→ 조회합니다.
 	 * set 		→ 할당합니다.
@@ -120,103 +124,85 @@ public class NBDFResult implements Serializable {
 	 * parse 	→ 분석합니다.
 	 * --------------------------------------------------------------
 	 * 
+	 * --------------------------------------------------------------
+	 * [9] 구조
+	 * --------------------------------------------------------------
+	 * NBDFResult
+	 *   ├── success (boolean) : 성공/실패 상태
+	 *   ├── messageCode       : 메시지 코드
+	 *   ├── messageText       : 메시지 내용
+	 *   └── dataMap           : 여러 Dataset 형태 데이터 저장
+	 *         └── key(String)
+	 *               └── NBDFTransferData
+	 * --------------------------------------------------------------
+	 * 
 	 * </pre>
 	 */
 	
-	/**
-	 * Serializable Version UID
-	 */
+	/** Serializable Version UID */
 	private static final long serialVersionUID = 1L;
 	
-	/**
-	 * 처리결과
-	 */
-	private String result;
+	/** NBDFResult 객체 성공/실패 상태 여부 */
+	private boolean success = true;
+			
+	/** 메시지 번호 */
+	private String messageCode;
 	
-	/**
-	 * 메시지 번호 
-	 */
-	private String messageNo;
+	/** 메시지 내용 */
+	private String messageText;
 	
-	/**
-	 * 메시지
-	 */
-	private String message;
+	/** 다중 메시지 지원 */
+	private List<String> messages = new ArrayList<>();
 	
-	/**
-	 * 전송 데이터 : 아직 구현되지 않음
-	 */
-	//private NBDFTransferData transferData;
+	/** 데이터 영역 */
+	private Map<String, NBDFTransferData> dataMap = new HashMap<>();
+	
+	/** 시스템 변수 */
+	private Map<String, Object> systemVariablesMap = new HashMap<>();
+	
+	/** 사용자 변수 */
+	private Map<String, Object> variables = new HashMap<>();
+	
+	/** 예외 정보 */
+	private Exception exception;
 	
 	
-	/**
-     * 기본 생성자
-     */
-    public NBDFResult() {
-    	
-    }
-
-	/**
-	 * @description    	: 처리결과 값을 조회하는 메서드 
-	 * @return 			: 처리결과 값
-	 */
-	public String getResult() {
-		return result;
-	}
-    
-	/**
-	 * @description    	: 처리결과 값을 할당하는 매서드
-	 * @param result 	: 처리결과
-	 */
-	public void setResult(String result) {
-		this.result = result;
-	}
-
-	/**
-	 * @description    	: 메시지번호 조회하는 메서드
-	 * @return 			: 메시지번호
-	 */
-	public String getMessageNo() {
-		return messageNo;
-	}
-
-	/**
-	 * @description    	: 메시지번호 값을 할당하는 메서드 
-	 * @param messageNo : 메시지번호
-	 */
-	public void setMessageNo(String messageNo) {
-		this.messageNo = messageNo;
-	}
-
-	/**
-	 * @description    	: 메시지 텍스트를 조회하는 메서드
-	 * @return 			: 메시지 텍스트
-	 */
-	public String getMessage() {
-		return message;
-	}
-
-	/**
-	 * @description    	: 메시지 텍스트 할당하는 메소드
-	 * @param message 	: 메시지 텍스트
-	 */
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	/**
-     * @description    	: 전송 데이터를 조회하는 메소드
-     * @return 			: 전송 데이터
-     */
-    //public NBDFTransferData getTransferData() {
-    //    return transferData;
-    //}
-
+    // --------------------------------------------------
+    // [1] NBDFResult 객체에 대한 성공 및 실패에 대한 메서드 선언
+    // --------------------------------------------------
+	
     /**
-     * @description    		: 전송 데이터를 할당하는 메소드
-     * @param transferData	: 전송 데이터
-     */
-    //public void setTransferData(NBDFTransferData transferData) {
-    //    this.transferData = transferData;
-    //}
+    * @methodName     		: success
+    * @author         		: built1
+    * @date           		: 2026.07.06
+    * @description    		: NBDFResult 객체를 성공 상태로 만들어서 반환하는 메소드
+    * 						  @static 객체를 선언하지 않고 메소드를 직접 호출 (e.g. NBDFResult.success())
+    * @param messageCode	: 메시지코드
+    * @param messageText	: 메시지내용
+    * @return				: NBDFResult 객체
+    */
+    public static NBDFResult success(String messageCode, String messageText) {
+    	NBDFResult result = new NBDFResult();
+    	result.success = true;
+    	result.messageCode = messageCode;
+    	result.messageText = messageText;
+    	return result;
+    }
+    
+    /**
+    * @methodName     		: fail
+    * @author         		: built1
+    * @date           		: 2026.07.06
+    * @description    		: NBDFResult 객체를 실패 상태로 만들어서 반환하는 메소드
+    * @param messageCode	: 메시지코드
+    * @param messageText	: 메시지내용
+    * @return				: NBDFResult 객체
+    */
+    public static NBDFResult fail(String messageCode, String messageText) {
+    	NBDFResult result = new NBDFResult();
+    	result.success = false;
+    	result.messageCode = messageCode;
+    	result.messageText = messageText;
+    	return result;
+    }
 }

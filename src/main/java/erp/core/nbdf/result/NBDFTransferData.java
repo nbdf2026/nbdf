@@ -168,14 +168,14 @@ public class NBDFTransferData {
 	 */
 	
 	/**
-	* @methodName     		: putVariable
+	* @methodName     		: addVariable
 	* @author         		: Built1
 	* @date           		: 2026.07.05
 	* @description    		: Map에 변수명 및 값을 할당/수정(키 존재)하는 메서드
 	* @param variableName	: 변수명(e.g. USER_ID)
 	* @param value			: 변수값(e.g. ADMIN)
 	*/
-	public void putVariable(String variableName, Object value) {
+	public void addVariable(String variableName, Object value) {
 		
 		//null or empty일 경우 오류 메시지
 		if (variableName == null || variableName.trim().isEmpty()) {
@@ -271,14 +271,14 @@ public class NBDFTransferData {
 	 */
 	
 	/**
-	* @methodName     		: putDataSet
+	* @methodName     		: addDataSet
 	* @author         		: Built1
 	* @date           		: 2026.07.05
 	* @description    		: dataSet에 데이터셋명 및 데이터셋을 할당하는 메서드
 	* @param dataSetName	: 데이터셋명
 	* @param dateSet		: 데이터셋
 	*/
-	public void putDataSet(String dataSetName, DataSet dataSet) {
+	public void addDataSet(String dataSetName, DataSet dataSet) {
 		if (dataSetName == null || dataSetName.trim().isEmpty()) {
 			throw new NBDFException("FMSG-RST-10010"); //변수명은 필수입니다.
 		}
@@ -371,14 +371,14 @@ public class NBDFTransferData {
 	 */
 	
 	/**
-	* @methodName     		: putSystemVariable
+	* @methodName     		: addSystemVariable
 	* @author         		: Built1
 	* @date           		: 2026.07.05
 	* @description    		: Map에 변수명 및 값을 할당/수정(키 존재)하는 메서드
 	* @param variableName	: 변수명(e.g. USER_ID)
 	* @param value			: 변수값(e.g. ADMIN)
 	*/
-	public void putSystemVariable(String systemVariableName, Object value) {
+	public void addSystemVariable(String systemVariableName, Object value) {
 		
 		//null or empty일 경우 오류 메시지
 		if (systemVariableName == null || systemVariableName.trim().isEmpty()) {
