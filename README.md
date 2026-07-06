@@ -2,8 +2,8 @@
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.06
  2. 작업내용
-  - NBDFResult : NBDF Framework의 표준 응답(Result) 객체 클래스 작업中
-  - NBDFTransferData : NBDF 전송 데이터를 관리하는 Container 클래스 (variables, dataSets, systemVariables)
+  - NBDFResult : NBDF Framework의 표준 응답(Result) 객체 클래스 
+  - NBDFTransferData : NBDF 전송 데이터를 관리하는 Container 클래스 (variables, dataSets, systemVariables)  
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.05
