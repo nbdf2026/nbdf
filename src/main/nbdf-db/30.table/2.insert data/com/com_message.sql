@@ -81,6 +81,9 @@ begin
                                                         
     insert into com_message values('FMSG-RST-10010', 'A', '변수명은 필수입니다.'
                                                         , 'Variable names are required.', '중', '일', '기', l_remark, l_current_date, 'admin', l_current_date, l_user_id);
+                                                        
+    insert into com_message values('FMSG-BLD-10000', 'A', 'NBDFTransferData 객체에 값이 존재하지 않습니다.'
+                                                        , 'NBDFTransferData is null.', '중', '일', '기', l_remark, l_current_date, 'admin', l_current_date, l_user_id);
     
     --
     commit;

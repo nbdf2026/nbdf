@@ -1,0 +1,19 @@
+"아키샘"
+
+NBDFResult
+
+흐름을 묶어주는 단계
+Controller → Service → NBDFResult → NBDFTransferData → PlatformData → Nexacro
+
+핵심
+“NBDFResult + Builder + Mapper 연결”
+
+NBDFTransferData가 “데이터 운반”이라면 NBDFResult는 “응답 표준 컨테이너” 역할입니다.
+
+
+지금 단계에서는 아래 순서가 가장 안정적입니다.
+? NBDFResult 생성
+? NBDFTransferDataBuilder 생성
+? NBDFDataTypeMapper 보완
+? NBDFResult ↔ TransferData 연결 테스트
+? Controller → Service 흐름 테스트

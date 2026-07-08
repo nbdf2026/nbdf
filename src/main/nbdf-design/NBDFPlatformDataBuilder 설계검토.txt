@@ -1,0 +1,314 @@
+NBDFPlatformDataBuilder 
+
+
+1단계. 클래스 기본 구조
+public final class NBDFPlatformDataBuilder {
+
+    public PlatformData build(NBDFTransferData transferData) {
+
+    }
+
+}
+
+
+2단계. Variable 변환
+NBDFTransferData
+      ↓
+Map<String,Object>
+
+PlatformData
+      ↓
+VariableList
+
+
+지원
+
+String
+Integer
+Long
+Double
+Float
+BigDecimal
+Boolean
+Date
+byte[]
+null
+
+
+3단계. DataSet 변환
+Map<String, DataSet>
+        ↓
+
+PlatformData.addDataSet()
+
+
+4단계. System Variable 변환
+ErrorCode
+ErrorMsg
+TransactionId
+Locale
+...
+
+
+5단계. Null 안전 처리
+transferData == null
+NBDFException
+
+
+6단계. Builder 패턴 적용
+NBDFTransferDataBuilder
+PlatformData platformData =
+        new NBDFPlatformDataBuilder()
+                .build(result.getTransferData());
+                
+                
+                
+PlatformData platformData =
+        new NBDFPlatformDataBuilder()
+                .build(result.getTransferData());
+                
+                
+7단계. 주석 100%
+/**
+ * 전달 객체를 Nexacro PlatformData로 변환한다.
+ *
+ * <pre>
+ * NBDFTransferData
+ *        ↓
+ * PlatformData
+ * </pre>
+ *
+ * @param transferData 전달 객체
+ * @return PlatformData
+ */
+ 
+ 
+8단계. 실무 편의 메서드 추가
+private void addVariables(...)
+
+private void addDataSets(...)
+
+private void addSystemVariables(...)
+
+private void addVariable(...)
+
+private Variable createVariable(...)
+
+
+이번 구현 목표
+erp.core.nbdf.builder
+    ├─ NBDFTransferDataBuilder     (완료)
+    └─ NBDFPlatformDataBuilder     (오늘 완료)
+
+erp.core.nbdf.result
+    ├─ NBDFResult                  (완료)
+    └─ NBDFTransferData            (완료)
+
+erp.core.nbdf.mapper
+    └─ NBDFDataTypeMapper          (완료)
+    
+    
+Controller에서 단 한 줄로 Nexacro 응답을 생성
+NBDFResult result = new NBDFResult();
+
+result.addVariable("RESULT", "SUCCESS");
+result.addDataSet("ds_list", ds);
+
+PlatformData platformData =
+        new NBDFPlatformDataBuilder().build(result.getTransferData());
+        
+        
+-- -----------------------------------------------------------------------
+전체 흐름
+
+build()
+
+     │
+
+PlatformData 생성
+
+     │
+
+Variable 등록
+
+     │
+
+DataSet 등록
+
+     │
+
+SystemVariable 등록
+
+     │
+
+PlatformData 반환
+
+
+-- -----------------------------------------------------------------------
+build()
+/**
+ * NBDFTransferData를 Nexacro PlatformData로 변환한다.
+ *
+ * <pre>
+ * NBDFTransferData
+ *        ↓
+ * PlatformData
+ * </pre>
+ *
+ * @param transferData 변환 대상
+ * @return PlatformData
+ */
+public PlatformData build(NBDFTransferData transferData)
+
+
+순서
+PlatformData 생성
+
+↓
+
+addVariables()
+
+↓
+
+addDataSets()
+
+↓
+
+addSystemVariables()
+
+↓
+
+return
+
+
+-- -----------------------------------------------------------------------
+addVariables()
+Map<String,Object>
+
+↓
+
+VariableList
+
+transferData.getVariables()
+for (Entry<String,Object> entry : variables.entrySet())
+
+addVariable(...)
+
+
+private void addVariable(
+        VariableList variableList,
+        String name,
+        Object value)
+        
+Variable variable =
+        createVariable(name, value);
+
+variableList.add(variable);
+
+
+-- -----------------------------------------------------------------------
+createVariable()
+모든 Java Type을 Nexacro Type으로 변환
+
+String
+↓
+
+STRING
+
+Integer
+↓
+
+INT
+
+Long
+↓
+
+LONG
+
+Double
+↓
+
+DECIMAL
+
+Float
+↓
+
+FLOAT
+
+BigDecimal
+↓
+
+BIG_DECIMAL
+
+Boolean
+↓
+
+BOOLEAN
+
+Date
+↓
+
+DATE
+
+byte[]
+
+↓
+
+BLOB
+
+이 부분은 우리가 이미 만든 NBDFDataTypeMapper를 그대로 사용합니다.
+NBDFDataTypeMapper.getPlatformType(value)
+
+
+-- -----------------------------------------------------------------------
+addDataSets()
+
+SystemVariable
+
+↓
+
+PlatformData VariableList
+
+업무 Variable과 구분하기 위해
+ErrorCode
+
+ErrorMsg
+
+Locale
+
+TransactionId
+
+
+Null 처리
+if (transferData == null)
+throw new NBDFException(
+    NBDFMessageCode.COMM0001
+);
+
+
+-- -----------------------------------------------------------------------
+최종 실행 흐름
+
+NBDFResult
+
+↓
+
+NBDFTransferData
+
+↓
+
+NBDFPlatformDataBuilder
+
+↓
+
+PlatformData
+
+↓
+
+NexacroResponse
+
+↓
+
+Client
+
+
