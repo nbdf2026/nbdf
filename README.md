@@ -1,5 +1,13 @@
 # nbdf 프로젝트
 [nbdf 프로젝트]
+ 1. 작업일자 : 2026.07.09
+ 2. 작업내용
+  - NBDFPlatformDataBuilder : NBDFTransferData 객체를 Nexacro PlatformData 객체로 변환하는 Builder 클래스 진행中
+    : 사용자변수 등록(userVariables)    : addVariables(platformData, transferData);		
+	: 데이터셋 등록(dataSets)			: addDataSets(platformData, transferData);		
+    : 시스템변수 등록(systemVariables)	: addSystemVariables(platformData, transferData);
+  
+[nbdf 프로젝트]
  1. 작업일자 : 2026.07.08
  2. 작업내용
   - NBDFPlatformDataBuilder : NBDFTransferData 객체를 Nexacro PlatformData 객체로 변환하는 Builder 클래스 진행中
