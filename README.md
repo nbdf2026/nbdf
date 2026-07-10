@@ -1,5 +1,11 @@
 # nbdf 프로젝트
 [nbdf 프로젝트]
+ 1. 작업일자 : 2026.07.10
+ 2. 작업내용
+  - NBDFPlatformDataBuilder : NBDFTransferData 객체를 Nexacro PlatformData 객체로 변환하는 Builder 클래스 진행中
+    : setVariable(final Variable variable, final Object value) 전달된 값을 Variable 타입에 맞게 저장하는 메소드
+    
+[nbdf 프로젝트]
  1. 작업일자 : 2026.07.09
  2. 작업내용
   - NBDFPlatformDataBuilder : NBDFTransferData 객체를 Nexacro PlatformData 객체로 변환하는 Builder 클래스 진행中

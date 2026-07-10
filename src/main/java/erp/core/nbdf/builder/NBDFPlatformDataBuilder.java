@@ -1,8 +1,12 @@
 package erp.core.nbdf.builder;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Map.Entry;
-
-import org.antlr.grammar.v3.ANTLRParser.finallyClause_return;
 
 import com.nexacro.java.xapi.data.DataSet;
 import com.nexacro.java.xapi.data.PlatformData;
@@ -161,6 +165,85 @@ public final class NBDFPlatformDataBuilder {
 		}		
 	}
 	
-	// 다음 단계에서는 아래 메서드를 추가하는 것을 추천 : 2026.07.09
-	// private void setVariableValue(Variable variable, Object value)
+	/**
+	* @methodName     		: setVariable
+	* @author         		: built1
+	* @date           		: 2026.07.10
+	* @description    		: 전달된 값을 Variable 타입에 맞게 저장하는 메소드
+	* @param variable		: PlatformData Variable
+	* @param value			: 저장할 값  
+	*/
+	private void setVariable(final Variable variable, final Object value) {
+		
+	    // Null은 빈 문자열로 저장
+	    if (value == null) {
+	        variable.set("");
+	        return;
+	    }
+
+	    // 문자열
+	    if (value instanceof String) {
+	        variable.set((String) value);
+
+	    // 정수형
+	    } else if (value instanceof Integer) {
+	        variable.set((Integer) value);
+
+	    } else if (value instanceof Long) {
+	        variable.set((Long) value);
+
+	    } else if (value instanceof Short) {
+	        variable.set(((Short) value).intValue());
+
+	    } else if (value instanceof Byte) {
+	        variable.set((Byte) value);
+
+	    // 실수형
+	    } else if (value instanceof Double) {
+	        variable.set((Double) value);
+
+	    } else if (value instanceof Float) {
+	        variable.set((Float) value);
+
+	    } else if (value instanceof BigDecimal) {
+	        variable.set((BigDecimal) value);
+
+	    // BigInteger는 Variable에서 직접 지원하지 않으므로 문자열 저장
+	    } else if (value instanceof BigInteger) {
+	        variable.set(value.toString());
+
+	    // 논리형
+	    } else if (value instanceof Boolean) {
+	        variable.set((Boolean) value);
+
+	    // 문자형
+	    } else if (value instanceof Character) {
+	        variable.set(value.toString());
+
+	    // Enum은 이름(String)으로 저장
+	    } else if (value instanceof Enum<?>) {
+	        variable.set(((Enum<?>) value).name());
+
+	    // 날짜(java.util.Date, java.sql.Date, java.sql.Timestamp 모두 포함)
+	    } else if (value instanceof java.util.Date) {
+	        variable.set((java.util.Date) value);
+
+	    // Java 8 날짜
+	    } else if (value instanceof LocalDateTime) {
+	        variable.set(Timestamp.valueOf((LocalDateTime) value));
+
+	    } else if (value instanceof LocalDate) {
+	        variable.set(value.toString());
+
+	    } else if (value instanceof LocalTime) {
+	        variable.set(value.toString());
+
+	    // 기타 타입은 문자열 저장
+	    } else {
+	        variable.set(String.valueOf(value));
+	    }
+	}
+	// 다음은 buildDataSet()
 }
+
+
