@@ -1,5 +1,4 @@
-# nbdf 프로젝트
-# NBDF (Nexacro Builder Development Framework)
+# NBDF (New Built1 Development Framework)
 
 ## Coding Standard
 
