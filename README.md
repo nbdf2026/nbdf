@@ -1,42 +1,62 @@
 # nbdf 프로젝트
-[nbdf 프로젝트 개발 표준]
+# NBDF (Nexacro Builder Development Framework)
 
-	1. 클래스명
-	- Builder
-	- Reader
-	- Mapper
-	- Converter
-	- Validator
+## Coding Standard
+
+### Class Naming
+- Builder
+- Reader
+- Converter
+- Mapper
+- Validator
+- Utility
+
+### Method Prefix
+
+build      : 최종 객체 생성
+create     : 객체 생성
+add        : 데이터 추가
+set        : 값 설정
+get        : 데이터 조회
+has        : 존재 여부 확인
+convert    : 데이터 타입 변환
+read       : PlatformData 읽기
+validate   : 데이터 검증
+
+### Development Rules
+
+- public 메서드는 JavaDoc 작성
+- final 적극 사용
+- 하나의 메서드는 하나의 책임만 수행
+- 메서드는 가능한 30줄 내외 유지
+- Null Check 우선 수행
+- 예외는 NBDFException 사용
 	
-	2. 메서드 Prefix
-	- build : 최종 객체 생성
-	- create : 객체 생성
-	- add : 데이터 추가
-	- set : 값 설정
-	- convert : 타입 변환
-	- read : 데이터 읽기
-	- get : 데이터 조회
-	- has : 존재 여부 확인
-	
-	3. 코딩 규칙
-	- public 메서드는 JavaDoc 필수
-	- final 적극 사용
-	- 하나의 메서드는 하나의 책임만 수행
-	- 30줄 내외 유지
-	
-	4. 예시
-	----------------------------------------------------------
-	Prefix     의미              예시
-	----------------------------------------------------------
-	build      최종 객체 생성    build()
-	create     구조(객체) 생성   createColumns(), createVariable()
-	add        데이터 추가       addRows(), addRow(), addVariables()
-	set        값 설정           setColumnValue(), setVariable()
-	convert    타입 변환         convertValue()
-	get        조회              getVariables()
-	has        존재 여부 확인    hasDataSets()
-	----------------------------------------------------------
- 
+- 예시
+- build [      최종 객체 생성 ]    build()
+- create [     구조(객체) 생성 ]   createColumns(), createVariable()
+- add [        데이터 추가 ]       addRows(), addRow(), addVariables()
+- set [        값 설정 ]           setColumnValue(), setVariable()
+- convert [    타입 변환 ]         convertValue()
+- get [        조회 ]              getVariables()
+- has [        존재 여부 확인 ]    hasDataSets()
+- ---------------------------------------------------------
+
+### NBDF 패키지 구조
+```text
+erp.core.nbdf
+├─ builder
+├─ converter
+├─ exception
+├─ mapper
+├─ message
+├─ metadata
+├─ reader
+├─ result
+├─ util
+├─ validation
+└─ constants
+```
  
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.12
