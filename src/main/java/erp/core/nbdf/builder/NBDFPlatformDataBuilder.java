@@ -109,12 +109,8 @@ public final class NBDFPlatformDataBuilder {
 		// Variable 객체 생성
 		Variable variable = new Variable(name);
 		
-		// 키에 대한 갑을 할당
-		if (name == null) {
-			variable.set((Object) null);
-		} else {
-			variable.set(value);
-		}
+		// Variable 변수명에 값(key, value) 할당
+		setVariable(variable, value);
 		
 		// Variable 객체 반환
 		return variable;

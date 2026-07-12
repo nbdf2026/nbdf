@@ -1,0 +1,28 @@
+NBDFPlatformDataParser
+프레임워크의 흐름이 완성
+
+          Client(Nexacro)
+                 │
+                 ▼
+          PlatformData
+                 │
+                 ▼
+      NBDFPlatformDataParser
+                 │
+                 ▼
+        NBDFTransferData
+                 │
+                 ▼
+             Service
+                 │
+                 ▼
+            NBDFResult
+                 │
+                 ▼
+     NBDFPlatformDataBuilder
+                 │
+                 ▼
+          PlatformData
+                 │
+                 ▼
+            Client(Nexacro)

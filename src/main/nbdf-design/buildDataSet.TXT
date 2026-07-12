@@ -1,0 +1,85 @@
+NBDFPlatformDataBuilder
+│
+├── build()
+│
+├── addVariables()
+│
+├── addDataSets()
+│
+├── buildDataSet()      ★ 오늘 구현
+│
+├── buildColumns()
+│
+├── buildRows()
+│
+├── setColumnValue()
+│
+├── convertValue()
+│
+└── setRowType()
+
+
+buildDataSet()의 역할
+메서드 하나가 NBDF DataSet → Nexacro DataSet으로 변환하는 핵심
+
+NBDFDataSet
+     │
+     ├─ 컬럼 생성
+     │
+     ├─ Row 생성
+     │
+     ├─ Cell 값 입력
+     │
+     ▼
+Nexacro DataSet
+
+
+① DataSet 생성
+DataSet dataSet = new DataSet(nbdfDataSet.getName());
+
+② Column 생성
+for (NBDFColumn column : nbdfDataSet.getColumns()) {
+
+    dataSet.addColumn(
+        column.getName(),
+        NBDFDataTypeMapper.toPlatformType(column.getType()),
+        column.getSize()
+    );
+
+}
+
+③ Row 생성
+for (NBDFRow row : nbdfDataSet.getRows()) {
+
+    int rowIndex = dataSet.newRow();
+
+    ...
+}
+
+④ Cell 값 입력
+for (NBDFColumn column : nbdfDataSet.getColumns()) {
+
+    Object value = row.get(column.getName());
+
+    setColumnValue(
+        dataSet,
+        rowIndex,
+        column,
+        value
+    );
+}
+
+⑤ 완성된 DataSet 반환
+return dataSet;
+
+
+
+오늘은 NBDFPlatformDataBuilder를 완성하는 것이 좋겠습니다.
+
+? buildDataSet() 전체 구현
+? buildColumns()
+? buildRows()
+? setColumnValue()
+? JavaDoc 주석 작성
+? Oracle DATE / TIMESTAMP / NULL 처리
+? Nexacro DataSetRowType(INSERT/UPDATE/DELETE/NORMAL)까지 지원

@@ -1,4 +1,49 @@
 # nbdf 프로젝트
+[nbdf 프로젝트 개발 표준]
+
+	1. 클래스명
+	- Builder
+	- Reader
+	- Mapper
+	- Converter
+	- Validator
+	
+	2. 메서드 Prefix
+	- build : 최종 객체 생성
+	- create : 객체 생성
+	- add : 데이터 추가
+	- set : 값 설정
+	- convert : 타입 변환
+	- read : 데이터 읽기
+	- get : 데이터 조회
+	- has : 존재 여부 확인
+	
+	3. 코딩 규칙
+	- public 메서드는 JavaDoc 필수
+	- final 적극 사용
+	- 하나의 메서드는 하나의 책임만 수행
+	- 30줄 내외 유지
+	
+	4. 예시
+	----------------------------------------------------------
+	Prefix     의미              예시
+	----------------------------------------------------------
+	build      최종 객체 생성    build()
+	create     구조(객체) 생성   createColumns(), createVariable()
+	add        데이터 추가       addRows(), addRow(), addVariables()
+	set        값 설정           setColumnValue(), setVariable()
+	convert    타입 변환         convertValue()
+	get        조회              getVariables()
+	has        존재 여부 확인    hasDataSets()
+	----------------------------------------------------------
+ 
+ 
+[nbdf 프로젝트]
+ 1. 작업일자 : 2026.07.12
+ 2. 작업내용
+  - NBDFDataSetBuilder : NBDF 메타정보와 조회 데이터를 Nexacro DataSet으로 생성하는 Builder 클래스
+    : build, createColumns, addRows, addRow, setColumnValue, convertValue : 메소드 작성 완료
+    
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.10
  2. 작업내용
