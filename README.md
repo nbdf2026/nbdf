@@ -11,35 +11,23 @@
 - Utility
 
 ### Method Prefix
-
-build      : 최종 객체 생성
-create     : 객체 생성
-add        : 데이터 추가
-set        : 값 설정
-get        : 데이터 조회
-has        : 존재 여부 확인
-convert    : 데이터 타입 변환
-read       : PlatformData 읽기
-validate   : 데이터 검증
+- build      : 최종 객체 생성
+- create     : 객체 생성
+- add        : 데이터 추가
+- set        : 값 설정
+- get        : 데이터 조회
+- has        : 존재 여부 확인
+- convert    : 데이터 타입 변환
+- read       : PlatformData 읽기
+- validate   : 데이터 검증
 
 ### Development Rules
-
 - public 메서드는 JavaDoc 작성
 - final 적극 사용
 - 하나의 메서드는 하나의 책임만 수행
 - 메서드는 가능한 30줄 내외 유지
 - Null Check 우선 수행
 - 예외는 NBDFException 사용
-	
-- 예시
-- build [      최종 객체 생성 ]    build()
-- create [     구조(객체) 생성 ]   createColumns(), createVariable()
-- add [        데이터 추가 ]       addRows(), addRow(), addVariables()
-- set [        값 설정 ]           setColumnValue(), setVariable()
-- convert [    타입 변환 ]         convertValue()
-- get [        조회 ]              getVariables()
-- has [        존재 여부 확인 ]    hasDataSets()
-- ---------------------------------------------------------
 
 ### NBDF 패키지 구조
 ```text
