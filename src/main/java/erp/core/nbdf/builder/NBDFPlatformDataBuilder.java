@@ -76,7 +76,7 @@ public final class NBDFPlatformDataBuilder {
 	*/
 	private void addVariables(final PlatformData platformData, final NBDFTransferData transferData) {
 		
-		// Variables 데이터(key, value)가 존재하는지 체크
+		// Variables 데이터(key, value)가 존재하는지 않으면 종료
 		if (transferData.hasVariables()) {
 			return;
 		}
@@ -85,7 +85,7 @@ public final class NBDFPlatformDataBuilder {
 		VariableList variableList = platformData.getVariableList();
 		
 		// NBDFTransferData 객체의 Variables의 Map객체 반환 후 key, value 값을 추출 후 entry Map에 할당
-		for (Entry<String, Object> entry : transferData.getVariables().entrySet()) {
+		for (final Entry<String, Object> entry : transferData.getVariables().entrySet()) {
 			
 			// variable 객체에 key and value 추가
 			Variable variable = createVariable(entry.getKey(), entry.getValue());
@@ -125,14 +125,19 @@ public final class NBDFPlatformDataBuilder {
 	* @param platformData	: 넥사크로 platformData 객체
 	* @param transferData	: NBDF transferData 객체
 	*/
-	private void addDataSets(final PlatformData platformData, NBDFTransferData transferData) {
+	private void addDataSets(final PlatformData platformData, final NBDFTransferData transferData) {
+		
+		// transferData 객체에 DataSet이 존재하지 않으면 종료
+		if (!transferData.hasDataSets()) {
+	        return;
+	    }
 		
 		// transferData 객체에서 DataSet의 데이터 (행, 열 전체?)
 		// key              	DataSet
 		// ------------------------------------
 		// "ds_employee"		DataSet 객체 (ds_employee)
 		// "ds_dept"	 		DataSet 객체 (ds_dept)		
-		for (Entry<String, DataSet> entry : transferData.getDataSets().entrySet())
+		for (final Entry<String, DataSet> entry : transferData.getDataSets().entrySet())
 			
 			// entrySet() : entry.getKey() or entry.getValue()
 			// platformData 객체에 DataSet을 추가 : DataSet 객체(ds_employee, ds_dept)
@@ -149,6 +154,11 @@ public final class NBDFPlatformDataBuilder {
 	*/
 	private void addSystemVariables(final PlatformData platformData, final NBDFTransferData transferData) {
 		
+		// SystemVariables 데이터(key, value)가 존재하는지 않으면 종료
+		if (transferData.hasSystemVariables()) {
+			return;
+		}
+				
 		// variableList 객체 생성
 		VariableList variableList = platformData.getVariableList();
 		

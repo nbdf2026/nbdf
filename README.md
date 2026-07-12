@@ -49,7 +49,9 @@ erp.core.nbdf
  1. 작업일자 : 2026.07.12
  2. 작업내용
   - NBDFDataSetBuilder : NBDF 메타정보와 조회 데이터를 Nexacro DataSet으로 생성하는 Builder 클래스
-    : build, createColumns, addRows, addRow, setColumnValue, convertValue : 메소드 작성 완료
+    : 메소드 - build, createColumns, addRows, addRow, setColumnValue, convertValue
+  - NBDFPlatformDataReader : Nexacro PlatformData를 NBDFTransferData로 변환하는 Reader 클래스
+    : 메소드 - readVariables, readDataSets, readDataSet, readSystemVariables, isSystemVariable, convertToJavaValue  
     
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.10
@@ -77,6 +79,10 @@ erp.core.nbdf
  2. 작업내용
   - NBDFResult : NBDF Framework의 표준 응답(Result) 객체 클래스 
   - NBDFTransferData : NBDF 전송 데이터를 관리하는 Container 클래스 (variables, dataSets, systemVariables)  
+  - NBDFPlatformDataReader : Nexacro PlatformData를 NBDFTransferData로 변환하는 Reader 클래스
+    : read - Nexacro PlatformData를 NBDFTransferData로 변환하는 메서드
+    : readVariables - Nexacro PlatformData의 Variable을 읽어 TransferData에 저장하는 메서드
+    : convertToJavaValue - Nexacro Variable 값을 Java 객체로 변환하는 메서드
   
 [nbdf 프로젝트]
  1. 작업일자 : 2026.07.05

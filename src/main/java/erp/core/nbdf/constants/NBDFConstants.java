@@ -138,5 +138,16 @@ public final class NBDFConstants {
      * 처리상태코드
      */
     public static final String SUCCESS = "SUCCESS";
-    public static final String FAIL = "FAIL";
+    public static final String FAIL    = "FAIL";
+    
+    /**
+     * 시스템변수
+     */
+    public static final String ERR_CD   = "ErrorCode";
+    public static final String ERR_MSG  = "ErrorMsg";
+    public static final String ERR_TYPE = "ErrorType";
+    public static final String LANG_CD  = "LanguageCode";
+    public static final String USER_ID  = "UserId";
+    public static final String USER_NM  = "UserName";
+
 }

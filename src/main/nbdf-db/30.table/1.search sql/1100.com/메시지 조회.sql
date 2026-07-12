@@ -35,19 +35,22 @@ UMSG-ERR-20000     20000 ~ 29990  시스템 공통(Error)
 
 
 프레임워크 메시지
--------------------------------------------------------
-메시지번호         번호범위       범위 용도
--------------------------------------------------------
-FMSG-MTD-10000	   10000 ~ 19990  1. Metadata Layer
-FMSG-BLD-10000	   10000 ~ 19990  2. Builder Layer
-FMSG-CON-10000	   10000 ~ 19990  3. Constants Layer
-FMSG-ECP-10000	   10000 ~ 19990  4. Exception Layer
-FMSG-TYP-10000	   10000 ~ 19990  5. Type Mapping Layer
-FMSG-UTL-10000	   10000 ~ 19990  6. Utility Layer
-FMSG-RST-10000	   10000 ~ 19990  7. Result Layer
-FMSG-MSG-10000	   10000 ~ 19990  8. Message Layer
-FMSG-VLD-10000	   10000 ~ 19990  9. Validation Layer
-FMSG-CVT-10000	   10000 ~ 19990  10. Converter Layer
-FMSG-CNF-10000	   10000 ~ 19990  11. Configuration Layer
-FMSG-EXT-10000	   10000 ~ 19990  12. Extension Layer
+-- --------------------------------------------------------------
+-- 메시지번호         번호범위       범위 용도
+-- --------------------------------------------------------------
+-- FMSG-CON-10000     10000 ~ 19990  Constants Layer
+-- FMSG-TYP-10000     10000 ~ 19990  Type Mapping Layer
+-- FMSG-MTD-10000     10000 ~ 19990  Metadata Layer
+-- FMSG-MSG-10000     10000 ~ 19990  Message Layer
+-- FMSG-VLD-10000     10000 ~ 19990  Validation Layer
+-- FMSG-BLD-10000     10000 ~ 19990  Builder Layer
+-- FMSG-RED-10000	    10000 ~ 19990  Reader Layer
+-- FMSG-RST-10000     10000 ~ 19990  Result Layer
+-- FMSG-CVT-10000     10000 ~ 19990  Converter Layer
+-- FMSG-UTL-10000     10000 ~ 19990  Utility Layer
+-- FMSG-ECP-10000     10000 ~ 19990  Exception Layer
+-- FMSG-CNF-10000     10000 ~ 19990  Configuration Layer
+-- FMSG-EXT-10000     10000 ~ 19990  Extension Layer
+
+
 */

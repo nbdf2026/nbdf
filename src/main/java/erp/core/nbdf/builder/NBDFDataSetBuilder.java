@@ -253,12 +253,12 @@ public final class NBDFDataSetBuilder {
 	private static void setColumnValue(final DataSet dataSet, final int rowIndex, final NBDFColumn column, final Object value ) {
 	
 		// DataSet에 행, 컬럼명, 값을 설정
-		dataSet.set(rowIndex, column.getColumnName(), convertValue(value));
+		dataSet.set(rowIndex, column.getColumnName(), convertToPlatformValue(value));
 		
 	}
 	
 	/**
-	* @methodName     	: convertValue
+	* @methodName     	: convertToPlatformValue
 	* @author         	: Built1
 	* @date           	: 2026.07.03
 	* @description    	: DataSet에 저장 가능한 데이터로 변환하는 메서드
@@ -275,7 +275,7 @@ public final class NBDFDataSetBuilder {
 	* @param value	  	: 원본 데이터
 	* @return		  	: 변환된 데이터
 	*/
-	private static Object convertValue(final Object value) {
+	private static Object convertToPlatformValue(final Object value) {
 		
 		/*
 		 * ----------------------------------------------------------
