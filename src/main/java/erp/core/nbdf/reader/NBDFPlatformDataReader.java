@@ -1,6 +1,7 @@
 package erp.core.nbdf.reader;
 
 import com.nexacro.java.xapi.data.DataSet;
+import com.nexacro.java.xapi.data.DataSetList;
 import com.nexacro.java.xapi.data.PlatformData;
 import com.nexacro.java.xapi.data.Variable;
 import com.nexacro.java.xapi.data.VariableList;
@@ -51,22 +52,30 @@ public final class NBDFPlatformDataReader {
 	*/
 	public static NBDFTransferData read(final PlatformData platformData) {
 		
+		// NBDF transferData 생성
+		final NBDFTransferData transferData = new NBDFTransferData();
+				
 		// Nexacro platformData 없을 경우 오류 메시지 출력
 		if (platformData == null) {
 			throw new NBDFException("FMSG-RED-10000"); // PlatformData 객체에 값이 존재하지 않습니다.
 		}
 		
-		// NBDF transferData 생성
-		final NBDFTransferData transferData = new NBDFTransferData();
-		
 		// Nexacro platformData의 Variable 읽기 
 		readVariables(platformData, transferData);
 		
-		// Nexacro platformData의 DataSet 읽기
-		readDataSets(platformData, transferData);
-		
 		// Nexacro platformData의 SystemVariable 읽기
 		readSystemVariable(platformData, transferData);
+		
+		// Nexacro platformData DataSet 목록 추출
+		final DataSetList dataSetList = platformData.getDataSetList();
+
+		// 추출된 DataSet 갯수 만큼 Loop
+	    for (int i = 0; i < dataSetList.size(); i++) {
+	    	
+	    	// Nexacro platformData의 DataSet 한건씩 읽어서 NBDF DataSet 생성
+	        readDataSet(dataSetList.get(i), transferData);
+	        
+	    }
 		
 		// transferData 리턴
 		return transferData;
@@ -158,6 +167,7 @@ public final class NBDFPlatformDataReader {
 		transferData.addDataSet(dataSet.getName(), dataSet);
 		
 	}
+	
 		
 	/**
 	* @methodName     		: readSystemVariable
