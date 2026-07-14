@@ -65,7 +65,7 @@ begin
     -- FMSG-MSG-10000     10000 ~ 19990  Message Layer
     -- FMSG-VLD-10000     10000 ~ 19990  Validation Layer
     -- FMSG-BLD-10000     10000 ~ 19990  Builder Layer
-    -- FMSG-RED-10000	    10000 ~ 19990  Reader Layer
+    -- FMSG-RED-10000	  10000 ~ 19990  Reader Layer
     -- FMSG-RST-10000     10000 ~ 19990  Result Layer
     -- FMSG-CVT-10000     10000 ~ 19990  Converter Layer
     -- FMSG-UTL-10000     10000 ~ 19990  Utility Layer
@@ -88,6 +88,9 @@ begin
                                                         
     insert into com_message values('FMSG-RED-10000', 'A', 'PlatformData 객체에 값이 존재하지 않습니다.'
                                                         , 'PlatformData is null.', '중', '일', '기', l_remark, l_current_date, 'admin', l_current_date, l_user_id);
+                                                        
+    insert into com_message values('FMSG-RED-10010', 'A', 'Oracle TIMESTAMP 변환 중 오류가 발생하였습니다.'
+                                                        , 'An error occurred during Oracle TIMESTAMP conversion.', '중', '일', '기', l_remark, l_current_date, 'admin', l_current_date, l_user_id);
     
     --
     commit;

@@ -46,15 +46,12 @@ erp.core.nbdf
 ```
  
 [nbdf 프로젝트]
- 1. 작업예정 : 2026.07.13 ~ 16
-	□ Builder / Reader 전체 리팩토링
-	□ JavaDoc 및 주석 통일
-	□ 예외 처리 일관성 검토
-	□ JUnit 테스트 작성
-	□ 실제 Nexacro 송수신 테스트
-	□ README 및 CHANGELOG 정리
-	□ NBDF v1.0.0 기반 완성
+ 1. 작업일자 : 2026.07.14
+ 2. 작업내용
+  - NBDFPlatformDataReader : Nexacro PlatformData를 NBDFTransferData로 변환하는 Reader 클래스
+    : 메소드 - convertToJavaValue  상세화 진행
 
+[nbdf 프로젝트]
  1. 작업일자 : 2026.07.12
  2. 작업내용
   - NBDFDataSetBuilder : NBDF 메타정보와 조회 데이터를 Nexacro DataSet으로 생성하는 Builder 클래스

@@ -1,7 +1,10 @@
 package erp.core.nbdf.reader;
 
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 import com.nexacro.java.xapi.data.DataSet;
-import com.nexacro.java.xapi.data.DataSetList;
 import com.nexacro.java.xapi.data.PlatformData;
 import com.nexacro.java.xapi.data.Variable;
 import com.nexacro.java.xapi.data.VariableList;
@@ -60,32 +63,21 @@ public final class NBDFPlatformDataReader {
 			throw new NBDFException("FMSG-RED-10000"); // PlatformData 객체에 값이 존재하지 않습니다.
 		}
 		
-		// Nexacro platformData의 Variable 읽기 
+		// Nexacro PlatformData의 Variable and SystemVariable을 읽어 TransferData에 저장하는 메서드
 		readVariables(platformData, transferData);
 		
-		// Nexacro platformData의 SystemVariable 읽기
-		readSystemVariable(platformData, transferData);
-		
-		// Nexacro platformData DataSet 목록 추출
-		final DataSetList dataSetList = platformData.getDataSetList();
-
-		// 추출된 DataSet 갯수 만큼 Loop
-	    for (int i = 0; i < dataSetList.size(); i++) {
-	    	
-	    	// Nexacro platformData의 DataSet 한건씩 읽어서 NBDF DataSet 생성
-	        readDataSet(dataSetList.get(i), transferData);
-	        
-	    }
+		// PlatformData의 모든 DataSet을 읽어 TransferData에 저장하는 메서드
+		readDataSets(platformData, transferData);
 		
 		// transferData 리턴
 		return transferData;
 	}
-
+	
 	/**
 	* @methodName     		: readVariables
 	* @author         		: Built1
 	* @date           		: 2026.07.12
-	* @description    		: Nexacro PlatformData의 Variable을 읽어 TransferData에 저장하는 메서드
+	* @description    		: Nexacro PlatformData의 Variable 및 SystemVariable을 읽어 TransferData에 저장하는 메서드
 	* @param platformData	: Nexacro PlatformData
 	* @param transferData	: NBDFTransferData
 	*/
@@ -105,8 +97,20 @@ public final class NBDFPlatformDataReader {
 			// variableList에서 로우 단위로 데이터 variable 추출
 			final Variable variable = variableList.get(i);
 			
-			// transferData에 variable 추가
-			transferData.addVariable(variable.getName(), convertToJavaValue(variable.getObject()));
+			// variable의 변수명(key)
+			final String variableName = variable.getName();
+			
+			// variable 값 변환(value)
+			final Object variableValue = convertToJavaValue(variable.getObject());
+			
+			// 시스템 SystemVariable일 경우
+			if (isSystemVariable(variableName)) {
+				// transferData에 systemVariable 추가
+				transferData.addSystemVariable(variableName, variableValue);				
+			} else {				
+				// transferData에 variable 추가
+				transferData.addVariable(variableName, variableValue);				
+			}			
 		}
 		
 	}
@@ -167,44 +171,6 @@ public final class NBDFPlatformDataReader {
 		transferData.addDataSet(dataSet.getName(), dataSet);
 		
 	}
-	
-		
-	/**
-	* @methodName     		: readSystemVariable
-	* @author         		: Built1
-	* @date           		: 2026.07.12
-	* @description    		: PlatformData의 시스템 Variable을 읽어 NBDFTransferData에 저장하는 메서드
-	* @param platformData	: Nexacro PlatformData
-	* @param transferData	: NBDF transferData 
-	*/
-	private static void readSystemVariable(final PlatformData platformData, final NBDFTransferData transferData) {
-		
-		// variableList 조회
-		final VariableList variableList = platformData.getVariableList();
-		
-		// variableList 없거나 갯수가 0일 경우 종료
-		if (variableList == null || variableList.size() == 0) {
-			return;
-		}
-		
-		// variableList 갯수만큰 loop 저장
-		for (int i=0; i<variableList.size(); i++) {
-			
-			// variable 값 할당(key, value)
-			final Variable variable = variableList.get(i);
-			
-			// variable의 변수명 값 할당
-			final String systemVariableName = variable.getName();
-			
-			// 시스템 variable 아니면 다음 loop
-			if (!isSystemVariable(systemVariableName)) {
-				continue;
-			}
-			
-			// transferData에 systemVariable 추가
-			transferData.addSystemVariable(systemVariableName, convertToJavaValue(variable.getObject()));
-		}
-	}
 
 	/**
 	* @methodName     			: isSystemVariable
@@ -214,7 +180,7 @@ public final class NBDFPlatformDataReader {
 	* @param systemVariableName	: 시스템 변수명
 	* @return					: true(시스템 변수명), false(일반 변수명)
 	*/
-	private static boolean isSystemVariable(String systemVariableName) {
+	private static boolean isSystemVariable(final String systemVariableName) {
 		
 		// systemVariableName가 없을 경우 일반 변수
 		if (systemVariableName == null) {
@@ -241,15 +207,79 @@ public final class NBDFPlatformDataReader {
 	* @author         	: Built1
 	* @date           	: 2026.07.12
 	* @description    	: Nexacro Variable 값을 Java 객체로 변환하는 메서드
-	* @param value
-	* @return
+	* @param value		: 오브젝트 값
+	* @return			: 자바 데이터 유형으로 변환된 값
 	*/
 	private static Object convertToJavaValue(final Object value) {
-
-		// value null일 경우 리턴 null 
+		
+		// value null일 경우 null 
 		if (value == null) {
 			return null;
 		}
+		
+		// String → String
+		if (value instanceof String) {
+			return value.toString();
+		} 
+		
+		// Integer, Long, Short, Double, Flat, Byte, BigDecimal, BigInteger 유지
+		if (value instanceof Number) {
+			return value;
+		} 
+		
+		// Boolean → String
+		if (value instanceof Boolean) {
+			return value.toString();
+		} 
+		
+		// Character → String
+		if (value instanceof Character) {
+			return value.toString();
+		} 
+		
+		// Enum(Status.SUCCESS) → 코드("SUCCESS")
+		if (value instanceof Enum<?>) {
+			return ((Enum<?>) value).name();
+		} 
+		
+		// java.sql.Timestamp 유지
+		if (value instanceof java.sql.Timestamp) {
+			return value;
+		} 
+		
+		// Oracle JDBC 버전 oracle.sql.TIMESTAMP
+		if (value instanceof oracle.sql.TIMESTAMP) {
+			try {			
+				return ((oracle.sql.TIMESTAMP) value).timestampValue();
+			} catch (SQLException e) {
+				throw new NBDFException("FMSG-RED-10010", e); // Oracle TIMESTAMP 변환 중 오류가 발생하였습니다.
+			}
+		} 
+		
+		// java.sql.Date 유지
+		if (value instanceof java.sql.Date) {
+		    return value;
+		} 
+		
+		// java.util.Date 유지
+		if (value instanceof java.util.Date) {
+			return value;
+		} 
+		
+		// LocalDate 유지
+		if (value instanceof LocalDate) {
+			return value;
+		} 
+		
+		// LocalDateTime 유지
+		if (value instanceof LocalDateTime) {
+			return value;
+		} 
+		
+		// byte[] 유지
+		if (value instanceof byte[]) {
+		    return value;
+		}		
 		
 		return value;
 	}
